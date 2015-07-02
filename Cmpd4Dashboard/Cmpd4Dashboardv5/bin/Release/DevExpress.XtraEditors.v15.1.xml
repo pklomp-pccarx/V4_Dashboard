@@ -678,767 +678,996 @@ For the <see cref="T:DevExpress.XtraGrid.GridControl"/>, these operations are in
         <member name="T:DevExpress.XtraEditors.XtraDialog">
 
             <summary>
-                <para> </para>
+                <para>A message box that allows displaying any control (e.g., a UserControl) in its client area.
+</para>
             </summary>
 
         </member>
         <member name="P:DevExpress.XtraEditors.XtraDialog.AllowCustomLookAndFeel">
             <summary>
-                <para> </para>
+                <para>Gets or sets whether a dialog is painted using its own look and feel settings, which are specified by the <i>lookAndFeel</i> parameter of specific <see cref="M:DevExpress.XtraEditors.XtraDialog.Show"/> method overloads. This property is ignored if the <i>lookAndFeel</i> parameter is set to use a skinning paint scheme. 
+</para>
             </summary>
-            <value> </value>
+            <value><b>true</b>, if the dialog is painted using its own look and feel settings; <b>false</b>, if the default look and feel settings are used. 
+</value>
 
 
         </member>
         <member name="P:DevExpress.XtraEditors.XtraDialog.AllowHtmlText">
             <summary>
-                <para> </para>
+                <para>Gets or sets whether the HTML Text Formatting feature is enabled by default for dialog captions. 
+</para>
             </summary>
-            <value> </value>
+            <value><b>true</b>, if the HTML text formatting feature is enabled for dialog captions; otherwise, <b>false</b>.
+</value>
 
 
         </member>
         <member name="M:DevExpress.XtraEditors.XtraDialog.Show(System.Windows.Forms.Control)">
             <summary>
-                <para> </para>
+                <para>Invokes a dialog displaying the specified control in its client area.
+</para>
             </summary>
             <param name="content">
-		 
+		A control to be displayed in the dialog's client area. 
+
             </param>
-            <returns> </returns>
+            <returns>One of the <see cref="T:System.Windows.Forms.DialogResult"/> values.
+</returns>
 
 
         </member>
         <member name="M:DevExpress.XtraEditors.XtraDialog.Show(System.Windows.Forms.Control,System.String,System.Windows.Forms.MessageBoxButtons)">
             <summary>
-                <para> </para>
+                <para>Invokes a dialog with the specified control, caption and buttons. 
+</para>
             </summary>
             <param name="content">
-		 
+		A control to be displayed in the dialog's client area. 
+
             </param>
             <param name="caption">
-		 
+		A string that specifies the dialog's caption.
+
             </param>
             <param name="buttons">
-		 
+		A value that specifies which buttons should be displayed in the dialog.
+
             </param>
-            <returns> </returns>
+            <returns>One of the <see cref="T:System.Windows.Forms.DialogResult"/> values.
+</returns>
 
 
         </member>
         <member name="M:DevExpress.XtraEditors.XtraDialog.Show(System.Windows.Forms.Control,System.String,System.Windows.Forms.MessageBoxButtons,DevExpress.Utils.DefaultBoolean)">
             <summary>
-                <para> </para>
+                <para>Invokes a dialog with the specified settings.
+</para>
             </summary>
             <param name="content">
-		 
+		A control to be displayed in the dialog's client area. 
+
             </param>
             <param name="caption">
-		 
+		A string that specifies the dialog's caption.
+
             </param>
             <param name="buttons">
-		 
+		A value that specifies which buttons should be displayed in the dialog.
+
             </param>
             <param name="allowHtmlText">
-		 
+		A value that specifies whether HTML tags can be used to format the dialog's caption.
+
             </param>
-            <returns> </returns>
+            <returns>One of the <see cref="T:System.Windows.Forms.DialogResult"/> values.
+</returns>
 
 
         </member>
         <member name="M:DevExpress.XtraEditors.XtraDialog.Show(System.Windows.Forms.IWin32Window,System.Windows.Forms.Control,System.String)">
             <summary>
-                <para> </para>
+                <para>Invokes a dialog with the specified control, caption and owner.
+</para>
             </summary>
             <param name="owner">
-		 
+		An object that serves as the dialog's top-level window and owner.
+
             </param>
             <param name="content">
-		 
+		A control to be displayed in the dialog's client area. 
+
             </param>
             <param name="caption">
-		 
+		A string that specifies the dialog's caption.
+
             </param>
-            <returns> </returns>
+            <returns>One of the <see cref="T:System.Windows.Forms.DialogResult"/> values.
+</returns>
 
 
         </member>
         <member name="M:DevExpress.XtraEditors.XtraDialog.Show(System.Windows.Forms.IWin32Window,System.Windows.Forms.Control,System.String,System.Windows.Forms.MessageBoxButtons,DevExpress.Utils.DefaultBoolean)">
             <summary>
-                <para> </para>
+                <para>Invokes a dialog with the specified settings.
+</para>
             </summary>
             <param name="owner">
-		 
+		An object that serves as the dialog's top-level window and owner.
+
             </param>
             <param name="content">
-		 
+		A control to be displayed in the dialog's client area. 
+
             </param>
             <param name="caption">
-		 
+		A string that specifies the dialog's caption.
+
             </param>
             <param name="buttons">
-		 
+		A value that specifies which buttons should be displayed in the dialog.
+
             </param>
             <param name="allowHtmlText">
-		 
+		A value that specifies whether HTML tags can be used to format the dialog's caption.
+
             </param>
-            <returns> </returns>
+            <returns>One of the <see cref="T:System.Windows.Forms.DialogResult"/> values.
+</returns>
 
 
         </member>
         <member name="M:DevExpress.XtraEditors.XtraDialog.Show(System.Windows.Forms.Control,System.String,System.Windows.Forms.MessageBoxButtons,System.Windows.Forms.MessageBoxDefaultButton)">
             <summary>
-                <para> </para>
+                <para>Invokes a dialog with the specified control, caption, buttons and default button.
+</para>
             </summary>
             <param name="content">
-		 
+		A control to be displayed in the dialog's client area. 
+
             </param>
             <param name="caption">
-		 
+		A string that specifies the dialog's caption.
+
             </param>
             <param name="buttons">
-		 
+		A value that specifies which buttons should be displayed in the dialog.
+
             </param>
             <param name="defaultButton">
-		 
+		One of the <see cref="T:System.Windows.Forms.MessageBoxDefaultButton"/> values that specifies the default button for the dialog.
+
             </param>
-            <returns> </returns>
+            <returns>One of the <see cref="T:System.Windows.Forms.DialogResult"/> values.
+</returns>
 
 
         </member>
         <member name="M:DevExpress.XtraEditors.XtraDialog.Show(System.Windows.Forms.IWin32Window,System.Windows.Forms.Control,System.String,System.Windows.Forms.MessageBoxButtons)">
             <summary>
-                <para> </para>
+                <para>Invokes a dialog with the specified owner, control, caption and buttons.
+</para>
             </summary>
             <param name="owner">
-		 
+		An object that serves as the dialog's top-level window and owner.
+
             </param>
             <param name="content">
-		 
+		A control to be displayed in the dialog's client area. 
+
             </param>
             <param name="caption">
-		 
+		A string that specifies the dialog's caption.
+
             </param>
             <param name="buttons">
-		 
+		A value that specifies which buttons should be displayed in the dialog.
+
             </param>
-            <returns> </returns>
+            <returns>One of the <see cref="T:System.Windows.Forms.DialogResult"/> values.
+</returns>
 
 
         </member>
         <member name="M:DevExpress.XtraEditors.XtraDialog.Show(System.Windows.Forms.IWin32Window,System.Windows.Forms.Control,System.String,System.Windows.Forms.MessageBoxButtons,System.Windows.Forms.MessageBoxDefaultButton)">
             <summary>
-                <para> </para>
+                <para>Invokes a dialog with the specified owner, control, caption, buttons and default button.
+</para>
             </summary>
             <param name="owner">
-		 
+		An object that serves as the dialog's top-level window and owner.
+
             </param>
             <param name="content">
-		 
+		A control to be displayed in the dialog's client area. 
+
             </param>
             <param name="caption">
-		 
+		A string that specifies the dialog's caption.
+
             </param>
             <param name="buttons">
-		 
+		A value that specifies which buttons should be displayed in the dialog.
+
             </param>
             <param name="defaultButton">
-		 
+		One of the <see cref="T:System.Windows.Forms.MessageBoxDefaultButton"/> values that specifies the default button for the dialog.
+
             </param>
-            <returns> </returns>
+            <returns>One of the <see cref="T:System.Windows.Forms.DialogResult"/> values.
+</returns>
 
 
         </member>
         <member name="M:DevExpress.XtraEditors.XtraDialog.Show(System.Windows.Forms.IWin32Window,System.Windows.Forms.Control,System.String,System.Windows.Forms.MessageBoxButtons,System.Windows.Forms.MessageBoxDefaultButton,DevExpress.Utils.DefaultBoolean)">
             <summary>
-                <para> </para>
+                <para>Invokes a dialog with the specified settings.
+</para>
             </summary>
             <param name="owner">
-		 
+		An object that serves as the dialog's top-level window and owner.
+
             </param>
             <param name="content">
-		 
+		A control to be displayed in the dialog's client area. 
+
             </param>
             <param name="caption">
-		 
+		A string that specifies the dialog's caption.
+
             </param>
             <param name="buttons">
-		 
+		A value that specifies which buttons should be displayed in the dialog.
+
             </param>
             <param name="defaultButton">
-		 
+		One of the <see cref="T:System.Windows.Forms.MessageBoxDefaultButton"/> values that specifies the default button for the dialog.
+
             </param>
             <param name="allowHtmlText">
-		 
+		A value that specifies whether HTML tags can be used to format the dialog's caption.
+
             </param>
-            <returns> </returns>
+            <returns>One of the <see cref="T:System.Windows.Forms.DialogResult"/> values.
+</returns>
 
 
         </member>
         <member name="M:DevExpress.XtraEditors.XtraDialog.Show(System.Windows.Forms.IWin32Window,System.Windows.Forms.Control,System.String,DevExpress.Utils.DefaultBoolean)">
             <summary>
-                <para> </para>
+                <para>Invokes a dialog with the specified settings.
+</para>
             </summary>
             <param name="owner">
-		 
+		An object that serves as the dialog's top-level window and owner.
+
             </param>
             <param name="content">
-		 
+		A control to be displayed in the dialog's client area. 
+
             </param>
             <param name="caption">
-		 
+		A string that specifies the dialog's caption.
+
             </param>
             <param name="allowHtmlText">
-		 
+		A value that specifies whether HTML tags can be used to format the dialog's caption.
+
             </param>
-            <returns> </returns>
+            <returns>One of the <see cref="T:System.Windows.Forms.DialogResult"/> values.
+</returns>
 
 
         </member>
         <member name="M:DevExpress.XtraEditors.XtraDialog.Show(DevExpress.LookAndFeel.UserLookAndFeel,System.Windows.Forms.Control)">
             <summary>
-                <para> </para>
+                <para>Invokes a dialog with the specified settings.
+</para>
             </summary>
             <param name="lookAndFeel">
-		 
+		An object whose properties specify the dialog's look and feel.
+
             </param>
             <param name="content">
-		 
+		A control to be displayed in the dialog's client area. 
+
             </param>
-            <returns> </returns>
+            <returns>One of the <see cref="T:System.Windows.Forms.DialogResult"/> values.
+</returns>
 
 
         </member>
         <member name="M:DevExpress.XtraEditors.XtraDialog.Show(DevExpress.LookAndFeel.UserLookAndFeel,System.Windows.Forms.Control,DevExpress.Utils.DefaultBoolean)">
             <summary>
-                <para> </para>
+                <para>Invokes a dialog with the specified settings.
+</para>
             </summary>
             <param name="lookAndFeel">
-		 
+		An object whose properties specify the dialog's look and feel.
+
             </param>
             <param name="content">
-		 
+		A control to be displayed in the dialog's client area. 
+
             </param>
             <param name="allowHtmlText">
-		 
+		A value that specifies whether HTML tags can be used to format the dialog's caption.
+
             </param>
-            <returns> </returns>
+            <returns>One of the <see cref="T:System.Windows.Forms.DialogResult"/> values.
+</returns>
 
 
         </member>
         <member name="M:DevExpress.XtraEditors.XtraDialog.Show(System.Windows.Forms.Control,System.String,System.Windows.Forms.MessageBoxButtons,System.Windows.Forms.MessageBoxDefaultButton,DevExpress.Utils.DefaultBoolean)">
             <summary>
-                <para> </para>
+                <para>Invokes a dialog with the specified settings.
+</para>
             </summary>
             <param name="content">
-		 
+		A control to be displayed in the dialog's client area. 
+
             </param>
             <param name="caption">
-		 
+		A string that specifies the dialog's caption.
+
             </param>
             <param name="buttons">
-		 
+		A value that specifies which buttons should be displayed in the dialog.
+
             </param>
             <param name="defaultButton">
-		 
+		One of the <see cref="T:System.Windows.Forms.MessageBoxDefaultButton"/> values that specifies the default button for the dialog.
+
             </param>
             <param name="allowHtmlText">
-		 
+		A value that specifies whether HTML tags can be used to format the dialog's caption.
+
             </param>
-            <returns> </returns>
+            <returns>One of the <see cref="T:System.Windows.Forms.DialogResult"/> values.
+</returns>
 
 
         </member>
         <member name="M:DevExpress.XtraEditors.XtraDialog.Show(DevExpress.LookAndFeel.UserLookAndFeel,System.Windows.Forms.IWin32Window,System.Windows.Forms.Control,DevExpress.Utils.DefaultBoolean)">
             <summary>
-                <para> </para>
+                <para>Invokes a dialog with the specified settings.
+</para>
             </summary>
             <param name="lookAndFeel">
-		 
+		An object whose properties specify the dialog's look and feel.
+
             </param>
             <param name="owner">
-		 
+		An object that serves as the dialog's top-level window and owner.
+
             </param>
             <param name="content">
-		 
+		A control to be displayed in the dialog's client area. 
+
             </param>
             <param name="allowHtmlText">
-		 
+		A value that specifies whether HTML tags can be used to format the dialog's caption.
+
             </param>
-            <returns> </returns>
+            <returns>One of the <see cref="T:System.Windows.Forms.DialogResult"/> values.
+</returns>
 
 
         </member>
         <member name="M:DevExpress.XtraEditors.XtraDialog.Show(System.Windows.Forms.Control,System.String,DevExpress.Utils.DefaultBoolean)">
             <summary>
-                <para> </para>
+                <para>Invokes a dialog with the specified settings.
+</para>
             </summary>
             <param name="content">
-		 
+		A control to be displayed in the dialog's client area. 
+
             </param>
             <param name="caption">
-		 
+		A string that specifies the dialog's caption.
+
             </param>
             <param name="allowHtmlText">
-		 
+		A value that specifies whether HTML tags can be used to format the dialog's caption.
+
             </param>
-            <returns> </returns>
+            <returns>One of the <see cref="T:System.Windows.Forms.DialogResult"/> values.
+</returns>
 
 
         </member>
         <member name="M:DevExpress.XtraEditors.XtraDialog.Show(DevExpress.LookAndFeel.UserLookAndFeel,System.Windows.Forms.IWin32Window,System.Windows.Forms.Control,System.String,System.Windows.Forms.DialogResult[],System.Int32)">
             <summary>
-                <para> </para>
+                <para>Invokes a dialog with the specified settings.
+</para>
             </summary>
             <param name="lookAndFeel">
-		 
+		An object whose properties specify the dialog's look and feel.
+
             </param>
             <param name="owner">
-		 
+		An object that serves as the dialog's top-level window and owner.
+
             </param>
             <param name="content">
-		 
+		A control to be displayed in the dialog's client area. 
+
             </param>
             <param name="caption">
-		 
+		A string that specifies the dialog's caption.
+
             </param>
             <param name="buttons">
-		 
+		An array of values that specify which buttons should be displayed in the dialog.
+
             </param>
             <param name="defaultButton">
-		 
+		One of the <see cref="T:System.Windows.Forms.MessageBoxDefaultButton"/> values that specifies the default button for the dialog.
+
             </param>
-            <returns> </returns>
+            <returns>One of the <see cref="T:System.Windows.Forms.DialogResult"/> values.
+</returns>
 
 
         </member>
         <member name="M:DevExpress.XtraEditors.XtraDialog.Show(DevExpress.LookAndFeel.UserLookAndFeel,System.Windows.Forms.Control,System.String,System.Windows.Forms.MessageBoxButtons,DevExpress.Utils.DefaultBoolean)">
             <summary>
-                <para> </para>
+                <para>Invokes a dialog with the specified settings.
+</para>
             </summary>
             <param name="lookAndFeel">
-		 
+		An object whose properties specify the dialog's look and feel.
+
             </param>
             <param name="content">
-		 
+		A control to be displayed in the dialog's client area. 
+
             </param>
             <param name="caption">
-		 
+		A string that specifies the dialog's caption.
+
             </param>
             <param name="buttons">
-		 
+		A value that specifies which buttons should be displayed in the dialog.
+
             </param>
             <param name="allowHtmlText">
-		 
+		A value that specifies whether HTML tags can be used to format the dialog's caption.
+
             </param>
-            <returns> </returns>
+            <returns>One of the <see cref="T:System.Windows.Forms.DialogResult"/> values.
+</returns>
 
 
         </member>
         <member name="M:DevExpress.XtraEditors.XtraDialog.Show(DevExpress.LookAndFeel.UserLookAndFeel,System.Windows.Forms.IWin32Window,System.Windows.Forms.Control,System.String,System.Windows.Forms.MessageBoxButtons)">
             <summary>
-                <para> </para>
+                <para>Invokes a dialog with the specified settings.
+</para>
             </summary>
             <param name="lookAndFeel">
-		 
+		An object whose properties specify the dialog's look and feel.
+
             </param>
             <param name="owner">
-		 
+		An object that serves as the dialog's top-level window and owner.
+
             </param>
             <param name="content">
-		 
+		A control to be displayed in the dialog's client area. 
+
             </param>
             <param name="caption">
-		 
+		A string that specifies the dialog's caption.
+
             </param>
             <param name="buttons">
-		 
+		A value that specifies which buttons should be displayed in the dialog.
+
             </param>
-            <returns> </returns>
+            <returns>One of the <see cref="T:System.Windows.Forms.DialogResult"/> values.
+</returns>
 
 
         </member>
         <member name="M:DevExpress.XtraEditors.XtraDialog.Show(DevExpress.LookAndFeel.UserLookAndFeel,System.Windows.Forms.IWin32Window,System.Windows.Forms.Control,System.String,System.Windows.Forms.MessageBoxButtons,DevExpress.Utils.DefaultBoolean)">
             <summary>
-                <para> </para>
+                <para>Invokes a dialog with the specified settings.
+</para>
             </summary>
             <param name="lookAndFeel">
-		 
+		An object whose properties specify the dialog's look and feel.
+
             </param>
             <param name="owner">
-		 
+		An object that serves as the dialog's top-level window and owner.
+
             </param>
             <param name="content">
-		 
+		A control to be displayed in the dialog's client area. 
+
             </param>
             <param name="caption">
-		 
+		A string that specifies the dialog's caption.
+
             </param>
             <param name="buttons">
-		 
+		A value that specifies which buttons should be displayed in the dialog.
+
             </param>
             <param name="allowHtmlText">
-		 
+		A value that specifies whether HTML tags can be used to format the dialog's caption.
+
             </param>
-            <returns> </returns>
+            <returns>One of the <see cref="T:System.Windows.Forms.DialogResult"/> values.
+</returns>
 
 
         </member>
         <member name="M:DevExpress.XtraEditors.XtraDialog.Show(DevExpress.LookAndFeel.UserLookAndFeel,System.Windows.Forms.Control,System.String,System.Windows.Forms.MessageBoxButtons,System.Windows.Forms.MessageBoxDefaultButton)">
             <summary>
-                <para> </para>
+                <para>Invokes a dialog with the specified settings.
+</para>
             </summary>
             <param name="lookAndFeel">
-		 
+		An object whose properties specify the dialog's look and feel.
+
             </param>
             <param name="content">
-		 
+		A control to be displayed in the dialog's client area. 
+
             </param>
             <param name="caption">
-		 
+		A string that specifies the dialog's caption.
+
             </param>
             <param name="buttons">
-		 
+		A value that specifies which buttons should be displayed in the dialog.
+
             </param>
             <param name="defaultButton">
-		 
+		One of the <see cref="T:System.Windows.Forms.MessageBoxDefaultButton"/> values that specifies the default button for the dialog.
+
             </param>
-            <returns> </returns>
+            <returns>One of the <see cref="T:System.Windows.Forms.DialogResult"/> values.
+</returns>
 
 
         </member>
         <member name="M:DevExpress.XtraEditors.XtraDialog.Show(DevExpress.LookAndFeel.UserLookAndFeel,System.Windows.Forms.IWin32Window,System.Windows.Forms.Control,System.String,System.Windows.Forms.MessageBoxButtons,System.Windows.Forms.MessageBoxDefaultButton,DevExpress.Utils.DefaultBoolean)">
             <summary>
-                <para> </para>
+                <para>Invokes a dialog with the specified settings.
+</para>
             </summary>
             <param name="lookAndFeel">
-		 
+		An object whose properties specify the dialog's look and feel.
+
             </param>
             <param name="owner">
-		 
+		An object that serves as the dialog's top-level window and owner.
+
             </param>
             <param name="content">
-		 
+		A control to be displayed in the dialog's client area. 
+
             </param>
             <param name="caption">
-		 
+		A string that specifies the dialog's caption.
+
             </param>
             <param name="buttons">
-		 
+		A value that specifies which buttons should be displayed in the dialog.
+
             </param>
             <param name="defaultButton">
-		 
+		One of the <see cref="T:System.Windows.Forms.MessageBoxDefaultButton"/> values that specifies the default button for the dialog.
+
             </param>
             <param name="allowHtmlText">
-		 
+		A value that specifies whether HTML tags can be used to format the dialog's caption.
+
             </param>
-            <returns> </returns>
+            <returns>One of the <see cref="T:System.Windows.Forms.DialogResult"/> values.
+</returns>
 
 
         </member>
         <member name="M:DevExpress.XtraEditors.XtraDialog.Show(DevExpress.LookAndFeel.UserLookAndFeel,System.Windows.Forms.IWin32Window,System.Windows.Forms.Control,System.String,System.Windows.Forms.MessageBoxButtons,System.Windows.Forms.MessageBoxDefaultButton)">
             <summary>
-                <para> </para>
+                <para>Invokes a dialog with the specified settings.
+</para>
             </summary>
             <param name="lookAndFeel">
-		 
+		An object whose properties specify the dialog's look and feel.
+
             </param>
             <param name="owner">
-		 
+		An object that serves as the dialog's top-level window and owner.
+
             </param>
             <param name="content">
-		 
+		A control to be displayed in the dialog's client area. 
+
             </param>
             <param name="caption">
-		 
+		A string that specifies the dialog's caption.
+
             </param>
             <param name="buttons">
-		 
+		A value that specifies which buttons should be displayed in the dialog.
+
             </param>
             <param name="defaultButton">
-		 
+		One of the <see cref="T:System.Windows.Forms.MessageBoxDefaultButton"/> values that specifies the default button for the dialog.
+
             </param>
-            <returns> </returns>
+            <returns>One of the <see cref="T:System.Windows.Forms.DialogResult"/> values.
+</returns>
 
 
         </member>
         <member name="M:DevExpress.XtraEditors.XtraDialog.Show(DevExpress.LookAndFeel.UserLookAndFeel,System.Windows.Forms.Control,System.String,DevExpress.Utils.DefaultBoolean)">
             <summary>
-                <para> </para>
+                <para>Invokes a dialog with the specified settings.
+</para>
             </summary>
             <param name="lookAndFeel">
-		 
+		An object whose properties specify the dialog's look and feel.
+
             </param>
             <param name="content">
-		 
+		A control to be displayed in the dialog's client area. 
+
             </param>
             <param name="caption">
-		 
+		A string that specifies the dialog's caption.
+
             </param>
             <param name="allowHtmlText">
-		 
+		A value that specifies whether HTML tags can be used to format the dialog's caption.
+
             </param>
-            <returns> </returns>
+            <returns>One of the <see cref="T:System.Windows.Forms.DialogResult"/> values.
+</returns>
 
 
         </member>
         <member name="M:DevExpress.XtraEditors.XtraDialog.Show(System.Windows.Forms.Control,System.String)">
             <summary>
-                <para> </para>
+                <para>Invokes a dialog with the specified control and caption.
+</para>
             </summary>
             <param name="content">
-		 
+		A control to be displayed in the dialog's client area. 
+
             </param>
             <param name="caption">
-		 
+		A string that specifies the dialog's caption.
+
             </param>
-            <returns> </returns>
+            <returns>One of the <see cref="T:System.Windows.Forms.DialogResult"/> values.
+</returns>
 
 
         </member>
         <member name="M:DevExpress.XtraEditors.XtraDialog.Show(DevExpress.LookAndFeel.UserLookAndFeel,System.Windows.Forms.IWin32Window,System.Windows.Forms.Control,System.String,DevExpress.Utils.DefaultBoolean)">
             <summary>
-                <para> </para>
+                <para>Invokes a dialog with the specified settings.
+</para>
             </summary>
             <param name="lookAndFeel">
-		 
+		An object whose properties specify the dialog's look and feel.
+
             </param>
             <param name="owner">
-		 
+		An object that serves as the dialog's top-level window and owner.
+
             </param>
             <param name="content">
-		 
+		A control to be displayed in the dialog's client area. 
+
             </param>
             <param name="caption">
-		 
+		A string that specifies the dialog's caption.
+
             </param>
             <param name="allowHtmlText">
-		 
+		A value that specifies whether HTML tags can be used to format the dialog's caption.
+
             </param>
-            <returns> </returns>
+            <returns>One of the <see cref="T:System.Windows.Forms.DialogResult"/> values.
+</returns>
 
 
         </member>
         <member name="M:DevExpress.XtraEditors.XtraDialog.Show(System.Windows.Forms.IWin32Window,System.Windows.Forms.Control,System.String,System.Windows.Forms.DialogResult[],System.Int32)">
             <summary>
-                <para> </para>
+                <para>Invokes a dialog with the specified owner, control, buttons and default button.
+</para>
             </summary>
             <param name="owner">
-		 
+		An object that serves as the dialog's top-level window and owner.
+
             </param>
             <param name="content">
-		 
+		A control to be displayed in the dialog's client area. 
+
             </param>
             <param name="caption">
-		 
+		A string that specifies the dialog's caption.
+
             </param>
             <param name="buttons">
-		 
+		An array of values that specify which buttons should be displayed in the dialog.
+
             </param>
             <param name="defaultButton">
-		 
+		The zero-based index of the default button. 
+
             </param>
-            <returns> </returns>
+            <returns>One of the <see cref="T:System.Windows.Forms.DialogResult"/> values.
+</returns>
 
 
         </member>
         <member name="M:DevExpress.XtraEditors.XtraDialog.Show(DevExpress.LookAndFeel.UserLookAndFeel,System.Windows.Forms.IWin32Window,System.Windows.Forms.Control,System.String,System.Windows.Forms.DialogResult[],System.Int32,DevExpress.Utils.DefaultBoolean)">
             <summary>
-                <para> </para>
+                <para>Invokes a dialog with the specified settings.
+</para>
             </summary>
             <param name="lookAndFeel">
-		 
+		An object whose properties specify the dialog's look and feel.
+
             </param>
             <param name="owner">
-		 
+		An object that serves as the dialog's top-level window and owner.
+
             </param>
             <param name="content">
-		 
+		A control to be displayed in the dialog's client area. 
+
             </param>
             <param name="caption">
-		 
+		A string that specifies the dialog's caption.
+
             </param>
             <param name="buttons">
-		 
+		An array of values that specify which buttons should be displayed in the dialog.
+
             </param>
             <param name="defaultButton">
-		 
+		The zero-based index of the default button. 
+
             </param>
             <param name="allowHtmlText">
-		 
+		A value that specifies whether HTML tags can be used to format the dialog's caption.
+
             </param>
-            <returns> </returns>
+            <returns>One of the <see cref="T:System.Windows.Forms.DialogResult"/> values.
+</returns>
 
 
         </member>
         <member name="M:DevExpress.XtraEditors.XtraDialog.Show(DevExpress.LookAndFeel.UserLookAndFeel,System.Windows.Forms.Control,System.String,System.Windows.Forms.MessageBoxButtons,System.Windows.Forms.MessageBoxDefaultButton,DevExpress.Utils.DefaultBoolean)">
             <summary>
-                <para> </para>
+                <para>Invokes a dialog with the specified settings.
+</para>
             </summary>
             <param name="lookAndFeel">
-		 
+		An object whose properties specify the dialog's look and feel.
+
             </param>
             <param name="content">
-		 
+		A control to be displayed in the dialog's client area. 
+
             </param>
             <param name="caption">
-		 
+		A string that specifies the dialog's caption.
+
             </param>
             <param name="buttons">
-		 
+		A value that specifies which buttons should be displayed in the dialog.
+
             </param>
             <param name="defaultButton">
-		 
+		One of the <see cref="T:System.Windows.Forms.MessageBoxDefaultButton"/> values that specifies the default button for the dialog.
+
             </param>
             <param name="allowHtmlText">
-		 
+		A value that specifies whether HTML tags can be used to format the dialog's caption.
+
             </param>
-            <returns> </returns>
+            <returns>One of the <see cref="T:System.Windows.Forms.DialogResult"/> values.
+</returns>
 
 
         </member>
         <member name="M:DevExpress.XtraEditors.XtraDialog.Show(DevExpress.LookAndFeel.UserLookAndFeel,System.Windows.Forms.Control,System.String)">
             <summary>
-                <para> </para>
+                <para>Invokes a dialog with the specified settings.
+</para>
             </summary>
             <param name="lookAndFeel">
-		 
+		An object whose properties specify the dialog's look and feel.
+
             </param>
             <param name="content">
-		 
+		A control to be displayed in the dialog's client area. 
+
             </param>
             <param name="caption">
-		 
+		A string that specifies the dialog's caption.
+
             </param>
-            <returns> </returns>
+            <returns>One of the <see cref="T:System.Windows.Forms.DialogResult"/> values.
+</returns>
 
 
         </member>
         <member name="M:DevExpress.XtraEditors.XtraDialog.Show(DevExpress.LookAndFeel.UserLookAndFeel,System.Windows.Forms.Control,System.String,System.Windows.Forms.MessageBoxButtons)">
             <summary>
-                <para> </para>
+                <para>Invokes a dialog with the specified settings.
+</para>
             </summary>
             <param name="lookAndFeel">
-		 
+		An object whose properties specify the dialog's look and feel.
+
             </param>
             <param name="content">
-		 
+		A control to be displayed in the dialog's client area. 
+
             </param>
             <param name="caption">
-		 
+		A string that specifies the dialog's caption.
+
             </param>
             <param name="buttons">
-		 
+		A value that specifies which buttons should be displayed in the dialog.
+
             </param>
-            <returns> </returns>
+            <returns>One of the <see cref="T:System.Windows.Forms.DialogResult"/> values.
+</returns>
 
 
         </member>
         <member name="M:DevExpress.XtraEditors.XtraDialog.Show(DevExpress.LookAndFeel.UserLookAndFeel,System.Windows.Forms.IWin32Window,System.Windows.Forms.Control)">
             <summary>
-                <para> </para>
+                <para>Invokes a dialog with the specified settings.
+</para>
             </summary>
             <param name="lookAndFeel">
-		 
+		An object whose properties specify the dialog's look and feel.
+
             </param>
             <param name="owner">
-		 
+		An object that serves as the dialog's top-level window and owner.
+
             </param>
             <param name="content">
-		 
+		A control to be displayed in the dialog's client area. 
+
             </param>
-            <returns> </returns>
+            <returns>One of the <see cref="T:System.Windows.Forms.DialogResult"/> values.
+</returns>
 
 
         </member>
         <member name="M:DevExpress.XtraEditors.XtraDialog.Show(System.Windows.Forms.Control,DevExpress.Utils.DefaultBoolean)">
             <summary>
-                <para> </para>
+                <para>Invokes a dialog with the specified settings.
+</para>
             </summary>
             <param name="content">
-		 
+		A control to be displayed in the dialog's client area. 
+
             </param>
             <param name="allowHtmlText">
-		 
+		A value that specifies whether HTML tags can be used to format the dialog's caption.
+
             </param>
-            <returns> </returns>
+            <returns>One of the <see cref="T:System.Windows.Forms.DialogResult"/> values.
+</returns>
 
 
         </member>
         <member name="M:DevExpress.XtraEditors.XtraDialog.Show(System.Windows.Forms.IWin32Window,System.Windows.Forms.Control)">
             <summary>
-                <para> </para>
+                <para>Invokes a dialog with the specified owner and control.
+</para>
             </summary>
             <param name="owner">
-		 
+		An object that serves as the dialog's top-level window and owner.
+
             </param>
             <param name="content">
-		 
+		A control to be displayed in the dialog's client area. 
+
             </param>
-            <returns> </returns>
+            <returns>One of the <see cref="T:System.Windows.Forms.DialogResult"/> values.
+</returns>
 
 
         </member>
         <member name="M:DevExpress.XtraEditors.XtraDialog.Show(System.Windows.Forms.IWin32Window,System.Windows.Forms.Control,DevExpress.Utils.DefaultBoolean)">
             <summary>
-                <para> </para>
+                <para>Invokes a dialog with the specified settings.
+</para>
             </summary>
             <param name="owner">
-		 
+		An object that serves as the dialog's top-level window and owner.
+
             </param>
             <param name="content">
-		 
+		A control to be displayed in the dialog's client area. 
+
             </param>
             <param name="allowHtmlText">
-		 
+		A value that specifies whether HTML tags can be used to format the dialog's caption.
+
             </param>
-            <returns> </returns>
+            <returns>One of the <see cref="T:System.Windows.Forms.DialogResult"/> values.
+</returns>
 
 
         </member>
         <member name="M:DevExpress.XtraEditors.XtraDialog.Show(System.Windows.Forms.IWin32Window,System.Windows.Forms.Control,System.String,System.Windows.Forms.DialogResult[],System.Int32,DevExpress.Utils.DefaultBoolean)">
             <summary>
-                <para> </para>
+                <para>Invokes a dialog with the specified settings.
+</para>
             </summary>
             <param name="owner">
-		 
+		An object that serves as the dialog's top-level window and owner.
+
             </param>
             <param name="content">
-		 
+		A control to be displayed in the dialog's client area. 
+
             </param>
             <param name="caption">
-		 
+		A string that specifies the dialog's caption.
+
             </param>
             <param name="buttons">
-		 
+		An array of values that specify which buttons should be displayed in the dialog.
+
             </param>
             <param name="defaultButton">
-		 
+		The zero-based index of the default button. 
+
             </param>
             <param name="allowHtmlText">
-		 
+		A value that specifies whether HTML tags can be used to format the dialog's caption.
+
             </param>
-            <returns> </returns>
+            <returns>One of the <see cref="T:System.Windows.Forms.DialogResult"/> values.
+</returns>
 
 
         </member>
         <member name="M:DevExpress.XtraEditors.XtraDialog.Show(DevExpress.LookAndFeel.UserLookAndFeel,System.Windows.Forms.IWin32Window,System.Windows.Forms.Control,System.String)">
             <summary>
-                <para> </para>
+                <para>Invokes a dialog with the specified settings.
+</para>
             </summary>
             <param name="lookAndFeel">
-		 
+		An object whose properties specify the dialog's look and feel.
+
             </param>
             <param name="owner">
-		 
+		An object that serves as the dialog's top-level window and owner.
+
             </param>
             <param name="content">
-		 
+		A control to be displayed in the dialog's client area. 
+
             </param>
             <param name="caption">
-		 
+		A string that specifies the dialog's caption.
+
             </param>
-            <returns> </returns>
+            <returns>One of the <see cref="T:System.Windows.Forms.DialogResult"/> values.
+</returns>
 
 
         </member>
@@ -8059,13 +8288,16 @@ In Visual Studio 2005 and more recent versions, the same as the <b>Horizontal</b
         </member>
         <member name="M:DevExpress.XtraEditors.LabelControlAppearanceObject.Combine(DevExpress.Utils.AppearanceObject[],DevExpress.Utils.AppearanceDefault)">
             <summary>
-                <para> </para>
+                <para>Copies the activated appearance settings of objects passed as the parameter to the current object; properties that aren't activated are set to the value in the default appearance object.
+</para>
             </summary>
             <param name="appearances">
-		 
+		An array of appearance objects that specifies the source of the operation.
+
             </param>
             <param name="defaultAppearance">
-		 
+		An object that specifies the default appearance settings.
+
             </param>
 
 
@@ -8322,9 +8554,11 @@ In Visual Studio 2005 and more recent versions, the same as the <b>Horizontal</b
         </member>
         <member name="P:DevExpress.XtraEditors.LabelControl.BackColor">
             <summary>
-                <para> </para>
+                <para>Gets or sets the label control's background color.
+</para>
             </summary>
-            <value> </value>
+            <value>A value that specifies the control's background color.
+</value>
 
 
         </member>
@@ -12616,9 +12850,11 @@ For a <see cref="T:DevExpress.XtraBars.Docking2010.Views.Tabbed.TabbedView"/> in
         </member>
         <member name="P:DevExpress.XtraTab.XtraTabControl.RightToLeftLayout">
             <summary>
-                <para> </para>
+                <para>Gets or sets whether the XtraTabControl is aligned to support locales using right-to-left fonts.
+</para>
             </summary>
-            <value> </value>
+            <value>A <a href="ms-xhelp:///?Id=T%3aDevExpress.Utils.DefaultBoolean">DefaultBoolean</a> enumeration value that specifies whether the XtraTabControl is aligned to support locales using right-to-left fonts.
+</value>
 
 
         </member>
@@ -13049,9 +13285,11 @@ A dropdown control is invoked on clicking the dropdown arrow button unless the <
         </member>
         <member name="P:DevExpress.XtraEditors.FormatRuleBase.ColumnFieldName">
             <summary>
-                <para> </para>
+                <para>This member supports the internal infrastructure, and is not intended to be used directly from your code. 
+</para>
             </summary>
-            <value> </value>
+            <value>The field name of the column that provides values to test against the current formatting rule. 
+</value>
 
 
         </member>
@@ -13668,9 +13906,11 @@ A dropdown control is invoked on clicking the dropdown arrow button unless the <
         </member>
         <member name="P:DevExpress.XtraEditors.Repository.RepositoryItemRatingControl.FillPrecision">
             <summary>
-                <para> </para>
+                <para>Gets or sets the type of the precision with which end-users can set the rating using the mouse pointer.
+</para>
             </summary>
-            <value> </value>
+            <value>A value that specifies the rating precision.
+</value>
 
 
         </member>
@@ -14641,9 +14881,11 @@ A dropdown control is invoked on clicking the dropdown arrow button unless the <
         </member>
         <member name="P:DevExpress.XtraEditors.FormatConditionIconSet.LookAndFeel">
             <summary>
-                <para> </para>
+                <para>This member supports the internal infrastructure, and is not intended to be used directly from your code. 
+</para>
             </summary>
-            <value> </value>
+            <value> 
+</value>
 
 
         </member>
@@ -14659,9 +14901,11 @@ A dropdown control is invoked on clicking the dropdown arrow button unless the <
         </member>
         <member name="P:DevExpress.XtraEditors.FormatConditionIconSet.RangeDescription">
             <summary>
-                <para> </para>
+                <para>This member supports the internal infrastructure, and is not intended to be used directly from your code. 
+</para>
             </summary>
-            <value> </value>
+            <value>A string that specifies the icon set's range description.
+</value>
 
 
         </member>
@@ -17257,7 +17501,8 @@ A dropdown control is invoked on clicking the dropdown arrow button unless the <
         </member>
         <member name="M:DevExpress.XtraEditors.RangeControl.SelectAll">
             <summary>
-                <para> </para>
+                <para>Select a range from the RangeControl's minimum bound to its maximum bound.
+</para>
             </summary>
 
 
@@ -19145,9 +19390,11 @@ This property is now obsolete. Use the <see cref="P:DevExpress.XtraEditors.TileI
         </member>
         <member name="P:DevExpress.XtraEditors.TileItem.BorderVisibility">
             <summary>
-                <para> </para>
+                <para>Gets or sets whether the current TileItem's border is visible. 
+</para>
             </summary>
-            <value> </value>
+            <value>A value that specifies whether the TileItem's border is visible.
+</value>
 
 
         </member>
@@ -20337,9 +20584,11 @@ This property is now obsolete. Use the <see cref="P:DevExpress.XtraEditors.TileC
         </member>
         <member name="P:DevExpress.XtraEditors.TileControl.IsRightToLeft">
             <summary>
-                <para> </para>
+                <para>Gets a value indicating whether the TileControl's elements are aligned to support locales using right-to-left fonts.
+</para>
             </summary>
-            <value> </value>
+            <value><b>true</b>, if the TileControl's elements are aligned to support locales using right-to-left fonts; otherwise, <b>false</b>.
+</value>
 
 
         </member>
@@ -20395,9 +20644,12 @@ This property is now obsolete. Use the <see cref="P:DevExpress.XtraEditors.TileC
         </member>
         <member name="P:DevExpress.XtraEditors.TileControl.ItemBorderVisibility">
             <summary>
-                <para> </para>
+                <para>Gets or sets whether borders of all tile items within the current TileControl are visible. 
+</para>
             </summary>
-            <value> </value>
+            <value>A value that specifies whether tile item borders are visible. 
+
+</value>
 
 
         </member>
@@ -23014,106 +23266,136 @@ Allows you to select a form that should be subsequently activated.
         </member>
         <member name="M:DevExpress.XtraSplashScreen.SplashScreenManager.#ctor(System.Windows.Forms.UserControl,System.Type,System.Boolean,System.Boolean,DevExpress.XtraSplashScreen.SplashFormStartPosition,System.Drawing.Point,System.Type,System.Boolean)">
             <summary>
-                <para> </para>
+                <para>Initializes a new instance of the SplashScreenManager class with the specified settings.
+</para>
             </summary>
             <param name="parentControl">
-		 
+		A <b>UserControl</b> contained on the <b>Form</b>, against which the splash form is centered.
+
             </param>
             <param name="splashFormType">
-		 
+		The type of splash form to be displayed.
+
             </param>
             <param name="useFadeIn">
-		 
+		<b>true</b>, to use the fade-in effect when opening the form; otherwise, <b>false</b>.
+
             </param>
             <param name="useFadeOut">
-		 
+		<b>true</b>, to use the fade-out effect when closing the form; otherwise, <b>false</b>. 
+
             </param>
             <param name="startPos">
-		 
+		The splash form's arrangement.
+
             </param>
             <param name="loc">
-		 
+		Coordinates at which the splash form is shown (if the <i>startPos</i> parameter is set to <b>Manual</b>).
+
             </param>
             <param name="type">
-		 
+		The Type of the parent object. The parent should be either a Form or a UserControl. Otherwise, ArgumentException is thrown.
+
             </param>
             <param name="allowGlowEffect">
-		 
+		<b>true</b>, to use the glow effect when displaying the splash form; otherwise, <b>false</b>.
+
             </param>
 
 
         </member>
         <member name="M:DevExpress.XtraSplashScreen.SplashScreenManager.#ctor(System.Windows.Forms.UserControl,System.Type,System.Boolean,System.Boolean,DevExpress.XtraSplashScreen.SplashFormStartPosition,System.Drawing.Point,System.Type)">
             <summary>
-                <para> </para>
+                <para>Initializes a new instance of the SplashScreenManager class with the specified settings.
+</para>
             </summary>
             <param name="parentControl">
-		 
+		A <b>UserControl</b> contained on the <b>Form</b>, against which the splash form is centered.
+
             </param>
             <param name="splashFormType">
-		 
+		The type of splash form to be displayed.
+
             </param>
             <param name="useFadeIn">
-		 
+		<b>true</b>, to use the fade-in effect when opening the form; otherwise, <b>false</b>.
+
             </param>
             <param name="useFadeOut">
-		 
+		<b>true</b>, to use the fade-out effect when closing the form; otherwise, <b>false</b>. 
+
             </param>
             <param name="startPos">
-		 
+		The splash form's arrangement.
+
             </param>
             <param name="loc">
-		 
+		Coordinates at which the splash form is shown (if the <i>startPos</i> parameter is set to <b>Manual</b>).
+
             </param>
             <param name="type">
-		 
+		The Type of the parent object. The parent should be either a Form or a UserControl. Otherwise, ArgumentException is thrown.
+
             </param>
 
 
         </member>
         <member name="M:DevExpress.XtraSplashScreen.SplashScreenManager.#ctor(System.Windows.Forms.UserControl,System.Type,System.Boolean,System.Boolean,System.Type,System.Boolean)">
             <summary>
-                <para> </para>
+                <para>Initializes a new instance of the SplashScreenManager class with the specified settings.
+</para>
             </summary>
             <param name="parentControl">
-		 
+		A <b>UserControl</b> contained on the <b>Form</b>, against which the splash form is centered.
+
             </param>
             <param name="splashFormType">
-		 
+		The type of splash form to be displayed.
+
             </param>
             <param name="useFadeIn">
-		 
+		<b>true</b>, to use the fade-in effect when opening the form; otherwise, <b>false</b>.
+
             </param>
             <param name="useFadeOut">
-		 
+		<b>true</b>, to use the fade-out effect when closing the form; otherwise, <b>false</b>. 
+
             </param>
             <param name="type">
-		 
+		The Type of the parent object. The parent should be either a Form or a UserControl. Otherwise, ArgumentException is thrown.
+
             </param>
             <param name="allowGlowEffect">
-		 
+		<b>true</b>, to use the glow effect when displaying the splash form; otherwise, <b>false</b>.
+
             </param>
 
 
         </member>
         <member name="M:DevExpress.XtraSplashScreen.SplashScreenManager.#ctor(System.Windows.Forms.UserControl,System.Type,System.Boolean,System.Boolean,System.Type)">
             <summary>
-                <para> </para>
+                <para>Initializes a new instance of the SplashScreenManager class with the specified settings.
+</para>
             </summary>
             <param name="parentControl">
-		 
+		A <b>UserControl</b> contained on the <b>Form</b>, against which the splash form is centered.
+
             </param>
             <param name="splashFormType">
-		 
+		The type of splash form to be displayed.
+
             </param>
             <param name="useFadeIn">
-		 
+		<b>true</b>, to use the fade-in effect when opening the form; otherwise, <b>false</b>.
+
             </param>
             <param name="useFadeOut">
-		 
+		<b>true</b>, to use the fade-out effect when closing the form; otherwise, <b>false</b>. 
+
             </param>
             <param name="type">
-		 
+		The Type of the parent object. The parent should be either a Form or a UserControl. Otherwise, ArgumentException is thrown.
+
             </param>
 
 
@@ -23914,7 +24196,7 @@ The method's parameter allows you to suppress an exception that is thrown if ano
         </member>
         <member name="M:DevExpress.XtraSplashScreen.SplashScreenManager.ShowForm(System.Windows.Forms.Form,System.Type,System.Boolean,System.Boolean,System.Boolean,DevExpress.XtraSplashScreen.SplashFormStartPosition,System.Drawing.Point,System.Int32,System.Boolean)">
             <summary>
-                <para>This member supports the internal infrastructure, and is not intended to be used directly from your code.
+                <para>Creates and displays the specified <see cref="T:DevExpress.XtraSplashScreen.SplashScreen"/> or <see cref="T:DevExpress.XtraWaitForm.WaitForm"/> descendant.
 </para>
             </summary>
             <param name="parentForm">
@@ -24004,7 +24286,7 @@ The method's parameter allows you to disable the parent form while the splash fo
         </member>
         <member name="M:DevExpress.XtraSplashScreen.SplashScreenManager.ShowForm(System.Windows.Forms.Form,System.Type,System.Boolean,System.Boolean,System.Boolean,DevExpress.XtraSplashScreen.SplashFormStartPosition,System.Drawing.Point,System.Int32,System.Boolean,DevExpress.XtraSplashScreen.ParentFormState)">
             <summary>
-                <para>Creates and displays the specified <see cref="T:DevExpress.XtraSplashScreen.SplashScreen"/> or <see cref="T:DevExpress.XtraWaitForm.WaitForm"/> descendant. This member supports the internal infrastructure, and is not intended to be used directly from your code.
+                <para>Creates and displays the specified <see cref="T:DevExpress.XtraSplashScreen.SplashScreen"/> or <see cref="T:DevExpress.XtraWaitForm.WaitForm"/> descendant.
 </para>
             </summary>
             <param name="parentForm">
@@ -24283,8 +24565,7 @@ The method's parameter allows you to disable the parent form while the splash fo
         </member>
         <member name="M:DevExpress.XtraSplashScreen.SplashScreenManager.ShowForm(System.Windows.Forms.Form,System.Type,System.Boolean,System.Boolean,System.Boolean,DevExpress.XtraSplashScreen.SplashFormStartPosition,System.Drawing.Point,System.Int32,System.Boolean,DevExpress.XtraSplashScreen.ParentFormState,System.Boolean)">
             <summary>
-                <para>Creates and displays the specified <see cref="T:DevExpress.XtraSplashScreen.SplashScreen"/> or <see cref="T:DevExpress.XtraWaitForm.WaitForm"/> descendant. This member supports the internal infrastructure, and is not intended to be used directly from your code.
-
+                <para>Creates and displays the specified <see cref="T:DevExpress.XtraSplashScreen.SplashScreen"/> or <see cref="T:DevExpress.XtraWaitForm.WaitForm"/> descendant.
 </para>
             </summary>
             <param name="parentForm">
@@ -33409,14 +33690,16 @@ Return value: Cancel
         </member>
         <member name="F:DevExpress.XtraEditors.Controls.StringId.ChartRangeControlClientInvalidGrid">
             <summary>
-                <para> </para>
+                <para>Returns "The interval  between grid lines is too small to be represented in the range control."
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.XtraEditors.Controls.StringId.ChartRangeControlClientNoData">
             <summary>
-                <para> </para>
+                <para>Returns "The interval  between grid lines is too small to be represented in the range control."
+</para>
             </summary>
 
 
@@ -33450,70 +33733,80 @@ Return value: Unchecked
         </member>
         <member name="F:DevExpress.XtraEditors.Controls.StringId.ColorPickBlueValidationMsg">
             <summary>
-                <para> </para>
+                <para>Returns "Blue component should be in range 0..255".
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.XtraEditors.Controls.StringId.ColorPickBrightnessAxisName">
             <summary>
-                <para> </para>
+                <para>Returns "Brightness".
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.XtraEditors.Controls.StringId.ColorPickBrightValidationMsg">
             <summary>
-                <para> </para>
+                <para>Returns "Brightness component should be in range 0..100".
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.XtraEditors.Controls.StringId.ColorPickColorHexValidationMsg">
             <summary>
-                <para> </para>
+                <para>Returns "Invalid hexadecimal value".
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.XtraEditors.Controls.StringId.ColorPickGreenValidationMsg">
             <summary>
-                <para> </para>
+                <para>Returns "Green component should be in range 0..255".
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.XtraEditors.Controls.StringId.ColorPickHueAxisName">
             <summary>
-                <para> </para>
+                <para>Returns "Hue".
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.XtraEditors.Controls.StringId.ColorPickHueValidationMsg">
             <summary>
-                <para> </para>
+                <para>Returns "Hue component should be in range 0..359".
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.XtraEditors.Controls.StringId.ColorPickLuminanceAxisName">
             <summary>
-                <para> </para>
+                <para>Returns "Luminance".
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.XtraEditors.Controls.StringId.ColorPickOpacityAxisName">
             <summary>
-                <para> </para>
+                <para>Returns "Opacity".
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.XtraEditors.Controls.StringId.ColorPickOpacityValidationMsg">
             <summary>
-                <para> </para>
+                <para>Returns "Opacity component should be in range 0..255".
+</para>
             </summary>
 
 
@@ -33530,119 +33823,136 @@ Return value: Automatic
         </member>
         <member name="F:DevExpress.XtraEditors.Controls.StringId.ColorPickPopupMoreColorsItemCaption">
             <summary>
-                <para> </para>
+                <para>Returns "More Colors..."
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.XtraEditors.Controls.StringId.ColorPickPopupRecentColorsGroupCaption">
             <summary>
-                <para> </para>
+                <para>Returns "Recent Colors".
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.XtraEditors.Controls.StringId.ColorPickPopupStandardColorsGroupCaption">
             <summary>
-                <para> </para>
+                <para>Returns "Standard Colors".
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.XtraEditors.Controls.StringId.ColorPickPopupThemeColorsGroupCaption">
             <summary>
-                <para> </para>
+                <para>Returns "Theme Colors".
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.XtraEditors.Controls.StringId.ColorPickRedValidationMsg">
             <summary>
-                <para> </para>
+                <para>Returns "Red component should be in range 0..255".
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.XtraEditors.Controls.StringId.ColorPickSaturationAxisName">
             <summary>
-                <para> </para>
+                <para>Returns "Saturation".
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.XtraEditors.Controls.StringId.ColorPickSaturationValidationMsg">
             <summary>
-                <para> </para>
+                <para>Returns "Saturation component should be in range 0..100".
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.XtraEditors.Controls.StringId.ColorScaleBlueWhiteRed">
             <summary>
-                <para> </para>
+                <para>Returns "Blue - White - Red".
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.XtraEditors.Controls.StringId.ColorScaleEmeraldAzureBlue">
             <summary>
-                <para> </para>
+                <para>Returns "Emerald - Azure - Blue".
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.XtraEditors.Controls.StringId.ColorScaleGreenWhiteRed">
             <summary>
-                <para> </para>
+                <para>Returns "Green - White - Red".
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.XtraEditors.Controls.StringId.ColorScaleGreenYellowRed">
             <summary>
-                <para> </para>
+                <para>Returns "Green - Yellow - Red".
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.XtraEditors.Controls.StringId.ColorScalePurpleWhiteAzure">
             <summary>
-                <para> </para>
+                <para>Returns "Purple - White - Azure".
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.XtraEditors.Controls.StringId.ColorScaleWhiteAzure">
             <summary>
-                <para> </para>
+                <para>Returns "White - Azure".
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.XtraEditors.Controls.StringId.ColorScaleWhiteGreen">
             <summary>
-                <para> </para>
+                <para>Returns "White - Green".
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.XtraEditors.Controls.StringId.ColorScaleWhiteRed">
             <summary>
-                <para> </para>
+                <para>Returns "White - Red".
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.XtraEditors.Controls.StringId.ColorScaleYellowGreen">
             <summary>
-                <para> </para>
+                <para>Returns "Yellow - Green".
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.XtraEditors.Controls.StringId.ColorScaleYellowOrangeCoral">
             <summary>
-                <para> </para>
+                <para>Returns "Yellow - Orange - Coral".
+</para>
             </summary>
 
 
@@ -33676,7 +33986,8 @@ Return value: Web
         </member>
         <member name="F:DevExpress.XtraEditors.Controls.StringId.ColorTabWebSafeColors">
             <summary>
-                <para> </para>
+                <para>Returns "Web-Safe".
+</para>
             </summary>
 
 
@@ -33695,126 +34006,144 @@ The string which is identified by this enumeration value is used to initiliaze a
         </member>
         <member name="F:DevExpress.XtraEditors.Controls.StringId.DataBarBlue">
             <summary>
-                <para> </para>
+                <para>Returns "Blue Data Bar".
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.XtraEditors.Controls.StringId.DataBarBlueGradient">
             <summary>
-                <para> </para>
+                <para>Returns "Blue Data Bar Gradient".
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.XtraEditors.Controls.StringId.DataBarCoral">
             <summary>
-                <para> </para>
+                <para>Returns "Coral Data Bar".
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.XtraEditors.Controls.StringId.DataBarCoralGradient">
             <summary>
-                <para> </para>
+                <para>Returns "Coral Data Bar Gradient".
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.XtraEditors.Controls.StringId.DataBarGreen">
             <summary>
-                <para> </para>
+                <para>Returns "Green Data Bar".
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.XtraEditors.Controls.StringId.DataBarGreenGradient">
             <summary>
-                <para> </para>
+                <para>Returns "Green Data Bar Gradient".
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.XtraEditors.Controls.StringId.DataBarLightBlue">
             <summary>
-                <para> </para>
+                <para>Returns "Light Blue Data Bar".
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.XtraEditors.Controls.StringId.DataBarLightBlueGradient">
             <summary>
-                <para> </para>
+                <para>Returns "Light Blue Data Bar Gradient".
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.XtraEditors.Controls.StringId.DataBarMint">
             <summary>
-                <para> </para>
+                <para>Returns "Mint Data Bar".
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.XtraEditors.Controls.StringId.DataBarMintGradient">
             <summary>
-                <para> </para>
+                <para>Returns "Mint Data Bar Gradient".
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.XtraEditors.Controls.StringId.DataBarOrange">
             <summary>
-                <para> </para>
+                <para>Returns "Orange Data Bar".
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.XtraEditors.Controls.StringId.DataBarOrangeGradient">
             <summary>
-                <para> </para>
+                <para>Returns "Orange Data Bar Gradient".
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.XtraEditors.Controls.StringId.DataBarRaspberry">
             <summary>
-                <para> </para>
+                <para>Returns "Raspberry Data Bar".
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.XtraEditors.Controls.StringId.DataBarRaspberryGradient">
             <summary>
-                <para> </para>
+                <para>Returns "Raspberry Data Bar Gradient".
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.XtraEditors.Controls.StringId.DataBarViolet">
             <summary>
-                <para> </para>
+                <para>Returns "Violet Data Bar".
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.XtraEditors.Controls.StringId.DataBarVioletGradient">
             <summary>
-                <para> </para>
+                <para>Returns "Violet Data Bar Gradient".
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.XtraEditors.Controls.StringId.DataBarYellow">
             <summary>
-                <para> </para>
+                <para>Returns "Yellow Data Bar".
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.XtraEditors.Controls.StringId.DataBarYellowGradient">
             <summary>
-                <para> </para>
+                <para>Returns "Yellow Data Bar Gradient".
+</para>
             </summary>
 
 
@@ -33895,7 +34224,8 @@ Return value: days
         </member>
         <member name="F:DevExpress.XtraEditors.Controls.StringId.EditFormattingRule">
             <summary>
-                <para> </para>
+                <para>Returns "Edit Formatting Rule".
+</para>
             </summary>
 
 
@@ -35765,413 +36095,472 @@ Return value:
         </member>
         <member name="F:DevExpress.XtraEditors.Controls.StringId.FormatPredefinedAppearanceBoldText">
             <summary>
-                <para> </para>
+                <para>Returns "Bold Text".
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.XtraEditors.Controls.StringId.FormatPredefinedAppearanceGreenBoldText">
             <summary>
-                <para> </para>
+                <para>Returns "Green Bold Text".
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.XtraEditors.Controls.StringId.FormatPredefinedAppearanceGreenFill">
             <summary>
-                <para> </para>
+                <para>Returns "Green Fill".
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.XtraEditors.Controls.StringId.FormatPredefinedAppearanceGreenFillGreenText">
             <summary>
-                <para> </para>
+                <para>Returns "Green Fill with Green Text".
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.XtraEditors.Controls.StringId.FormatPredefinedAppearanceGreenText">
             <summary>
-                <para> </para>
+                <para>Returns "Green Text".
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.XtraEditors.Controls.StringId.FormatPredefinedAppearanceItalicText">
             <summary>
-                <para> </para>
+                <para>Returns "Italic Text".
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.XtraEditors.Controls.StringId.FormatPredefinedAppearanceRedBoldText">
             <summary>
-                <para> </para>
+                <para>Returns "Red Bold Text".
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.XtraEditors.Controls.StringId.FormatPredefinedAppearanceRedFill">
             <summary>
-                <para> </para>
+                <para>Returns "Red Fill".
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.XtraEditors.Controls.StringId.FormatPredefinedAppearanceRedFillRedText">
             <summary>
-                <para> </para>
+                <para>Returns "Red Fill with Red Text".
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.XtraEditors.Controls.StringId.FormatPredefinedAppearanceRedText">
             <summary>
-                <para> </para>
+                <para>Returns "Red Text".
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.XtraEditors.Controls.StringId.FormatPredefinedAppearanceStrikeoutText">
             <summary>
-                <para> </para>
+                <para>Returns "Strikeout Text".
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.XtraEditors.Controls.StringId.FormatPredefinedAppearanceYellowFillYellowText">
             <summary>
-                <para> </para>
+                <para>Returns "Yellow Fill with Yellow Text".
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.XtraEditors.Controls.StringId.FormatRuleAboveAverageText">
             <summary>
-                <para> </para>
+                <para>Returns "Format cells that are ABOVE AVERAGE".
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.XtraEditors.Controls.StringId.FormatRuleApplyFormatProperty">
             <summary>
-                <para> </para>
+                <para>Returns "Apply formatting to an entire row".
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.XtraEditors.Controls.StringId.FormatRuleBelowAverageText">
             <summary>
-                <para> </para>
+                <para>Returns "Format cells that are BELOW AVERAGE".
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.XtraEditors.Controls.StringId.FormatRuleBetweenText">
             <summary>
-                <para> </para>
+                <para>Returns "Format cells that are BETWEEN".
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.XtraEditors.Controls.StringId.FormatRuleBottomText">
             <summary>
-                <para> </para>
+                <para>Returns "Format cells that rank in the BOTTOM".
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.XtraEditors.Controls.StringId.FormatRuleCustomConditionText">
             <summary>
-                <para> </para>
+                <para>Returns "Format cells that match the following condition".
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.XtraEditors.Controls.StringId.FormatRuleDateOccurring">
             <summary>
-                <para> </para>
+                <para>Returns "Format cells that contain a date matching these conditions".
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.XtraEditors.Controls.StringId.FormatRuleDuplicateText">
             <summary>
-                <para> </para>
+                <para>Returns "Format cells that are DUPLICATE VALUES".
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.XtraEditors.Controls.StringId.FormatRuleEqualToText">
             <summary>
-                <para> </para>
+                <para>Returns "Format cells that are EQUAL TO".
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.XtraEditors.Controls.StringId.FormatRuleExpressionEmptyEnter">
             <summary>
-                <para> </para>
+                <para>Returns "&lt;enter an expression&gt;".
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.XtraEditors.Controls.StringId.FormatRuleForThisColumnWith">
             <summary>
-                <para> </para>
+                <para>Returns "for this column with".
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.XtraEditors.Controls.StringId.FormatRuleGreaterThanText">
             <summary>
-                <para> </para>
+                <para>Returns "Format cells that are GREATER THAN".
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.XtraEditors.Controls.StringId.FormatRuleLessThanText">
             <summary>
-                <para> </para>
+                <para>Returns "Format cells that are LESS THAN".
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.XtraEditors.Controls.StringId.FormatRuleMenuItemAboveAverage">
             <summary>
-                <para> </para>
+                <para>Returns "Above Average".
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.XtraEditors.Controls.StringId.FormatRuleMenuItemBelowAverage">
             <summary>
-                <para> </para>
+                <para>Returns "Below Average".
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.XtraEditors.Controls.StringId.FormatRuleMenuItemBetween">
             <summary>
-                <para> </para>
+                <para>Returns "Between".
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.XtraEditors.Controls.StringId.FormatRuleMenuItemBottom10Items">
             <summary>
-                <para> </para>
+                <para>Returns "Bottom 10 Items".
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.XtraEditors.Controls.StringId.FormatRuleMenuItemBottom10Percent">
             <summary>
-                <para> </para>
+                <para>Returns "Bottom 10 %".
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.XtraEditors.Controls.StringId.FormatRuleMenuItemClearAllRules">
             <summary>
-                <para> </para>
+                <para>Returns "Clear Rules from All Columns".
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.XtraEditors.Controls.StringId.FormatRuleMenuItemClearColumnRules">
             <summary>
-                <para> </para>
+                <para>Returns "Clear Rules from This Column".
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.XtraEditors.Controls.StringId.FormatRuleMenuItemClearRules">
             <summary>
-                <para> </para>
+                <para>Returns "Clear Rules".
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.XtraEditors.Controls.StringId.FormatRuleMenuItemColorScaleDescription">
             <summary>
-                <para> </para>
+                <para>Returns "Apply a color gradient to a range of\r\ncells in this column. The color indicates\r\nwhere each cell falls within that range."
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.XtraEditors.Controls.StringId.FormatRuleMenuItemColorScales">
             <summary>
-                <para> </para>
+                <para>Returns "Color Scales".
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.XtraEditors.Controls.StringId.FormatRuleMenuItemCustomCondition">
             <summary>
-                <para> </para>
+                <para>Returns "Custom Condition".
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.XtraEditors.Controls.StringId.FormatRuleMenuItemDataBarDescription">
             <summary>
-                <para> </para>
+                <para>Returns "Add a colored data bar to represent\r\nthe value in a cell. The higher the\r\nvalue, the longer the bar."
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.XtraEditors.Controls.StringId.FormatRuleMenuItemDataBars">
             <summary>
-                <para> </para>
+                <para>Returns "Data Bars".
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.XtraEditors.Controls.StringId.FormatRuleMenuItemDateOccurring">
             <summary>
-                <para> </para>
+                <para>Returns "A Date Occurring".
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.XtraEditors.Controls.StringId.FormatRuleMenuItemDuplicate">
             <summary>
-                <para> </para>
+                <para>Returns "Duplicate Values".
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.XtraEditors.Controls.StringId.FormatRuleMenuItemEqualTo">
             <summary>
-                <para> </para>
+                <para>Returns "Equal To".
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.XtraEditors.Controls.StringId.FormatRuleMenuItemGradientFill">
             <summary>
-                <para> </para>
+                <para>Returns "Gradient Fill".
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.XtraEditors.Controls.StringId.FormatRuleMenuItemGreaterThan">
             <summary>
-                <para> </para>
+                <para>Returns "Greater Than".
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.XtraEditors.Controls.StringId.FormatRuleMenuItemHighlightCellRules">
             <summary>
-                <para> </para>
+                <para>Returns "Highlight Cell Rules".
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.XtraEditors.Controls.StringId.FormatRuleMenuItemIconSetDescription">
             <summary>
-                <para> </para>
+                <para>Returns "Use this icon set to classify column\r\nvalues into the following ranges:".
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.XtraEditors.Controls.StringId.FormatRuleMenuItemIconSets">
             <summary>
-                <para> </para>
+                <para>Returns "Icon Sets".
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.XtraEditors.Controls.StringId.FormatRuleMenuItemLessThan">
             <summary>
-                <para> </para>
+                <para>Returns "Less Than".
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.XtraEditors.Controls.StringId.FormatRuleMenuItemManageRules">
             <summary>
-                <para> </para>
+                <para>Returns "Manage Rules..."
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.XtraEditors.Controls.StringId.FormatRuleMenuItemSolidFill">
             <summary>
-                <para> </para>
+                <para>Returns "Solid Fill".
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.XtraEditors.Controls.StringId.FormatRuleMenuItemTextThatContains">
             <summary>
-                <para> </para>
+                <para>Returns "Text that Contains".
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.XtraEditors.Controls.StringId.FormatRuleMenuItemTop10Items">
             <summary>
-                <para> </para>
+                <para>Returns "Top 10 Items".
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.XtraEditors.Controls.StringId.FormatRuleMenuItemTop10Percent">
             <summary>
-                <para> </para>
+                <para>Returns "Top 10 %".
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.XtraEditors.Controls.StringId.FormatRuleMenuItemTopBottomRules">
             <summary>
-                <para> </para>
+                <para>Returns "Top/Bottom Rules".
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.XtraEditors.Controls.StringId.FormatRuleMenuItemUnique">
             <summary>
-                <para> </para>
+                <para>Returns "Unique Values".
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.XtraEditors.Controls.StringId.FormatRuleMenuItemUniqueDuplicateRules">
             <summary>
-                <para> </para>
+                <para>Returns "Unique/Duplicate Rules".
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.XtraEditors.Controls.StringId.FormatRuleTextThatContainsText">
             <summary>
-                <para> </para>
+                <para>Returns "Format cells that contain the text".
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.XtraEditors.Controls.StringId.FormatRuleTopText">
             <summary>
-                <para> </para>
+                <para>Returns "Format cells that rank in the TOP".
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.XtraEditors.Controls.StringId.FormatRuleUniqueText">
             <summary>
-                <para> </para>
+                <para>Returns "Format cells that are UNIQUE VALUES".
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.XtraEditors.Controls.StringId.FormatRuleWith">
             <summary>
-                <para> </para>
+                <para>Returns "with".
+</para>
             </summary>
 
 
@@ -36190,203 +36579,232 @@ Return value: hours
         </member>
         <member name="F:DevExpress.XtraEditors.Controls.StringId.IconSetCategoryDirectional">
             <summary>
-                <para> </para>
+                <para>Returns "Directional".
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.XtraEditors.Controls.StringId.IconSetCategoryIndicators">
             <summary>
-                <para> </para>
+                <para>Returns "Indicators".
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.XtraEditors.Controls.StringId.IconSetCategoryPositiveNegative">
             <summary>
-                <para> </para>
+                <para>Returns "Positive/Negative".
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.XtraEditors.Controls.StringId.IconSetCategoryRatings">
             <summary>
-                <para> </para>
+                <para>Returns "Ratings".
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.XtraEditors.Controls.StringId.IconSetCategoryShapes">
             <summary>
-                <para> </para>
+                <para>Returns "Shapes".
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.XtraEditors.Controls.StringId.IconSetCategorySymbols">
             <summary>
-                <para> </para>
+                <para>Returns "Symbols".
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.XtraEditors.Controls.StringId.IconSetTitleArrows3Colored">
             <summary>
-                <para> </para>
+                <para>Returns "3 Arrows (Colored)".
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.XtraEditors.Controls.StringId.IconSetTitleArrows3Gray">
             <summary>
-                <para> </para>
+                <para>Returns "3 Arrows (Gray)".
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.XtraEditors.Controls.StringId.IconSetTitleArrows4Colored">
             <summary>
-                <para> </para>
+                <para>Returns "4 Arrows (Colored)".
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.XtraEditors.Controls.StringId.IconSetTitleArrows4Gray">
             <summary>
-                <para> </para>
+                <para>Returns "4 Arrows (Gray)".
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.XtraEditors.Controls.StringId.IconSetTitleArrows5Colored">
             <summary>
-                <para> </para>
+                <para>Returns "5 Arrows (Colored)".
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.XtraEditors.Controls.StringId.IconSetTitleArrows5Gray">
             <summary>
-                <para> </para>
+                <para>Returns "5 Arrows (Gray)".
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.XtraEditors.Controls.StringId.IconSetTitleBoxes5">
             <summary>
-                <para> </para>
+                <para>Returns "5 Boxes".
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.XtraEditors.Controls.StringId.IconSetTitleFlags3">
             <summary>
-                <para> </para>
+                <para>Returns "3 Flags".
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.XtraEditors.Controls.StringId.IconSetTitlePositiveNegativeArrows">
             <summary>
-                <para> </para>
+                <para>Returns "Arrows (Colored)".
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.XtraEditors.Controls.StringId.IconSetTitlePositiveNegativeArrowsGray">
             <summary>
-                <para> </para>
+                <para>Returns "Arrows (Gray)".
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.XtraEditors.Controls.StringId.IconSetTitlePositiveNegativeTriangles">
             <summary>
-                <para> </para>
+                <para>Returns "Triangles".
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.XtraEditors.Controls.StringId.IconSetTitleQuarters5">
             <summary>
-                <para> </para>
+                <para>Returns "5 Quarters".
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.XtraEditors.Controls.StringId.IconSetTitleRatings4">
             <summary>
-                <para> </para>
+                <para>Returns "4 Ratings".
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.XtraEditors.Controls.StringId.IconSetTitleRatings5">
             <summary>
-                <para> </para>
+                <para>Returns "5 Ratings".
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.XtraEditors.Controls.StringId.IconSetTitleRedToBlack">
             <summary>
-                <para> </para>
+                <para>Returns "Red To Black".
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.XtraEditors.Controls.StringId.IconSetTitleSigns3">
             <summary>
-                <para> </para>
+                <para>Returns "3 Signs".
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.XtraEditors.Controls.StringId.IconSetTitleStars3">
             <summary>
-                <para> </para>
+                <para>Returns "3 Stars".
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.XtraEditors.Controls.StringId.IconSetTitleSymbols3Circled">
             <summary>
-                <para> </para>
+                <para>Returns "3 Symbols (Circled)".
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.XtraEditors.Controls.StringId.IconSetTitleSymbols3Uncircled">
             <summary>
-                <para> </para>
+                <para>Returns "3 Symbols (Uncircled)".
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.XtraEditors.Controls.StringId.IconSetTitleTrafficLights3Rimmed">
             <summary>
-                <para> </para>
+                <para>Returns "3 Traffic Lights (Rimmed)".
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.XtraEditors.Controls.StringId.IconSetTitleTrafficLights3Unrimmed">
             <summary>
-                <para> </para>
+                <para>Returns "3 Traffic Lights (Unrimmed)".
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.XtraEditors.Controls.StringId.IconSetTitleTrafficLights4">
             <summary>
-                <para> </para>
+                <para>Returns "4 Traffic Lights".
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.XtraEditors.Controls.StringId.IconSetTitleTriangles3">
             <summary>
-                <para> </para>
+                <para>Returns "3 Triangles".
+</para>
             </summary>
 
 
@@ -36456,735 +36874,840 @@ Return value: Name
         </member>
         <member name="F:DevExpress.XtraEditors.Controls.StringId.ManageRuleAboveAverage">
             <summary>
-                <para> </para>
+                <para>Returns "Above Average".
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.XtraEditors.Controls.StringId.ManageRuleAverageAbove">
             <summary>
-                <para> </para>
+                <para>Returns "Above".
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.XtraEditors.Controls.StringId.ManageRuleAverageBelow">
             <summary>
-                <para> </para>
+                <para>Returns "Below".
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.XtraEditors.Controls.StringId.ManageRuleAverageEqualOrAbove">
             <summary>
-                <para> </para>
+                <para>Returns "Equal Or Above".
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.XtraEditors.Controls.StringId.ManageRuleAverageEqualOrBelow">
             <summary>
-                <para> </para>
+                <para>Returns "Equal Or Below".
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.XtraEditors.Controls.StringId.ManageRuleAverageFormatValuesThatAre">
             <summary>
-                <para> </para>
+                <para>Returns "Format values that are:".
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.XtraEditors.Controls.StringId.ManageRuleAverageTheAverageForTheSelectedRange">
             <summary>
-                <para> </para>
+                <para>Returns "the average of column values".
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.XtraEditors.Controls.StringId.ManageRuleBelowAverage">
             <summary>
-                <para> </para>
+                <para>Returns "Below Average".
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.XtraEditors.Controls.StringId.ManageRuleCellValueBetween">
             <summary>
-                <para> </para>
+                <para>Returns "Between".
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.XtraEditors.Controls.StringId.ManageRuleCellValueEqualTo">
             <summary>
-                <para> </para>
+                <para>Returns "Equal To".
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.XtraEditors.Controls.StringId.ManageRuleCellValueGreaterThan">
             <summary>
-                <para> </para>
+                <para>Returns "Greater Than".
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.XtraEditors.Controls.StringId.ManageRuleCellValueGreaterThanOrEqualTo">
             <summary>
-                <para> </para>
+                <para>Returns "Greater Than Or Equal To".
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.XtraEditors.Controls.StringId.ManageRuleCellValueLessThan">
             <summary>
-                <para> </para>
+                <para>Returns "Less Than".
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.XtraEditors.Controls.StringId.ManageRuleCellValueLessThanOrEqualTo">
             <summary>
-                <para> </para>
+                <para>Returns "Less Than Or Equal To".
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.XtraEditors.Controls.StringId.ManageRuleCellValueNotBetween">
             <summary>
-                <para> </para>
+                <para>Returns "Not Between".
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.XtraEditors.Controls.StringId.ManageRuleCellValueNotEqualTo">
             <summary>
-                <para> </para>
+                <para>Returns "Not Equal To".
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.XtraEditors.Controls.StringId.ManageRuleColorScale">
             <summary>
-                <para> </para>
+                <para>Returns "Graded Color Scale".
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.XtraEditors.Controls.StringId.ManageRuleColorScale2">
             <summary>
-                <para> </para>
+                <para>Returns "2-Color Scale".
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.XtraEditors.Controls.StringId.ManageRuleColorScale3">
             <summary>
-                <para> </para>
+                <para>Returns "3-Color Scale".
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.XtraEditors.Controls.StringId.ManageRuleColorScaleMidpoint">
             <summary>
-                <para> </para>
+                <para>Returns "Midpoint".
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.XtraEditors.Controls.StringId.ManageRuleCommonColor">
             <summary>
-                <para> </para>
+                <para>Returns "Color:"
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.XtraEditors.Controls.StringId.ManageRuleCommonMaximum">
             <summary>
-                <para> </para>
+                <para>Returns "Maximum".
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.XtraEditors.Controls.StringId.ManageRuleCommonMinimum">
             <summary>
-                <para> </para>
+                <para>Returns "Minimum".
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.XtraEditors.Controls.StringId.ManageRuleCommonNumber">
             <summary>
-                <para> </para>
+                <para>Returns "Number".
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.XtraEditors.Controls.StringId.ManageRuleCommonPercent">
             <summary>
-                <para> </para>
+                <para>Returns "Percent".
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.XtraEditors.Controls.StringId.ManageRuleCommonPreview">
             <summary>
-                <para> </para>
+                <para>Returns "Preview:"
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.XtraEditors.Controls.StringId.ManageRuleCommonType">
             <summary>
-                <para> </para>
+                <para>Returns "Type:"
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.XtraEditors.Controls.StringId.ManageRuleCommonValue">
             <summary>
-                <para> </para>
+                <para>Returns "Value:"
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.XtraEditors.Controls.StringId.ManageRuleComplexRuleBaseFormatStyle">
             <summary>
-                <para> </para>
+                <para>Returns "Format Style:"
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.XtraEditors.Controls.StringId.ManageRuleDataBar">
             <summary>
-                <para> </para>
+                <para>Returns "Data Bar".
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.XtraEditors.Controls.StringId.ManageRuleDataBarAxisColor">
             <summary>
-                <para> </para>
+                <para>Returns "Axis Color:"
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.XtraEditors.Controls.StringId.ManageRuleDataBarBarAppearance">
             <summary>
-                <para> </para>
+                <para>Returns "Bar Appearance:"
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.XtraEditors.Controls.StringId.ManageRuleDataBarBarDirection">
             <summary>
-                <para> </para>
+                <para>Returns "Bar Direction:"
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.XtraEditors.Controls.StringId.ManageRuleDataBarBorder">
             <summary>
-                <para> </para>
+                <para>Returns "Border:"
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.XtraEditors.Controls.StringId.ManageRuleDataBarContext">
             <summary>
-                <para> </para>
+                <para>Returns "Context".
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.XtraEditors.Controls.StringId.ManageRuleDataBarDrawAxis">
             <summary>
-                <para> </para>
+                <para>Returns "Draw Axis".
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.XtraEditors.Controls.StringId.ManageRuleDataBarFill">
             <summary>
-                <para> </para>
+                <para>Returns "Fill:"
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.XtraEditors.Controls.StringId.ManageRuleDataBarGradientFill">
             <summary>
-                <para> </para>
+                <para>Returns "Gradient Fill".
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.XtraEditors.Controls.StringId.ManageRuleDataBarLTR">
             <summary>
-                <para> </para>
+                <para>Returns "Left-to-Right".
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.XtraEditors.Controls.StringId.ManageRuleDataBarNoBorder">
             <summary>
-                <para> </para>
+                <para>Returns "No Border".
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.XtraEditors.Controls.StringId.ManageRuleDataBarRTL">
             <summary>
-                <para> </para>
+                <para>Returns "Right-to-Left".
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.XtraEditors.Controls.StringId.ManageRuleDataBarSolidBorder">
             <summary>
-                <para> </para>
+                <para>Returns "Solid Border".
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.XtraEditors.Controls.StringId.ManageRuleDataBarSolidFill">
             <summary>
-                <para> </para>
+                <para>Returns "Solid Fill".
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.XtraEditors.Controls.StringId.ManageRuleDataBarUseNegativeBar">
             <summary>
-                <para> </para>
+                <para>Returns "Use Negative Bar".
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.XtraEditors.Controls.StringId.ManageRuleDatesOccurringBeyond">
             <summary>
-                <para> </para>
+                <para>Returns "Following the month in 2 months time".
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.XtraEditors.Controls.StringId.ManageRuleDatesOccurringBeyondThisYear">
             <summary>
-                <para> </para>
+                <para>Returns "Following this year".
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.XtraEditors.Controls.StringId.ManageRuleDatesOccurringEarlier">
             <summary>
-                <para> </para>
+                <para>Returns "Prior to the month 6 months ago".
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.XtraEditors.Controls.StringId.ManageRuleDatesOccurringEarlierThisMonth">
             <summary>
-                <para> </para>
+                <para>Returns "This month, prior to previous week".
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.XtraEditors.Controls.StringId.ManageRuleDatesOccurringEarlierThisWeek">
             <summary>
-                <para> </para>
+                <para>Returns "This week, prior to yesterday".
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.XtraEditors.Controls.StringId.ManageRuleDatesOccurringEarlierThisYear">
             <summary>
-                <para> </para>
+                <para>Returns "This year, prior to this month".
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.XtraEditors.Controls.StringId.ManageRuleDatesOccurringLastWeek">
             <summary>
-                <para> </para>
+                <para>Returns "Last Week".
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.XtraEditors.Controls.StringId.ManageRuleDatesOccurringLaterThisMonth">
             <summary>
-                <para> </para>
+                <para>Returns "This month, beyond next week".
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.XtraEditors.Controls.StringId.ManageRuleDatesOccurringLaterThisWeek">
             <summary>
-                <para> </para>
+                <para>Returns "This week, beyond tomorrow".
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.XtraEditors.Controls.StringId.ManageRuleDatesOccurringLaterThisYear">
             <summary>
-                <para> </para>
+                <para>Returns "This year, beyond this month".
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.XtraEditors.Controls.StringId.ManageRuleDatesOccurringMonthAfter1">
             <summary>
-                <para> </para>
+                <para>Returns "Next Month".
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.XtraEditors.Controls.StringId.ManageRuleDatesOccurringMonthAfter2">
             <summary>
-                <para> </para>
+                <para>Returns "During the month in 2 months time".
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.XtraEditors.Controls.StringId.ManageRuleDatesOccurringMonthAgo1">
             <summary>
-                <para> </para>
+                <para>Returns "Last Month".
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.XtraEditors.Controls.StringId.ManageRuleDatesOccurringMonthAgo2">
             <summary>
-                <para> </para>
+                <para>Returns "During the month 2 months ago".
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.XtraEditors.Controls.StringId.ManageRuleDatesOccurringMonthAgo3">
             <summary>
-                <para> </para>
+                <para>Returns "During the month 3 months ago".
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.XtraEditors.Controls.StringId.ManageRuleDatesOccurringMonthAgo4">
             <summary>
-                <para> </para>
+                <para>Returns "During the month 4 months ago".
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.XtraEditors.Controls.StringId.ManageRuleDatesOccurringMonthAgo5">
             <summary>
-                <para> </para>
+                <para>Returns "During the month 5 months ago".
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.XtraEditors.Controls.StringId.ManageRuleDatesOccurringMonthAgo6">
             <summary>
-                <para> </para>
+                <para>Returns "During the month 6 months ago".
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.XtraEditors.Controls.StringId.ManageRuleDatesOccurringNextWeek">
             <summary>
-                <para> </para>
+                <para>Returns "Next Week".
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.XtraEditors.Controls.StringId.ManageRuleDatesOccurringPriorThisYear">
             <summary>
-                <para> </para>
+                <para>Returns "Prior to this year".
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.XtraEditors.Controls.StringId.ManageRuleDatesOccurringThisMonth">
             <summary>
-                <para> </para>
+                <para>Returns "This Month".
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.XtraEditors.Controls.StringId.ManageRuleDatesOccurringThisWeek">
             <summary>
-                <para> </para>
+                <para>Returns "This Week".
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.XtraEditors.Controls.StringId.ManageRuleDatesOccurringToday">
             <summary>
-                <para> </para>
+                <para>Returns "Today".
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.XtraEditors.Controls.StringId.ManageRuleDatesOccurringTomorrow">
             <summary>
-                <para> </para>
+                <para>Returns "Tomorrow".
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.XtraEditors.Controls.StringId.ManageRuleDatesOccurringYesterday">
             <summary>
-                <para> </para>
+                <para>Returns "Yesterday".
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.XtraEditors.Controls.StringId.ManageRuleDeleteRule">
             <summary>
-                <para> </para>
+                <para>Returns "Delete Rule".
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.XtraEditors.Controls.StringId.ManageRuleDown">
             <summary>
-                <para> </para>
+                <para>Returns "Down".
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.XtraEditors.Controls.StringId.ManageRuleEditRule">
             <summary>
-                <para> </para>
+                <para>Returns "Edit Rule..."
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.XtraEditors.Controls.StringId.ManageRuleEqualOrAboveAverage">
             <summary>
-                <para> </para>
+                <para>Returns "Equal to or Above Average".
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.XtraEditors.Controls.StringId.ManageRuleEqualOrBelowAverage">
             <summary>
-                <para> </para>
+                <para>Returns "Equal to or Below Average".
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.XtraEditors.Controls.StringId.ManageRuleFormula">
             <summary>
-                <para> </para>
+                <para>Returns "Formula".
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.XtraEditors.Controls.StringId.ManageRuleFormulaFormatValuesWhereThisFormaulaIsTrue">
             <summary>
-                <para> </para>
+                <para>Returns "Format values where this formula is true:"
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.XtraEditors.Controls.StringId.ManageRuleIconSet">
             <summary>
-                <para> </para>
+                <para>Returns "Icon Set".
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.XtraEditors.Controls.StringId.ManageRuleIconSets">
             <summary>
-                <para> </para>
+                <para>Returns "Icon Set".
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.XtraEditors.Controls.StringId.ManageRuleIconSetsDisplayEachIconAccordingToTheseRules">
             <summary>
-                <para> </para>
+                <para>Returns "Display each icon according to these rules:"
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.XtraEditors.Controls.StringId.ManageRuleIconSetsReverseIconOrder">
             <summary>
-                <para> </para>
+                <para>Returns "Reverse Icon Order".
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.XtraEditors.Controls.StringId.ManageRuleIconSetsValueIs">
             <summary>
-                <para> </para>
+                <para>Returns "value is".
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.XtraEditors.Controls.StringId.ManageRuleIconSetsWhen">
             <summary>
-                <para> </para>
+                <para>Returns "When".
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.XtraEditors.Controls.StringId.ManageRuleNewRule">
             <summary>
-                <para> </para>
+                <para>Returns "New Rule..."
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.XtraEditors.Controls.StringId.ManageRuleRankedValuesBottom">
             <summary>
-                <para> </para>
+                <para>Returns "Bottom".
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.XtraEditors.Controls.StringId.ManageRuleRankedValuesFormatValuesThatRankInThe">
             <summary>
-                <para> </para>
+                <para>Returns "Format values that rank in the:"
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.XtraEditors.Controls.StringId.ManageRuleRankedValuesOfTheColumnsCellValues">
             <summary>
-                <para> </para>
+                <para>Returns "% of column values".
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.XtraEditors.Controls.StringId.ManageRuleRankedValuesTop">
             <summary>
-                <para> </para>
+                <para>Returns "Top".
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.XtraEditors.Controls.StringId.ManageRuleSimpleRuleBaseFormat">
             <summary>
-                <para> </para>
+                <para>Returns "Format..."
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.XtraEditors.Controls.StringId.ManageRuleSpecificTextBeginningWith">
             <summary>
-                <para> </para>
+                <para>Returns "Beginning With".
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.XtraEditors.Controls.StringId.ManageRuleSpecificTextContaining">
             <summary>
-                <para> </para>
+                <para>Returns "Containing".
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.XtraEditors.Controls.StringId.ManageRuleSpecificTextEndingWith">
             <summary>
-                <para> </para>
+                <para>Returns "Ending With".
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.XtraEditors.Controls.StringId.ManageRuleSpecificTextNotContaining">
             <summary>
-                <para> </para>
+                <para>Returns "Not Containing".
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.XtraEditors.Controls.StringId.ManageRuleThatContainBlanks">
             <summary>
-                <para> </para>
+                <para>Returns "Blanks".
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.XtraEditors.Controls.StringId.ManageRuleThatContainCellValue">
             <summary>
-                <para> </para>
+                <para>Returns "Cell Value".
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.XtraEditors.Controls.StringId.ManageRuleThatContainDatesOccurring">
             <summary>
-                <para> </para>
+                <para>Returns "Dates Occurring".
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.XtraEditors.Controls.StringId.ManageRuleThatContainErrors">
             <summary>
-                <para> </para>
+                <para>Returns "Errors".
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.XtraEditors.Controls.StringId.ManageRuleThatContainFormatOnlyCellsWith">
             <summary>
-                <para> </para>
+                <para>Returns "Format only cells with:"
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.XtraEditors.Controls.StringId.ManageRuleThatContainNoBlanks">
             <summary>
-                <para> </para>
+                <para>Returns "No Blanks".
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.XtraEditors.Controls.StringId.ManageRuleThatContainNoErrors">
             <summary>
-                <para> </para>
+                <para>Returns "No Errors".
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.XtraEditors.Controls.StringId.ManageRuleThatContainSpecificText">
             <summary>
-                <para> </para>
+                <para>Returns "Specific Text".
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.XtraEditors.Controls.StringId.ManageRuleUniqueOrDublicateDublicate">
             <summary>
-                <para> </para>
+                <para>Returns "Duplicate".
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.XtraEditors.Controls.StringId.ManageRuleUniqueOrDublicateFormatAll">
             <summary>
-                <para> </para>
+                <para>Returns "Format all:"
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.XtraEditors.Controls.StringId.ManageRuleUniqueOrDublicateUnique">
             <summary>
-                <para> </para>
+                <para>Returns "Unique".
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.XtraEditors.Controls.StringId.ManageRuleUniqueOrDublicateValuesInTheSelectedRange">
             <summary>
-                <para> </para>
+                <para>Returns "column values".
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.XtraEditors.Controls.StringId.ManageRuleUp">
             <summary>
-                <para> </para>
+                <para>Returns "Up".
+</para>
             </summary>
 
 
@@ -37321,63 +37844,72 @@ Return value: Record {0} of {1}
         </member>
         <member name="F:DevExpress.XtraEditors.Controls.StringId.NewEditFormattingRuleEditTheRuleDescription">
             <summary>
-                <para> </para>
+                <para>Returns "Edit the Rule Description:"
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.XtraEditors.Controls.StringId.NewEditFormattingRuleFormatAllCellsBasedOnTheirValues">
             <summary>
-                <para> </para>
+                <para>Returns "Format all cells based on their values".
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.XtraEditors.Controls.StringId.NewEditFormattingRuleFormatOnlyCellsThatContain">
             <summary>
-                <para> </para>
+                <para>Returns "Format only cells that contain".
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.XtraEditors.Controls.StringId.NewEditFormattingRuleFormatOnlyTopOrBottomRankedValues">
             <summary>
-                <para> </para>
+                <para>Returns "Format only top or bottom ranked values".
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.XtraEditors.Controls.StringId.NewEditFormattingRuleFormatOnlyUniqueOrDuplicateValues">
             <summary>
-                <para> </para>
+                <para>Returns "Format only unique or duplicate values".
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.XtraEditors.Controls.StringId.NewEditFormattingRuleFormatOnlyValuesThatAreAboveOrBelowAverage">
             <summary>
-                <para> </para>
+                <para>Returns "Format only values that are above or below average".
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.XtraEditors.Controls.StringId.NewEditFormattingRuleSelectARuleType">
             <summary>
-                <para> </para>
+                <para>Returns "Select a Rule Type:"
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.XtraEditors.Controls.StringId.NewEditFormattingRuleUseAFormulaToDetermineWhichCellsToFormat">
             <summary>
-                <para> </para>
+                <para>Returns "Use a formula to determine which cells to format".
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.XtraEditors.Controls.StringId.NewFormattingRule">
             <summary>
-                <para> </para>
+                <para>Returns "New Formatting Rule".
+</para>
             </summary>
 
 
@@ -37853,7 +38385,8 @@ Return value: Preview:
         </member>
         <member name="F:DevExpress.XtraEditors.Controls.StringId.PreviewWaiting">
             <summary>
-                <para> </para>
+                <para> 
+</para>
             </summary>
 
 
@@ -37948,14 +38481,16 @@ Return value: Preview:
         </member>
         <member name="F:DevExpress.XtraEditors.Controls.StringId.SearchForColumn">
             <summary>
-                <para> </para>
+                <para>Returns "Search for a column..."
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.XtraEditors.Controls.StringId.SearchForField">
             <summary>
-                <para> </para>
+                <para>Returns "Search for a field..."
+</para>
             </summary>
 
 
@@ -37994,7 +38529,8 @@ Return value: secs
         </member>
         <member name="F:DevExpress.XtraEditors.Controls.StringId.TabHeaderButtonPin">
             <summary>
-                <para> </para>
+                <para>Returns "Pin".
+</para>
             </summary>
 
 
@@ -38011,7 +38547,8 @@ Return value: secs
         </member>
         <member name="F:DevExpress.XtraEditors.Controls.StringId.TabHeaderButtonUnpin">
             <summary>
-                <para> </para>
+                <para>Returns "Unpin".
+</para>
             </summary>
 
 
@@ -39034,9 +39571,11 @@ Return value: Unknown picture format
         </member>
         <member name="P:DevExpress.XtraEditors.SimpleButton.AutoSize">
             <summary>
-                <para> </para>
+                <para>Gets or sets whether the control's size is automatically calculated based on its contents.
+</para>
             </summary>
-            <value> </value>
+            <value><b>true</b>, if the control's size is automatically calculated; otherwise, <b>false</b>.
+</value>
 
 
         </member>
@@ -47073,18 +47612,23 @@ After an end-user enters and completes a specific portion of a date/time value t
         </member>
         <member name="M:DevExpress.XtraEditors.BaseEdit.StringStartsWidth(System.String,System.String,System.Boolean)">
             <summary>
-                <para> </para>
+                <para>This member supports the internal .NET Framework infrastructure, and is not intended to be used directly from your code. 
+</para>
             </summary>
             <param name="source">
 		 
+
             </param>
             <param name="part">
 		 
+
             </param>
             <param name="ignoreCase">
 		 
+
             </param>
-            <returns> </returns>
+            <returns> 
+</returns>
 
 
         </member>
@@ -47375,9 +47919,11 @@ This property is in effect for standalone editors, and is not in effect for in-p
         </member>
         <member name="P:DevExpress.XtraEditors.Repository.RepositoryItemTextEdit.XlsxFormatString">
             <summary>
-                <para> </para>
+                <para>Gets or sets the native Excel format string used to format the editor's value when exporting to XLSX. This property is in effect in WYSIWYG export mode.
+</para>
             </summary>
-            <value> </value>
+            <value>A string value, representing the XLSX format string. 
+</value>
 
 
         </member>
@@ -47451,10 +47997,10 @@ This property is in effect for standalone editors, and is not in effect for in-p
         </member>
         <member name="P:DevExpress.XtraEditors.Repository.RepositoryItemSpinEdit.IsFloatValue">
             <summary>
-                <para>Gets or sets a value specifying whether the editor's value is a float or integer.
+                <para>Gets or sets whether the editor's value is of the Decimal or Integer type.
 </para>
             </summary>
-            <value><b>true</b> if the editor's value is a float; <b>false</b> if the editor's value is an integer.
+            <value><b>true</b> if the editor's value is of the Decimal type; <b>false</b> if the editor's value is of the Integer type.
 </value>
 
 
@@ -50536,7 +51082,7 @@ This property is in effect for standalone editors, and is not in effect for in-p
         </member>
         <member name="P:DevExpress.XtraEditors.Repository.RepositoryItem.ExportMode">
             <summary>
-                <para>Specifies whether the editor's value or display text is exported when data is exported to XLS and CSV formats.
+                <para>Specifies whether the editor's value or display text is exported when data is exported to XLS and CSV formats. This property is not in effect in Data-Aware export mode.
 </para>
             </summary>
             <value>A <see cref="T:DevExpress.XtraEditors.Repository.ExportMode"/> enumeration value.
@@ -50619,9 +51165,11 @@ This property is in effect for standalone editors, and is not in effect for in-p
         </member>
         <member name="M:DevExpress.XtraEditors.Repository.RepositoryItem.GetEditorType">
             <summary>
-                <para> </para>
+                <para>This member supports the internal infrastructure, and is not intended to be used directly from your code. 
+</para>
             </summary>
-            <returns> </returns>
+            <returns>An object that specifies the type of the current editor.
+</returns>
 
 
         </member>

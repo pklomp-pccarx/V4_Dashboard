@@ -153,6 +153,14 @@
 
 
         </member>
+        <member name="E:DevExpress.XtraRichEdit.RichEditDocumentServer.AfterExport">
+            <summary>
+                <para>Occurs after the document is successfully exported.
+</para>
+            </summary>
+
+
+        </member>
         <member name="E:DevExpress.XtraRichEdit.RichEditDocumentServer.BeforeExport">
             <summary>
                 <para>Occurs before the document is saved (exported to a certain format).
@@ -264,9 +272,11 @@
         </member>
         <member name="P:DevExpress.XtraRichEdit.RichEditDocumentServer.DocumentLayout">
             <summary>
-                <para> </para>
+                <para>Provides access to the document layout.
+</para>
             </summary>
-            <value> </value>
+            <value>A <see cref="T:DevExpress.XtraRichEdit.API.Layout.DocumentLayout"/> object.
+</value>
 
 
         </member>
@@ -427,9 +437,11 @@
         </member>
         <member name="P:DevExpress.XtraRichEdit.RichEditDocumentServer.LayoutCalculationMode">
             <summary>
-                <para> </para>
+                <para>Gets or sets the mode for layout calculation.
+</para>
             </summary>
-            <value> </value>
+            <value>A <see cref="T:DevExpress.XtraRichEdit.CalculationModeType"/> enumeration value. Default is <see cref="F:DevExpress.XtraRichEdit.CalculationModeType.Manual"/>.
+</value>
 
 
         </member>
@@ -8252,7 +8264,8 @@
         <member name="T:DevExpress.XtraRichEdit.API.Layout.LayoutComment">
 
             <summary>
-                <para> </para>
+                <para>Layout element that relates to the <see cref="T:DevExpress.XtraRichEdit.API.Native.Comment"/> in the document. 
+</para>
             </summary>
 
         </member>
@@ -8302,9 +8315,11 @@
         </member>
         <member name="M:DevExpress.XtraRichEdit.API.Layout.LayoutComment.GetDocumentComment">
             <summary>
-                <para> </para>
+                <para>Returns a <see cref="T:DevExpress.XtraRichEdit.API.Native.Comment"/> object that relates to the current <see cref="T:DevExpress.XtraRichEdit.API.Layout.LayoutComment"/> element.
+</para>
             </summary>
-            <returns> </returns>
+            <returns>A <a href="ms-xhelp:///?Id=T%3aDevExpress.XtraRichEdit.API.Native.Comment">Comment</a> object that is the comment in the logical document model.
+</returns>
 
 
         </member>
@@ -13004,10 +13019,12 @@
         </member>
         <member name="M:DevExpress.XtraRichEdit.NumberingOptions.Assign(DevExpress.Utils.Controls.BaseOptions)">
             <summary>
-                <para> </para>
+                <para>Copies all settings from the object passed as the parameter to the current object.
+</para>
             </summary>
             <param name="options">
-		 
+		A NumberingOptions object whose settings are assigned to the current object.
+
             </param>
 
 
@@ -13105,10 +13122,12 @@
         </member>
         <member name="M:DevExpress.XtraRichEdit.DocumentCapabilitiesOptions.Assign(DevExpress.Utils.Controls.BaseOptions)">
             <summary>
-                <para> </para>
+                <para>Copies all settings from the object passed as the parameter to the current object.
+</para>
             </summary>
             <param name="options">
-		 
+		A DocumentCapabilitiesOptions object whose settings are assigned to the current object.
+
             </param>
 
 
@@ -13683,10 +13702,12 @@
         </member>
         <member name="M:DevExpress.XtraRichEdit.RichEditBehaviorOptions.Assign(DevExpress.Utils.Controls.BaseOptions)">
             <summary>
-                <para> </para>
+                <para>Copies all settings from the object passed as the parameter to the current object.
+</para>
             </summary>
             <param name="options">
-		 
+		A RichEditBehaviorOptions object whose settings are assigned to the current object.
+
             </param>
 
 
@@ -14314,6 +14335,16 @@
                 <para>Initializes a new instance of the BookmarkOptions class with default settings.
 </para>
             </summary>
+
+
+        </member>
+        <member name="P:DevExpress.XtraRichEdit.BookmarkOptions.AllowNameResolution">
+            <summary>
+                <para>Gets or sets whether duplicate bookmark names are automatically replaced with auto-generated unique names.
+</para>
+            </summary>
+            <value><b>True</b>, to automatically replace duplicate names; otherwise, <b>false</b>.
+</value>
 
 
         </member>
@@ -15635,7 +15666,7 @@
                 <para>Gets or sets whether the right indent marker is visible.
 </para>
             </summary>
-            <value><b>true</b> to display righ indent marker; otherwise, <b>false</b>.
+            <value><b>true</b> to display right indent marker; otherwise, <b>false</b>.
 </value>
 
 
@@ -16033,9 +16064,11 @@
         </member>
         <member name="P:DevExpress.XtraRichEdit.Export.OpenXmlDocumentExporterOptions.AllowAlternateStyleNames">
             <summary>
-                <para> </para>
+                <para>Gets or sets whether the alternate names (aliases) for built-in styles are allowed in the exported file.
+</para>
             </summary>
-            <value> </value>
+            <value><b>True</b>, to allow aliases for built-in style names; otherwise, <b>false</b>.
+</value>
 
 
         </member>
@@ -16064,25 +16097,32 @@
         </member>
         <member name="P:DevExpress.XtraRichEdit.Export.OpenXmlDocumentExporterOptions.LimitBookmarkNameTo40Chars">
             <summary>
-                <para> </para>
+                <para>Gets or sets whether bookmark names longer than 40 characters should be automatically renamed in the exported file.
+</para>
             </summary>
-            <value> </value>
+            <value><b>True</b>, to automatically rename bookmarks with name length of 40 characters or more; otherwise, <b>false</b>.
+</value>
 
 
         </member>
         <member name="P:DevExpress.XtraRichEdit.Export.OpenXmlDocumentExporterOptions.LimitFontNameTo31Chars">
             <summary>
-                <para> </para>
+                <para>Gets or sets whether font names longer than 31 characters should be truncated in the exported file.
+</para>
             </summary>
-            <value> </value>
+            <value><b>True</b>, to truncate font names with more than 31 characters; otherwise, <b>false</b>.
+</value>
 
 
         </member>
         <member name="P:DevExpress.XtraRichEdit.Export.OpenXmlDocumentExporterOptions.LimitStyleNameTo253Chars">
             <summary>
-                <para> </para>
+                <para>Gets or sets whether style with names longer than 253 characters should be automatically renamed in the exported file.
+
+</para>
             </summary>
-            <value> </value>
+            <value><b>True</b>, to rename styles with names longer than 253 characters; otherwise, <b>false</b>.
+</value>
 
 
         </member>
@@ -17289,15 +17329,18 @@
         <member name="T:DevExpress.XtraRichEdit.API.Layout.RangedLayoutElementBase">
 
             <summary>
-                <para> </para>
+                <para>Base class for layout elements related to document objects based on the <see cref="T:DevExpress.XtraRichEdit.API.Native.FixedRange"/>.
+</para>
             </summary>
 
         </member>
         <member name="P:DevExpress.XtraRichEdit.API.Layout.RangedLayoutElementBase.Range">
             <summary>
-                <para> </para>
+                <para>Returns the range to which the current layout element relates.
+</para>
             </summary>
-            <value> </value>
+            <value>A <see cref="T:DevExpress.XtraRichEdit.API.Native.FixedRange"/> that relates to the document range occupying by the object to which the current layout element relates.
+</value>
 
 
         </member>
@@ -17624,15 +17667,18 @@
         <member name="T:DevExpress.XtraRichEdit.API.Layout.LayoutPageAreaBase">
 
             <summary>
-                <para> </para>
+                <para>Base element for parts of a page which relate to document ranges.
+</para>
             </summary>
 
         </member>
         <member name="P:DevExpress.XtraRichEdit.API.Layout.LayoutPageAreaBase.Columns">
             <summary>
-                <para> </para>
+                <para>Gets columns of the current page.
+</para>
             </summary>
-            <value> </value>
+            <value>A <see cref="T:DevExpress.XtraRichEdit.API.Layout.LayoutColumnCollection"/> collection containing columns of the current page.
+</value>
 
 
         </member>
@@ -17857,9 +17903,12 @@
         </member>
         <member name="P:DevExpress.XtraRichEdit.FieldOptions.ThrowExceptionOnInvalidFormatSwitch">
             <summary>
-                <para> </para>
+                <para>Gets or sets whether to throw exception if a field formatting switch is not recognized.
+</para>
             </summary>
-            <value> </value>
+            <value><b>True</b>, to throw exception on an invalid field formatting switch; otherwise, <b>false</b>.
+
+</value>
 
 
         </member>
@@ -18073,60 +18122,74 @@
         <member name="T:DevExpress.XtraRichEdit.API.Layout.LayoutElementBase">
 
             <summary>
-                <para> </para>
+                <para>Base class for layout elements.
+</para>
             </summary>
 
         </member>
         <member name="M:DevExpress.XtraRichEdit.API.Layout.LayoutElementBase.Accept(DevExpress.XtraRichEdit.API.Layout.LayoutVisitor)">
             <summary>
-                <para> </para>
+                <para>Dispatches to the <b>Visit</b> method that is specific to the current <see cref="T:DevExpress.XtraRichEdit.API.Layout.LayoutType"/>.
+</para>
             </summary>
             <param name="visitor">
-		 
+		A <see cref="T:DevExpress.XtraRichEdit.API.Layout.LayoutVisitor"/> implementation that is the instance of the visitor class defined in the <b>Visitor</b> pattern. 
+
             </param>
 
 
         </member>
         <member name="P:DevExpress.XtraRichEdit.API.Layout.LayoutElementBase.Bounds">
             <summary>
-                <para> </para>
+                <para>Gets coordinates of a rectangle which encompasses the layout element. 
+</para>
             </summary>
-            <value> </value>
+            <value>A <see cref="T:System.Drawing.Rectangle"/> structure specifying the coordinates of the layout element.
+</value>
 
 
         </member>
         <member name="M:DevExpress.XtraRichEdit.API.Layout.LayoutElementBase.GetParentByType``1">
             <summary>
-                <para> </para>
+                <para>Returns the parent layout element of the type designated by the specified generic type parameter.
+</para>
             </summary>
-            <returns> </returns>
+            <returns>The layout element of the type designated by the specified generic type parameter.
+</returns>
 
 
         </member>
         <member name="M:DevExpress.XtraRichEdit.API.Layout.LayoutElementBase.GetRelativeBounds(DevExpress.XtraRichEdit.API.Layout.LayoutElement)">
             <summary>
-                <para> </para>
+                <para>Gets coordinates of the specified layout element relative to its container. 
+</para>
             </summary>
             <param name="element">
-		 
+		A <see cref="T:DevExpress.XtraRichEdit.API.Layout.LayoutElement"/> descendant that is the element whose relative position is obtained.
+
             </param>
-            <returns> </returns>
+            <returns>A <see cref="T:System.Drawing.Rectangle"/> structure specifying the coordinates of the layout element.
+</returns>
 
 
         </member>
         <member name="P:DevExpress.XtraRichEdit.API.Layout.LayoutElementBase.Parent">
             <summary>
-                <para> </para>
+                <para>Returns the element which is one step higher in the layout hierarchy.
+</para>
             </summary>
-            <value> </value>
+            <value>A <see cref="T:DevExpress.XtraRichEdit.API.Layout.LayoutElement"/> descendant which is the parent of the current layout element.
+</value>
 
 
         </member>
         <member name="P:DevExpress.XtraRichEdit.API.Layout.LayoutElementBase.Type">
             <summary>
-                <para> </para>
+                <para>Gets the type of the layout element.
+</para>
             </summary>
-            <value> </value>
+            <value>A <see cref="T:DevExpress.XtraRichEdit.API.Layout.LayoutType"/> enumeration value.
+</value>
 
 
         </member>
@@ -19300,15 +19363,76 @@
         <member name="T:DevExpress.XtraRichEdit.API.Layout.Box">
 
             <summary>
-                <para> </para>
+                <para>Base class for inline layout elements.
+</para>
             </summary>
 
         </member>
         <member name="P:DevExpress.XtraRichEdit.API.Layout.Box.Type">
             <summary>
-                <para> </para>
+                <para>Gets the type of the box descendant.
+</para>
             </summary>
-            <value> </value>
+            <value>A <a href="ms-xhelp:///?Id=T%3aDevExpress.XtraRichEdit.API.Layout.LayoutType">LayoutType</a> enumeration member indicating the type of the box element.
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.XtraRichEdit.PageLayoutPosition">
+
+            <summary>
+                <para>Combines the page index and position in the page layout.
+
+</para>
+            </summary>
+
+        </member>
+        <member name="P:DevExpress.XtraRichEdit.PageLayoutPosition.PageIndex">
+            <summary>
+                <para>Gets the index of a page.
+</para>
+            </summary>
+            <value>An integer that is the zero-based page index.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraRichEdit.PageLayoutPosition.Position">
+            <summary>
+                <para>Gets the location of the point on a page.
+</para>
+            </summary>
+            <value>A <see cref="T:System.Drawing.Point"/> object that is the location of the point on a page.
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.XtraRichEdit.PageLayoutInfo">
+
+            <summary>
+                <para>Combines the page index and page bounds.
+
+</para>
+            </summary>
+
+        </member>
+        <member name="P:DevExpress.XtraRichEdit.PageLayoutInfo.Bounds">
+            <summary>
+                <para>Gets coordinates of a rectangle which encompasses the page. 
+</para>
+            </summary>
+            <value>A <see cref="T:System.Drawing.Rectangle"/> structure specifying the coordinates of the layout element.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraRichEdit.PageLayoutInfo.PageIndex">
+            <summary>
+                <para>Gets the index of a page.
+</para>
+            </summary>
+            <value>An integer that is the zero-based page index.
+</value>
 
 
         </member>
@@ -19379,6 +19503,22 @@
             </summary>
             <value>A <see cref="T:System.Collections.Generic.List`1[[DevExpress.XtraRichEdit.Model.Comment]]"/> object.
 </value>
+
+
+        </member>
+        <member name="T:DevExpress.XtraRichEdit.API.Layout.RangePermissionHighlightAreaCollection">
+
+            <summary>
+                <para>A collection of <see cref="T:DevExpress.XtraRichEdit.API.Layout.RangePermissionHighlightAreaBox"/> elements.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.XtraRichEdit.API.Layout.RangePermissionHighlightAreaCollection.#ctor">
+            <summary>
+                <para>Initializes a new instance of the RangePermissionHighlightAreaCollection class with default settings.
+</para>
+            </summary>
 
 
         </member>
@@ -19488,6 +19628,22 @@
             </summary>
             <value>A <see cref="T:System.String"/> value, specifying the suggested replacement.
 </value>
+
+
+        </member>
+        <member name="T:DevExpress.XtraRichEdit.API.Layout.HiddenTextUnderlineBoxCollection">
+
+            <summary>
+                <para>A collection of <see cref="T:DevExpress.XtraRichEdit.API.Layout.HiddenTextUnderlineBox"/> elements.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.XtraRichEdit.API.Layout.HiddenTextUnderlineBoxCollection.#ctor">
+            <summary>
+                <para>Initializes a new instance of the HiddenTextUnderlineBoxCollection class with default settings.
+</para>
+            </summary>
 
 
         </member>
@@ -19980,7 +20136,8 @@
         <member name="T:DevExpress.XtraRichEdit.API.Layout.BoxCollection">
 
             <summary>
-                <para> </para>
+                <para>A collection of <see cref="T:DevExpress.XtraRichEdit.API.Layout.Box"/> elements.
+</para>
             </summary>
 
         </member>
@@ -22287,7 +22444,8 @@
         <member name="T:DevExpress.XtraRichEdit.API.Layout.LayoutPageAreaCollection">
 
             <summary>
-                <para> </para>
+                <para>A collection of <see cref="T:DevExpress.XtraRichEdit.API.Layout.LayoutPageArea"/> elements.
+</para>
             </summary>
 
         </member>
@@ -22422,7 +22580,8 @@
         <member name="T:DevExpress.XtraRichEdit.API.Layout.LayoutColumnCollection">
 
             <summary>
-                <para> </para>
+                <para>A collection of <see cref="T:DevExpress.XtraRichEdit.API.Layout.LayoutColumn"/> objects.
+</para>
             </summary>
 
         </member>
@@ -22437,7 +22596,8 @@
         <member name="T:DevExpress.XtraRichEdit.API.Layout.LayoutElementCollection`1">
 
             <summary>
-                <para> </para>
+                <para>Base collection for collections of layout elements
+</para>
             </summary>
 
         </member>
@@ -22453,36 +22613,45 @@
         </member>
         <member name="P:DevExpress.XtraRichEdit.API.Layout.LayoutElementCollection`1.First">
             <summary>
-                <para> </para>
+                <para>Returns the first element in the collection of the type designated by the specified generic type parameter.
+</para>
             </summary>
-            <value> </value>
+            <value>The layout element of the type designated by the specified generic type parameter.
+</value>
 
 
         </member>
         <member name="M:DevExpress.XtraRichEdit.API.Layout.LayoutElementCollection`1.GetEnumerator">
             <summary>
-                <para> </para>
+                <para>Returns an enumerator that iterates through the LayoutElementCollection instance.
+</para>
             </summary>
-            <returns> </returns>
+            <returns>A <see cref="T:System.Collections.IEnumerator"/> for the LayoutElementCollection instance.
+</returns>
 
 
         </member>
         <member name="P:DevExpress.XtraRichEdit.API.Layout.LayoutElementCollection`1.Item(System.Int32)">
             <summary>
-                <para> </para>
+                <para>Gets the object of the type designated by the specified generic type parameter  and specified by its index.
+</para>
             </summary>
             <param name="index">
-		 
+		An integer that is the index of the element in a corresponding collection of elements with the specified generic type parameter.
+
             </param>
-            <value> </value>
+            <value>The layout element of the type designated by the specified generic type parameter.
+</value>
 
 
         </member>
         <member name="P:DevExpress.XtraRichEdit.API.Layout.LayoutElementCollection`1.Last">
             <summary>
-                <para> </para>
+                <para>Returns the last element in the collection of the type designated by the specified generic type parameter.
+</para>
             </summary>
-            <value> </value>
+            <value>The layout element of the type designated by the specified generic type parameter.
+</value>
 
 
         </member>
@@ -23005,6 +23174,14 @@
             <summary>
                 <para>For internal use.
 </para>
+            </summary>
+            <returns> </returns>
+
+
+        </member>
+        <member name="F:DevExpress.XtraRichEdit.Commands.RichEditCommandId.DeleteNonEmptySelection">
+            <summary>
+                <para> </para>
             </summary>
             <returns> </returns>
 
@@ -23601,6 +23778,14 @@
             <summary>
                 <para><see cref="T:DevExpress.XtraRichEdit.Commands.IgnoreMisspellingCommand"/> ID.
 </para>
+            </summary>
+            <returns> </returns>
+
+
+        </member>
+        <member name="F:DevExpress.XtraRichEdit.Commands.RichEditCommandId.ImeUndo">
+            <summary>
+                <para> </para>
             </summary>
             <returns> </returns>
 
@@ -24401,6 +24586,14 @@
             <summary>
                 <para><see cref="T:DevExpress.XtraRichEdit.Commands.ReplaceMisspellingCommand"/> ID.
 </para>
+            </summary>
+            <returns> </returns>
+
+
+        </member>
+        <member name="F:DevExpress.XtraRichEdit.Commands.RichEditCommandId.ResetMerging">
+            <summary>
+                <para> </para>
             </summary>
             <returns> </returns>
 
@@ -29091,31 +29284,38 @@
         <member name="T:DevExpress.XtraRichEdit.API.Layout.LayoutBorder">
 
             <summary>
-                <para> </para>
+                <para>Combines border characteristics.
+</para>
             </summary>
 
         </member>
         <member name="P:DevExpress.XtraRichEdit.API.Layout.LayoutBorder.Color">
             <summary>
-                <para> </para>
+                <para>Gets the border color.
+</para>
             </summary>
-            <value> </value>
+            <value>A <see cref="T:System.Drawing.Color"/> that is the color of the border.
+</value>
 
 
         </member>
         <member name="P:DevExpress.XtraRichEdit.API.Layout.LayoutBorder.Style">
             <summary>
-                <para> </para>
+                <para>Returns the style of the border line.
+</para>
             </summary>
-            <value> </value>
+            <value>A <a href="ms-xhelp:///?Id=T%3aDevExpress.XtraRichEdit.API.Native.TableBorderLineStyle">TableBorderLineStyle</a> enumeration member that indicates the line style.
+</value>
 
 
         </member>
         <member name="P:DevExpress.XtraRichEdit.API.Layout.LayoutBorder.Thickness">
             <summary>
-                <para> </para>
+                <para>Returns a parameter that characterizes the thickness of a border line.
+</para>
             </summary>
-            <value> </value>
+            <value>An integer that characterizes the thickness of a border line.
+</value>
 
 
         </member>
@@ -30486,7 +30686,8 @@
         <member name="T:DevExpress.XtraRichEdit.API.Layout.UnderlineBox">
 
             <summary>
-                <para> </para>
+                <para>Layout element that relates to the underlined text. 
+</para>
             </summary>
 
         </member>
@@ -30504,9 +30705,11 @@
         </member>
         <member name="P:DevExpress.XtraRichEdit.API.Layout.UnderlineBox.Thickness">
             <summary>
-                <para> </para>
+                <para>Returns a parameter that identifies the relative height of the underline painting.
+</para>
             </summary>
-            <value> </value>
+            <value>An integer that identified the relative thickness of the underline.
+</value>
 
 
         </member>
@@ -30523,7 +30726,8 @@
         <member name="T:DevExpress.XtraRichEdit.API.Layout.StrikeoutBox">
 
             <summary>
-                <para> </para>
+                <para>Layout element that relates to the striked text. 
+</para>
             </summary>
 
         </member>
@@ -30552,7 +30756,8 @@
         <member name="T:DevExpress.XtraRichEdit.API.Layout.RangePermissionHighlightAreaBox">
 
             <summary>
-                <para> </para>
+                <para>Layout element that relates to the highlighted range which visualizes the <see cref="P:DevExpress.XtraRichEdit.API.Native.RangePermission.Range"/> value. . 
+</para>
             </summary>
 
         </member>
@@ -30581,7 +30786,8 @@
         <member name="T:DevExpress.XtraRichEdit.API.Layout.RangePermissionBox">
 
             <summary>
-                <para> </para>
+                <para>Layout element that relates to the Range Permission start and end visual indicators. 
+</para>
             </summary>
 
         </member>
@@ -30600,7 +30806,8 @@
         <member name="T:DevExpress.XtraRichEdit.API.Layout.HighlightAreaBox">
 
             <summary>
-                <para> </para>
+                <para>Layout element that relates to the highlighted text. 
+</para>
             </summary>
 
         </member>
@@ -30629,7 +30836,8 @@
         <member name="T:DevExpress.XtraRichEdit.API.Layout.HiddenTextUnderlineBox">
 
             <summary>
-                <para> </para>
+                <para>Layout element that relates to the visualization of the hidden text in the document. 
+</para>
             </summary>
 
         </member>
@@ -30658,7 +30866,8 @@
         <member name="T:DevExpress.XtraRichEdit.API.Layout.FieldHighlightAreaBox">
 
             <summary>
-                <para> </para>
+                <para>Layout element that relates to the highlighted text of the document <see cref="T:DevExpress.XtraRichEdit.API.Native.Field"/>. 
+</para>
             </summary>
 
         </member>
@@ -30687,7 +30896,8 @@
         <member name="T:DevExpress.XtraRichEdit.API.Layout.CommentBox">
 
             <summary>
-                <para> </para>
+                <para>Layout element that relates to the <see cref="T:DevExpress.XtraRichEdit.API.Native.Comment"/> start and end visual indicators. 
+</para>
             </summary>
 
         </member>
@@ -30706,7 +30916,8 @@
         <member name="T:DevExpress.XtraRichEdit.API.Layout.BookmarkBox">
 
             <summary>
-                <para> </para>
+                <para>Layout element that relates to the <see cref="T:DevExpress.XtraRichEdit.API.Native.Bookmark"/> start and end visual indicators. 
+</para>
             </summary>
 
         </member>
@@ -30735,46 +30946,56 @@
         <member name="T:DevExpress.XtraRichEdit.API.Layout.Borders">
 
             <summary>
-                <para> </para>
+                <para>A structure that combines characteristics of borders for the layout table or cell.
+</para>
             </summary>
 
         </member>
         <member name="P:DevExpress.XtraRichEdit.API.Layout.Borders.Bottom">
             <summary>
-                <para> </para>
+                <para>Provides access to an object that specifies the bottom border of a table cell. 
+</para>
             </summary>
-            <value> </value>
+            <value>A <a href="ms-xhelp:///?Id=T%3aDevExpress.XtraRichEdit.API.Layout.LayoutBorder">LayoutBorder</a> object that specifies characteristics of the table border.
+</value>
 
 
         </member>
         <member name="P:DevExpress.XtraRichEdit.API.Layout.Borders.Left">
             <summary>
-                <para> </para>
+                <para>Provides access to an object that specifies the left border of a table cell. 
+</para>
             </summary>
-            <value> </value>
+            <value>A <a href="ms-xhelp:///?Id=T%3aDevExpress.XtraRichEdit.API.Layout.LayoutBorder">LayoutBorder</a> object that specifies characteristics of the table border.
+</value>
 
 
         </member>
         <member name="P:DevExpress.XtraRichEdit.API.Layout.Borders.Right">
             <summary>
-                <para> </para>
+                <para>Provides access to an object that specifies the right border of a table cell. 
+</para>
             </summary>
-            <value> </value>
+            <value>A <a href="ms-xhelp:///?Id=T%3aDevExpress.XtraRichEdit.API.Layout.LayoutBorder">LayoutBorder</a> object that specifies characteristics of the table border.
+</value>
 
 
         </member>
         <member name="P:DevExpress.XtraRichEdit.API.Layout.Borders.Top">
             <summary>
-                <para> </para>
+                <para>Provides access to an object that specifies the bottom border of a table cell. 
+</para>
             </summary>
-            <value> </value>
+            <value>A <a href="ms-xhelp:///?Id=T%3aDevExpress.XtraRichEdit.API.Layout.LayoutBorder">LayoutBorder</a> object that specifies characteristics of the table border.
+</value>
 
 
         </member>
         <member name="T:DevExpress.XtraRichEdit.API.Layout.UnderlineBoxCollection">
 
             <summary>
-                <para> </para>
+                <para>A collection of <see cref="T:DevExpress.XtraRichEdit.API.Layout.UnderlineBox"/> elements.
+</para>
             </summary>
 
         </member>
@@ -30789,7 +31010,8 @@
         <member name="T:DevExpress.XtraRichEdit.API.Layout.LayoutPageArea">
 
             <summary>
-                <para> </para>
+                <para>Layout element that relates to a page body - a page without headers, footers, comments and floating objects.
+</para>
             </summary>
 
         </member>
@@ -30828,184 +31050,218 @@
         <member name="T:DevExpress.XtraRichEdit.API.Native.FixedRange">
 
             <summary>
-                <para> </para>
+                <para>Combines start and length of the document range. Used in Layout API.
+</para>
             </summary>
 
         </member>
         <member name="M:DevExpress.XtraRichEdit.API.Native.FixedRange.#ctor(System.Int32,System.Int32)">
             <summary>
-                <para> </para>
+                <para>Initializes a new instance of the FixedRange class with the specified start and length.
+</para>
             </summary>
             <param name="start">
-		 
+		An integer that is the start position of the range.
+
             </param>
             <param name="length">
-		 
+		An integer that is number of positions contained in the range.
+
             </param>
 
 
         </member>
         <member name="M:DevExpress.XtraRichEdit.API.Native.FixedRange.Contains(DevExpress.XtraRichEdit.API.Native.FixedRange)">
             <summary>
-                <para> </para>
+                <para>Gets whether the current document range contains a specified range. 
+</para>
             </summary>
             <param name="range">
-		 
+		A <see cref="T:DevExpress.XtraRichEdit.API.Native.FixedRange"/> that is a range to test for inclusion.
+
             </param>
-            <returns> </returns>
+            <returns><b>true</b> if the specified range is contained within the range; otherwise, <b>false</b>.
+</returns>
 
 
         </member>
         <member name="M:DevExpress.XtraRichEdit.API.Native.FixedRange.Contains(System.Int32)">
             <summary>
-                <para> </para>
+                <para>Gets whether the current document range contains a specified position. 
+</para>
             </summary>
             <param name="position">
-		 
+		An integer that is a position to test for inclusion.
+
             </param>
-            <returns> </returns>
-
-
-        </member>
-        <member name="P:DevExpress.XtraRichEdit.API.Native.FixedRange.End">
-            <summary>
-                <para> </para>
-            </summary>
-            <value> </value>
+            <returns><b>true</b> if the specified position is contained within the range; otherwise, <b>false</b>.
+</returns>
 
 
         </member>
         <member name="M:DevExpress.XtraRichEdit.API.Native.FixedRange.Equals(System.Object)">
             <summary>
-                <para> </para>
+                <para>Determines whether the specified object is equal to the current FixedRange instance.
+</para>
             </summary>
             <param name="obj">
-		 
+		The object to compare with the current object.
+
             </param>
-            <returns> </returns>
+            <returns><b>true</b> if the specified object is equal to the current FixedRange instance; otherwise <b>false</b>.
+</returns>
 
 
         </member>
         <member name="M:DevExpress.XtraRichEdit.API.Native.FixedRange.GetHashCode">
             <summary>
-                <para> </para>
+                <para>Gets the hash code (a number) that corresponds to the value of the current FixedRange object.
+
+</para>
             </summary>
-            <returns> </returns>
+            <returns>An integer value representing the hash code for the current object.
+</returns>
 
 
         </member>
         <member name="M:DevExpress.XtraRichEdit.API.Native.FixedRange.Intersect(DevExpress.XtraRichEdit.API.Native.FixedRange)">
             <summary>
-                <para> </para>
+                <para>Gets whether the current and the specified ranges intersect.
+</para>
             </summary>
             <param name="range">
-		 
+		A <see cref="T:DevExpress.XtraRichEdit.API.Native.FixedRange"/> object that specifies the range to check for intersection.
+
             </param>
-            <returns> </returns>
+            <returns><b>True</b> if ranges intersect; otherwise, <b>false</b>.
+</returns>
 
 
         </member>
         <member name="P:DevExpress.XtraRichEdit.API.Native.FixedRange.Length">
             <summary>
-                <para> </para>
+                <para>Returns the range length.
+</para>
             </summary>
-            <value> </value>
+            <value>An integer that is the number of positions the range contains.
+</value>
 
 
         </member>
         <member name="P:DevExpress.XtraRichEdit.API.Native.FixedRange.Start">
             <summary>
-                <para> </para>
+                <para>Returns the start position of the range.
+</para>
             </summary>
-            <value> </value>
+            <value>An integer that is the start position of the range.
+</value>
 
 
         </member>
         <member name="M:DevExpress.XtraRichEdit.API.Native.FixedRange.ToString">
             <summary>
-                <para> </para>
+                <para>Returns a message containing range start and length.
+</para>
             </summary>
-            <returns> </returns>
+            <returns>A string containing range start and length delimited with comma.
+</returns>
 
 
         </member>
         <member name="T:DevExpress.XtraRichEdit.API.Native.SelectionCollection">
 
             <summary>
-                <para> </para>
+                <para>A collection of selections in the document.
+</para>
             </summary>
 
         </member>
         <member name="M:DevExpress.XtraRichEdit.API.Native.SelectionCollection.Add(DevExpress.XtraRichEdit.API.Native.DocumentRange)">
             <summary>
-                <para> </para>
+                <para>Adds a range to the collection of selections.
+</para>
             </summary>
             <param name="range">
-		 
+		A <see cref="T:DevExpress.XtraRichEdit.API.Native.DocumentRange"/> to add.
+
             </param>
 
 
         </member>
         <member name="M:DevExpress.XtraRichEdit.API.Native.SelectionCollection.Add(System.Collections.Generic.List`1)">
             <summary>
-                <para> </para>
+                <para>Adds listed ranges to the collection of selections.
+</para>
             </summary>
             <param name="items">
-		 
+		A <see cref="T:System.Collections.Generic.List`1[[DevExpress.XtraRichEdit.API.Native.DocumentRange]]"/> list of document ranges.
+
             </param>
 
 
         </member>
         <member name="M:DevExpress.XtraRichEdit.API.Native.SelectionCollection.Clear">
             <summary>
-                <para> </para>
+                <para>Removes all items from the collection.
+</para>
             </summary>
 
 
         </member>
         <member name="P:DevExpress.XtraRichEdit.API.Native.SelectionCollection.Count">
             <summary>
-                <para> </para>
+                <para>Returns the number of selections in a collection.
+</para>
             </summary>
-            <value> </value>
+            <value>An integer that is the number of items in a collection.
+</value>
 
 
         </member>
         <member name="M:DevExpress.XtraRichEdit.API.Native.SelectionCollection.GetEnumerator">
             <summary>
-                <para> </para>
+                <para>Returns an enumerator that iterates through the SelectionCollection instance.
+</para>
             </summary>
-            <returns> </returns>
+            <returns>A <see cref="T:System.Collections.IEnumerator"/> for the SelectionCollection instance.
+</returns>
 
 
         </member>
         <member name="P:DevExpress.XtraRichEdit.API.Native.SelectionCollection.Item(System.Int32)">
             <summary>
-                <para> </para>
+                <para>Gets the selection specified by its index.
+</para>
             </summary>
             <param name="index">
-		 
+		An integer that is the index in the collection.
+
             </param>
-            <value> </value>
+            <value>A <a href="ms-xhelp:///?Id=T%3aDevExpress.XtraRichEdit.API.Native.DocumentRange">DocumentRange</a> object that is the selected range in the collection.
+</value>
 
 
         </member>
         <member name="M:DevExpress.XtraRichEdit.API.Native.SelectionCollection.RemoveAt(System.Int32)">
             <summary>
-                <para> </para>
+                <para>Deletes a selection specified by its index.
+</para>
             </summary>
             <param name="index">
-		 
+		An integer that is the zero-based index of a selection to delete.
+
             </param>
 
 
         </member>
         <member name="M:DevExpress.XtraRichEdit.API.Native.SelectionCollection.Unselect(DevExpress.XtraRichEdit.API.Native.DocumentRange)">
             <summary>
-                <para> </para>
+                <para>Unselects a specified range.
+</para>
             </summary>
             <param name="range">
-		 
+		A <see cref="T:DevExpress.XtraRichEdit.API.Native.DocumentRange"/> to unselect.
+
             </param>
 
 
@@ -31013,7 +31269,8 @@
         <member name="T:DevExpress.XtraRichEdit.API.Layout.LayoutFloatingObject">
 
             <summary>
-                <para> </para>
+                <para>Base class for layout element that relates to the floating object. 
+</para>
             </summary>
 
         </member>
@@ -31039,52 +31296,65 @@
         </member>
         <member name="M:DevExpress.XtraRichEdit.API.Layout.LayoutFloatingObject.GetContentCoordinates">
             <summary>
-                <para> </para>
+                <para>Returns an array of points which are the vertices of a rectangle encompassing the floating object content.
+</para>
             </summary>
-            <returns> </returns>
+            <returns>A <see cref="T:System.Drawing.Point[]"/> array identifying a rectangle.
+</returns>
 
 
         </member>
         <member name="M:DevExpress.XtraRichEdit.API.Layout.LayoutFloatingObject.GetCoordinates">
             <summary>
-                <para> </para>
+                <para>Returns an array of points which are the vertices of a rectangle encompassing the floating object.
+</para>
             </summary>
-            <returns> </returns>
+            <returns>A <see cref="T:System.Drawing.Point[]"/> array identifying a rectangle.
+</returns>
 
 
         </member>
         <member name="M:DevExpress.XtraRichEdit.API.Layout.LayoutFloatingObject.GetDocumentShape">
             <summary>
-                <para> </para>
+                <para>Returns a <see cref="T:DevExpress.XtraRichEdit.API.Native.Shape"/> object that relates to the current <see cref="T:DevExpress.XtraRichEdit.API.Layout.LayoutFloatingObject"/> element.
+</para>
             </summary>
-            <returns> </returns>
+            <returns>A <a href="ms-xhelp:///?Id=T%3aDevExpress.XtraRichEdit.API.Native.Shape">Shape</a> object in the logical document model.
+</returns>
 
 
         </member>
         <member name="P:DevExpress.XtraRichEdit.API.Layout.LayoutFloatingObject.RotationAngle">
             <summary>
-                <para> </para>
+                <para>Returns the <see cref="P:DevExpress.XtraRichEdit.API.Native.Shape.RotationAngle"/> value of a shape which relates to the current layout element.
+</para>
             </summary>
-            <value> </value>
+            <value>A <see cref="T:System.Single"/> value that is the number of degrees the shape is rotated around the z-axis. 
+
+</value>
 
 
         </member>
         <member name="T:DevExpress.XtraRichEdit.API.Layout.PageFormattedEventHandler">
 
             <summary>
-                <para> </para>
+                <para>A method that will handle the <see cref="E:DevExpress.XtraRichEdit.API.Layout.DocumentLayout.PageFormatted"/> event.
+</para>
             </summary>
 
         </member>
         <member name="M:DevExpress.XtraRichEdit.API.Layout.PageFormattedEventHandler.Invoke(System.Object,DevExpress.XtraRichEdit.API.Layout.PageFormattedEventArgs)">
             <summary>
-                <para> </para>
+                <para>A method that will handle the <see cref="E:DevExpress.XtraRichEdit.API.Layout.DocumentLayout.PageFormatted"/> event.
+</para>
             </summary>
             <param name="sender">
-		 
+		The event source. This parameter identifies the <see cref="T:DevExpress.XtraRichEdit.API.Layout.DocumentLayout"/> object, which raised the event.
+
             </param>
             <param name="e">
-		 
+		A <see cref="T:DevExpress.XtraRichEdit.API.Layout.PageFormattedEventArgs"/> instance which contains event data.
+
             </param>
 
 
@@ -31092,7 +31362,8 @@
         <member name="T:DevExpress.XtraRichEdit.API.Layout.PageFormattedEventArgs">
 
             <summary>
-                <para> </para>
+                <para>Provides data for the <see cref="E:DevExpress.XtraRichEdit.API.Layout.DocumentLayout.PageFormatted"/> event.
+</para>
             </summary>
 
         </member>
@@ -31122,19 +31393,23 @@
         <member name="T:DevExpress.XtraRichEdit.API.Layout.DocumentLayoutInvalidatedEventHandler">
 
             <summary>
-                <para> </para>
+                <para>A method that will handle the <see cref="E:DevExpress.XtraRichEdit.API.Layout.DocumentLayout.DocumentLayoutInvalidated"/> event.
+</para>
             </summary>
 
         </member>
         <member name="M:DevExpress.XtraRichEdit.API.Layout.DocumentLayoutInvalidatedEventHandler.Invoke(System.Object,DevExpress.XtraRichEdit.API.Layout.DocumentLayoutInvalidatedEventArgs)">
             <summary>
-                <para> </para>
+                <para>A method that will handle the <see cref="E:DevExpress.XtraRichEdit.API.Layout.DocumentLayout.DocumentLayoutInvalidated"/> event.
+</para>
             </summary>
             <param name="sender">
-		 
+		The event source. This parameter identifies the <see cref="T:DevExpress.XtraRichEdit.API.Layout.DocumentLayout"/> object, which raised the event.
+
             </param>
             <param name="e">
-		 
+		A <see cref="T:DevExpress.XtraRichEdit.API.Layout.DocumentLayoutInvalidatedEventArgs"/> instance which contains event data.
+
             </param>
 
 
@@ -31142,45 +31417,53 @@
         <member name="T:DevExpress.XtraRichEdit.API.Layout.DocumentLayoutInvalidatedEventArgs">
 
             <summary>
-                <para> </para>
+                <para>Provides data for the <see cref="E:DevExpress.XtraRichEdit.API.Layout.DocumentLayout.DocumentLayoutInvalidated"/> event.
+</para>
             </summary>
 
         </member>
         <member name="M:DevExpress.XtraRichEdit.API.Layout.DocumentLayoutInvalidatedEventArgs.#ctor(System.Int32)">
             <summary>
-                <para> </para>
+                <para>Initializes a new instance of the DocumentLayoutInvalidatedEventArgs class with the specified page index.
+</para>
             </summary>
             <param name="pageIndex">
-		 
+		An integer that is the page index.
+
             </param>
 
 
         </member>
         <member name="P:DevExpress.XtraRichEdit.API.Layout.DocumentLayoutInvalidatedEventArgs.PageIndex">
             <summary>
-                <para> </para>
+                <para>Returns an index of a page from which the document layout recalculation starts.
+</para>
             </summary>
-            <value> </value>
+            <value>An integer that is the page index.
+</value>
 
 
         </member>
         <member name="T:DevExpress.XtraRichEdit.CalculationModeType">
 
             <summary>
-                <para> </para>
+                <para>Lists modes for layout calculation.
+</para>
             </summary>
 
         </member>
         <member name="F:DevExpress.XtraRichEdit.CalculationModeType.Automatic">
             <summary>
-                <para> </para>
+                <para>Calculates layout asynchronously.
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.XtraRichEdit.CalculationModeType.Manual">
             <summary>
-                <para> </para>
+                <para>Does not allow asynchronous layout calculation.
+</para>
             </summary>
 
 
@@ -31188,22 +31471,26 @@
         <member name="T:DevExpress.XtraRichEdit.API.Layout.RangedLayoutElement">
 
             <summary>
-                <para> </para>
+                <para>Base interface for layout elements related to document objects based on the <see cref="T:DevExpress.XtraRichEdit.API.Native.FixedRange"/>.
+</para>
             </summary>
 
         </member>
         <member name="P:DevExpress.XtraRichEdit.API.Layout.RangedLayoutElement.Range">
             <summary>
-                <para> </para>
+                <para>Returns the range to which the current layout element relates.
+</para>
             </summary>
-            <value> </value>
+            <value>A <see cref="T:DevExpress.XtraRichEdit.API.Native.FixedRange"/> that relates to the document range occupying by the object to which the current layout element relates.
+</value>
 
 
         </member>
         <member name="T:DevExpress.XtraRichEdit.API.Layout.LayoutTextBox">
 
             <summary>
-                <para> </para>
+                <para>Layout element that relates to a floating object - Text Box.
+</para>
             </summary>
 
         </member>
@@ -31231,25 +31518,31 @@
         </member>
         <member name="P:DevExpress.XtraRichEdit.API.Layout.LayoutTextBox.Range">
             <summary>
-                <para> </para>
+                <para>Returns a range which the text box content occupies. 
+</para>
             </summary>
-            <value> </value>
+            <value>A <a href="ms-xhelp:///?Id=T%3aDevExpress.XtraRichEdit.API.Native.FixedRange">FixedRange</a> object that is the text box content range.
+</value>
 
 
         </member>
         <member name="P:DevExpress.XtraRichEdit.API.Layout.LayoutTextBox.Rows">
             <summary>
-                <para> </para>
+                <para>Gets lines of the document contained in the current text box.
+</para>
             </summary>
-            <value> </value>
+            <value>A <see cref="T:DevExpress.XtraRichEdit.API.Layout.LayoutRowCollection"/> containing lines of the text box document.
+</value>
 
 
         </member>
         <member name="P:DevExpress.XtraRichEdit.API.Layout.LayoutTextBox.Tables">
             <summary>
-                <para> </para>
+                <para>Gets tables contained within the text box.
+</para>
             </summary>
-            <value> </value>
+            <value>A <a href="ms-xhelp:///?Id=T%3aDevExpress.XtraRichEdit.API.Layout.LayoutTableCollection">LayoutTableCollection</a> containing tables which are in the text box content.
+</value>
 
 
         </member>
@@ -31266,7 +31559,8 @@
         <member name="T:DevExpress.XtraRichEdit.API.Layout.LayoutTableRow">
 
             <summary>
-                <para> </para>
+                <para>Layout element that relates to a <see cref="T:DevExpress.XtraRichEdit.API.Native.TableRow"/> object.
+</para>
             </summary>
 
         </member>
@@ -31284,9 +31578,11 @@
         </member>
         <member name="P:DevExpress.XtraRichEdit.API.Layout.LayoutTableRow.TableCells">
             <summary>
-                <para> </para>
+                <para>Gets cells of the current table row.
+</para>
             </summary>
-            <value> </value>
+            <value>A <see cref="T:DevExpress.XtraRichEdit.API.Layout.LayoutTableCellCollection"/> containing cell of the current row in a table.
+</value>
 
 
         </member>
@@ -31303,7 +31599,8 @@
         <member name="T:DevExpress.XtraRichEdit.API.Layout.LayoutTableCell">
 
             <summary>
-                <para> </para>
+                <para>Layout element that relates to a <see cref="T:DevExpress.XtraRichEdit.API.Native.TableCell"/> object.
+</para>
             </summary>
 
         </member>
@@ -31331,17 +31628,21 @@
         </member>
         <member name="P:DevExpress.XtraRichEdit.API.Layout.LayoutTableCell.NestedTables">
             <summary>
-                <para> </para>
+                <para>Gets nested tables contained in the current table cell.
+</para>
             </summary>
-            <value> </value>
+            <value>A <see cref="T:DevExpress.XtraRichEdit.API.Layout.LayoutTableCollection"/> containing tables nested in the current table cell.
+</value>
 
 
         </member>
         <member name="P:DevExpress.XtraRichEdit.API.Layout.LayoutTableCell.Rows">
             <summary>
-                <para> </para>
+                <para>Gets lines within a table cell.
+</para>
             </summary>
-            <value> </value>
+            <value>A <a href="ms-xhelp:///?Id=T%3aDevExpress.XtraRichEdit.API.Layout.LayoutRowCollection">LayoutRowCollection</a> containing lines (<see cref="T:DevExpress.XtraRichEdit.API.Layout.LayoutRow"/> objects) in the current table cell.
+</value>
 
 
         </member>
@@ -31358,7 +31659,8 @@
         <member name="T:DevExpress.XtraRichEdit.API.Layout.LayoutTable">
 
             <summary>
-                <para> </para>
+                <para>Layout element that relates to a <see cref="T:DevExpress.XtraRichEdit.API.Native.Table"/> object.
+</para>
             </summary>
 
         </member>
@@ -31386,9 +31688,11 @@
         </member>
         <member name="P:DevExpress.XtraRichEdit.API.Layout.LayoutTable.TableRows">
             <summary>
-                <para> </para>
+                <para>Gets rows of the current table.
+</para>
             </summary>
-            <value> </value>
+            <value>A <see cref="T:DevExpress.XtraRichEdit.API.Layout.LayoutTableRowCollection"/> containing rows of the current table.
+</value>
 
 
         </member>
@@ -31405,7 +31709,8 @@
         <member name="T:DevExpress.XtraRichEdit.API.Layout.LayoutRow">
 
             <summary>
-                <para> </para>
+                <para>A line on a page.
+</para>
             </summary>
 
         </member>
@@ -31433,17 +31738,21 @@
         </member>
         <member name="P:DevExpress.XtraRichEdit.API.Layout.LayoutRow.ExtendedBoxes">
             <summary>
-                <para> </para>
+                <para>Gets box elements which are not of the <see cref="F:DevExpress.XtraRichEdit.API.Layout.LayoutType.PlainTextBox"/> type, contained in the current line.
+</para>
             </summary>
-            <value> </value>
+            <value>A <see cref="T:DevExpress.XtraRichEdit.API.Layout.RowExtendedBoxes"/> object that is a container for extended boxes. 
+</value>
 
 
         </member>
         <member name="P:DevExpress.XtraRichEdit.API.Layout.LayoutRow.NumberingListBox">
             <summary>
-                <para> </para>
+                <para>Returns a numbered list mark of the current line.
+</para>
             </summary>
-            <value> </value>
+            <value>A <a href="ms-xhelp:///?Id=T%3aDevExpress.XtraRichEdit.API.Layout.NumberingListMarkBox">NumberingListMarkBox</a> object that is a numbered list mark of the current line.
+</value>
 
 
         </member>
@@ -31460,7 +31769,8 @@
         <member name="T:DevExpress.XtraRichEdit.API.Layout.NumberingListWithSeparatorBox">
 
             <summary>
-                <para> </para>
+                <para>Layout element that relates to a mark in the numbered list.
+</para>
             </summary>
 
         </member>
@@ -31478,9 +31788,11 @@
         </member>
         <member name="P:DevExpress.XtraRichEdit.API.Layout.NumberingListWithSeparatorBox.Separator">
             <summary>
-                <para> </para>
+                <para>Gets the text box which relates to a separator used in the current numbered list box.
+</para>
             </summary>
-            <value> </value>
+            <value>A <see cref="T:DevExpress.XtraRichEdit.API.Layout.PlainTextBox"/> which relates to separator symbols used to display a number in the numbered list.
+</value>
 
 
         </member>
@@ -31497,7 +31809,8 @@
         <member name="T:DevExpress.XtraRichEdit.API.Layout.NumberingListMarkBox">
 
             <summary>
-                <para> </para>
+                <para>Base class for a mark in the numbered list.
+</para>
             </summary>
 
         </member>
@@ -31515,25 +31828,31 @@
         </member>
         <member name="P:DevExpress.XtraRichEdit.API.Layout.NumberingListMarkBox.ListIndex">
             <summary>
-                <para> </para>
+                <para>Returns the index of a list to which the current numbered list mark relates.
+</para>
             </summary>
-            <value> </value>
+            <value>A integer that corresponds to the <see cref="P:DevExpress.XtraRichEdit.API.Native.Paragraph.ListIndex"/> characteristic.
+</value>
 
 
         </member>
         <member name="P:DevExpress.XtraRichEdit.API.Layout.NumberingListMarkBox.ListLevel">
             <summary>
-                <para> </para>
+                <para>Returns the <see cref="P:DevExpress.XtraRichEdit.API.Native.Paragraph.ListLevel"/> value that corresponds to the current layout element.
+</para>
             </summary>
-            <value> </value>
+            <value>An integer that is the <see cref="P:DevExpress.XtraRichEdit.API.Native.Paragraph.ListLevel"/> value.
+</value>
 
 
         </member>
         <member name="P:DevExpress.XtraRichEdit.API.Layout.NumberingListMarkBox.Text">
             <summary>
-                <para> </para>
+                <para>Returns the text displayed by the numbered list mark.
+</para>
             </summary>
-            <value> </value>
+            <value>A string displayed in the layout element.
+</value>
 
 
         </member>
@@ -31550,7 +31869,8 @@
         <member name="T:DevExpress.XtraRichEdit.API.Layout.LineNumberBox">
 
             <summary>
-                <para> </para>
+                <para>Layout element that relates to a line number.
+</para>
             </summary>
 
         </member>
@@ -31568,17 +31888,21 @@
         </member>
         <member name="P:DevExpress.XtraRichEdit.API.Layout.LineNumberBox.Row">
             <summary>
-                <para> </para>
+                <para>Returns a line to which the current line number element belongs.
+</para>
             </summary>
-            <value> </value>
+            <value>A <see cref="T:DevExpress.XtraRichEdit.API.Layout.LayoutRow"/> element to which the current <see cref="T:DevExpress.XtraRichEdit.API.Layout.LineNumberBox"/> belongs.
+</value>
 
 
         </member>
         <member name="P:DevExpress.XtraRichEdit.API.Layout.LineNumberBox.Text">
             <summary>
-                <para> </para>
+                <para>Returns the text displayed by the line number.
+</para>
             </summary>
-            <value> </value>
+            <value>A string displayed by the line number.
+</value>
 
 
         </member>
@@ -31595,7 +31919,8 @@
         <member name="T:DevExpress.XtraRichEdit.API.Layout.InlinePictureBox">
 
             <summary>
-                <para> </para>
+                <para>Layout element that relates to the inline picture. 
+</para>
             </summary>
 
         </member>
@@ -31613,16 +31938,19 @@
         </member>
         <member name="P:DevExpress.XtraRichEdit.API.Layout.InlinePictureBox.Image">
             <summary>
-                <para> </para>
+                <para>Returns a <see cref="T:DevExpress.Office.Utils.OfficeImage"/> object that relates to the current <see cref="T:DevExpress.XtraRichEdit.API.Layout.InlinePictureBox"/> element.
+</para>
             </summary>
-            <value> </value>
+            <value>A <a href="ms-xhelp:///?Id=T%3aDevExpress.Office.Utils.OfficeImage">OfficeImage</a> object that is the image in the logical document model.
+</value>
 
 
         </member>
         <member name="T:DevExpress.XtraRichEdit.API.Layout.LayoutFloatingPicture">
 
             <summary>
-                <para> </para>
+                <para>Layout element that relates to the floating picture in the document. 
+</para>
             </summary>
 
         </member>
@@ -31640,9 +31968,11 @@
         </member>
         <member name="P:DevExpress.XtraRichEdit.API.Layout.LayoutFloatingPicture.Image">
             <summary>
-                <para> </para>
+                <para>Returns an image contained in the floating picture object.
+</para>
             </summary>
-            <value> </value>
+            <value>An <see cref="T:DevExpress.Office.Utils.OfficeImage"/> object that is the image contained in the floating picture.
+</value>
 
 
         </member>
@@ -31659,7 +31989,8 @@
         <member name="T:DevExpress.XtraRichEdit.API.Layout.FloatingObjectAnchorBox">
 
             <summary>
-                <para> </para>
+                <para>Layout element that relates to the anchoring <see cref="P:DevExpress.XtraRichEdit.API.Native.Shape.Range"/> of the floating object. 
+</para>
             </summary>
 
         </member>
@@ -31677,9 +32008,11 @@
         </member>
         <member name="P:DevExpress.XtraRichEdit.API.Layout.FloatingObjectAnchorBox.FloatingObjectBox">
             <summary>
-                <para> </para>
+                <para>Returns a floating object that is anchored to the current anchor box element.
+</para>
             </summary>
-            <value> </value>
+            <value>A <a href="ms-xhelp:///?Id=T%3aDevExpress.XtraRichEdit.API.Layout.LayoutFloatingObject">LayoutFloatingObject</a> anchored to the current anchor box element.
+</value>
 
 
         </member>
@@ -32045,10 +32378,12 @@
         </member>
         <member name="M:DevExpress.XtraRichEdit.API.Layout.LayoutVisitor.Visit(DevExpress.XtraRichEdit.API.Layout.LayoutElement)">
             <summary>
-                <para> </para>
+                <para>Dispatches the specified layout element to a special method of the Visitor class. 
+</para>
             </summary>
             <param name="element">
-		 
+		A <see cref="T:DevExpress.XtraRichEdit.API.Layout.LayoutElement"/> descendant that is the element for which a specialized method is called.
+
             </param>
 
 
@@ -32056,7 +32391,9 @@
         <member name="T:DevExpress.XtraRichEdit.API.Layout.DocumentLayout">
 
             <summary>
-                <para> </para>
+                <para>Provides access to the Layout API.
+
+</para>
             </summary>
 
         </member>
@@ -32078,113 +32415,146 @@
         </member>
         <member name="E:DevExpress.XtraRichEdit.API.Layout.DocumentLayout.DocumentLayoutInvalidated">
             <summary>
-                <para> </para>
+                <para>Fires after any document modification which makes the current layout outdated.
+</para>
             </summary>
 
 
         </member>
         <member name="M:DevExpress.XtraRichEdit.API.Layout.DocumentLayout.GetElement(DevExpress.XtraRichEdit.API.Native.DocumentPosition,DevExpress.XtraRichEdit.API.Layout.LayoutType)">
             <summary>
-                <para> </para>
+                <para>Gets the layout element of the specified type which relates to the specified position in the document model.
+</para>
             </summary>
             <param name="position">
-		 
+		A <see cref="T:DevExpress.XtraRichEdit.API.Native.DocumentPosition"/> object that specifies the position in the document model.
+
             </param>
             <param name="type">
-		 
+		A <see cref="T:DevExpress.XtraRichEdit.API.Layout.LayoutType"/> enumeration that specifies the type of the requested layout element.
+
             </param>
-            <returns> </returns>
+            <returns>A <see cref="T:DevExpress.XtraRichEdit.API.Layout.RangedLayoutElement"/> class descendant. 
+</returns>
 
 
         </member>
         <member name="M:DevExpress.XtraRichEdit.API.Layout.DocumentLayout.GetElement``1(DevExpress.XtraRichEdit.API.Native.DocumentPosition)">
             <summary>
-                <para> </para>
+                <para>Returns the layout element of the type designated by the specified generic type parameter which relates to the specified position in the document model.
+</para>
             </summary>
             <param name="position">
-		 
+		A <see cref="T:DevExpress.XtraRichEdit.API.Native.DocumentPosition"/> object that specifies the position in the document model.
+
             </param>
-            <returns> </returns>
+            <returns>The layout element of the type designated by the specified generic type parameter.
+</returns>
 
 
         </member>
         <member name="M:DevExpress.XtraRichEdit.API.Layout.DocumentLayout.GetFormattedPageCount">
             <summary>
-                <para> </para>
+                <para>Obtains a number of pages for which layout has been already calculated.
+</para>
             </summary>
-            <returns> </returns>
+            <returns>An integer that is the number of pages in the document layout.
+</returns>
 
 
         </member>
         <member name="M:DevExpress.XtraRichEdit.API.Layout.DocumentLayout.GetPage(System.Int32)">
             <summary>
-                <para> </para>
+                <para>Gets the page of the document layout by the specified index.
+</para>
             </summary>
             <param name="pageIndex">
-		 
+		An integer that is the index of a requested page.
+
             </param>
-            <returns> </returns>
+            <returns>A <see cref="T:DevExpress.XtraRichEdit.API.Layout.LayoutPage"/> object that is the page of the document layout.
+</returns>
 
 
         </member>
         <member name="M:DevExpress.XtraRichEdit.API.Layout.DocumentLayout.GetPageAsync(System.Int32,System.Action`1)">
             <summary>
-                <para> </para>
+                <para>Calculates page layout asynchronously for the specified page.
+</para>
             </summary>
             <param name="pageIndex">
-		 
+		An integer that is the index of the page for which to calculate layout.
+
             </param>
             <param name="callback">
-		 
+		A <see cref="T:System.Action"/> that is the action to run when page formatting completes.
+
             </param>
-            <returns> </returns>
+            <returns>A <see cref="T:System.Threading.Tasks.Task"/> that is an asynchronous operation being performed.
+</returns>
 
 
         </member>
         <member name="M:DevExpress.XtraRichEdit.API.Layout.DocumentLayout.GetPageAsync(System.Int32,System.Action`1,System.Threading.CancellationToken)">
             <summary>
-                <para> </para>
+                <para>Calculates the page layout asynchronously for the specified page and allows task cancellation through the use of a cancellation token.
+
+</para>
             </summary>
             <param name="pageIndex">
-		 
+		An integer that is the index of the page for which to calculate layout.
+
             </param>
             <param name="callback">
-		 
+		A <see cref="T:System.Action"/> that is the action to run when page formatting completes.
+
             </param>
             <param name="cancellationToken">
-		 
+		A cancellation token that should be used to cancel formatting.
+
             </param>
-            <returns> </returns>
+            <returns>A <see cref="T:System.Threading.Tasks.Task"/> that is an asynchronous operation being performed.
+</returns>
 
 
         </member>
         <member name="M:DevExpress.XtraRichEdit.API.Layout.DocumentLayout.GetPageIndex(DevExpress.XtraRichEdit.API.Layout.LayoutElement)">
             <summary>
-                <para> </para>
+                <para>Obtains the index of the page containing the specified layout element.
+
+</para>
             </summary>
             <param name="element">
-		 
+		A <see cref="T:DevExpress.XtraRichEdit.API.Layout.LayoutElement"/> descendant that is the layout element being queried for the parent page.
+
             </param>
-            <returns> </returns>
+            <returns>An integer that is the page index.
+</returns>
 
 
         </member>
         <member name="M:DevExpress.XtraRichEdit.API.Layout.DocumentLayout.GetText(DevExpress.XtraRichEdit.API.Layout.LayoutElement)">
             <summary>
-                <para> </para>
+                <para>Gets the plain text contained in the range to which the layout element relates.
+
+</para>
             </summary>
             <param name="element">
-		 
+		A <see cref="T:DevExpress.XtraRichEdit.API.Layout.LayoutElement"/> descendant.
+
             </param>
-            <returns> </returns>
+            <returns>A string that is the text contained in the corresponding range.
+</returns>
 
 
         </member>
         <member name="P:DevExpress.XtraRichEdit.API.Layout.DocumentLayout.IsDocumentFormattingCompleted">
             <summary>
-                <para> </para>
+                <para>Indicates whether the document layout is ready and up-to-date.
+</para>
             </summary>
-            <value> </value>
+            <value><b>true</b>, if the document layout is calculated completely; otherwise, <b>false</b>.
+</value>
 
 
         </member>
@@ -32222,7 +32592,8 @@
         <member name="T:DevExpress.XtraRichEdit.API.Layout.StrikeoutBoxCollection">
 
             <summary>
-                <para> </para>
+                <para>A collection of <see cref="T:DevExpress.XtraRichEdit.API.Layout.StrikeoutBox"/> elements.
+</para>
             </summary>
 
         </member>
@@ -33932,9 +34303,11 @@
         </member>
         <member name="P:DevExpress.XtraRichEdit.API.Native.Document.Selections">
             <summary>
-                <para> </para>
+                <para>Provides access to a collection of selections in the document.
+</para>
             </summary>
-            <value> </value>
+            <value>A <see cref="T:DevExpress.XtraRichEdit.API.Native.SelectionCollection"/> object containing ranges selected in the document.
+</value>
 
 
         </member>
@@ -33999,283 +34372,341 @@
         <member name="T:DevExpress.XtraRichEdit.API.Native.ReadOnlyTableCollection">
 
             <summary>
-                <para> </para>
+                <para>A collection of tables (<see cref="T:DevExpress.XtraRichEdit.API.Native.Table"/> objects) in the document.
+</para>
             </summary>
 
         </member>
         <member name="M:DevExpress.XtraRichEdit.API.Native.ReadOnlyTableCollection.Get(DevExpress.XtraRichEdit.API.Native.DocumentRange)">
             <summary>
-                <para> </para>
+                <para>Gets all tables located in the specified document range. 
+</para>
             </summary>
             <param name="range">
-		 
+		A <see cref="T:DevExpress.XtraRichEdit.API.Native.DocumentRange"/> specifying the range in which to search for tables.
+
+
             </param>
-            <returns> </returns>
+            <returns>A <see cref="T:DevExpress.XtraRichEdit.API.Native.ReadOnlyTableCollection"/> object specifying the read-only collection of tables.
+</returns>
 
 
         </member>
         <member name="M:DevExpress.XtraRichEdit.API.Native.ReadOnlyTableCollection.GetTableCell(DevExpress.XtraRichEdit.API.Native.DocumentPosition)">
             <summary>
-                <para> </para>
+                <para>Gets the table cell encompassing the specified position.
+</para>
             </summary>
             <param name="pos">
-		 
+		A <see cref="T:DevExpress.XtraRichEdit.API.Native.DocumentPosition"/> that is the position in the document.
+
             </param>
-            <returns> </returns>
+            <returns>A <a href="ms-xhelp:///?Id=T%3aDevExpress.XtraRichEdit.API.Native.TableCell">TableCell</a> object that is the table cell containing the specified position.
+</returns>
 
 
         </member>
         <member name="T:DevExpress.XtraRichEdit.API.Native.ReadOnlyHyperlinkCollection">
 
             <summary>
-                <para> </para>
+                <para>A collection of <see cref="T:DevExpress.XtraRichEdit.API.Native.Hyperlink"/> objects in the document.
+</para>
             </summary>
 
         </member>
         <member name="M:DevExpress.XtraRichEdit.API.Native.ReadOnlyHyperlinkCollection.Get(DevExpress.XtraRichEdit.API.Native.DocumentRange)">
             <summary>
-                <para> </para>
+                <para>Gets all hyperlinks located in the specified document range. 
+</para>
             </summary>
             <param name="range">
-		 
+		A <see cref="T:DevExpress.XtraRichEdit.API.Native.DocumentRange"/> specifying the range in which to search for hyperlinks.
+
+
             </param>
-            <returns> </returns>
+            <returns>A <see cref="T:DevExpress.XtraRichEdit.API.Native.ReadOnlyHyperlinkCollection"/> object specifying the read-only collection of hyperlinks.
+</returns>
 
 
         </member>
         <member name="T:DevExpress.XtraRichEdit.API.Native.ReadOnlyFieldCollection">
 
             <summary>
-                <para> </para>
+                <para>A collection of <see cref="T:DevExpress.XtraRichEdit.API.Native.Field"/> objects in the document.
+</para>
             </summary>
 
         </member>
         <member name="M:DevExpress.XtraRichEdit.API.Native.ReadOnlyFieldCollection.Get(DevExpress.XtraRichEdit.API.Native.DocumentRange)">
             <summary>
-                <para> </para>
+                <para>Gets all fields located in the specified document range. 
+</para>
             </summary>
             <param name="range">
-		 
+		A <see cref="T:DevExpress.XtraRichEdit.API.Native.DocumentRange"/> specifying the range in which to search for fields.
+
+
             </param>
-            <returns> </returns>
+            <returns>A <see cref="T:DevExpress.XtraRichEdit.API.Native.ReadOnlyFieldCollection"/> object specifying the read-only collection of fields.
+</returns>
 
 
         </member>
         <member name="T:DevExpress.XtraRichEdit.API.Native.ReadOnlyCustomMarkCollection">
 
             <summary>
-                <para> </para>
+                <para>A collection of <see cref="T:DevExpress.XtraRichEdit.API.Native.CustomMark"/> objects in the document.
+</para>
             </summary>
 
         </member>
         <member name="M:DevExpress.XtraRichEdit.API.Native.ReadOnlyCustomMarkCollection.Get(DevExpress.XtraRichEdit.API.Native.DocumentRange)">
             <summary>
-                <para> </para>
+                <para>Gets all custom marks located in the specified document range. 
+</para>
             </summary>
             <param name="range">
-		 
+		A <see cref="T:DevExpress.XtraRichEdit.API.Native.DocumentRange"/> specifying the range in which to search for custom marks.
+
+
             </param>
-            <returns> </returns>
+            <returns>A <see cref="T:DevExpress.XtraRichEdit.API.Native.ReadOnlyCustomMarkCollection"/> object specifying the read-only collection of custom marks.
+</returns>
 
 
         </member>
         <member name="M:DevExpress.XtraRichEdit.API.Native.ReadOnlyCustomMarkCollection.GetByVisualInfo(DevExpress.XtraRichEdit.Layout.Export.CustomMarkVisualInfo)">
             <summary>
-                <para> </para>
+                <para>Obtains a custom mark by its visual info available in the <see cref="E:DevExpress.XtraRichEdit.RichEditControl.CustomMarkDraw"/> event handler.
+</para>
             </summary>
             <param name="customMarkVisualInfo">
-		 
+		A <b>DevExpress.XtraRichEdit.Layout.Export.CustomMarkVisualInfo</b> object. A collection of such objects is accessible using the <see cref="P:DevExpress.XtraRichEdit.RichEditCustomMarkDrawEventArgs.VisualInfoCollection"/> property.
+
             </param>
-            <returns> </returns>
+            <returns>A <see cref="T:DevExpress.XtraRichEdit.API.Native.CustomMark"/> object.
+</returns>
 
 
         </member>
         <member name="T:DevExpress.XtraRichEdit.API.Native.ReadOnlyCommentCollection">
 
             <summary>
-                <para> </para>
+                <para>A collection of comments (<see cref="T:DevExpress.XtraRichEdit.API.Native.Comment"/> objects) in the document.
+</para>
             </summary>
 
         </member>
         <member name="M:DevExpress.XtraRichEdit.API.Native.ReadOnlyCommentCollection.Get(DevExpress.XtraRichEdit.API.Native.DocumentRange)">
             <summary>
-                <para> </para>
+                <para>Gets all comments located in the specified document range. 
+</para>
             </summary>
             <param name="range">
-		 
+		A <see cref="T:DevExpress.XtraRichEdit.API.Native.DocumentRange"/> specifying the range in which to search for comments.
+
+
             </param>
-            <returns> </returns>
+            <returns>A <see cref="T:DevExpress.XtraRichEdit.API.Native.ReadOnlyCommentCollection"/> object specifying the read-only collection of comments.
+</returns>
 
 
         </member>
         <member name="T:DevExpress.XtraRichEdit.API.Native.ReadOnlyBookmarkCollection">
 
             <summary>
-                <para> </para>
+                <para>A collection of <see cref="T:DevExpress.XtraRichEdit.API.Native.Bookmark"/> objects in the document.
+</para>
             </summary>
 
         </member>
         <member name="M:DevExpress.XtraRichEdit.API.Native.ReadOnlyBookmarkCollection.Get(DevExpress.XtraRichEdit.API.Native.DocumentRange)">
             <summary>
-                <para> </para>
+                <para>Gets all bookmarks located in the specified document range. 
+</para>
             </summary>
             <param name="range">
-		 
+		A <see cref="T:DevExpress.XtraRichEdit.API.Native.DocumentRange"/> specifying the range in which to search for bookmarks.
+
+
             </param>
-            <returns> </returns>
+            <returns>A <see cref="T:DevExpress.XtraRichEdit.API.Native.ReadOnlyBookmarkCollection"/> object specifying the read-only collection of bookmarks.
+</returns>
 
 
         </member>
         <member name="T:DevExpress.XtraRichEdit.API.Native.TablePropertiesMask">
 
             <summary>
-                <para> </para>
+                <para>Lists the value masks available for table cell properties.
+</para>
             </summary>
 
         </member>
         <member name="F:DevExpress.XtraRichEdit.API.Native.TablePropertiesMask.All">
             <summary>
-                <para> </para>
+                <para>Specifies all table properties.
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.XtraRichEdit.API.Native.TablePropertiesMask.BackgroundColor">
             <summary>
-                <para> </para>
+                <para><see cref="P:DevExpress.XtraRichEdit.API.Native.TablePropertiesBase.TableBackgroundColor"/>
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.XtraRichEdit.API.Native.TablePropertiesMask.Borders">
             <summary>
-                <para> </para>
+                <para><see cref="P:DevExpress.XtraRichEdit.API.Native.Table.Borders"/>
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.XtraRichEdit.API.Native.TablePropertiesMask.BottomBorder">
             <summary>
-                <para> </para>
+                <para><see cref="P:DevExpress.Spreadsheet.Borders.BottomBorder"/>
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.XtraRichEdit.API.Native.TablePropertiesMask.BottomPadding">
             <summary>
-                <para> </para>
+                <para><see cref="P:DevExpress.XtraRichEdit.API.Native.Table.BottomPadding"/>
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.XtraRichEdit.API.Native.TablePropertiesMask.CellSpacing">
             <summary>
-                <para> </para>
+                <para><see cref="P:DevExpress.XtraRichEdit.API.Native.TablePropertiesBase.TableCellSpacing"/>
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.XtraRichEdit.API.Native.TablePropertiesMask.InsideHorizontalBorder">
             <summary>
-                <para> </para>
+                <para><see cref="P:DevExpress.XtraRichEdit.API.Native.TableBorders.InsideHorizontalBorder"/>
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.XtraRichEdit.API.Native.TablePropertiesMask.InsideVerticalBorder">
             <summary>
-                <para> </para>
+                <para><see cref="P:DevExpress.XtraRichEdit.API.Native.TableBorders.InsideVerticalBorder"/>
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.XtraRichEdit.API.Native.TablePropertiesMask.LeftBorder">
             <summary>
-                <para> </para>
+                <para><see cref="P:DevExpress.XtraRichEdit.API.Native.TableBorders.Left"/>
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.XtraRichEdit.API.Native.TablePropertiesMask.LeftPadding">
             <summary>
-                <para> </para>
+                <para><see cref="P:DevExpress.XtraRichEdit.API.Native.TablePropertiesBase.LeftPadding"/>
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.XtraRichEdit.API.Native.TablePropertiesMask.PreferredWidth">
             <summary>
-                <para> </para>
+                <para><see cref="P:DevExpress.XtraRichEdit.API.Native.Table.PreferredWidth"/>
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.XtraRichEdit.API.Native.TablePropertiesMask.RightBorder">
             <summary>
-                <para> </para>
+                <para><see cref="P:DevExpress.XtraRichEdit.API.Native.TableBorders.Right"/>
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.XtraRichEdit.API.Native.TablePropertiesMask.RightPadding">
             <summary>
-                <para> </para>
+                <para><see cref="P:DevExpress.XtraRichEdit.API.Native.TablePropertiesBase.RightPadding"/>
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.XtraRichEdit.API.Native.TablePropertiesMask.TableAlignment">
             <summary>
-                <para> </para>
+                <para><see cref="P:DevExpress.XtraRichEdit.API.Native.TablePropertiesBase.TableAlignment"/>
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.XtraRichEdit.API.Native.TablePropertiesMask.TableIndent">
             <summary>
-                <para> </para>
+                <para><see cref="P:DevExpress.XtraRichEdit.API.Native.Table.Indent"/>
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.XtraRichEdit.API.Native.TablePropertiesMask.TableLayout">
             <summary>
-                <para> </para>
+                <para><see cref="P:DevExpress.XtraRichEdit.API.Native.TablePropertiesBase.TableLayout"/>
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.XtraRichEdit.API.Native.TablePropertiesMask.TableLook">
             <summary>
-                <para> </para>
+                <para><see cref="P:DevExpress.XtraRichEdit.API.Native.Table.TableLook"/>
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.XtraRichEdit.API.Native.TablePropertiesMask.TableStyleColBandSize">
             <summary>
-                <para> </para>
+                <para>0x200
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.XtraRichEdit.API.Native.TablePropertiesMask.TableStyleRowBandSize">
             <summary>
-                <para> </para>
+                <para>0x400
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.XtraRichEdit.API.Native.TablePropertiesMask.TopBorder">
             <summary>
-                <para> </para>
+                <para><see cref="P:DevExpress.XtraRichEdit.API.Layout.Borders.Top"/>
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.XtraRichEdit.API.Native.TablePropertiesMask.TopPadding">
             <summary>
-                <para> </para>
+                <para><see cref="P:DevExpress.XtraRichEdit.API.Native.TablePropertiesBase.TopPadding"/>
+</para>
             </summary>
 
 
@@ -34283,125 +34714,143 @@
         <member name="T:DevExpress.XtraRichEdit.API.Native.TableCellPropertiesMask">
 
             <summary>
-                <para> </para>
+                <para>Lists the value masks available for table cell properties.
+</para>
             </summary>
 
         </member>
         <member name="F:DevExpress.XtraRichEdit.API.Native.TableCellPropertiesMask.All">
             <summary>
-                <para> </para>
+                <para>Specifies all table cell properties.
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.XtraRichEdit.API.Native.TableCellPropertiesMask.BackgroundColor">
             <summary>
-                <para> </para>
+                <para><see cref="P:DevExpress.XtraRichEdit.API.Native.TableCellPropertiesBase.CellBackgroundColor"/>
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.XtraRichEdit.API.Native.TableCellPropertiesMask.BottomBorder">
             <summary>
-                <para> </para>
+                <para><see cref="P:DevExpress.XtraRichEdit.API.Native.TableCellBorders.Bottom"/>
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.XtraRichEdit.API.Native.TableCellPropertiesMask.BottomPadding">
             <summary>
-                <para> </para>
+                <para><see cref="P:DevExpress.XtraRichEdit.API.Native.TableCell.BottomPadding"/>
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.XtraRichEdit.API.Native.TableCellPropertiesMask.InsideHorizontalBorder">
             <summary>
-                <para> </para>
+                <para><see cref="P:DevExpress.XtraRichEdit.API.Native.TableBorders.InsideHorizontalBorder"/>
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.XtraRichEdit.API.Native.TableCellPropertiesMask.InsideVerticalBorder">
             <summary>
-                <para> </para>
+                <para><see cref="P:DevExpress.XtraRichEdit.API.Native.TableBorders.InsideVerticalBorder"/>
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.XtraRichEdit.API.Native.TableCellPropertiesMask.LeftBorder">
             <summary>
-                <para> </para>
+                <para><see cref="P:DevExpress.XtraRichEdit.API.Native.TableCellBorders.Left"/>
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.XtraRichEdit.API.Native.TableCellPropertiesMask.LeftPadding">
             <summary>
-                <para> </para>
+                <para><see cref="P:DevExpress.XtraRichEdit.API.Native.TableCell.LeftPadding"/>
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.XtraRichEdit.API.Native.TableCellPropertiesMask.NoWrap">
             <summary>
-                <para> </para>
+                <para><see cref="P:DevExpress.XtraRichEdit.API.Native.TableCellPropertiesBase.NoWrap"/>
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.XtraRichEdit.API.Native.TableCellPropertiesMask.PreferredWidth">
             <summary>
-                <para> </para>
+                <para><see cref="P:DevExpress.XtraRichEdit.API.Native.TableCell.PreferredWidth"/>
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.XtraRichEdit.API.Native.TableCellPropertiesMask.RightBorder">
             <summary>
-                <para> </para>
+                <para><see cref="P:DevExpress.XtraRichEdit.API.Native.TableCellBorders.Right"/>
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.XtraRichEdit.API.Native.TableCellPropertiesMask.RightPadding">
             <summary>
-                <para> </para>
+                <para><see cref="P:DevExpress.XtraRichEdit.API.Native.TableCell.RightPadding"/>
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.XtraRichEdit.API.Native.TableCellPropertiesMask.TopBorder">
             <summary>
-                <para> </para>
+                <para><see cref="P:DevExpress.XtraRichEdit.API.Native.TableCellBorders.Top"/>
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.XtraRichEdit.API.Native.TableCellPropertiesMask.TopLeftDiagonalBorder">
             <summary>
-                <para> </para>
+                <para> 0x40000
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.XtraRichEdit.API.Native.TableCellPropertiesMask.TopPadding">
             <summary>
-                <para> </para>
+                <para><see cref="P:DevExpress.XtraRichEdit.API.Native.TableCell.TopPadding"/>
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.XtraRichEdit.API.Native.TableCellPropertiesMask.TopRightDiagonalBorder">
             <summary>
-                <para> </para>
+                <para>0x80000
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.XtraRichEdit.API.Native.TableCellPropertiesMask.VerticalAlignment">
             <summary>
-                <para> </para>
+                <para><see cref="P:DevExpress.XtraRichEdit.API.Native.TableCell.VerticalAlignment"/>
+</para>
             </summary>
 
 
@@ -34439,7 +34888,8 @@
         <member name="T:DevExpress.XtraRichEdit.API.Layout.RangePermissionBoxCollection">
 
             <summary>
-                <para> </para>
+                <para>A collection of <see cref="T:DevExpress.XtraRichEdit.API.Layout.RangePermissionBox"/> elements.
+</para>
             </summary>
 
         </member>
@@ -34861,7 +35311,8 @@
         <member name="T:DevExpress.XtraRichEdit.API.Layout.LayoutTableRowCollection">
 
             <summary>
-                <para> </para>
+                <para>A collection of <see cref="T:DevExpress.XtraRichEdit.API.Layout.LayoutTableRow"/> elements.
+</para>
             </summary>
 
         </member>
@@ -34876,7 +35327,8 @@
         <member name="T:DevExpress.XtraRichEdit.API.Layout.LayoutTableCellCollection">
 
             <summary>
-                <para> </para>
+                <para>A collection of <see cref="T:DevExpress.XtraRichEdit.API.Layout.LayoutTableCell"/> elements.
+</para>
             </summary>
 
         </member>
@@ -35160,7 +35612,8 @@
         <member name="T:DevExpress.XtraRichEdit.API.Layout.LayoutPageCollection">
 
             <summary>
-                <para> </para>
+                <para>A collection of <see cref="T:DevExpress.XtraRichEdit.API.Layout.LayoutPage"/> elements.
+</para>
             </summary>
 
         </member>
@@ -35310,7 +35763,8 @@
         <member name="T:DevExpress.XtraRichEdit.API.Layout.LineNumberBoxCollection">
 
             <summary>
-                <para> </para>
+                <para>A collection of <see cref="T:DevExpress.XtraRichEdit.API.Layout.LineNumberBox"/> elements.
+</para>
             </summary>
 
         </member>
@@ -35921,7 +36375,7 @@
         </member>
         <member name="M:DevExpress.XtraRichEdit.MailMergeCustomSeparators.Assign(DevExpress.XtraRichEdit.MailMergeCustomSeparators)">
             <summary>
-                <para>Copies all settings from the options object passed as the parameter to the current object.
+                <para>Copies all settings from the object passed as the parameter to the current object.
 </para>
             </summary>
             <param name="other">
@@ -35986,6 +36440,22 @@
             </summary>
             <value>A string which will be recognized as a group separator.
 </value>
+
+
+        </member>
+        <member name="T:DevExpress.XtraRichEdit.API.Layout.HighlightAreaCollection">
+
+            <summary>
+                <para>A collection of <see cref="T:DevExpress.XtraRichEdit.API.Layout.HighlightAreaBox"/> elements.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.XtraRichEdit.API.Layout.HighlightAreaCollection.#ctor">
+            <summary>
+                <para>Initializes a new instance of the HighlightAreaCollection class with default settings.
+</para>
+            </summary>
 
 
         </member>
@@ -36101,10 +36571,27 @@
 
 
         </member>
+        <member name="T:DevExpress.XtraRichEdit.API.Layout.FieldHighlightAreaCollection">
+
+            <summary>
+                <para>A collection of <see cref="T:DevExpress.XtraRichEdit.API.Layout.FieldHighlightAreaBox"/> elements.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.XtraRichEdit.API.Layout.FieldHighlightAreaCollection.#ctor">
+            <summary>
+                <para>Initializes a new instance of the FieldHighlightAreaCollection class with default settings.
+</para>
+            </summary>
+
+
+        </member>
         <member name="T:DevExpress.XtraRichEdit.API.Layout.LayoutTableCollection">
 
             <summary>
-                <para> </para>
+                <para>A collection of <see cref="T:DevExpress.XtraRichEdit.API.Layout.LayoutTable"/> elements.
+</para>
             </summary>
 
         </member>
@@ -36205,6 +36692,22 @@
 		An <see cref="T:DevExpress.Utils.Commands.ICommandUIState"/> interface defining the state of a command.
 
             </param>
+
+
+        </member>
+        <member name="T:DevExpress.XtraRichEdit.API.Layout.CommentHighlightAreaCollection">
+
+            <summary>
+                <para>A collection of <see cref="T:DevExpress.XtraRichEdit.API.Layout.CommentHighlightAreaBox"/> elements.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.XtraRichEdit.API.Layout.CommentHighlightAreaCollection.#ctor">
+            <summary>
+                <para>Initializes a new instance of the CommentHighlightAreaCollection class with default settings.
+</para>
+            </summary>
 
 
         </member>
@@ -36367,6 +36870,22 @@
             </param>
             <returns>A <see cref="T:System.String"/> corresponding to the specified identifier.
 </returns>
+
+
+        </member>
+        <member name="T:DevExpress.XtraRichEdit.API.Layout.BookmarkBoxCollection">
+
+            <summary>
+                <para>A collection of <see cref="T:DevExpress.XtraRichEdit.API.Layout.BookmarkBox"/> elements.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.XtraRichEdit.API.Layout.BookmarkBoxCollection.#ctor">
+            <summary>
+                <para>Initializes a new instance of the BookmarkBoxCollection class with default settings.
+</para>
+            </summary>
 
 
         </member>
@@ -36534,10 +37053,119 @@
 
 
         </member>
+        <member name="T:DevExpress.XtraRichEdit.API.Layout.RowExtendedBoxes">
+
+            <summary>
+                <para>Container for collections of objects of the <see cref="T:DevExpress.XtraRichEdit.API.Layout.PlainTextBox"/> type and various <see cref="T:DevExpress.XtraRichEdit.API.Layout.LayoutType"/> characteristics. <see cref="F:DevExpress.XtraRichEdit.API.Layout.LayoutType.PlainTextBox"/> elements are not included.
+</para>
+            </summary>
+
+        </member>
+        <member name="P:DevExpress.XtraRichEdit.API.Layout.RowExtendedBoxes.BookmarkBoxes">
+            <summary>
+                <para>Returns <see cref="T:DevExpress.XtraRichEdit.API.Layout.BookmarkBox"/> layout elements contained in the <see cref="T:DevExpress.XtraRichEdit.API.Layout.LayoutRow"/>.
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.XtraRichEdit.API.Layout.BookmarkBoxCollection"/> of <see cref="T:DevExpress.XtraRichEdit.API.Layout.BookmarkBox"/> elements.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraRichEdit.API.Layout.RowExtendedBoxes.CommentBoxes">
+            <summary>
+                <para>Returns <see cref="T:DevExpress.XtraRichEdit.API.Layout.CommentBox"/> layout elements contained in the <see cref="T:DevExpress.XtraRichEdit.API.Layout.LayoutRow"/>.
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.XtraRichEdit.API.Layout.CommentBoxCollection"/> of <see cref="T:DevExpress.XtraRichEdit.API.Layout.CommentBox"/> elements.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraRichEdit.API.Layout.RowExtendedBoxes.CommentHighlightAreas">
+            <summary>
+                <para>Returns <see cref="T:DevExpress.XtraRichEdit.API.Layout.CommentHighlightAreaBox"/> layout elements contained in the <see cref="T:DevExpress.XtraRichEdit.API.Layout.LayoutRow"/>.
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.XtraRichEdit.API.Layout.CommentHighlightAreaCollection"/> of <see cref="T:DevExpress.XtraRichEdit.API.Layout.CommentHighlightAreaBox"/> elements.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraRichEdit.API.Layout.RowExtendedBoxes.FieldHighlightAreas">
+            <summary>
+                <para>Returns <see cref="T:DevExpress.XtraRichEdit.API.Layout.FieldHighlightAreaBox"/> layout elements contained in the <see cref="T:DevExpress.XtraRichEdit.API.Layout.LayoutRow"/>.
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.XtraRichEdit.API.Layout.FieldHighlightAreaCollection"/> of <see cref="T:DevExpress.XtraRichEdit.API.Layout.FieldHighlightAreaBox"/> elements.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraRichEdit.API.Layout.RowExtendedBoxes.HiddenTextUnderlineBoxes">
+            <summary>
+                <para>Returns <see cref="T:DevExpress.XtraRichEdit.API.Layout.HiddenTextUnderlineBox"/> layout elements contained in the <see cref="T:DevExpress.XtraRichEdit.API.Layout.LayoutRow"/>.
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.XtraRichEdit.API.Layout.HiddenTextUnderlineBoxCollection"/> of <see cref="T:DevExpress.XtraRichEdit.API.Layout.HiddenTextUnderlineBox"/> elements.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraRichEdit.API.Layout.RowExtendedBoxes.HighlightAreas">
+            <summary>
+                <para>Returns <see cref="T:DevExpress.XtraRichEdit.API.Layout.HighlightAreaBox"/> layout elements contained in the <see cref="T:DevExpress.XtraRichEdit.API.Layout.LayoutRow"/>.
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.XtraRichEdit.API.Layout.HighlightAreaCollection"/> of <see cref="T:DevExpress.XtraRichEdit.API.Layout.HighlightAreaBox"/> elements.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraRichEdit.API.Layout.RowExtendedBoxes.RangePermissionBoxes">
+            <summary>
+                <para>Returns <see cref="T:DevExpress.XtraRichEdit.API.Layout.RangePermissionBox"/> layout elements contained in the <see cref="T:DevExpress.XtraRichEdit.API.Layout.LayoutRow"/>.
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.XtraRichEdit.API.Layout.RangePermissionBoxCollection"/> of <see cref="T:DevExpress.XtraRichEdit.API.Layout.RangePermissionBox"/> elements.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraRichEdit.API.Layout.RowExtendedBoxes.RangePermissionHighlightAreas">
+            <summary>
+                <para>Returns <see cref="T:DevExpress.XtraRichEdit.API.Layout.RangePermissionHighlightAreaBox"/> layout elements contained in the <see cref="T:DevExpress.XtraRichEdit.API.Layout.LayoutRow"/>.
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.XtraRichEdit.API.Layout.RangePermissionHighlightAreaCollection"/> of <see cref="T:DevExpress.XtraRichEdit.API.Layout.RangePermissionHighlightAreaBox"/> elements.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraRichEdit.API.Layout.RowExtendedBoxes.Strikeouts">
+            <summary>
+                <para>Returns <see cref="T:DevExpress.XtraRichEdit.API.Layout.StrikeoutBox"/> layout elements contained in the <see cref="T:DevExpress.XtraRichEdit.API.Layout.LayoutRow"/>.
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.XtraRichEdit.API.Layout.StrikeoutBoxCollection"/> of <see cref="T:DevExpress.XtraRichEdit.API.Layout.StrikeoutBox"/> elements.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraRichEdit.API.Layout.RowExtendedBoxes.Underlines">
+            <summary>
+                <para>Returns <see cref="T:DevExpress.XtraRichEdit.API.Layout.UnderlineBox"/> layout elements contained in the <see cref="T:DevExpress.XtraRichEdit.API.Layout.LayoutRow"/>.
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.XtraRichEdit.API.Layout.UnderlineBoxCollection"/> of <see cref="T:DevExpress.XtraRichEdit.API.Layout.UnderlineBox"/> elements.
+</value>
+
+
+        </member>
         <member name="T:DevExpress.XtraRichEdit.API.Layout.LayoutRowCollection">
 
             <summary>
-                <para> </para>
+                <para>A collection of <see cref="T:DevExpress.XtraRichEdit.API.Layout.LayoutRow"/> elements.
+</para>
             </summary>
 
         </member>
@@ -36662,6 +37290,42 @@
                 <para>Defines the parameters of the <b>Page Setup</b> dialog window that are eligible to be changed.
 </para>
             </summary>
+
+        </member>
+        <member name="M:DevExpress.XtraRichEdit.Forms.PageSetupFormControllerParameters.#ctor(DevExpress.XtraRichEdit.IRichEditControl,DevExpress.XtraRichEdit.Forms.PageSetupInfo)">
+            <summary>
+                <para>Initializes a new instance of the PageSetupFormControllerParameters class with the specified settings.
+</para>
+            </summary>
+            <param name="control">
+		A Rich Edit control.
+
+            </param>
+            <param name="pageSetupInfo">
+		A <b>DevExpress.XtraRichEdit.Forms.PageSetupInfo</b> object containing information used to fill in editors of the <b>Page Setup</b> dialog.
+
+            </param>
+
+
+        </member>
+        <member name="P:DevExpress.XtraRichEdit.Forms.PageSetupFormControllerParameters.InitialTabPage">
+            <summary>
+                <para>Gets or sets the initial tab page of the <b>Page Setup</b> dialog.
+</para>
+            </summary>
+            <value>A <b>DevExpress.XtraRichEdit.Forms.PageSetupFormInitialTabPage</b> enumeration value that specifies the tab page of the Page Setup dialog.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraRichEdit.Forms.PageSetupFormControllerParameters.PageSetupInfo">
+            <summary>
+                <para>Provides access to the information contained in the dialog editors.
+</para>
+            </summary>
+            <value>A <b>DevExpress.XtraRichEdit.Forms.PageSetupInfo</b> object that is the container for values of the dialog editors.
+</value>
+
 
         </member>
         <member name="T:DevExpress.XtraRichEdit.TableStyleFormShowingEventHandler">
@@ -37131,9 +37795,36 @@
 
 
         </member>
+        <member name="M:DevExpress.XtraRichEdit.RichEditView.GetDocumentLayoutPosition(System.Drawing.Point)">
+            <summary>
+                <para>Obtains the page index and the layout position on the page for the specified point.
+</para>
+            </summary>
+            <param name="point">
+		A <see cref="T:System.Drawing.Point"/> object that is the point in control coordinates.
+
+
+            </param>
+            <returns>A <see cref="T:DevExpress.XtraRichEdit.PageLayoutPosition"/> object containing the page index and the position on a page.
+
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.XtraRichEdit.RichEditView.GetVisiblePageLayoutInfos">
+            <summary>
+                <para>Obtains information on the layout of visible pages.
+
+</para>
+            </summary>
+            <returns>A <see cref="T:System.Collections.Generic.List`1[[DevExpress.XtraRichEdit.PageLayoutInfo]]"/> list of layout information on individual pages.
+</returns>
+
+
+        </member>
         <member name="M:DevExpress.XtraRichEdit.RichEditView.GetVisiblePagesRange">
             <summary>
-                <para>Gets the range encompassing all pages that are currently visible in the View.
+                <para>Gets the range encompassing all pages which are shown in the View.
 </para>
             </summary>
             <returns>A <see cref="T:DevExpress.XtraRichEdit.API.Native.DocumentRange"/> that is the range containing visible pages.
@@ -37189,6 +37880,14 @@
                 <para>Interface of a rich text engine providing the essential Rich Editor functionality.
 </para>
             </summary>
+
+        </member>
+        <member name="E:DevExpress.XtraRichEdit.IRichEditDocumentServer.AfterExport">
+            <summary>
+                <para>Occurs after the document is successfully exported.
+</para>
+            </summary>
+
 
         </member>
         <member name="E:DevExpress.XtraRichEdit.IRichEditDocumentServer.BeforeExport">
@@ -37849,7 +38548,8 @@
         <member name="T:DevExpress.XtraRichEdit.API.Layout.PlainTextBox">
 
             <summary>
-                <para> </para>
+                <para>Layout elements related to text runs in a line.
+</para>
             </summary>
 
         </member>
@@ -37867,9 +38567,11 @@
         </member>
         <member name="P:DevExpress.XtraRichEdit.API.Layout.PlainTextBox.Text">
             <summary>
-                <para> </para>
+                <para>Returns the text displayed in the current <see cref="T:DevExpress.XtraRichEdit.API.Layout.PlainTextBox"/> element.
+</para>
             </summary>
-            <value> </value>
+            <value>A string that is the text displayed in the layout element.
+</value>
 
 
         </member>
@@ -37916,7 +38618,8 @@
         <member name="T:DevExpress.XtraRichEdit.API.Layout.LayoutColumn">
 
             <summary>
-                <para> </para>
+                <para>Layout element that relates to the column in the section. 
+</para>
             </summary>
 
         </member>
@@ -37934,25 +38637,31 @@
         </member>
         <member name="P:DevExpress.XtraRichEdit.API.Layout.LayoutColumn.LineNumbers">
             <summary>
-                <para> </para>
+                <para>Returns line numbers for lines in a column on a page.
+</para>
             </summary>
-            <value> </value>
+            <value>A <a href="ms-xhelp:///?Id=T%3aDevExpress.XtraRichEdit.API.Layout.LineNumberBoxCollection">LineNumberBoxCollection</a> containing <see cref="T:DevExpress.XtraRichEdit.API.Layout.LineNumberBox"/> elements for all lines in a column on the page.
+</value>
 
 
         </member>
         <member name="P:DevExpress.XtraRichEdit.API.Layout.LayoutColumn.Rows">
             <summary>
-                <para> </para>
+                <para>Returns lines of a current column.
+</para>
             </summary>
-            <value> </value>
+            <value>A <a href="ms-xhelp:///?Id=T%3aDevExpress.XtraRichEdit.API.Layout.LayoutRowCollection">LayoutRowCollection</a> containing <see cref="T:DevExpress.XtraRichEdit.API.Layout.LayoutRow"/> elements for the current column on the page.
+</value>
 
 
         </member>
         <member name="P:DevExpress.XtraRichEdit.API.Layout.LayoutColumn.Tables">
             <summary>
-                <para> </para>
+                <para>Returns tables contained within the current column on a page.
+</para>
             </summary>
-            <value> </value>
+            <value>A <a href="ms-xhelp:///?Id=T%3aDevExpress.XtraRichEdit.API.Layout.LayoutTableCollection">LayoutTableCollection</a> containing tables in a current column on the page.
+</value>
 
 
         </member>
@@ -37966,10 +38675,27 @@
 
 
         </member>
+        <member name="T:DevExpress.XtraRichEdit.API.Layout.CommentBoxCollection">
+
+            <summary>
+                <para>A collection of <see cref="T:DevExpress.XtraRichEdit.API.Layout.CommentBox"/> elements.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.XtraRichEdit.API.Layout.CommentBoxCollection.#ctor">
+            <summary>
+                <para>Initializes a new instance of the CommentBoxCollection class with default settings.
+</para>
+            </summary>
+
+
+        </member>
         <member name="T:DevExpress.XtraRichEdit.API.Layout.LayoutFooter">
 
             <summary>
-                <para> </para>
+                <para>Layout element that relates to the document's footer. 
+</para>
             </summary>
 
         </member>
@@ -38035,7 +38761,8 @@
         <member name="T:DevExpress.XtraRichEdit.API.Layout.LayoutFloatingObjectCollection">
 
             <summary>
-                <para> </para>
+                <para>A collection of <see cref="T:DevExpress.XtraRichEdit.API.Layout.LayoutFloatingObject"/> elements.
+</para>
             </summary>
 
         </member>
@@ -38152,7 +38879,8 @@
         <member name="T:DevExpress.XtraRichEdit.API.Layout.LayoutHeader">
 
             <summary>
-                <para> </para>
+                <para>Layout element that relates to the document's header. 
+</para>
             </summary>
 
         </member>
@@ -39349,7 +40077,8 @@
         <member name="T:DevExpress.XtraRichEdit.API.Layout.LayoutCommentCollection">
 
             <summary>
-                <para> </para>
+                <para>A collection of <see cref="T:DevExpress.XtraRichEdit.API.Layout.LayoutComment"/> elements.
+</para>
             </summary>
 
         </member>
@@ -39582,7 +40311,8 @@
         <member name="T:DevExpress.XtraRichEdit.API.Layout.LayoutElement">
 
             <summary>
-                <para> </para>
+                <para>Base interface for layout elements.
+</para>
             </summary>
 
         </member>
@@ -39610,28 +40340,35 @@
         </member>
         <member name="M:DevExpress.XtraRichEdit.API.Layout.LayoutElement.GetParentByType``1">
             <summary>
-                <para> </para>
+                <para>Returns the parent layout element of the type designated by the specified generic type parameter.
+</para>
             </summary>
-            <returns> </returns>
+            <returns>The layout element of the type designated by the specified generic type parameter.
+</returns>
 
 
         </member>
         <member name="M:DevExpress.XtraRichEdit.API.Layout.LayoutElement.GetRelativeBounds(DevExpress.XtraRichEdit.API.Layout.LayoutElement)">
             <summary>
-                <para> </para>
+                <para>Gets coordinates of the specified layout element relative to its container. 
+</para>
             </summary>
             <param name="element">
-		 
+		A <see cref="T:DevExpress.XtraRichEdit.API.Layout.LayoutElement"/> descendant that is the element whose relative position is obtained.
+
             </param>
-            <returns> </returns>
+            <returns>A <see cref="T:System.Drawing.Rectangle"/> structure specifying the coordinates of the layout element.
+</returns>
 
 
         </member>
         <member name="P:DevExpress.XtraRichEdit.API.Layout.LayoutElement.Parent">
             <summary>
-                <para> </para>
+                <para>Returns the element which is one step higher in the layout hierarchy.
+</para>
             </summary>
-            <value> </value>
+            <value>A <see cref="T:DevExpress.XtraRichEdit.API.Layout.LayoutElement"/> descendant which is the parent of the current layout element.
+</value>
 
 
         </member>
@@ -39818,17 +40555,21 @@
         </member>
         <member name="P:DevExpress.XtraRichEdit.PrintingOptions.EnableCommentBackgroundOnPrint">
             <summary>
-                <para> </para>
+                <para>Gets or sets whether to print the background of the document's margin containing comment balloons.
+</para>
             </summary>
-            <value> </value>
+            <value><b>True</b>, to print the background of the document's margin; otherwise, <b>false</b>.
+</value>
 
 
         </member>
         <member name="P:DevExpress.XtraRichEdit.PrintingOptions.EnableCommentFillOnPrint">
             <summary>
-                <para> </para>
+                <para>Gets or sets whether to print the background color of the comment balloons.
+</para>
             </summary>
-            <value> </value>
+            <value><b>True</b>, to print the comment balloon background; otherwise, <b>false</b>.
+</value>
 
 
         </member>
@@ -41766,7 +42507,8 @@
         <member name="T:DevExpress.XtraRichEdit.API.Layout.LayoutPage">
 
             <summary>
-                <para> </para>
+                <para>A page of the document layout.
+</para>
             </summary>
 
         </member>
@@ -41804,23 +42546,27 @@
         </member>
         <member name="P:DevExpress.XtraRichEdit.API.Layout.LayoutPage.FloatingObjects">
             <summary>
-                <para> </para>
+                <para>Returns floating objects located in the current page.
+</para>
             </summary>
-            <value> </value>
+            <value>A <see cref="T:DevExpress.XtraRichEdit.API.Layout.LayoutFloatingObjectCollection"/> containing floating objects of the current page.
+</value>
 
 
         </member>
         <member name="P:DevExpress.XtraRichEdit.API.Layout.LayoutPage.Footer">
             <summary>
-                <para> </para>
+                <para>Gets the footer of the current page.
+</para>
             </summary>
-            <value> </value>
+            <value>A <see cref="T:DevExpress.XtraRichEdit.API.Layout.LayoutFooter"/> object that is the page footer.
+</value>
 
 
         </member>
         <member name="P:DevExpress.XtraRichEdit.API.Layout.LayoutPage.ForegroundFloatingObjects">
             <summary>
-                <para>Provides access to the collection of layouts related to the floating objects located behind the text. 
+                <para>Provides access to the collection of layouts related to the floating objects located in front of the text. 
 </para>
             </summary>
             <value>A collection of <see cref="T:DevExpress.XtraRichEdit.API.Layout.LayoutFloatingObject"/> elements.
@@ -41830,25 +42576,31 @@
         </member>
         <member name="P:DevExpress.XtraRichEdit.API.Layout.LayoutPage.Header">
             <summary>
-                <para> </para>
+                <para>Gets the header of the current page.
+</para>
             </summary>
-            <value> </value>
+            <value>A <see cref="T:DevExpress.XtraRichEdit.API.Layout.LayoutHeader"/> object that is the page header.
+</value>
 
 
         </member>
         <member name="P:DevExpress.XtraRichEdit.API.Layout.LayoutPage.Index">
             <summary>
-                <para> </para>
+                <para>Gets the index of the current page in the document layout.
+</para>
             </summary>
-            <value> </value>
+            <value>An integer that is he page index.
+</value>
 
 
         </member>
         <member name="P:DevExpress.XtraRichEdit.API.Layout.LayoutPage.PageAreas">
             <summary>
-                <para> </para>
+                <para>Gets page areas of the current page.
+</para>
             </summary>
-            <value> </value>
+            <value>A <see cref="T:DevExpress.XtraRichEdit.API.Layout.LayoutPageAreaCollection"/> containing page areas.
+</value>
 
 
         </member>
@@ -42224,7 +42976,8 @@
         <member name="T:DevExpress.XtraRichEdit.API.Layout.CommentHighlightAreaBox">
 
             <summary>
-                <para> </para>
+                <para>Layout element that relates to the highlighted range to which a comment is assigned.
+</para>
             </summary>
 
         </member>
@@ -43173,7 +43926,8 @@ Currently not supported.
         </member>
         <member name="M:DevExpress.XtraRichEdit.API.Native.TablePropertiesBase.Reset">
             <summary>
-                <para> </para>
+                <para>Resets the table properties to the properties specified by the underlying table style or to default properties.
+</para>
             </summary>
 
 

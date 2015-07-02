@@ -3869,9 +3869,11 @@ Use the <see cref="P:DevExpress.Utils.FlyoutPanelOptions.HorzIndent"/> and <see 
         </member>
         <member name="M:DevExpress.Utils.Menu.DXPopupMenu.GetIsRightToLeft">
             <summary>
-                <para> </para>
+                <para>Returns whether the menu items are aligned to support locales using right-to-left fonts.
+</para>
             </summary>
-            <returns> </returns>
+            <returns><b>true</b> if menu items are aligned to support locales using right-to-left fonts; otherwise, <b>false</b>.
+</returns>
 
 
         </member>
@@ -3885,9 +3887,11 @@ Use the <see cref="P:DevExpress.Utils.FlyoutPanelOptions.HorzIndent"/> and <see 
         </member>
         <member name="P:DevExpress.Utils.Menu.DXPopupMenu.IsRightToLeft">
             <summary>
-                <para> </para>
+                <para>Gets or sets whether menu items are aligned to support locales using right-to-left fonts.
+</para>
             </summary>
-            <value> </value>
+            <value><b>true</b> if menu items are aligned to support locales using right-to-left fonts; otherwise, <b>false</b>.
+</value>
 
 
         </member>
@@ -4488,9 +4492,11 @@ Use the <see cref="P:DevExpress.Utils.FlyoutPanelOptions.HorzIndent"/> and <see 
         </member>
         <member name="M:DevExpress.Utils.Menu.DXMenuItem.GetIsRightToLeft">
             <summary>
-                <para> </para>
+                <para>Returns whether the current item is aligned to support locales using right-to-left fonts.
+</para>
             </summary>
-            <returns> </returns>
+            <returns><b>true</b> if the current item is aligned to support locales using right-to-left fonts; otherwise, <b>false</b>.
+</returns>
 
 
         </member>
@@ -4516,9 +4522,11 @@ Use the <see cref="P:DevExpress.Utils.FlyoutPanelOptions.HorzIndent"/> and <see 
         </member>
         <member name="P:DevExpress.Utils.Menu.DXMenuItem.IsRightToLeft">
             <summary>
-                <para> </para>
+                <para>Gets or sets whether the menu item is aligned to support locales using right-to-left fonts.
+</para>
             </summary>
-            <value> </value>
+            <value><b>true</b> if the menu item is aligned to support locales using right-to-left fonts; otherwise, <b>false</b>.
+</value>
 
 
         </member>
@@ -5561,26 +5569,21 @@ Use the <see cref="P:DevExpress.Utils.FlyoutPanelOptions.HorzIndent"/> and <see 
         </member>
         <member name="M:DevExpress.Utils.Images.Insert(System.String,System.String,System.String,System.Int32)">
             <summary>
-                <para>Adds an image from the target assembly to the specific slot of this Images collection.
-</para>
+                <para> </para>
             </summary>
             <param name="assemblyName">
-		A String value that is the name of the assembly containing the target image.
-
+		 
             </param>
             <param name="name">
-		A String value that is the target image name.
-
-
+		 
             </param>
             <param name="path">
-		A String value that is the path to the assembly.
-
+		 
             </param>
             <param name="index">
-		An Int32 value that is the place in the Images collection to which the target image should be inserted.
-
+		 
             </param>
+            <returns> </returns>
 
 
         </member>
@@ -5801,7 +5804,7 @@ Use the <see cref="P:DevExpress.Utils.FlyoutPanelOptions.HorzIndent"/> and <see 
         <member name="T:DevExpress.Utils.VisualEffects.Badge">
 
             <summary>
-                <para>A simple element within the <see cref="T:DevExpress.Utils.VisualEffects.AdornerElementsManager"/>.
+                <para>A simple element within the <see cref="T:DevExpress.Utils.VisualEffects.AdornerUIManager"/>.
 </para>
             </summary>
 
@@ -6077,9 +6080,11 @@ Use the <see cref="P:DevExpress.Utils.FlyoutPanelOptions.HorzIndent"/> and <see 
         </member>
         <member name="P:DevExpress.Utils.TextOptions.RightToLeft">
             <summary>
-                <para> </para>
+                <para>Gets or sets whether the text is displayed from right to left.
+</para>
             </summary>
-            <value> </value>
+            <value><b>true</b> if the text is displayed from right to left; otherwise, <b>false</b>.
+</value>
 
 
         </member>
@@ -7588,88 +7593,6 @@ For the XtraPivotGrid control, this option acts as the <see cref="F:DevExpress.U
 
 
         </member>
-        <member name="T:DevExpress.Utils.VisualEffects.AdornerElementsManager">
-
-            <summary>
-                <para>An adorner manager.
-</para>
-            </summary>
-
-        </member>
-        <member name="M:DevExpress.Utils.VisualEffects.AdornerElementsManager.#ctor">
-            <summary>
-                <para> </para>
-            </summary>
-
-
-        </member>
-        <member name="P:DevExpress.Utils.VisualEffects.AdornerElementsManager.BadgeAppearance">
-            <summary>
-                <para> </para>
-            </summary>
-            <value> </value>
-
-
-        </member>
-        <member name="P:DevExpress.Utils.VisualEffects.AdornerElementsManager.BadgeProperties">
-            <summary>
-                <para> </para>
-            </summary>
-            <value> </value>
-
-
-        </member>
-        <member name="M:DevExpress.Utils.VisualEffects.AdornerElementsManager.BeginUpdate">
-            <summary>
-                <para> </para>
-            </summary>
-
-
-        </member>
-        <member name="M:DevExpress.Utils.VisualEffects.AdornerElementsManager.CancelUpdate">
-            <summary>
-                <para> </para>
-            </summary>
-
-
-        </member>
-        <member name="P:DevExpress.Utils.VisualEffects.AdornerElementsManager.Elements">
-            <summary>
-                <para> </para>
-            </summary>
-            <value> </value>
-
-
-        </member>
-        <member name="M:DevExpress.Utils.VisualEffects.AdornerElementsManager.EndUpdate">
-            <summary>
-                <para> </para>
-            </summary>
-
-
-        </member>
-        <member name="M:DevExpress.Utils.VisualEffects.AdornerElementsManager.Hide">
-            <summary>
-                <para> </para>
-            </summary>
-
-
-        </member>
-        <member name="P:DevExpress.Utils.VisualEffects.AdornerElementsManager.Owner">
-            <summary>
-                <para> </para>
-            </summary>
-            <value> </value>
-
-
-        </member>
-        <member name="M:DevExpress.Utils.VisualEffects.AdornerElementsManager.Show">
-            <summary>
-                <para> </para>
-            </summary>
-
-
-        </member>
         <member name="T:DevExpress.Utils.Taskbar.JumpListCategoryCollection">
 
             <summary>
@@ -7760,11 +7683,9 @@ For the XtraPivotGrid control, this option acts as the <see cref="F:DevExpress.U
         </member>
         <member name="P:DevExpress.XtraEditors.XtraUserControl.LookAndFeel">
             <summary>
-                <para>Provides access to the settings which control the user control's look and feel. 
-</para>
+                <para> </para>
             </summary>
-            <value>A <see cref="T:DevExpress.LookAndFeel.UserLookAndFeel"/> object whose properties specify the user control's look and feel.
-</value>
+            <value> </value>
 
 
         </member>
@@ -7959,6 +7880,13 @@ For the XtraPivotGrid control, this option acts as the <see cref="F:DevExpress.U
 
 
         </member>
+        <member name="E:DevExpress.XtraEditors.XtraForm.FormLayoutChanged">
+            <summary>
+                <para> </para>
+            </summary>
+
+
+        </member>
         <member name="P:DevExpress.XtraEditors.XtraForm.HtmlImages">
             <summary>
                 <para>Gets or sets a collection of images to be inserted into the form's caption using HTML tags. This property is in effect when the Form Title Bar Skinning feature is enabled.
@@ -8141,16 +8069,6 @@ For the XtraPivotGrid control, this option acts as the <see cref="F:DevExpress.U
 
 </para>
             </summary>
-
-
-        </member>
-        <member name="P:DevExpress.XtraEditors.XtraForm.RightToLeftLayout">
-            <summary>
-                <para>This property is not supported by the XtraForm class and its descendants.
-</para>
-            </summary>
-            <value> 
-</value>
 
 
         </member>
@@ -8865,9 +8783,12 @@ For the XtraPivotGrid control, this option acts as the <see cref="F:DevExpress.U
         </member>
         <member name="P:DevExpress.XtraEditors.GroupControl.AllowBorderColorBlending">
             <summary>
-                <para> </para>
+                <para>Gets or sets whether to colorize the group caption and border according to the <b>BorderColor</b> setting in skinning paint schemes.
+
+</para>
             </summary>
-            <value> </value>
+            <value><b>true</b>, if the group caption and border should be colorized according to its <b>BorderColor</b> settings in skinning paint schemes; otherwise, <b>false</b>.
+</value>
 
 
         </member>
@@ -9212,452 +9133,95 @@ For the XtraPivotGrid control, this option acts as the <see cref="F:DevExpress.U
 
 
         </member>
-        <member name="T:DevExpress.Utils.DXMouseEventArgs">
+        <member name="T:DevExpress.Utils.VisualEffects.AdornerUIManager">
 
             <summary>
-                <para>Provides data for mouse events.
+                <para>The Adorner UI Manager.
 </para>
             </summary>
 
         </member>
-        <member name="M:DevExpress.Utils.DXMouseEventArgs.#ctor(System.Windows.Forms.MouseButtons,System.Int32,System.Int32,System.Int32,System.Int32)">
-            <summary>
-                <para>Initializes a new instance of the <see cref="T:DevExpress.Utils.DXMouseEventArgs"/> class with the specified parameters.
-</para>
-            </summary>
-            <param name="buttons">
-		A <see cref="T:System.Windows.Forms.MouseButtons"/> enumeration value that defines which mouse button was pressed. This value is assigned to the <see cref="P:System.Windows.Forms.MouseEventArgs.Button"/> property.
-
-            </param>
-            <param name="clicks">
-		An integer value which specifies the number of times the mouse button was pressed and released. This value is assigned to the <see cref="P:System.Windows.Forms.MouseEventArgs.Clicks"/> property.
-
-            </param>
-            <param name="x">
-		An integer value which specifies the x-coordinate of a mouse click, in pixels. This value is assigned to the <see cref="P:System.Windows.Forms.MouseEventArgs.X"/> property.
-
-            </param>
-            <param name="y">
-		An integer value which specifies the y-coordinate of a mouse click, in pixels. This value is assigned to the <see cref="P:System.Windows.Forms.MouseEventArgs.Y"/> property.
-
-            </param>
-            <param name="delta">
-		An integer value which specifies a signed count of the number of detents the mouse wheel has rotated. This value is assigned to the <see cref="P:System.Windows.Forms.MouseEventArgs.Delta"/> property.
-
-
-            </param>
-
-
-        </member>
-        <member name="M:DevExpress.Utils.DXMouseEventArgs.#ctor(System.Windows.Forms.MouseButtons,System.Int32,System.Int32,System.Int32,System.Int32,System.Boolean)">
-            <summary>
-                <para>Initializes a new instance of the <see cref="T:DevExpress.Utils.DXMouseEventArgs"/> class.
-</para>
-            </summary>
-            <param name="buttons">
-		A <see cref="T:System.Windows.Forms.MouseButtons"/> enumeration value that defines which mouse button was pressed. This value is assigned to the <see cref="P:System.Windows.Forms.MouseEventArgs.Button"/> property.
-
-            </param>
-            <param name="clicks">
-		An integer value which specifies the number of times the mouse button was pressed and released. This value is assigned to the <see cref="P:System.Windows.Forms.MouseEventArgs.Clicks"/> property.
-
-            </param>
-            <param name="x">
-		An integer value which specifies the x-coordinate of a mouse click, in pixels. This value is assigned to the <see cref="P:System.Windows.Forms.MouseEventArgs.X"/> property.
-
-            </param>
-            <param name="y">
-		An integer value which specifies the y-coordinate of a mouse click, in pixels. This value is assigned to the <see cref="P:System.Windows.Forms.MouseEventArgs.Y"/> property.
-
-            </param>
-            <param name="delta">
-		An integer value which specifies a signed count of the number of detents the mouse wheel has rotated. This value is assigned to the <see cref="P:System.Windows.Forms.MouseEventArgs.Delta"/> property.
-
-            </param>
-            <param name="handled">
-		<b>true</b> if the event hasn't been handled by a control; otherwise, <b>false</b>. This value is assigned to the <see cref="P:DevExpress.Utils.DXMouseEventArgs.Handled"/> property.
-
-            </param>
-
-
-        </member>
-        <member name="M:DevExpress.Utils.DXMouseEventArgs.GetMouseArgs(System.Windows.Forms.MouseEventArgs)">
-            <summary>
-                <para>Converts the <see cref="T:System.Windows.Forms.MouseEventArgs"/> object passed as a parameter to a <see cref="T:DevExpress.Utils.DXMouseEventArgs"/> object.
-</para>
-            </summary>
-            <param name="eventArgs">
-		A <see cref="T:System.Windows.Forms.MouseEventArgs"/> object which contains data for the <b>MouseUp</b>, <b>MouseDown</b>, and <b>MouseMove</b> events.
-
-            </param>
-            <returns>A <see cref="T:DevExpress.Utils.DXMouseEventArgs"/> object which provides data for the mouse events.
-</returns>
-
-
-        </member>
-        <member name="M:DevExpress.Utils.DXMouseEventArgs.GetMouseArgs(System.Windows.Forms.Control,System.EventArgs)">
-            <summary>
-                <para>Converts the <see cref="T:System.Windows.Forms.MouseEventArgs"/> object passed as a parameter to a <see cref="T:DevExpress.Utils.DXMouseEventArgs"/> object.
-</para>
-            </summary>
-            <param name="control">
-		A <see cref="T:System.Windows.Forms.Control"/> descendant.
-
-            </param>
-            <param name="eventArgs">
-		A <see cref="T:System.Windows.Forms.MouseEventArgs"/> object which contains data for the mouse events.
-
-            </param>
-            <returns>A <see cref="T:DevExpress.Utils.DXMouseEventArgs"/> object which provides data for the mouse events.
-</returns>
-
-
-        </member>
-        <member name="P:DevExpress.Utils.DXMouseEventArgs.Handled">
-            <summary>
-                <para>Gets or sets a value specifying whether an event has been handled.
-</para>
-            </summary>
-            <value><b>true</b> if the event hasn't been handled by a control; otherwise, <b>false</b>.
-</value>
-
-
-        </member>
-        <member name="P:DevExpress.Utils.DXMouseEventArgs.IsHMouseWheel">
-            <summary>
-                <para>This member supports the internal infrastructure, and is not intended to be used directly from your code.
-</para>
-            </summary>
-            <value> 
-</value>
-
-
-        </member>
-        <member name="M:DevExpress.Utils.DXMouseEventArgs.Sync">
-            <summary>
-                <para>For internal use.
-</para>
-            </summary>
-
-
-        </member>
-        <member name="T:DevExpress.Utils.BaseAppearanceCollection">
-
-            <summary>
-                <para>Serves as a base for the classes that provide the appearance settings used to paint DevExpress .NET controls.
-</para>
-            </summary>
-
-        </member>
-        <member name="M:DevExpress.Utils.BaseAppearanceCollection.#ctor">
-            <summary>
-                <para>Initializes a new instance of the <see cref="T:DevExpress.Utils.BaseAppearanceCollection"/> class.
-</para>
-            </summary>
-
-
-        </member>
-        <member name="M:DevExpress.Utils.BaseAppearanceCollection.Assign(DevExpress.Utils.BaseAppearanceCollection)">
-            <summary>
-                <para>Copies the settings from the object passed as the parameter.
-</para>
-            </summary>
-            <param name="source">
-		A <see cref="T:DevExpress.Utils.BaseAppearanceCollection"/> descendant representing the source of the operation. If <b>null</b> (<b>Nothing</b> in Visual Basic) this method does nothing.
-
-            </param>
-
-
-        </member>
-        <member name="M:DevExpress.Utils.BaseAppearanceCollection.AssignInternal(DevExpress.Utils.BaseAppearanceCollection)">
-            <summary>
-                <para>Copies the settings from the object passed as the parameter without raising the <see cref="E:DevExpress.Utils.BaseAppearanceCollection.Changed"/> event.
-</para>
-            </summary>
-            <param name="source">
-		A <see cref="T:DevExpress.Utils.BaseAppearanceCollection"/> descendant representing the source of the operation. If <b>null</b> (<b>Nothing</b> in Visual Basic) this method does nothing.
-
-            </param>
-
-
-        </member>
-        <member name="M:DevExpress.Utils.BaseAppearanceCollection.BeginUpdate">
-            <summary>
-                <para>Locks the BaseAppearanceCollection, preventing change notifications (and visual updates) from being raised by the object until the <b>EndUpdate</b> or <b>CancelUpdate</b> method is called.
-
-
-</para>
-            </summary>
-
-
-        </member>
-        <member name="M:DevExpress.Utils.BaseAppearanceCollection.CancelUpdate">
-            <summary>
-                <para>Unlocks the BaseAppearanceCollection object after it has been locked by the <b>BeginUpdate</b> method, without causing an immediate visual update.
-</para>
-            </summary>
-
-
-        </member>
-        <member name="E:DevExpress.Utils.BaseAppearanceCollection.Changed">
-            <summary>
-                <para>Fires when the collection is changed.
-
-</para>
-            </summary>
-
-
-        </member>
-        <member name="M:DevExpress.Utils.BaseAppearanceCollection.Combine(DevExpress.Utils.BaseAppearanceCollection,DevExpress.Utils.AppearanceDefaultInfo[])">
-            <summary>
-                <para>Copies the activated appearance settings of the object passed as the parameter to the current object, any properties that aren't activated are set to the value in the default appearance object.
-</para>
-            </summary>
-            <param name="appearances">
-		A <see cref="T:DevExpress.Utils.BaseAppearanceCollection"/> descendant representing the source of the operation.
-
-            </param>
-            <param name="defaults">
-		An array of DevExpress.Utils.AppearanceDefaultInfo objects which represent the default appearance settings.
-
-            </param>
-
-
-        </member>
-        <member name="M:DevExpress.Utils.BaseAppearanceCollection.Combine(DevExpress.Utils.BaseAppearanceCollection,DevExpress.Utils.AppearanceDefaultInfo[],System.Boolean)">
-            <summary>
-                <para>Copies the activated appearance settings of the object passed as the parameter and activates their corresponding options, any properties not activated are set to the value in the default appearance object.
-</para>
-            </summary>
-            <param name="appearances">
-		A <see cref="T:DevExpress.Utils.BaseAppearanceCollection"/> descendant representing the source of the operation.
-
-            </param>
-            <param name="defaults">
-		An array of DevExpress.Utils.AppearanceDefaultInfo objects which represent the default appearance settings.
-
-            </param>
-            <param name="setDefaultUseFlag">
-		<b>true</b> to enable options which correspond to the activated appearance settings; otherwise, <b>false</b>.
-
-            </param>
-
-
-        </member>
-        <member name="M:DevExpress.Utils.BaseAppearanceCollection.Dispose">
-            <summary>
-                <para>Releases all the resources used by the current object. 
-</para>
-            </summary>
-
-
-        </member>
-        <member name="M:DevExpress.Utils.BaseAppearanceCollection.EndUpdate">
-            <summary>
-                <para>Unlocks the BaseAppearanceCollection object after a call to the <b>BeginUpdate</b> method and causes an immediate visual update.
-
-
-</para>
-            </summary>
-
-
-        </member>
-        <member name="M:DevExpress.Utils.BaseAppearanceCollection.GetAppearance(System.String)">
-            <summary>
-                <para>Gets an appearance object contained within the collection by its name.
-</para>
-            </summary>
-            <param name="name">
-		A <see cref="T:System.String"/> value specifying the name of the required appearance object.
-
-            </param>
-            <returns>The <see cref="T:DevExpress.Utils.AppearanceObject"/> object within the collection which has the specified name.
-</returns>
-
-
-        </member>
-        <member name="M:DevExpress.Utils.BaseAppearanceCollection.GetEnumerator">
-            <summary>
-                <para>Returns an <see cref="T:System.Collections.IDictionaryEnumerator"/> that can iterate through the hashtable. 
-</para>
-            </summary>
-            <returns>An <see cref="T:System.Collections.IDictionaryEnumerator"/> for the hashtable.
-</returns>
-
-
-        </member>
-        <member name="P:DevExpress.Utils.BaseAppearanceCollection.IsDisposed">
-            <summary>
-                <para>Gets whether the current object has been disposed of.
-</para>
-            </summary>
-            <value><b>true</b> if the current object has been disposed of; otherwise, <b>false</b>.
-</value>
-
-
-        </member>
-        <member name="P:DevExpress.Utils.BaseAppearanceCollection.IsLoading">
-            <summary>
-                <para>Indicates whether the collection's owner is currently being initialized.
-</para>
-            </summary>
-            <value><b>false</b> always.
-</value>
-
-
-        </member>
-        <member name="E:DevExpress.Utils.BaseAppearanceCollection.PaintChanged">
-            <summary>
-                <para>Occurs when specific settings that control the text appearance are changed.
-</para>
-            </summary>
-
-
-        </member>
-        <member name="M:DevExpress.Utils.BaseAppearanceCollection.Reset">
-            <summary>
-                <para>Resets the properties of all the appearance objects within the collection to their default values. 
-</para>
-            </summary>
-
-
-        </member>
-        <member name="M:DevExpress.Utils.BaseAppearanceCollection.RestoreLayoutFromRegistry(System.String)">
-            <summary>
-                <para>Restores the appearance settings stored at the specified system registry path. 
-</para>
-            </summary>
-            <param name="path">
-		A string value specifying the system registry path. If the specified path doesn't exist, calling this method has no effect.
-
-            </param>
-
-
-        </member>
-        <member name="M:DevExpress.Utils.BaseAppearanceCollection.RestoreLayoutFromStream(System.IO.Stream)">
-            <summary>
-                <para>Restores the appearance settings from the specified stream.
-</para>
-            </summary>
-            <param name="stream">
-		A <see cref="T:System.IO.Stream"/> descendant from which the appearance settings are read.
-
-            </param>
-
-
-        </member>
-        <member name="M:DevExpress.Utils.BaseAppearanceCollection.RestoreLayoutFromXml(System.String)">
-            <summary>
-                <para>Loads the appearance settings stored in the specified XML file.
-</para>
-            </summary>
-            <param name="xmlFile">
-		A string value specifying the path to the XML file which contains the appearance settings to be loaded. If the specified file doesn't exist, an exception is raised.
-
-            </param>
-
-
-        </member>
-        <member name="M:DevExpress.Utils.BaseAppearanceCollection.SaveLayoutToRegistry(System.String)">
-            <summary>
-                <para>Saves the appearance settings to a system registry path.
-</para>
-            </summary>
-            <param name="path">
-		A string value specifying the system registry path to which the appearance settings are saved.
-
-            </param>
-
-
-        </member>
-        <member name="M:DevExpress.Utils.BaseAppearanceCollection.SaveLayoutToStream(System.IO.Stream)">
-            <summary>
-                <para>Saves the appearance settings to a specific stream.
-</para>
-            </summary>
-            <param name="stream">
-		A <see cref="T:System.IO.Stream"/> descendant to which the appearance settings are written.
-
-            </param>
-
-
-        </member>
-        <member name="M:DevExpress.Utils.BaseAppearanceCollection.SaveLayoutToXml(System.String)">
-            <summary>
-                <para>Saves the appearance settings to a specific XML file. 
-</para>
-            </summary>
-            <param name="xmlFile">
-		A string value specifying the path to the file in which the appearance settings should be stored. If an empty string is specified, an exception is raised.
-
-            </param>
-
-
-        </member>
-        <member name="M:DevExpress.Utils.BaseAppearanceCollection.ShouldSerialize">
-            <summary>
-                <para>Tests whether the <see cref="T:DevExpress.Utils.BaseAppearanceCollection"/> should be persisted.
-</para>
-            </summary>
-            <returns><b>true</b> if the object should be persisted; otherwise, <b>false</b>.
-</returns>
-
-
-        </member>
-        <member name="E:DevExpress.Utils.BaseAppearanceCollection.SizeChanged">
-            <summary>
-                <para>Occurs when specific settings that control text size  are changed.
-
-</para>
-            </summary>
-
-
-        </member>
-        <member name="M:DevExpress.Utils.BaseAppearanceCollection.UpdateRightToLeft(System.Boolean)">
+        <member name="M:DevExpress.Utils.VisualEffects.AdornerUIManager.#ctor">
             <summary>
                 <para> </para>
             </summary>
-            <param name="rightToLeft">
+
+
+        </member>
+        <member name="M:DevExpress.Utils.VisualEffects.AdornerUIManager.#ctor(System.ComponentModel.IContainer)">
+            <summary>
+                <para> </para>
+            </summary>
+            <param name="container">
 		 
             </param>
 
 
         </member>
-        <member name="T:DevExpress.Utils.AppearanceOptionsEx">
-
+        <member name="P:DevExpress.Utils.VisualEffects.AdornerUIManager.BadgeAppearance">
             <summary>
-                <para>Provides appearance options.
-</para>
+                <para> </para>
             </summary>
-
-        </member>
-        <member name="M:DevExpress.Utils.AppearanceOptionsEx.#ctor">
-            <summary>
-                <para>Initializes a new instance of the <see cref="T:DevExpress.Utils.AppearanceOptionsEx"/> class with default settings.
-</para>
-            </summary>
+            <value> </value>
 
 
         </member>
-        <member name="M:DevExpress.Utils.AppearanceOptionsEx.Assign(DevExpress.Utils.Controls.BaseOptions)">
+        <member name="P:DevExpress.Utils.VisualEffects.AdornerUIManager.BadgeProperties">
             <summary>
-                <para>Copies all the settings from the options object passed as the parameter and assigns them to the current object.
-</para>
+                <para> </para>
             </summary>
-            <param name="options">
-		A <see cref="T:DevExpress.Utils.Controls.BaseOptions"/> descendant whose settings are assigned to the current object.
-
-            </param>
+            <value> </value>
 
 
         </member>
-        <member name="P:DevExpress.Utils.AppearanceOptionsEx.HighPriority">
+        <member name="M:DevExpress.Utils.VisualEffects.AdornerUIManager.BeginUpdate">
             <summary>
-                <para>Gets or sets whether the settings specified by the current appearance object have the highest priority.
-</para>
+                <para> </para>
             </summary>
-            <value><b>true</b> to set the current appearance settings to the highest priority; otherwise, <b>false</b>.
-</value>
+
+
+        </member>
+        <member name="M:DevExpress.Utils.VisualEffects.AdornerUIManager.CancelUpdate">
+            <summary>
+                <para> </para>
+            </summary>
+
+
+        </member>
+        <member name="P:DevExpress.Utils.VisualEffects.AdornerUIManager.Elements">
+            <summary>
+                <para> </para>
+            </summary>
+            <value> </value>
+
+
+        </member>
+        <member name="M:DevExpress.Utils.VisualEffects.AdornerUIManager.EndUpdate">
+            <summary>
+                <para> </para>
+            </summary>
+
+
+        </member>
+        <member name="M:DevExpress.Utils.VisualEffects.AdornerUIManager.Hide">
+            <summary>
+                <para> </para>
+            </summary>
+
+
+        </member>
+        <member name="P:DevExpress.Utils.VisualEffects.AdornerUIManager.Owner">
+            <summary>
+                <para> </para>
+            </summary>
+            <value> </value>
+
+
+        </member>
+        <member name="M:DevExpress.Utils.VisualEffects.AdornerUIManager.Show">
+            <summary>
+                <para> </para>
+            </summary>
 
 
         </member>
@@ -10351,7 +9915,8 @@ For the XtraPivotGrid control, this option acts as the <see cref="F:DevExpress.U
         <member name="T:DevExpress.Utils.VisualEffects.AdornerElementCollection">
 
             <summary>
-                <para> </para>
+                <para>Stores elements of the <see cref="T:DevExpress.Utils.VisualEffects.AdornerElement"/> type.
+</para>
             </summary>
 
         </member>
@@ -10487,7 +10052,8 @@ For the XtraPivotGrid control, this option acts as the <see cref="F:DevExpress.U
         <member name="T:DevExpress.Utils.VisualEffects.AdornerElement">
 
             <summary>
-                <para> </para>
+                <para>The base class for all adorner elements (e.g., <see cref="T:DevExpress.Utils.VisualEffects.Badge"/>s).
+</para>
             </summary>
 
         </member>
@@ -10503,13 +10069,6 @@ For the XtraPivotGrid control, this option acts as the <see cref="F:DevExpress.U
                 <para> </para>
             </summary>
             <value> </value>
-
-
-        </member>
-        <member name="M:DevExpress.Utils.VisualEffects.AdornerElement.Dispose">
-            <summary>
-                <para> </para>
-            </summary>
 
 
         </member>
@@ -10684,6 +10243,14 @@ For the XtraPivotGrid control, this option acts as the <see cref="F:DevExpress.U
 
 
         </member>
+        <member name="P:DevExpress.Utils.WorkspaceManager.RecentWorkspaces">
+            <summary>
+                <para> </para>
+            </summary>
+            <value> </value>
+
+
+        </member>
         <member name="M:DevExpress.Utils.WorkspaceManager.RemoveWorkspace(System.String)">
             <summary>
                 <para>Removes a workspace with the target name from the <see cref="P:DevExpress.Utils.WorkspaceManager.Workspaces"/> collection.
@@ -10709,14 +10276,6 @@ For the XtraPivotGrid control, this option acts as the <see cref="F:DevExpress.U
 		A String value that is the new name for the workspace.
 
             </param>
-
-
-        </member>
-        <member name="P:DevExpress.Utils.WorkspaceManager.ResentWorkspaces">
-            <summary>
-                <para> </para>
-            </summary>
-            <value> </value>
 
 
         </member>
@@ -12600,6 +12159,135 @@ In other cases, tooltips are painted using the <see cref="F:DevExpress.Utils.Too
 
 
         </member>
+        <member name="T:DevExpress.Utils.DXMouseEventArgs">
+
+            <summary>
+                <para>Provides data for mouse events.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.Utils.DXMouseEventArgs.#ctor(System.Windows.Forms.MouseButtons,System.Int32,System.Int32,System.Int32,System.Int32)">
+            <summary>
+                <para>Initializes a new instance of the <see cref="T:DevExpress.Utils.DXMouseEventArgs"/> class with the specified parameters.
+</para>
+            </summary>
+            <param name="buttons">
+		A <see cref="T:System.Windows.Forms.MouseButtons"/> enumeration value that defines which mouse button was pressed. This value is assigned to the <see cref="P:System.Windows.Forms.MouseEventArgs.Button"/> property.
+
+            </param>
+            <param name="clicks">
+		An integer value which specifies the number of times the mouse button was pressed and released. This value is assigned to the <see cref="P:System.Windows.Forms.MouseEventArgs.Clicks"/> property.
+
+            </param>
+            <param name="x">
+		An integer value which specifies the x-coordinate of a mouse click, in pixels. This value is assigned to the <see cref="P:System.Windows.Forms.MouseEventArgs.X"/> property.
+
+            </param>
+            <param name="y">
+		An integer value which specifies the y-coordinate of a mouse click, in pixels. This value is assigned to the <see cref="P:System.Windows.Forms.MouseEventArgs.Y"/> property.
+
+            </param>
+            <param name="delta">
+		An integer value which specifies a signed count of the number of detents the mouse wheel has rotated. This value is assigned to the <see cref="P:System.Windows.Forms.MouseEventArgs.Delta"/> property.
+
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.Utils.DXMouseEventArgs.#ctor(System.Windows.Forms.MouseButtons,System.Int32,System.Int32,System.Int32,System.Int32,System.Boolean)">
+            <summary>
+                <para>Initializes a new instance of the <see cref="T:DevExpress.Utils.DXMouseEventArgs"/> class.
+</para>
+            </summary>
+            <param name="buttons">
+		A <see cref="T:System.Windows.Forms.MouseButtons"/> enumeration value that defines which mouse button was pressed. This value is assigned to the <see cref="P:System.Windows.Forms.MouseEventArgs.Button"/> property.
+
+            </param>
+            <param name="clicks">
+		An integer value which specifies the number of times the mouse button was pressed and released. This value is assigned to the <see cref="P:System.Windows.Forms.MouseEventArgs.Clicks"/> property.
+
+            </param>
+            <param name="x">
+		An integer value which specifies the x-coordinate of a mouse click, in pixels. This value is assigned to the <see cref="P:System.Windows.Forms.MouseEventArgs.X"/> property.
+
+            </param>
+            <param name="y">
+		An integer value which specifies the y-coordinate of a mouse click, in pixels. This value is assigned to the <see cref="P:System.Windows.Forms.MouseEventArgs.Y"/> property.
+
+            </param>
+            <param name="delta">
+		An integer value which specifies a signed count of the number of detents the mouse wheel has rotated. This value is assigned to the <see cref="P:System.Windows.Forms.MouseEventArgs.Delta"/> property.
+
+            </param>
+            <param name="handled">
+		<b>true</b> if the event hasn't been handled by a control; otherwise, <b>false</b>. This value is assigned to the <see cref="P:DevExpress.Utils.DXMouseEventArgs.Handled"/> property.
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.Utils.DXMouseEventArgs.GetMouseArgs(System.Windows.Forms.MouseEventArgs)">
+            <summary>
+                <para>Converts the <see cref="T:System.Windows.Forms.MouseEventArgs"/> object passed as a parameter to a <see cref="T:DevExpress.Utils.DXMouseEventArgs"/> object.
+</para>
+            </summary>
+            <param name="eventArgs">
+		A <see cref="T:System.Windows.Forms.MouseEventArgs"/> object which contains data for the <b>MouseUp</b>, <b>MouseDown</b>, and <b>MouseMove</b> events.
+
+            </param>
+            <returns>A <see cref="T:DevExpress.Utils.DXMouseEventArgs"/> object which provides data for the mouse events.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.Utils.DXMouseEventArgs.GetMouseArgs(System.Windows.Forms.Control,System.EventArgs)">
+            <summary>
+                <para>Converts the <see cref="T:System.Windows.Forms.MouseEventArgs"/> object passed as a parameter to a <see cref="T:DevExpress.Utils.DXMouseEventArgs"/> object.
+</para>
+            </summary>
+            <param name="control">
+		A <see cref="T:System.Windows.Forms.Control"/> descendant.
+
+            </param>
+            <param name="eventArgs">
+		A <see cref="T:System.Windows.Forms.MouseEventArgs"/> object which contains data for the mouse events.
+
+            </param>
+            <returns>A <see cref="T:DevExpress.Utils.DXMouseEventArgs"/> object which provides data for the mouse events.
+</returns>
+
+
+        </member>
+        <member name="P:DevExpress.Utils.DXMouseEventArgs.Handled">
+            <summary>
+                <para>Gets or sets a value specifying whether an event has been handled.
+</para>
+            </summary>
+            <value><b>true</b> if the event hasn't been handled by a control; otherwise, <b>false</b>.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Utils.DXMouseEventArgs.IsHMouseWheel">
+            <summary>
+                <para>This member supports the internal infrastructure, and is not intended to be used directly from your code.
+</para>
+            </summary>
+            <value> 
+</value>
+
+
+        </member>
+        <member name="M:DevExpress.Utils.DXMouseEventArgs.Sync">
+            <summary>
+                <para>For internal use.
+</para>
+            </summary>
+
+
+        </member>
         <member name="T:DevExpress.XtraEditors.WindowsFormsSettings">
 
             <summary>
@@ -12685,7 +12373,7 @@ In other cases, tooltips are painted using the <see cref="F:DevExpress.Utils.Too
         </member>
         <member name="M:DevExpress.XtraEditors.WindowsFormsSettings.ApplyDemoSettings">
             <summary>
-                <para>This method is called by DevExpress demos to apply specific settings. This is a static property.
+                <para>This method is called by DevExpress demos to apply specific settings. This is a static method.
 </para>
             </summary>
 
@@ -12873,67 +12561,85 @@ In other cases, tooltips are painted using the <see cref="F:DevExpress.Utils.Too
         </member>
         <member name="M:DevExpress.XtraEditors.WindowsFormsSettings.GetIsRightToLeft(System.Windows.Forms.RightToLeft)">
             <summary>
-                <para> </para>
+                <para>Returns a Boolean value that specifies whether DevExpress controls are aligned to support locales using right-to-left fonts. The method parameter allows the default behavior to be specified. This is a static method.
+</para>
             </summary>
             <param name="rightToLeft">
-		 
+		A <b>RightToLeft</b> value that specifies the default behavior that is used if the <see cref="P:DevExpress.XtraEditors.WindowsFormsSettings.RightToLeft"/> property equals <b>Default</b>.
+
             </param>
-            <returns> </returns>
+            <returns>A <b>Boolean</b> value that specifies whether DevExpress controls are aligned to support locales using right-to-left fonts.
+</returns>
 
 
         </member>
         <member name="M:DevExpress.XtraEditors.WindowsFormsSettings.GetIsRightToLeft(System.Windows.Forms.Control)">
             <summary>
-                <para> </para>
+                <para>Returns a Boolean value that indicates whether the specified control is aligned to support locales using right-to-left fonts. This is a static method.
+</para>
             </summary>
             <param name="control">
-		 
+		A Control object.
+
             </param>
-            <returns> </returns>
+            <returns>A Boolean value that indicates whether the specified control is aligned to support locales using right-to-left fonts.
+</returns>
 
 
         </member>
         <member name="M:DevExpress.XtraEditors.WindowsFormsSettings.GetIsRightToLeftLayout(System.Windows.Forms.Control)">
             <summary>
-                <para> </para>
+                <para>Returns a Boolean value that indicates whether right-to-left mirror placement is turned on for the specified form. This is a static method.
+</para>
             </summary>
             <param name="control">
-		 
+		A Control object.
+
             </param>
-            <returns> </returns>
+            <returns>A <b>Boolean</b> value that indicates whether right-to-left mirror placement is turned on for the specified form.
+</returns>
 
 
         </member>
         <member name="M:DevExpress.XtraEditors.WindowsFormsSettings.GetIsRightToLeftLayout(System.Boolean)">
             <summary>
-                <para> </para>
+                <para>Returns a Boolean value that indicates whether right-to-left mirror placement is turned on. The method parameter allows the default behavior to be specified. This is a static method.
+</para>
             </summary>
             <param name="rightToLeft">
-		 
+		A default <b>Boolean</b> value that is returned if the <see cref="P:DevExpress.XtraEditors.WindowsFormsSettings.RightToLeftLayout"/> property equals <b>Default</b>. <b>true</b> to turn on right-to-left mirror placement; otherwise, <b>false</b>.
+
             </param>
-            <returns> </returns>
+            <returns>A <b>Boolean</b> value that indicates whether right-to-left mirror placement is turned on.
+</returns>
 
 
         </member>
         <member name="M:DevExpress.XtraEditors.WindowsFormsSettings.GetRightToLeft(System.Windows.Forms.RightToLeft)">
             <summary>
-                <para> </para>
+                <para>Returns a RightToLeft enumeration value that specifies whether DevExpress controls are aligned to support locales using right-to-left fonts. The method parameter allows the default behavior to be specified. This is a static method.
+</para>
             </summary>
             <param name="rightToLeft">
-		 
+		A default <b>System.Windows.Forms.RightToLeft</b> enumeration value that is returned if the <see cref="P:DevExpress.XtraEditors.WindowsFormsSettings.RightToLeft"/> property equals <b>Default</b>.
+
             </param>
-            <returns> </returns>
+            <returns>A <b>System.Windows.Forms.RightToLeft</b> enumeration value that specifies whether DevExpress controls are aligned to support locales using right-to-left fonts.
+</returns>
 
 
         </member>
         <member name="M:DevExpress.XtraEditors.WindowsFormsSettings.GetRightToLeft(System.Windows.Forms.Control)">
             <summary>
-                <para> </para>
+                <para>Returns a RightToLeft enumeration value that indicates whether the specified control is aligned to support locales using right-to-left fonts. This is a static method.
+</para>
             </summary>
             <param name="control">
-		 
+		A Control object.
+
             </param>
-            <returns> </returns>
+            <returns>A <b>System.Windows.Forms.RightToLeft</b> enumeration value that indicates whether the specified control is aligned to support locales using right-to-left fonts.
+</returns>
 
 
         </member>
@@ -12969,17 +12675,21 @@ This is a static property.
         </member>
         <member name="P:DevExpress.XtraEditors.WindowsFormsSettings.RightToLeft">
             <summary>
-                <para> </para>
+                <para>Gets or sets whether visual elements of DevExpress controls are aligned to support locales using right-to-left fonts.
+</para>
             </summary>
-            <value> </value>
+            <value>A <a href="ms-xhelp:///?Id=T%3aDevExpress.Utils.DefaultBoolean">DefaultBoolean</a> value that specifies whether visual elements of DevExpress controls are aligned to support locales using right-to-left fonts.
+</value>
 
 
         </member>
         <member name="P:DevExpress.XtraEditors.WindowsFormsSettings.RightToLeftLayout">
             <summary>
-                <para> </para>
+                <para>Gets or sets whether right-to-left mirror placement is turned on.
+</para>
             </summary>
-            <value> </value>
+            <value>A <a href="ms-xhelp:///?Id=T%3aDevExpress.Utils.DefaultBoolean">DefaultBoolean</a> value that specifies right-to-left mirror placement is turned on.
+</value>
 
 
         </member>
@@ -14449,6 +14159,19 @@ This is a static property.
             </summary>
             <value> 
 </value>
+
+
+        </member>
+        <member name="M:DevExpress.Utils.ToolTipController.ProccessNCMouseMove(System.Object,System.Drawing.Point)">
+            <summary>
+                <para> </para>
+            </summary>
+            <param name="sender">
+		 
+            </param>
+            <param name="p">
+		 
+            </param>
 
 
         </member>
@@ -16497,39 +16220,6 @@ Prevents the control from being updated until the <see cref="M:DevExpress.XtraEd
 
 
         </member>
-        <member name="P:DevExpress.LookAndFeel.UserLookAndFeel.TouchScaleFactor">
-            <summary>
-                <para>Gets or sets the scale factor used to calculate the size and distance between specific control elements when touch UI mode is enabled.
-
-</para>
-            </summary>
-            <value>The scale factor used to calculate the size and distance between specific control elements when touch UI mode is enabled. 
-</value>
-
-
-        </member>
-        <member name="P:DevExpress.LookAndFeel.UserLookAndFeel.TouchUI">
-            <summary>
-                <para>Gets or sets whether touch-aware mode is enabled, in which controls automatically increase their size and the distance between some of their elements.
-
-</para>
-            </summary>
-            <value><b>true</b>, if touch-aware mode is enabled; otherwise, <b>false</b>.
-</value>
-
-
-        </member>
-        <member name="P:DevExpress.LookAndFeel.UserLookAndFeel.TouchUIMode">
-            <summary>
-                <para>Gets or sets whether touch UI mode is enabled, in which controls automatically increase their size and the distance between some of their elements. 
-
-</para>
-            </summary>
-            <value>A value that specifies if touch UI mode is enabled.
-</value>
-
-
-        </member>
         <member name="M:DevExpress.LookAndFeel.UserLookAndFeel.UpdateStyleSettings">
             <summary>
                 <para>Notifies controls that look-and-feel settings have been changed and the controls need to be refreshed.
@@ -17444,6 +17134,290 @@ The following screenshot shows the <b>UltraFlat</b> style applied to a button ed
 
 
         </member>
+        <member name="T:DevExpress.Utils.BaseAppearanceCollection">
+
+            <summary>
+                <para>Serves as a base for the classes that provide the appearance settings used to paint DevExpress .NET controls.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.Utils.BaseAppearanceCollection.#ctor">
+            <summary>
+                <para>Initializes a new instance of the <see cref="T:DevExpress.Utils.BaseAppearanceCollection"/> class.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="M:DevExpress.Utils.BaseAppearanceCollection.Assign(DevExpress.Utils.BaseAppearanceCollection)">
+            <summary>
+                <para>Copies the settings from the object passed as the parameter.
+</para>
+            </summary>
+            <param name="source">
+		A <see cref="T:DevExpress.Utils.BaseAppearanceCollection"/> descendant representing the source of the operation. If <b>null</b> (<b>Nothing</b> in Visual Basic) this method does nothing.
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.Utils.BaseAppearanceCollection.AssignInternal(DevExpress.Utils.BaseAppearanceCollection)">
+            <summary>
+                <para>Copies the settings from the object passed as the parameter without raising the <see cref="E:DevExpress.Utils.BaseAppearanceCollection.Changed"/> event.
+</para>
+            </summary>
+            <param name="source">
+		A <see cref="T:DevExpress.Utils.BaseAppearanceCollection"/> descendant representing the source of the operation. If <b>null</b> (<b>Nothing</b> in Visual Basic) this method does nothing.
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.Utils.BaseAppearanceCollection.BeginUpdate">
+            <summary>
+                <para>Locks the BaseAppearanceCollection, preventing change notifications (and visual updates) from being raised by the object until the <b>EndUpdate</b> or <b>CancelUpdate</b> method is called.
+
+
+</para>
+            </summary>
+
+
+        </member>
+        <member name="M:DevExpress.Utils.BaseAppearanceCollection.CancelUpdate">
+            <summary>
+                <para>Unlocks the BaseAppearanceCollection object after it has been locked by the <b>BeginUpdate</b> method, without causing an immediate visual update.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="E:DevExpress.Utils.BaseAppearanceCollection.Changed">
+            <summary>
+                <para>Fires when the collection is changed.
+
+</para>
+            </summary>
+
+
+        </member>
+        <member name="M:DevExpress.Utils.BaseAppearanceCollection.Combine(DevExpress.Utils.BaseAppearanceCollection,DevExpress.Utils.AppearanceDefaultInfo[])">
+            <summary>
+                <para>Copies the activated appearance settings of the object passed as the parameter to the current object, any properties that aren't activated are set to the value in the default appearance object.
+</para>
+            </summary>
+            <param name="appearances">
+		A <see cref="T:DevExpress.Utils.BaseAppearanceCollection"/> descendant representing the source of the operation.
+
+            </param>
+            <param name="defaults">
+		An array of DevExpress.Utils.AppearanceDefaultInfo objects which represent the default appearance settings.
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.Utils.BaseAppearanceCollection.Combine(DevExpress.Utils.BaseAppearanceCollection,DevExpress.Utils.AppearanceDefaultInfo[],System.Boolean)">
+            <summary>
+                <para>Copies the activated appearance settings of the object passed as the parameter and activates their corresponding options, any properties not activated are set to the value in the default appearance object.
+</para>
+            </summary>
+            <param name="appearances">
+		A <see cref="T:DevExpress.Utils.BaseAppearanceCollection"/> descendant representing the source of the operation.
+
+            </param>
+            <param name="defaults">
+		An array of DevExpress.Utils.AppearanceDefaultInfo objects which represent the default appearance settings.
+
+            </param>
+            <param name="setDefaultUseFlag">
+		<b>true</b> to enable options which correspond to the activated appearance settings; otherwise, <b>false</b>.
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.Utils.BaseAppearanceCollection.Dispose">
+            <summary>
+                <para>Releases all the resources used by the current object. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="M:DevExpress.Utils.BaseAppearanceCollection.EndUpdate">
+            <summary>
+                <para>Unlocks the BaseAppearanceCollection object after a call to the <b>BeginUpdate</b> method and causes an immediate visual update.
+
+
+</para>
+            </summary>
+
+
+        </member>
+        <member name="M:DevExpress.Utils.BaseAppearanceCollection.GetAppearance(System.String)">
+            <summary>
+                <para>Gets an appearance object contained within the collection by its name.
+</para>
+            </summary>
+            <param name="name">
+		A <see cref="T:System.String"/> value specifying the name of the required appearance object.
+
+            </param>
+            <returns>The <see cref="T:DevExpress.Utils.AppearanceObject"/> object within the collection which has the specified name.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.Utils.BaseAppearanceCollection.GetEnumerator">
+            <summary>
+                <para>Returns an <see cref="T:System.Collections.IDictionaryEnumerator"/> that can iterate through the hashtable. 
+</para>
+            </summary>
+            <returns>An <see cref="T:System.Collections.IDictionaryEnumerator"/> for the hashtable.
+</returns>
+
+
+        </member>
+        <member name="P:DevExpress.Utils.BaseAppearanceCollection.IsDisposed">
+            <summary>
+                <para>Gets whether the current object has been disposed of.
+</para>
+            </summary>
+            <value><b>true</b> if the current object has been disposed of; otherwise, <b>false</b>.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Utils.BaseAppearanceCollection.IsLoading">
+            <summary>
+                <para>Indicates whether the collection's owner is currently being initialized.
+</para>
+            </summary>
+            <value><b>false</b> always.
+</value>
+
+
+        </member>
+        <member name="E:DevExpress.Utils.BaseAppearanceCollection.PaintChanged">
+            <summary>
+                <para>Occurs when specific settings that control the text appearance are changed.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="M:DevExpress.Utils.BaseAppearanceCollection.Reset">
+            <summary>
+                <para>Resets the properties of all the appearance objects within the collection to their default values. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="M:DevExpress.Utils.BaseAppearanceCollection.RestoreLayoutFromRegistry(System.String)">
+            <summary>
+                <para>Restores the appearance settings stored at the specified system registry path. 
+</para>
+            </summary>
+            <param name="path">
+		A string value specifying the system registry path. If the specified path doesn't exist, calling this method has no effect.
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.Utils.BaseAppearanceCollection.RestoreLayoutFromStream(System.IO.Stream)">
+            <summary>
+                <para>Restores the appearance settings from the specified stream.
+</para>
+            </summary>
+            <param name="stream">
+		A <see cref="T:System.IO.Stream"/> descendant from which the appearance settings are read.
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.Utils.BaseAppearanceCollection.RestoreLayoutFromXml(System.String)">
+            <summary>
+                <para>Loads the appearance settings stored in the specified XML file.
+</para>
+            </summary>
+            <param name="xmlFile">
+		A string value specifying the path to the XML file which contains the appearance settings to be loaded. If the specified file doesn't exist, an exception is raised.
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.Utils.BaseAppearanceCollection.SaveLayoutToRegistry(System.String)">
+            <summary>
+                <para>Saves the appearance settings to a system registry path.
+</para>
+            </summary>
+            <param name="path">
+		A string value specifying the system registry path to which the appearance settings are saved.
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.Utils.BaseAppearanceCollection.SaveLayoutToStream(System.IO.Stream)">
+            <summary>
+                <para>Saves the appearance settings to a specific stream.
+</para>
+            </summary>
+            <param name="stream">
+		A <see cref="T:System.IO.Stream"/> descendant to which the appearance settings are written.
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.Utils.BaseAppearanceCollection.SaveLayoutToXml(System.String)">
+            <summary>
+                <para>Saves the appearance settings to a specific XML file. 
+</para>
+            </summary>
+            <param name="xmlFile">
+		A string value specifying the path to the file in which the appearance settings should be stored. If an empty string is specified, an exception is raised.
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.Utils.BaseAppearanceCollection.ShouldSerialize">
+            <summary>
+                <para>Tests whether the <see cref="T:DevExpress.Utils.BaseAppearanceCollection"/> should be persisted.
+</para>
+            </summary>
+            <returns><b>true</b> if the object should be persisted; otherwise, <b>false</b>.
+</returns>
+
+
+        </member>
+        <member name="E:DevExpress.Utils.BaseAppearanceCollection.SizeChanged">
+            <summary>
+                <para>Occurs when specific settings that control text size  are changed.
+
+</para>
+            </summary>
+
+
+        </member>
+        <member name="M:DevExpress.Utils.BaseAppearanceCollection.UpdateRightToLeft(System.Boolean)">
+            <summary>
+                <para>Updates the right-to-left text direction option.
+</para>
+            </summary>
+            <param name="rightToLeft">
+		<b>true</b> if the text is directed from right to left; otherwise, <b>false</b>.
+
+            </param>
+
+
+        </member>
         <member name="T:DevExpress.Utils.Animation.TransitionManager">
 
             <summary>
@@ -17595,6 +17569,44 @@ The following screenshot shows the <b>UltraFlat</b> style applied to a button ed
                 <para>Touch UI mode is enabled.
 </para>
             </summary>
+
+
+        </member>
+        <member name="T:DevExpress.Utils.AppearanceOptionsEx">
+
+            <summary>
+                <para>Provides appearance options.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.Utils.AppearanceOptionsEx.#ctor">
+            <summary>
+                <para>Initializes a new instance of the <see cref="T:DevExpress.Utils.AppearanceOptionsEx"/> class with default settings.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="M:DevExpress.Utils.AppearanceOptionsEx.Assign(DevExpress.Utils.Controls.BaseOptions)">
+            <summary>
+                <para>Copies all the settings from the options object passed as the parameter and assigns them to the current object.
+</para>
+            </summary>
+            <param name="options">
+		A <see cref="T:DevExpress.Utils.Controls.BaseOptions"/> descendant whose settings are assigned to the current object.
+
+            </param>
+
+
+        </member>
+        <member name="P:DevExpress.Utils.AppearanceOptionsEx.HighPriority">
+            <summary>
+                <para>Gets or sets whether the settings specified by the current appearance object have the highest priority.
+</para>
+            </summary>
+            <value><b>true</b> to set the current appearance settings to the highest priority; otherwise, <b>false</b>.
+</value>
 
 
         </member>

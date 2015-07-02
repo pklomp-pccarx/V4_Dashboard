@@ -1217,7 +1217,8 @@
         </member>
         <member name="F:DevExpress.DashboardWin.Localization.DashboardWinStringId.AddDashboardParameter">
             <summary>
-                <para> </para>
+                <para><b>Default value</b>: Add dashboard parameter
+</para>
             </summary>
 
 
@@ -2288,14 +2289,16 @@
         </member>
         <member name="F:DevExpress.DashboardWin.Localization.DashboardWinStringId.CommandEditConnectionCaption">
             <summary>
-                <para> </para>
+                <para><b>Default value</b>: Edit Connection
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.DashboardWin.Localization.DashboardWinStringId.CommandEditConnectionDescription">
             <summary>
-                <para> </para>
+                <para><b>Default value</b>: Customize parameters used to establish a connection to a data store.
+</para>
             </summary>
 
 
@@ -2366,14 +2369,16 @@
         </member>
         <member name="F:DevExpress.DashboardWin.Localization.DashboardWinStringId.CommandEditEFDataSourceCaption">
             <summary>
-                <para> </para>
+                <para><b>Default value</b>: Edit
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.DashboardWin.Localization.DashboardWinStringId.CommandEditEFDataSourceDescription">
             <summary>
-                <para> </para>
+                <para><b>Default value</b>: Edit the Entity Framework data source by selecting an existing data context or using an external assembly.
+</para>
             </summary>
 
 
@@ -2444,49 +2449,48 @@
         </member>
         <member name="F:DevExpress.DashboardWin.Localization.DashboardWinStringId.CommandEditObjectDataSourceCaption">
             <summary>
-                <para> </para>
+                <para><b>Default value</b>: Edit
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.DashboardWin.Localization.DashboardWinStringId.CommandEditObjectDataSourceDescription">
             <summary>
-                <para> </para>
+                <para><b>Default value</b>: Edit the current data source by selecting the required class definition and the data member.
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.DashboardWin.Localization.DashboardWinStringId.CommandEditQueriesCaption">
             <summary>
-                <para> </para>
+                <para><b>Default value</b>: Edit Queries
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.DashboardWin.Localization.DashboardWinStringId.CommandEditQueriesDescription">
             <summary>
-                <para> </para>
+                <para><b>Default value</b>: Edit queries used to select data from the current data source.
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.DashboardWin.Localization.DashboardWinStringId.CommandEditRulesCaption">
             <summary>
-                <para> </para>
+                <para><b>Default value</b>: Edit Rules
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.DashboardWin.Localization.DashboardWinStringId.CommandEditRulesDescription">
             <summary>
-                <para> </para>
-            </summary>
-
-
-        </member>
-        <member name="F:DevExpress.DashboardWin.Localization.DashboardWinStringId.CommandEditRulesRibbonCaption">
-            <summary>
-                <para> </para>
+                <para><b>Default value</b>: Edit rules used to apply conditional formatting to dashboard item elements.
+</para>
             </summary>
 
 
@@ -2533,322 +2537,368 @@
         </member>
         <member name="F:DevExpress.DashboardWin.Localization.DashboardWinStringId.CommandFormatRuleAboveAverage">
             <summary>
-                <para> </para>
+                <para><b>Default value</b>: Above Average
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.DashboardWin.Localization.DashboardWinStringId.CommandFormatRuleAboveAverageDescription">
             <summary>
-                <para> </para>
+                <para><b>Default value</b>: Format {0} values that are above average
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.DashboardWin.Localization.DashboardWinStringId.CommandFormatRuleAboveBelowAverage">
             <summary>
-                <para> </para>
+                <para><b>Default value</b>: Average
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.DashboardWin.Localization.DashboardWinStringId.CommandFormatRuleAboveOrEqualAverage">
             <summary>
-                <para> </para>
+                <para><b>Default value</b>: Above Or Equal Average
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.DashboardWin.Localization.DashboardWinStringId.CommandFormatRuleAboveOrEqualAverageDescription">
             <summary>
-                <para> </para>
+                <para><b>Default value</b>: Format {0} values that are above or equal average
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.DashboardWin.Localization.DashboardWinStringId.CommandFormatRuleBelowAverage">
             <summary>
-                <para> </para>
+                <para><b>Default value</b>: Below Average
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.DashboardWin.Localization.DashboardWinStringId.CommandFormatRuleBelowAverageDescription">
             <summary>
-                <para> </para>
+                <para><b>Default value</b>: Format {0} values that are below average
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.DashboardWin.Localization.DashboardWinStringId.CommandFormatRuleBelowOrEqualAverage">
             <summary>
-                <para> </para>
+                <para><b>Default value</b>: Below Or Equal Average
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.DashboardWin.Localization.DashboardWinStringId.CommandFormatRuleBelowOrEqualAverageDescription">
             <summary>
-                <para> </para>
+                <para><b>Default value</b>: Format {0} values that are below or equal average
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.DashboardWin.Localization.DashboardWinStringId.CommandFormatRuleBetween">
             <summary>
-                <para> </para>
+                <para><b>Default value</b>: Between
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.DashboardWin.Localization.DashboardWinStringId.CommandFormatRuleBetweenDescription">
             <summary>
-                <para> </para>
+                <para><b>Default value</b>: Format {0} values that are between
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.DashboardWin.Localization.DashboardWinStringId.CommandFormatRuleBottomN">
             <summary>
-                <para> </para>
+                <para><b>Default value</b>: Bottom N
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.DashboardWin.Localization.DashboardWinStringId.CommandFormatRuleBottomNDescription">
             <summary>
-                <para> </para>
+                <para><b>Default value</b>: Format {0} values that rank in the bottom
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.DashboardWin.Localization.DashboardWinStringId.CommandFormatRuleClearDataItem">
             <summary>
-                <para> </para>
+                <para><b>Default value</b>: Clear Rules
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.DashboardWin.Localization.DashboardWinStringId.CommandFormatRuleContains">
             <summary>
-                <para> </para>
+                <para><b>Default value</b>: Text that Contains
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.DashboardWin.Localization.DashboardWinStringId.CommandFormatRuleContainsDescription">
             <summary>
-                <para> </para>
+                <para><b>Default value</b>: Format {0} values that contain the text
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.DashboardWin.Localization.DashboardWinStringId.CommandFormatRuleDateOccurring">
             <summary>
-                <para> </para>
+                <para><b>Default value</b>: A Date Occurring
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.DashboardWin.Localization.DashboardWinStringId.CommandFormatRuleDateOccurringDescription">
             <summary>
-                <para> </para>
+                <para><b>Default value</b>: Format {0} values that contain a date matching these conditions
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.DashboardWin.Localization.DashboardWinStringId.CommandFormatRuleEqualTo">
             <summary>
-                <para> </para>
+                <para><b>Default value</b>: Equal To
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.DashboardWin.Localization.DashboardWinStringId.CommandFormatRuleEqualToDescription">
             <summary>
-                <para> </para>
+                <para><b>Default value</b>: Format {0} values that are equal to
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.DashboardWin.Localization.DashboardWinStringId.CommandFormatRuleExpression">
             <summary>
-                <para> </para>
+                <para><b>Default value</b>: Expression
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.DashboardWin.Localization.DashboardWinStringId.CommandFormatRuleExpressionDescription">
             <summary>
-                <para> </para>
+                <para><b>Default value</b>: Format values that match the following condition
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.DashboardWin.Localization.DashboardWinStringId.CommandFormatRuleGreaterThan">
             <summary>
-                <para> </para>
+                <para><b>Default value</b>: Greater Than
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.DashboardWin.Localization.DashboardWinStringId.CommandFormatRuleGreaterThanDescription">
             <summary>
-                <para> </para>
+                <para><b>Default value</b>: Format {0} values that are greater than
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.DashboardWin.Localization.DashboardWinStringId.CommandFormatRuleGreaterThanOrEqualTo">
             <summary>
-                <para> </para>
+                <para><b>Default value</b>: Greater Than Or Equal To
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.DashboardWin.Localization.DashboardWinStringId.CommandFormatRuleGreaterThanOrEqualToDescription">
             <summary>
-                <para> </para>
+                <para><b>Default value</b>: Format {0} values that are greater than or equal to
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.DashboardWin.Localization.DashboardWinStringId.CommandFormatRuleLessThan">
             <summary>
-                <para> </para>
+                <para><b>Default value</b>: Less Than
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.DashboardWin.Localization.DashboardWinStringId.CommandFormatRuleLessThanDescription">
             <summary>
-                <para> </para>
+                <para><b>Default value</b>: Format {0} values that are less than
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.DashboardWin.Localization.DashboardWinStringId.CommandFormatRuleLessThanOrEqualTo">
             <summary>
-                <para> </para>
+                <para><b>Default value</b>: Less Than Or Equal To
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.DashboardWin.Localization.DashboardWinStringId.CommandFormatRuleLessThanOrEqualToDescription">
             <summary>
-                <para> </para>
+                <para><b>Default value</b>: Format {0} values that are less than or equal to
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.DashboardWin.Localization.DashboardWinStringId.CommandFormatRuleManager">
             <summary>
-                <para> </para>
+                <para><b>Default value</b>: Edit Rules...
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.DashboardWin.Localization.DashboardWinStringId.CommandFormatRuleNotBetween">
             <summary>
-                <para> </para>
+                <para><b>Default value</b>: Not Between
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.DashboardWin.Localization.DashboardWinStringId.CommandFormatRuleNotBetweenDescription">
             <summary>
-                <para> </para>
+                <para><b>Default value</b>: Format {0} values that are not between
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.DashboardWin.Localization.DashboardWinStringId.CommandFormatRuleNotEqualTo">
             <summary>
-                <para> </para>
+                <para><b>Default value</b>: Not Equal To
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.DashboardWin.Localization.DashboardWinStringId.CommandFormatRuleNotEqualToDescription">
             <summary>
-                <para> </para>
+                <para><b>Default value</b>: Format {0} values that are not equal to
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.DashboardWin.Localization.DashboardWinStringId.CommandFormatRuleRange">
             <summary>
-                <para> </para>
+                <para><b>Default value</b>: Range
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.DashboardWin.Localization.DashboardWinStringId.CommandFormatRuleRangeColors">
             <summary>
-                <para> </para>
+                <para><b>Default value</b>: Color Ranges
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.DashboardWin.Localization.DashboardWinStringId.CommandFormatRuleRangeGradient">
             <summary>
-                <para> </para>
+                <para><b>Default value</b>: Gradient Ranges
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.DashboardWin.Localization.DashboardWinStringId.CommandFormatRuleRangeGradientDescription">
             <summary>
-                <para> </para>
+                <para><b>Default value</b>: Format {0} values using range conditions
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.DashboardWin.Localization.DashboardWinStringId.CommandFormatRuleRangeIcons">
             <summary>
-                <para> </para>
+                <para><b>Default value</b>: Icon Ranges
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.DashboardWin.Localization.DashboardWinStringId.CommandFormatRuleRangeSet">
             <summary>
-                <para> </para>
+                <para><b>Default value</b>: Range Set
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.DashboardWin.Localization.DashboardWinStringId.CommandFormatRuleRangeSetDescription">
             <summary>
-                <para> </para>
+                <para><b>Default value</b>: Format {0} values using range conditions
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.DashboardWin.Localization.DashboardWinStringId.CommandFormatRuleTopBottom">
             <summary>
-                <para> </para>
+                <para><b>Default value</b>: Top/Bottom
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.DashboardWin.Localization.DashboardWinStringId.CommandFormatRuleTopN">
             <summary>
-                <para> </para>
+                <para><b>Default value</b>: Top N
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.DashboardWin.Localization.DashboardWinStringId.CommandFormatRuleTopNDescription">
             <summary>
-                <para> </para>
+                <para><b>Default value</b>: Format {0} values that rank in the top
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.DashboardWin.Localization.DashboardWinStringId.CommandFormatRuleValue">
             <summary>
-                <para> </para>
+                <para><b>Default value</b>: Value
+</para>
             </summary>
 
 
@@ -5175,7 +5225,8 @@
         </member>
         <member name="F:DevExpress.DashboardWin.Localization.DashboardWinStringId.ConfigureOlapParametersPageViewHeaderDescription">
             <summary>
-                <para> </para>
+                <para><b>Default value</b>: Specify the connection properties.
+</para>
             </summary>
 
 
@@ -5326,7 +5377,8 @@
         </member>
         <member name="F:DevExpress.DashboardWin.Localization.DashboardWinStringId.DataSourceDataMember">
             <summary>
-                <para> </para>
+                <para><b>Default value</b>: Data Member
+</para>
             </summary>
 
 
@@ -5349,63 +5401,72 @@
         </member>
         <member name="F:DevExpress.DashboardWin.Localization.DashboardWinStringId.DataSourceQuery">
             <summary>
-                <para> </para>
+                <para><b>Default value</b>: Query
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.DashboardWin.Localization.DashboardWinStringId.DataSourceTypeEF">
             <summary>
-                <para> </para>
+                <para><b>Default value</b>: Entity Framework
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.DashboardWin.Localization.DashboardWinStringId.DataSourceTypeEFDescription">
             <summary>
-                <para> </para>
+                <para><b>Default value</b>: Connect to an Entity Framework data source.
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.DashboardWin.Localization.DashboardWinStringId.DataSourceTypeObject">
             <summary>
-                <para> </para>
+                <para><b>Default value</b>: Object Binding
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.DashboardWin.Localization.DashboardWinStringId.DataSourceTypeObjectDescription">
             <summary>
-                <para> </para>
+                <para><b>Default value</b>: Bind to an object that provides the required data.
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.DashboardWin.Localization.DashboardWinStringId.DataSourceTypeOlap">
             <summary>
-                <para> </para>
+                <para><b>Default value</b>: Olap
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.DashboardWin.Localization.DashboardWinStringId.DataSourceTypeOlapDescription">
             <summary>
-                <para> </para>
+                <para><b>Default value</b>: Connect to an OLAP cube in an MS Analysis Services database.
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.DashboardWin.Localization.DashboardWinStringId.DataSourceTypeSql">
             <summary>
-                <para> </para>
+                <para><b>Default value</b>: Database
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.DashboardWin.Localization.DashboardWinStringId.DataSourceTypeSqlDescription">
             <summary>
-                <para> </para>
+                <para><b>Default value</b>: Connect to an SQL database and select the required data using the Query Builder or SQL query.
+</para>
             </summary>
 
 
@@ -5748,21 +5809,24 @@
         </member>
         <member name="F:DevExpress.DashboardWin.Localization.DashboardWinStringId.EditorAutomaticValue">
             <summary>
-                <para> </para>
+                <para><b>Default value</b>: (Automatic)
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.DashboardWin.Localization.DashboardWinStringId.EditorCustomValue">
             <summary>
-                <para> </para>
+                <para><b>Default value</b>: (Custom)
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.DashboardWin.Localization.DashboardWinStringId.EditorEmptyEnter">
             <summary>
-                <para> </para>
+                <para><b>Default value</b>: enter a value
+</para>
             </summary>
 
 
@@ -5855,114 +5919,396 @@
 
 
         </member>
-        <member name="F:DevExpress.DashboardWin.Localization.DashboardWinStringId.FormatRuleApplyTo">
+        <member name="F:DevExpress.DashboardWin.Localization.DashboardWinStringId.FormatConditionAppearanceBlue">
             <summary>
                 <para> </para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.DashboardWin.Localization.DashboardWinStringId.FormatConditionAppearanceCustom">
+            <summary>
+                <para> </para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.DashboardWin.Localization.DashboardWinStringId.FormatConditionAppearanceCyan">
+            <summary>
+                <para> </para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.DashboardWin.Localization.DashboardWinStringId.FormatConditionAppearanceFontBlue">
+            <summary>
+                <para> </para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.DashboardWin.Localization.DashboardWinStringId.FormatConditionAppearanceFontBold">
+            <summary>
+                <para> </para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.DashboardWin.Localization.DashboardWinStringId.FormatConditionAppearanceFontGrayed">
+            <summary>
+                <para> </para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.DashboardWin.Localization.DashboardWinStringId.FormatConditionAppearanceFontGreen">
+            <summary>
+                <para> </para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.DashboardWin.Localization.DashboardWinStringId.FormatConditionAppearanceFontItalic">
+            <summary>
+                <para> </para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.DashboardWin.Localization.DashboardWinStringId.FormatConditionAppearanceFontRed">
+            <summary>
+                <para> </para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.DashboardWin.Localization.DashboardWinStringId.FormatConditionAppearanceFontUnderline">
+            <summary>
+                <para> </para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.DashboardWin.Localization.DashboardWinStringId.FormatConditionAppearanceFontYellow">
+            <summary>
+                <para> </para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.DashboardWin.Localization.DashboardWinStringId.FormatConditionAppearanceGradientBlue">
+            <summary>
+                <para> </para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.DashboardWin.Localization.DashboardWinStringId.FormatConditionAppearanceGradientCyan">
+            <summary>
+                <para> </para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.DashboardWin.Localization.DashboardWinStringId.FormatConditionAppearanceGradientGreen">
+            <summary>
+                <para> </para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.DashboardWin.Localization.DashboardWinStringId.FormatConditionAppearanceGradientOrange">
+            <summary>
+                <para> </para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.DashboardWin.Localization.DashboardWinStringId.FormatConditionAppearanceGradientPurple">
+            <summary>
+                <para> </para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.DashboardWin.Localization.DashboardWinStringId.FormatConditionAppearanceGradientRed">
+            <summary>
+                <para> </para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.DashboardWin.Localization.DashboardWinStringId.FormatConditionAppearanceGradientTransparent">
+            <summary>
+                <para> </para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.DashboardWin.Localization.DashboardWinStringId.FormatConditionAppearanceGradientYellow">
+            <summary>
+                <para> </para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.DashboardWin.Localization.DashboardWinStringId.FormatConditionAppearanceGray">
+            <summary>
+                <para> </para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.DashboardWin.Localization.DashboardWinStringId.FormatConditionAppearanceGreen">
+            <summary>
+                <para> </para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.DashboardWin.Localization.DashboardWinStringId.FormatConditionAppearanceNone">
+            <summary>
+                <para> </para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.DashboardWin.Localization.DashboardWinStringId.FormatConditionAppearanceOrange">
+            <summary>
+                <para> </para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.DashboardWin.Localization.DashboardWinStringId.FormatConditionAppearancePaleBlue">
+            <summary>
+                <para> </para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.DashboardWin.Localization.DashboardWinStringId.FormatConditionAppearancePaleCyan">
+            <summary>
+                <para> </para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.DashboardWin.Localization.DashboardWinStringId.FormatConditionAppearancePaleGray">
+            <summary>
+                <para> </para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.DashboardWin.Localization.DashboardWinStringId.FormatConditionAppearancePaleGreen">
+            <summary>
+                <para> </para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.DashboardWin.Localization.DashboardWinStringId.FormatConditionAppearancePaleOrange">
+            <summary>
+                <para> </para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.DashboardWin.Localization.DashboardWinStringId.FormatConditionAppearancePalePurple">
+            <summary>
+                <para> </para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.DashboardWin.Localization.DashboardWinStringId.FormatConditionAppearancePaleRed">
+            <summary>
+                <para> </para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.DashboardWin.Localization.DashboardWinStringId.FormatConditionAppearancePaleYellow">
+            <summary>
+                <para> </para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.DashboardWin.Localization.DashboardWinStringId.FormatConditionAppearancePurple">
+            <summary>
+                <para> </para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.DashboardWin.Localization.DashboardWinStringId.FormatConditionAppearanceRed">
+            <summary>
+                <para> </para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.DashboardWin.Localization.DashboardWinStringId.FormatConditionAppearanceYellow">
+            <summary>
+                <para> </para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.DashboardWin.Localization.DashboardWinStringId.FormatConditionBetweenAndCaption">
+            <summary>
+                <para> </para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.DashboardWin.Localization.DashboardWinStringId.FormatConditionCustomAppearanceCaption">
+            <summary>
+                <para> </para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.DashboardWin.Localization.DashboardWinStringId.FormatConditionRangeSetNoStyleCaption">
+            <summary>
+                <para> </para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.DashboardWin.Localization.DashboardWinStringId.FormatConditionTopBottomNCaption">
+            <summary>
+                <para> </para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.DashboardWin.Localization.DashboardWinStringId.FormatRuleApplyTo">
+            <summary>
+                <para><b>Default value</b>: Apply to
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.DashboardWin.Localization.DashboardWinStringId.FormatRuleApplyToColumn">
             <summary>
-                <para> </para>
+                <para><b>Default value</b>: Apply to column
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.DashboardWin.Localization.DashboardWinStringId.FormatRuleApplyToRow">
             <summary>
-                <para> </para>
+                <para><b>Default value</b>: Apply to row
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.DashboardWin.Localization.DashboardWinStringId.FormatRuleDataItemIsNotAvailable">
             <summary>
-                <para> </para>
+                <para><b>Default value</b>: (N/A)
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.DashboardWin.Localization.DashboardWinStringId.FormatRuleDataItemsAll">
             <summary>
-                <para> </para>
+                <para><b>Default value</b>: [All]
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.DashboardWin.Localization.DashboardWinStringId.FormatRuleFormatStyle">
             <summary>
-                <para> </para>
+                <para><b>Default value</b>: Format style
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.DashboardWin.Localization.DashboardWinStringId.FormatRuleInvalidRule">
             <summary>
-                <para> </para>
+                <para><b>Default value</b>: Invalid Rule
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.DashboardWin.Localization.DashboardWinStringId.FormatRuleInvalidRuleChanging">
             <summary>
-                <para> </para>
+                <para><b>Default value</b>: Invalid Rule cannot be enabled.
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.DashboardWin.Localization.DashboardWinStringId.FormatRulePercentOf">
             <summary>
-                <para> </para>
+                <para><b>Default value</b>: % of all values
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.DashboardWin.Localization.DashboardWinStringId.FormatRuleRangeAdd">
             <summary>
-                <para> </para>
+                <para><b>Default value</b>: Add
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.DashboardWin.Localization.DashboardWinStringId.FormatRuleRangeDelete">
             <summary>
-                <para> </para>
+                <para><b>Default value</b>: Delete
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.DashboardWin.Localization.DashboardWinStringId.FormatRuleRangeGenerateRanges">
             <summary>
-                <para> </para>
+                <para><b>Default value</b>: Generate Ranges
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.DashboardWin.Localization.DashboardWinStringId.FormatRuleRangeSegmentNumber">
             <summary>
-                <para> </para>
+                <para><b>Default value</b>: Number of ranges:
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.DashboardWin.Localization.DashboardWinStringId.FormatRuleRangeUsePercent">
             <summary>
-                <para> </para>
+                <para><b>Default value</b>: Use % ranges
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.DashboardWin.Localization.DashboardWinStringId.FormatRuleStyleAppearance">
             <summary>
-                <para> </para>
+                <para><b>Default value</b>: Appearance
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.DashboardWin.Localization.DashboardWinStringId.FormatRuleStyleIcons">
             <summary>
-                <para> </para>
+                <para><b>Default value</b>: Icons
+</para>
             </summary>
 
 
@@ -5977,84 +6323,96 @@
         </member>
         <member name="F:DevExpress.DashboardWin.Localization.DashboardWinStringId.GridClearSortingMenuItemCaption">
             <summary>
-                <para> </para>
+                <para><b>Default value</b>: Clear Sorting
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.DashboardWin.Localization.DashboardWinStringId.GridClearSortingMenuItemDescription">
             <summary>
-                <para> </para>
+                <para><b>Default value</b>: Clear Sorting
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.DashboardWin.Localization.DashboardWinStringId.GridColumnFitToContentMenuItemCaption">
             <summary>
-                <para> </para>
+                <para><b>Default value</b>: Fit to Content
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.DashboardWin.Localization.DashboardWinStringId.GridColumnFitToContentMenuItemDescription">
             <summary>
-                <para> </para>
+                <para><b>Default value</b>: Fit to Content.
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.DashboardWin.Localization.DashboardWinStringId.GridColumnFixedWidthMenuItemCaption">
             <summary>
-                <para> </para>
+                <para><b>Default value</b>: Fix Width
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.DashboardWin.Localization.DashboardWinStringId.GridColumnFixedWidthMenuItemDescription">
             <summary>
-                <para> </para>
+                <para><b>Default value</b>: Fix Width.
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.DashboardWin.Localization.DashboardWinStringId.GridColumnWidthMenuItemCaption">
             <summary>
-                <para> </para>
+                <para><b>Default value</b>: Column Width...
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.DashboardWin.Localization.DashboardWinStringId.GridColumnWidthMenuItemDescription">
             <summary>
-                <para> </para>
+                <para><b>Default value</b>: Column Width...
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.DashboardWin.Localization.DashboardWinStringId.GridSortAscendingMenuItemCaption">
             <summary>
-                <para> </para>
+                <para><b>Default value</b>: Sort Ascending
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.DashboardWin.Localization.DashboardWinStringId.GridSortAscendingMenuItemDescription">
             <summary>
-                <para> </para>
+                <para><b>Default value</b>: Sort Ascending
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.DashboardWin.Localization.DashboardWinStringId.GridSortDescendingMenuItemCaption">
             <summary>
-                <para> </para>
+                <para><b>Default value</b>: Sort Descending
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.DashboardWin.Localization.DashboardWinStringId.GridSortDescendingMenuItemDescription">
             <summary>
-                <para> </para>
+                <para><b>Default value</b>: Sort Descending
+</para>
             </summary>
 
 
@@ -6341,7 +6699,8 @@
         </member>
         <member name="F:DevExpress.DashboardWin.Localization.DashboardWinStringId.HistoryItemEditConnection">
             <summary>
-                <para> </para>
+                <para><b>Default value</b>: Modify connection parameters for '{0}'
+</para>
             </summary>
 
 
@@ -6404,7 +6763,8 @@
         </member>
         <member name="F:DevExpress.DashboardWin.Localization.DashboardWinStringId.HistoryItemEditQueries">
             <summary>
-                <para> </para>
+                <para><b>Default value</b>: Modify queries for '{0}'
+</para>
             </summary>
 
 
@@ -6443,42 +6803,48 @@
         </member>
         <member name="F:DevExpress.DashboardWin.Localization.DashboardWinStringId.HistoryItemFormatRuleClear">
             <summary>
-                <para> </para>
+                <para><b>Default value</b>: Clear format rules calculated by '{0}' for the '{1}'
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.DashboardWin.Localization.DashboardWinStringId.HistoryItemFormatRuleCreate">
             <summary>
-                <para> </para>
+                <para><b>Default value</b>: Create new '{0}' format rule for the '{1}'
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.DashboardWin.Localization.DashboardWinStringId.HistoryItemFormatRuleEdit">
             <summary>
-                <para> </para>
+                <para><b>Default value</b>: Edit '{0}' format rule of the '{1}'
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.DashboardWin.Localization.DashboardWinStringId.HistoryItemFormatRulePropertyEnabled">
             <summary>
-                <para> </para>
+                <para><b>Default value</b>: Enable/disable format rule for the '{0}'
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.DashboardWin.Localization.DashboardWinStringId.HistoryItemFormatRulesDelete">
             <summary>
-                <para> </para>
+                <para><b>Default value</b>: Delete format rule from the '{0}'
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.DashboardWin.Localization.DashboardWinStringId.HistoryItemFormatRulesMove">
             <summary>
-                <para> </para>
+                <para><b>Default value</b>: Change format rules order for the '{0}'
+</para>
             </summary>
 
 
@@ -6509,7 +6875,8 @@
         </member>
         <member name="F:DevExpress.DashboardWin.Localization.DashboardWinStringId.HistoryItemGeoPointMapClusterization">
             <summary>
-                <para> </para>
+                <para><b>Default value</b>: {0} clustering for '{1}'
+</para>
             </summary>
 
 
@@ -7012,56 +7379,64 @@
         </member>
         <member name="F:DevExpress.DashboardWin.Localization.DashboardWinStringId.IntersectionLevelColumnCaption">
             <summary>
-                <para> </para>
+                <para><b>Default value</b>: Column dimension
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.DashboardWin.Localization.DashboardWinStringId.IntersectionLevelModeAll">
             <summary>
-                <para> </para>
+                <para><b>Default value</b>: All levels
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.DashboardWin.Localization.DashboardWinStringId.IntersectionLevelModeAuto">
             <summary>
-                <para> </para>
+                <para><b>Default value</b>: (Auto)
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.DashboardWin.Localization.DashboardWinStringId.IntersectionLevelModeCaption">
             <summary>
-                <para> </para>
+                <para><b>Default value</b>: Intersection mode
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.DashboardWin.Localization.DashboardWinStringId.IntersectionLevelModeFirst">
             <summary>
-                <para> </para>
+                <para><b>Default value</b>: First level
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.DashboardWin.Localization.DashboardWinStringId.IntersectionLevelModeLast">
             <summary>
-                <para> </para>
+                <para><b>Default value</b>: Last level
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.DashboardWin.Localization.DashboardWinStringId.IntersectionLevelModeSpecific">
             <summary>
-                <para> </para>
+                <para><b>Default value</b>: Specific level
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.DashboardWin.Localization.DashboardWinStringId.IntersectionLevelRowCaption">
             <summary>
-                <para> </para>
+                <para><b>Default value</b>: Row dimension
+</para>
             </summary>
 
 
@@ -7276,7 +7651,8 @@
         </member>
         <member name="F:DevExpress.DashboardWin.Localization.DashboardWinStringId.MenuFormatRulesAdd">
             <summary>
-                <para> </para>
+                <para><b>Default value</b>: Add Format Rule
+</para>
             </summary>
 
 
@@ -7387,7 +7763,8 @@
         </member>
         <member name="F:DevExpress.DashboardWin.Localization.DashboardWinStringId.MessageDashboardLocked">
             <summary>
-                <para> </para>
+                <para><b>Default value</b>: Client actions cannot be performed until the Dashboard object is locked. Call the Dashboard.EndUpdate method to unlock the Dashboard.
+</para>
             </summary>
 
 
@@ -7490,7 +7867,8 @@
         </member>
         <member name="F:DevExpress.DashboardWin.Localization.DashboardWinStringId.MessageSummaryCalculatedFieldInDimension">
             <summary>
-                <para> </para>
+                <para><b>Default value</b>: Cannot change the expression of the '{0}' calculated field that provides data for the '{1}' dimension. Summary-based calculated fields can provide data for measures only.
+</para>
             </summary>
 
 
@@ -7585,7 +7963,8 @@
         </member>
         <member name="F:DevExpress.DashboardWin.Localization.DashboardWinStringId.ParameterFormCaption">
             <summary>
-                <para> </para>
+                <para><b>Default value</b>: Dashboard Parameter
+</para>
             </summary>
 
 
@@ -7608,7 +7987,8 @@
         </member>
         <member name="F:DevExpress.DashboardWin.Localization.DashboardWinStringId.PropertyGridNoDataMember">
             <summary>
-                <para> </para>
+                <para><b>Default value</b>: (none)
+</para>
             </summary>
 
 
@@ -7632,6 +8012,454 @@
         <member name="F:DevExpress.DashboardWin.Localization.DashboardWinStringId.PropertyGridParametersLookUpStaticList">
             <summary>
                 <para><b>Default value</b>: Static List
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.DashboardWin.Localization.DashboardWinStringId.RangeEditorControlBetweenValidateMesage">
+            <summary>
+                <para><b>Default value</b>: Specify a value between {0} and {1}
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.DashboardWin.Localization.DashboardWinStringId.RangeEditorControlGreaterValidateMesage">
+            <summary>
+                <para><b>Default value</b>: Specify a value greater than {0}
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.DashboardWin.Localization.DashboardWinStringId.RangeEditorControlLessValidateMesage">
+            <summary>
+                <para><b>Default value</b>: Specify a value less than {0}
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.DashboardWin.Localization.DashboardWinStringId.RangeGradientBlueGreen">
+            <summary>
+                <para><b>Default value</b>: Blue - Green
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.DashboardWin.Localization.DashboardWinStringId.RangeGradientBlueRed">
+            <summary>
+                <para><b>Default value</b>: Blue - Red
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.DashboardWin.Localization.DashboardWinStringId.RangeGradientBlueWhite">
+            <summary>
+                <para><b>Default value</b>: Blue - White
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.DashboardWin.Localization.DashboardWinStringId.RangeGradientBlueWhiteGreen">
+            <summary>
+                <para><b>Default value</b>: Blue - White - Green
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.DashboardWin.Localization.DashboardWinStringId.RangeGradientBlueWhiteRed">
+            <summary>
+                <para><b>Default value</b>: Blue - White - Red
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.DashboardWin.Localization.DashboardWinStringId.RangeGradientBlueYellow">
+            <summary>
+                <para><b>Default value</b>: Blue - Yellow
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.DashboardWin.Localization.DashboardWinStringId.RangeGradientBlueYellowGreen">
+            <summary>
+                <para><b>Default value</b>: Blue - Yellow - Green
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.DashboardWin.Localization.DashboardWinStringId.RangeGradientBlueYellowRed">
+            <summary>
+                <para><b>Default value</b>: Blue - Yellow - Red
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.DashboardWin.Localization.DashboardWinStringId.RangeGradientDescription">
+            <summary>
+                <para><b>Default value</b>: Apply formatting to values using\r\nthe specified color gradient.\r\nUnique colors indicate values\r\ncorresponding to the specified range
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.DashboardWin.Localization.DashboardWinStringId.RangeGradientGreenBlue">
+            <summary>
+                <para><b>Default value</b>: Green - Blue
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.DashboardWin.Localization.DashboardWinStringId.RangeGradientGreenWhite">
+            <summary>
+                <para><b>Default value</b>: Green - White
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.DashboardWin.Localization.DashboardWinStringId.RangeGradientGreenWhiteBlue">
+            <summary>
+                <para><b>Default value</b>: Green - White - Blue
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.DashboardWin.Localization.DashboardWinStringId.RangeGradientGreenWhiteRed">
+            <summary>
+                <para><b>Default value</b>: Green - White - Red
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.DashboardWin.Localization.DashboardWinStringId.RangeGradientGreenYellow">
+            <summary>
+                <para><b>Default value</b>: Green - Yellow
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.DashboardWin.Localization.DashboardWinStringId.RangeGradientGreenYellowBlue">
+            <summary>
+                <para><b>Default value</b>: Green - Yellow - Blue
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.DashboardWin.Localization.DashboardWinStringId.RangeGradientGreenYellowRed">
+            <summary>
+                <para><b>Default value</b>: Green - Yellow - Red
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.DashboardWin.Localization.DashboardWinStringId.RangeGradientRedBlue">
+            <summary>
+                <para><b>Default value</b>: Red - Blue
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.DashboardWin.Localization.DashboardWinStringId.RangeGradientRedWhite">
+            <summary>
+                <para><b>Default value</b>: Red - White
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.DashboardWin.Localization.DashboardWinStringId.RangeGradientRedWhiteBlue">
+            <summary>
+                <para><b>Default value</b>: Red - White - Blue
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.DashboardWin.Localization.DashboardWinStringId.RangeGradientRedWhiteGreen">
+            <summary>
+                <para><b>Default value</b>: Red - White - Green
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.DashboardWin.Localization.DashboardWinStringId.RangeGradientRedYellow">
+            <summary>
+                <para><b>Default value</b>: Red - Yellow
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.DashboardWin.Localization.DashboardWinStringId.RangeGradientRedYellowBlue">
+            <summary>
+                <para><b>Default value</b>: Red - Yellow - Blue
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.DashboardWin.Localization.DashboardWinStringId.RangeGradientRedYellowGreen">
+            <summary>
+                <para><b>Default value</b>: Red - Yellow - Green
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.DashboardWin.Localization.DashboardWinStringId.RangeGradientWhiteBlue">
+            <summary>
+                <para><b>Default value</b>: White - Blue
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.DashboardWin.Localization.DashboardWinStringId.RangeGradientWhiteGreen">
+            <summary>
+                <para><b>Default value</b>: White - Green
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.DashboardWin.Localization.DashboardWinStringId.RangeGradientWhiteRed">
+            <summary>
+                <para><b>Default value</b>: White - Red
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.DashboardWin.Localization.DashboardWinStringId.RangeGradientYellowBlue">
+            <summary>
+                <para><b>Default value</b>: Yellow - Blue
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.DashboardWin.Localization.DashboardWinStringId.RangeGradientYellowGreen">
+            <summary>
+                <para><b>Default value</b>: Yellow - Green
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.DashboardWin.Localization.DashboardWinStringId.RangeGradientYellowRed">
+            <summary>
+                <para><b>Default value</b>: Yellow - Red
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.DashboardWin.Localization.DashboardWinStringId.RangeSetColorsPaleRedGreen">
+            <summary>
+                <para><b>Default value</b>: Red/Green (Pale)
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.DashboardWin.Localization.DashboardWinStringId.RangeSetColorsPaleRedGreenBlue">
+            <summary>
+                <para><b>Default value</b>: Red/Green/Blue (Pale)
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.DashboardWin.Localization.DashboardWinStringId.RangeSetColorsPaleRedOrangeYellowGreenBlue">
+            <summary>
+                <para><b>Default value</b>: Red/Orange/Yellow/Green/Blue (Pale)
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.DashboardWin.Localization.DashboardWinStringId.RangeSetColorsPaleRedYellowGreenBlue">
+            <summary>
+                <para><b>Default value</b>: Red/Yellow/Green/Blue (Pale)
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.DashboardWin.Localization.DashboardWinStringId.RangeSetColorsRedGreen">
+            <summary>
+                <para><b>Default value</b>: Red/Green
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.DashboardWin.Localization.DashboardWinStringId.RangeSetColorsRedGreenBlue">
+            <summary>
+                <para><b>Default value</b>: Red/Green/Blue
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.DashboardWin.Localization.DashboardWinStringId.RangeSetColorsRedOrangeYellowGreenBlue">
+            <summary>
+                <para><b>Default value</b>: Red/Orange/Yellow/Green/Blue
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.DashboardWin.Localization.DashboardWinStringId.RangeSetColorsRedYellowGreenBlue">
+            <summary>
+                <para><b>Default value</b>: Red/Yellow/Green/Blue
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.DashboardWin.Localization.DashboardWinStringId.RangeSetDescription">
+            <summary>
+                <para><b>Default value</b>: Apply formatting to values classified\r\ninto the specified number of ranges
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.DashboardWin.Localization.DashboardWinStringId.RangeSetIconArrowsColored">
+            <summary>
+                <para><b>Default value</b>: {0} Arrows (Colored)
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.DashboardWin.Localization.DashboardWinStringId.RangeSetIconArrowsGray">
+            <summary>
+                <para><b>Default value</b>: {0} Arrows (Gray)
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.DashboardWin.Localization.DashboardWinStringId.RangeSetIconBars">
+            <summary>
+                <para><b>Default value</b>: {0} Bars
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.DashboardWin.Localization.DashboardWinStringId.RangeSetIconBoxes">
+            <summary>
+                <para><b>Default value</b>: 5 Boxes
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.DashboardWin.Localization.DashboardWinStringId.RangeSetIconCircles">
+            <summary>
+                <para><b>Default value</b>: 4 Circles (Red To Black)
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.DashboardWin.Localization.DashboardWinStringId.RangeSetIconCirclesRedToBlack">
+            <summary>
+                <para><b>Default value</b>: 4 Circles (Red To Black)
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.DashboardWin.Localization.DashboardWinStringId.RangeSetIconFlags">
+            <summary>
+                <para><b>Default value</b>: 3 Flags
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.DashboardWin.Localization.DashboardWinStringId.RangeSetIconPositiveNegativeTriangles">
+            <summary>
+                <para><b>Default value</b>: 3 Triangles
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.DashboardWin.Localization.DashboardWinStringId.RangeSetIconQuarters">
+            <summary>
+                <para><b>Default value</b>: 5 Quarters
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.DashboardWin.Localization.DashboardWinStringId.RangeSetIconSigns">
+            <summary>
+                <para><b>Default value</b>: 3 Signs
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.DashboardWin.Localization.DashboardWinStringId.RangeSetIconStars">
+            <summary>
+                <para><b>Default value</b>: 3 Stars
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.DashboardWin.Localization.DashboardWinStringId.RangeSetIconSymbolsCircled">
+            <summary>
+                <para><b>Default value</b>: {0} Symbols (Circled)
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.DashboardWin.Localization.DashboardWinStringId.RangeSetIconSymbolsUncircled">
+            <summary>
+                <para><b>Default value</b>: {0} Symbols (Uncircled)
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.DashboardWin.Localization.DashboardWinStringId.RangeSetIconTrafficLights">
+            <summary>
+                <para><b>Default value</b>: 3 Traffic Lights
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.DashboardWin.Localization.DashboardWinStringId.RangeSetIconTriangles">
+            <summary>
+                <para><b>Default value</b>: {0} Triangles
 </para>
             </summary>
 
@@ -7711,14 +8539,16 @@
         </member>
         <member name="F:DevExpress.DashboardWin.Localization.DashboardWinStringId.ResetGridColumnsWidthMenuItemCaption">
             <summary>
-                <para> </para>
+                <para><b>Default value</b>: Reset Column Widths
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.DashboardWin.Localization.DashboardWinStringId.ResetGridColumnsWidthMenuItemDescription">
             <summary>
-                <para> </para>
+                <para><b>Default value</b>: Reset column widths.
+</para>
             </summary>
 
 
@@ -7759,13 +8589,6 @@
             <summary>
                 <para><b>Default value</b>: Common
 </para>
-            </summary>
-
-
-        </member>
-        <member name="F:DevExpress.DashboardWin.Localization.DashboardWinStringId.RibbonGroupConditionalFormatting">
-            <summary>
-                <para> </para>
             </summary>
 
 
@@ -8076,7 +8899,8 @@
         </member>
         <member name="F:DevExpress.DashboardWin.Localization.DashboardWinStringId.RibbonGroupSqlDataSourceQueries">
             <summary>
-                <para> </para>
+                <para><b>Default value</b>: Queries
+</para>
             </summary>
 
 
@@ -8339,7 +9163,8 @@
         </member>
         <member name="F:DevExpress.DashboardWin.Localization.DashboardWinStringId.TooltipRefreshFieldList">
             <summary>
-                <para> </para>
+                <para><b>Default value</b>: Refresh Field List
+</para>
             </summary>
 
 

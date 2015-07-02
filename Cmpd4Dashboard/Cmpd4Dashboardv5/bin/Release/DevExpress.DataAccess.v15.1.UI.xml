@@ -437,7 +437,8 @@
         </member>
         <member name="F:DevExpress.DataAccess.UI.Localization.DataAccessUIStringId.MessageCannotLoadDatabasesList">
             <summary>
-                <para> </para>
+                <para><b>Default value</b>: "Error has occurred during loading databases list."
+</para>
             </summary>
 
 
@@ -564,14 +565,16 @@
         </member>
         <member name="F:DevExpress.DataAccess.UI.Localization.DataAccessUIStringId.QueryBuilderColumn">
             <summary>
-                <para> </para>
+                <para><b>Default value</b>: "Column"
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.DataAccess.UI.Localization.DataAccessUIStringId.QueryBuilderColumnsOf">
             <summary>
-                <para> </para>
+                <para><b>Default value</b>: "Columns of {0}"
+</para>
             </summary>
 
 
@@ -586,7 +589,8 @@
         </member>
         <member name="F:DevExpress.DataAccess.UI.Localization.DataAccessUIStringId.QueryBuilderTable">
             <summary>
-                <para> </para>
+                <para><b>Default value</b>: "Table"
+</para>
             </summary>
 
 
@@ -682,14 +686,16 @@
         </member>
         <member name="F:DevExpress.DataAccess.UI.Localization.DataAccessUIStringId.RebuildResultSchemaCaption">
             <summary>
-                <para> </para>
+                <para><b>Default value</b>: "Rebuild Result Schema"
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.DataAccess.UI.Localization.DataAccessUIStringId.RebuildResultSchemaComplete">
             <summary>
-                <para> </para>
+                <para><b>Default value</b>: "Result schema is rebuilt successfully."
+</para>
             </summary>
 
 
@@ -768,14 +774,16 @@
         </member>
         <member name="F:DevExpress.DataAccess.UI.Localization.DataAccessUIStringId.UpdateDBSchemaCaption">
             <summary>
-                <para> </para>
+                <para><b>Default value</b>: "Request Database Schema"
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.DataAccess.UI.Localization.DataAccessUIStringId.UpdateDBSchemaComplete">
             <summary>
-                <para> </para>
+                <para><b>Default value</b>: "Database schema is updated successfully."
+</para>
             </summary>
 
 
@@ -846,7 +854,8 @@
         </member>
         <member name="F:DevExpress.DataAccess.UI.Localization.DataAccessUIStringId.WizardDuplicatingColumnNameMessage">
             <summary>
-                <para> </para>
+                <para><b>Default value</b>: "A data schema contains a duplicated column '{0}'. Modify the query so that all columns have unique names."
+</para>
             </summary>
 
 
@@ -1075,7 +1084,7 @@
 
             </param>
             <param name="dbSchemaProvider">
-		An object implementing the <see cref="T:DevExpress.DataAccess.IDBSchemaProvider"/> interface.
+		An object implementing the <see cref="T:DevExpress.DataAccess.Sql.IDBSchemaProvider"/> interface.
 
             </param>
             <param name="parameterService">
@@ -1105,7 +1114,7 @@
 
             </param>
             <param name="dbSchemaProvider">
-		An <see cref="T:DevExpress.DataAccess.IDBSchemaProvider"/>, providing access to the schema of the SQL data base.
+		An <see cref="T:DevExpress.DataAccess.Sql.IDBSchemaProvider"/>, providing access to the schema of the SQL data base.
 
             </param>
             <returns><b>true</b>, if the dialog was finished by clicking the <b>OK</b> button; otherwise, <b>false</b>.
@@ -1451,7 +1460,7 @@
 
             </param>
             <param name="dbSchemaProvider">
-		An object implementing the <see cref="T:DevExpress.DataAccess.IDBSchemaProvider"/> interface.
+		An object implementing the <see cref="T:DevExpress.DataAccess.Sql.IDBSchemaProvider"/> interface.
 
             </param>
             <param name="parameterService">
@@ -1517,7 +1526,7 @@
 
             </param>
             <param name="dbSchemaProvider">
-		An <see cref="T:DevExpress.DataAccess.IDBSchemaProvider"/>, providing access to the schema of the SQL data base
+		An <see cref="T:DevExpress.DataAccess.Sql.IDBSchemaProvider"/>, providing access to the schema of the SQL data base
 
             </param>
             <returns><b>true</b>, if the dialog was finished by clicking the <b>OK</b> button; otherwise, <b>false</b>.
@@ -1683,7 +1692,7 @@
 
             </param>
             <param name="dbSchemaProvider">
-		An object implementing the <see cref="T:DevExpress.DataAccess.IDBSchemaProvider"/> interface.
+		An object implementing the <see cref="T:DevExpress.DataAccess.Sql.IDBSchemaProvider"/> interface.
 
             </param>
             <param name="parameterService">
@@ -1727,7 +1736,7 @@
 
             </param>
             <param name="dbSchemaProvider">
-		An object implementing the <see cref="T:DevExpress.DataAccess.IDBSchemaProvider"/> interface.
+		An object implementing the <see cref="T:DevExpress.DataAccess.Sql.IDBSchemaProvider"/> interface.
 
             </param>
             <returns><b>true</b>, if the dialog was finished by clicking the <b>OK</b> button; otherwise, <b>false</b>.
@@ -1807,7 +1816,7 @@
 
             </param>
             <param name="dbSchemaProvider">
-		An object implementing the <see cref="T:DevExpress.DataAccess.IDBSchemaProvider"/> interface.
+		An object implementing the <see cref="T:DevExpress.DataAccess.Sql.IDBSchemaProvider"/> interface.
 
             </param>
             <returns><b>true</b>, if the dialog was finished by clicking the <b>OK</b> button; otherwise, <b>false</b>.

@@ -403,45 +403,55 @@
         </member>
         <member name="P:DevExpress.DashboardCommon.FormatConditionRangeBase.IsValid">
             <summary>
-                <para> </para>
+                <para>Gets whether the current format condition is properly specified.
+</para>
             </summary>
-            <value> </value>
+            <value><b>true</b>, if the current format condition is properly specified; otherwise, <b>false</b>.
+</value>
 
 
         </member>
         <member name="P:DevExpress.DashboardCommon.FormatConditionRangeBase.RangeSet">
             <summary>
-                <para> </para>
+                <para>Gets the collection of ranges providing custom range boundaries and corresponding style settings.
+</para>
             </summary>
-            <value> </value>
+            <value>A <see cref="T:DevExpress.DashboardCommon.RangeSet"/> object that is the collection of ranges providing custom range boundaries and corresponding style settings.
+</value>
 
 
         </member>
         <member name="M:DevExpress.DashboardCommon.FormatConditionRangeBase.SetValueComparison(DevExpress.DashboardCommon.DashboardFormatConditionComparisonType)">
             <summary>
-                <para> </para>
+                <para>Specifies the comparison logic used to apply conditional formatting.
+</para>
             </summary>
             <param name="valueComparison">
-		 
+		A <see cref="T:DevExpress.DashboardCommon.DashboardFormatConditionComparisonType"/> object that specifies the comparison logic used to apply conditional formatting.
+
             </param>
 
 
         </member>
         <member name="M:DevExpress.DashboardCommon.FormatConditionRangeBase.SetValues(System.Collections.ICollection)">
             <summary>
-                <para> </para>
+                <para>Specifies boundary values for the current format condition.
+</para>
             </summary>
             <param name="values">
-		 
+		A collection of boundary values.
+
             </param>
 
 
         </member>
         <member name="P:DevExpress.DashboardCommon.FormatConditionRangeBase.ValueType">
             <summary>
-                <para> </para>
+                <para>Gets or sets the value type used in conditional formatting. 
+</para>
             </summary>
-            <value> </value>
+            <value>A <see cref="T:DevExpress.DashboardCommon.DashboardFormatConditionValueType"/> object that specifies the value type used in conditional formatting. 
+</value>
 
 
         </member>
@@ -718,9 +728,11 @@
         </member>
         <member name="P:DevExpress.DashboardCommon.PivotDashboardItem.FormatRules">
             <summary>
-                <para> </para>
+                <para>Provides access to format rules of the Pivot dashboard item.
+</para>
             </summary>
-            <value> </value>
+            <value>A <see cref="T:DevExpress.DashboardCommon.PivotItemFormatRuleCollection"/> object that is a collection of Pivot format rules.
+</value>
 
 
         </member>
@@ -2302,7 +2314,8 @@
         </member>
         <member name="F:DevExpress.DashboardCommon.Localization.DashboardStringId.DefaultEFDataSourceName">
             <summary>
-                <para> </para>
+                <para><b>Default value:</b> EF Data Source
+</para>
             </summary>
 
 
@@ -2429,21 +2442,24 @@
         </member>
         <member name="F:DevExpress.DashboardCommon.Localization.DashboardStringId.DefaultObjectDataSourceName">
             <summary>
-                <para> </para>
+                <para><b>Default value:</b> Object Data Source
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.DashboardCommon.Localization.DashboardStringId.DefaultOlapDataSourceName">
             <summary>
-                <para> </para>
+                <para><b>Default value:</b> OLAP Data Source
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.DashboardCommon.Localization.DashboardStringId.DefaultSqlDataSourceName">
             <summary>
-                <para> </para>
+                <para><b>Default value:</b> SQL Data Source
+</para>
             </summary>
 
 
@@ -2955,7 +2971,8 @@
         </member>
         <member name="F:DevExpress.DashboardCommon.Localization.DashboardStringId.MessageDashboardNotRelevantError">
             <summary>
-                <para> </para>
+                <para><b>Default value:</b> Dashboard object model was changed. Refresh operation is required.
+</para>
             </summary>
 
 
@@ -3082,14 +3099,16 @@
         </member>
         <member name="F:DevExpress.DashboardCommon.Localization.DashboardStringId.MessageInvalidLayoutClientHeight">
             <summary>
-                <para> </para>
+                <para><b>Default value:</b> The layout height must be greater than zero.
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.DashboardCommon.Localization.DashboardStringId.MessageInvalidLayoutClientWidth">
             <summary>
-                <para> </para>
+                <para><b>Default value:</b> The layout width must be greater than zero.
+</para>
             </summary>
 
 
@@ -3128,14 +3147,16 @@
         </member>
         <member name="F:DevExpress.DashboardCommon.Localization.DashboardStringId.MessagePivotHasNoData">
             <summary>
-                <para> </para>
+                <para><b>Default value:</b> The pivot has no data.
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.DashboardCommon.Localization.DashboardStringId.MessageSummaryCalculatedFieldInDimension">
             <summary>
-                <para> </para>
+                <para><b>Default value:</b> Cannot change the expression of the '{0}' calculated field that provides data for the '{1}' dimension. Summary-based calculated fields can provide data for measures only.
+</para>
             </summary>
 
 
@@ -5703,6 +5724,16 @@
 
 
         </member>
+        <member name="M:DevExpress.DashboardCommon.DataDashboardItem.GetMeasures">
+            <summary>
+                <para>Returns the measures used to provide data for the current dashboard item. 
+</para>
+            </summary>
+            <returns>A list of <see cref="T:DevExpress.DashboardCommon.Measure"/> objects that represent the measures used to provide data for the current dashboard item. 
+</returns>
+
+
+        </member>
         <member name="P:DevExpress.DashboardCommon.DataDashboardItem.HiddenDimensions">
             <summary>
                 <para>Gets a collection of hidden dimensions.
@@ -8207,9 +8238,11 @@
         </member>
         <member name="P:DevExpress.DashboardCommon.IDashboardDataSource.DataProvider">
             <summary>
-                <para> </para>
+                <para>For internal use.
+</para>
             </summary>
-            <value> </value>
+            <value> 
+</value>
 
 
         </member>
@@ -10028,54 +10061,64 @@
         <member name="T:DevExpress.DashboardCommon.PivotItemFormatRuleLevel">
 
             <summary>
-                <para> </para>
+                <para>A pivot level used to apply conditional formatting to specific cells.
+</para>
             </summary>
 
         </member>
         <member name="M:DevExpress.DashboardCommon.PivotItemFormatRuleLevel.#ctor">
             <summary>
-                <para> </para>
+                <para>Initializes a new instance of the PivotItemFormatRuleLevel class.
+</para>
             </summary>
 
 
         </member>
         <member name="M:DevExpress.DashboardCommon.PivotItemFormatRuleLevel.Assign(DevExpress.DashboardCommon.PivotItemFormatRuleLevel)">
             <summary>
-                <para> </para>
+                <para>Copies settings of the specified object to the current object.
+</para>
             </summary>
             <param name="level">
-		 
+		An PivotItemFormatRuleLevel object whose settings are copied to the current object. 
+
             </param>
 
 
         </member>
         <member name="M:DevExpress.DashboardCommon.PivotItemFormatRuleLevel.BeginUpdate">
             <summary>
-                <para> </para>
+                <para>Locks the PivotItemFormatRuleLevel object by preventing updates until the <see cref="M:DevExpress.DashboardCommon.PivotItemFormatRuleLevel.EndUpdate"/> method is called.
+</para>
             </summary>
 
 
         </member>
         <member name="P:DevExpress.DashboardCommon.PivotItemFormatRuleLevel.Column">
             <summary>
-                <para> </para>
+                <para>Gets or sets a column dimension used to specify a pivot level.
+</para>
             </summary>
-            <value> </value>
+            <value>A <see cref="T:DevExpress.DashboardCommon.Dimension"/> object that specifies a column dimension used to specify a pivot level.
+</value>
 
 
         </member>
         <member name="M:DevExpress.DashboardCommon.PivotItemFormatRuleLevel.EndUpdate">
             <summary>
-                <para> </para>
+                <para>Unlocks the PivotItemFormatRuleLevel object after a call to the <see cref="M:DevExpress.DashboardCommon.PivotItemFormatRuleLevel.BeginUpdate"/> method. 
+</para>
             </summary>
 
 
         </member>
         <member name="P:DevExpress.DashboardCommon.PivotItemFormatRuleLevel.Row">
             <summary>
-                <para> </para>
+                <para>Gets or sets a row dimension used to specify a pivot level.
+</para>
             </summary>
-            <value> </value>
+            <value>A <see cref="T:DevExpress.DashboardCommon.Dimension"/> object that specifies a row dimension used to specify a pivot level.
+</value>
 
 
         </member>
@@ -10799,9 +10842,11 @@
         </member>
         <member name="P:DevExpress.DashboardCommon.GridDashboardItem.FormatRules">
             <summary>
-                <para> </para>
+                <para>Provides access to format rules of the Grid dashboard item.
+</para>
             </summary>
-            <value> </value>
+            <value>A <see cref="T:DevExpress.DashboardCommon.GridItemFormatRuleCollection"/> object that is a collection of Grid format rules.
+</value>
 
 
         </member>
@@ -10912,20 +10957,25 @@
         </member>
         <member name="M:DevExpress.DashboardCommon.StyleSettingsBase.Equals(System.Object)">
             <summary>
-                <para> </para>
+                <para>Determines whether the specified object is equal to the current StyleSettingsBase instance.
+</para>
             </summary>
             <param name="obj">
-		 
+		The object to compare with the current object.
+
             </param>
-            <returns> </returns>
+            <returns><b>true</b>, if the specified object is equal to the current StyleSettingsBase instance; otherwise, <b>false</b>. 
+</returns>
 
 
         </member>
         <member name="M:DevExpress.DashboardCommon.StyleSettingsBase.GetHashCode">
             <summary>
-                <para> </para>
+                <para>Gets the hash code that corresponds to the value of the current StyleSettingsBase object.
+</para>
             </summary>
-            <returns> </returns>
+            <returns>An integer value representing the hash code for the current object.
+</returns>
 
 
         </member>
@@ -11049,14 +11099,6 @@
 
 
         </member>
-        <member name="M:DevExpress.DashboardCommon.OlapDataConnection.AddReference">
-            <summary>
-                <para>For internal use.
-</para>
-            </summary>
-
-
-        </member>
         <member name="M:DevExpress.DashboardCommon.OlapDataConnection.Close">
             <summary>
                 <para>Closes the connection to a cube in an MS Analysis Services database.
@@ -11112,14 +11154,6 @@
             </summary>
             <value><b>true</b>, if the connection to a cube in an MS Analysis Services database is established; otherwise, <b>false</b>.
 </value>
-
-
-        </member>
-        <member name="M:DevExpress.DashboardCommon.OlapDataConnection.RemoveReference">
-            <summary>
-                <para>For internal use.
-</para>
-            </summary>
 
 
         </member>
@@ -12264,439 +12298,470 @@
         </member>
         <member name="M:DevExpress.DashboardCommon.IconSettings.#ctor(DevExpress.DashboardCommon.FormatConditionIconType)">
             <summary>
-                <para> </para>
+                <para>Initializes a new instance of the IconSettings class.
+</para>
             </summary>
             <param name="iconType">
-		 
+		A <see cref="T:DevExpress.DashboardCommon.FormatConditionIconType"/> object that specifies the icon.
+
             </param>
 
 
         </member>
         <member name="M:DevExpress.DashboardCommon.IconSettings.#ctor">
             <summary>
-                <para> </para>
+                <para>Initializes a new instance of the IconSettings class.
+</para>
             </summary>
-
-
-        </member>
-        <member name="P:DevExpress.DashboardCommon.IconSettings.Data">
-            <summary>
-                <para> </para>
-            </summary>
-            <value> </value>
-
-
-        </member>
-        <member name="P:DevExpress.DashboardCommon.IconSettings.DataSerializable">
-            <summary>
-                <para> </para>
-            </summary>
-            <value> </value>
 
 
         </member>
         <member name="M:DevExpress.DashboardCommon.IconSettings.Equals(System.Object)">
             <summary>
-                <para> </para>
+                <para>Determines whether the specified object is equal to the current IconSettings instance.
+</para>
             </summary>
             <param name="obj">
-		 
+		The object to compare with the current object.
+
             </param>
-            <returns> </returns>
+            <returns><b>true</b>, if the specified object is equal to the current IconSettings instance; otherwise, <b>false</b>. 
+</returns>
 
 
         </member>
         <member name="M:DevExpress.DashboardCommon.IconSettings.GetHashCode">
             <summary>
-                <para> </para>
+                <para>Gets the hash code that corresponds to the value of the current IconSettings object.
+</para>
             </summary>
-            <returns> </returns>
+            <returns>An integer value representing the hash code for the current object.
+</returns>
 
 
         </member>
         <member name="P:DevExpress.DashboardCommon.IconSettings.IconType">
             <summary>
-                <para> </para>
+                <para>Gets or sets the icon used in conditional formatting.
+</para>
             </summary>
-            <value> </value>
-
-
-        </member>
-        <member name="P:DevExpress.DashboardCommon.IconSettings.Url">
-            <summary>
-                <para> </para>
-            </summary>
-            <value> </value>
+            <value>A <see cref="T:DevExpress.DashboardCommon.FormatConditionIconType"/> object that specifies the icon.
+</value>
 
 
         </member>
         <member name="T:DevExpress.DashboardCommon.FormatConditionIconType">
 
             <summary>
-                <para> </para>
+                <para>Lists values used to specify the icon used in conditional formatting.
+</para>
             </summary>
-
-        </member>
-        <member name="F:DevExpress.DashboardCommon.FormatConditionIconType.Custom">
-            <summary>
-                <para> </para>
-            </summary>
-
 
         </member>
         <member name="F:DevExpress.DashboardCommon.FormatConditionIconType.DirectionalGrayArrowUp">
             <summary>
-                <para> </para>
+                <para>Gray Up arrow.
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.DashboardCommon.FormatConditionIconType.DirectionalGrayDownArrow">
             <summary>
-                <para> </para>
+                <para>Gray Down arrow.
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.DashboardCommon.FormatConditionIconType.DirectionalGrayDownInclineArrow">
             <summary>
-                <para> </para>
+                <para>Gray Down Incline arrow.
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.DashboardCommon.FormatConditionIconType.DirectionalGraySideArrow">
             <summary>
-                <para> </para>
+                <para>Gray Side arrow.
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.DashboardCommon.FormatConditionIconType.DirectionalGrayUpInclineArrow">
             <summary>
-                <para> </para>
+                <para>Gray Up Incline arrow.
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.DashboardCommon.FormatConditionIconType.DirectionalGreenArrowUp">
             <summary>
-                <para> </para>
+                <para>Green Up arrow.
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.DashboardCommon.FormatConditionIconType.DirectionalGreenTriangleUp">
             <summary>
-                <para> </para>
+                <para>Green Up triangle.
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.DashboardCommon.FormatConditionIconType.DirectionalRedDownArrow">
             <summary>
-                <para> </para>
+                <para>Red Down arrow.
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.DashboardCommon.FormatConditionIconType.DirectionalRedTriangleDown">
             <summary>
-                <para> </para>
+                <para>Red Down triangle.
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.DashboardCommon.FormatConditionIconType.DirectionalYellowDash">
             <summary>
-                <para> </para>
+                <para>Yellow dash.
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.DashboardCommon.FormatConditionIconType.DirectionalYellowDownInclineArrow">
             <summary>
-                <para> </para>
+                <para>Yellow Down Incline arrow.
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.DashboardCommon.FormatConditionIconType.DirectionalYellowSideArrow">
             <summary>
-                <para> </para>
+                <para>Yellow Side arrow.
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.DashboardCommon.FormatConditionIconType.DirectionalYellowUpInclineArrow">
             <summary>
-                <para> </para>
+                <para>Yellow Up Incline arrow.
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.DashboardCommon.FormatConditionIconType.IndicatorCircledGreenCheck">
             <summary>
-                <para> </para>
+                <para>Circled Green Check.
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.DashboardCommon.FormatConditionIconType.IndicatorCircledRedCross">
             <summary>
-                <para> </para>
+                <para>Circled Red Cross.
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.DashboardCommon.FormatConditionIconType.IndicatorCircledYellowExclamation">
             <summary>
-                <para> </para>
+                <para>Circled Yellow Exclamation.
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.DashboardCommon.FormatConditionIconType.IndicatorGreenCheck">
             <summary>
-                <para> </para>
+                <para>Green Check.
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.DashboardCommon.FormatConditionIconType.IndicatorGreenFlag">
             <summary>
-                <para> </para>
+                <para>Green Flag.
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.DashboardCommon.FormatConditionIconType.IndicatorRedCross">
             <summary>
-                <para> </para>
+                <para>Red Cross.
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.DashboardCommon.FormatConditionIconType.IndicatorRedFlag">
             <summary>
-                <para> </para>
+                <para>Red Flag.
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.DashboardCommon.FormatConditionIconType.IndicatorYellowExclamation">
             <summary>
-                <para> </para>
+                <para>Yellow Exclamation.
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.DashboardCommon.FormatConditionIconType.IndicatorYellowFlag">
             <summary>
-                <para> </para>
+                <para>Yellow Flag.
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.DashboardCommon.FormatConditionIconType.None">
             <summary>
-                <para> </para>
+                <para>No icon.
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.DashboardCommon.FormatConditionIconType.Rating0Bars">
             <summary>
-                <para> </para>
+                <para>0 filled bars.
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.DashboardCommon.FormatConditionIconType.Rating0FilledBoxes">
             <summary>
-                <para> </para>
+                <para>0 filled boxes.
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.DashboardCommon.FormatConditionIconType.Rating1Bar">
             <summary>
-                <para> </para>
+                <para>1 filled bar.
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.DashboardCommon.FormatConditionIconType.Rating1FilledBox">
             <summary>
-                <para> </para>
+                <para>1 filled box.
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.DashboardCommon.FormatConditionIconType.Rating1QuarterGrayCircle">
             <summary>
-                <para> </para>
+                <para>Gray circle with one white quarter.
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.DashboardCommon.FormatConditionIconType.Rating2Bars">
             <summary>
-                <para> </para>
+                <para>2 filled bars.
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.DashboardCommon.FormatConditionIconType.Rating2FilledBoxes">
             <summary>
-                <para> </para>
+                <para>2 filled boxes.
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.DashboardCommon.FormatConditionIconType.Rating2QuartersGrayCircle">
             <summary>
-                <para> </para>
+                <para>Gray circle with two white quarters.
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.DashboardCommon.FormatConditionIconType.Rating3Bars">
             <summary>
-                <para> </para>
+                <para>3 filled bars.
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.DashboardCommon.FormatConditionIconType.Rating3FilledBoxes">
             <summary>
-                <para> </para>
+                <para>3 filled boxes.
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.DashboardCommon.FormatConditionIconType.Rating3QuartersGrayCircle">
             <summary>
-                <para> </para>
+                <para>Gray circle with three white quarters.
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.DashboardCommon.FormatConditionIconType.Rating4Bars">
             <summary>
-                <para> </para>
+                <para>4 filled bars.
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.DashboardCommon.FormatConditionIconType.Rating4FilledBoxes">
             <summary>
-                <para> </para>
+                <para>4 filled boxes.
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.DashboardCommon.FormatConditionIconType.RatingEmptyGrayCircle">
             <summary>
-                <para> </para>
+                <para>Empty gray circle.
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.DashboardCommon.FormatConditionIconType.RatingEmptyGrayStar">
             <summary>
-                <para> </para>
+                <para>Empty gray star.
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.DashboardCommon.FormatConditionIconType.RatingFullGrayCircle">
             <summary>
-                <para> </para>
+                <para>Gray circle.
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.DashboardCommon.FormatConditionIconType.RatingFullGrayStar">
             <summary>
-                <para> </para>
+                <para>Gray Star.
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.DashboardCommon.FormatConditionIconType.RatingHalfGrayStar">
             <summary>
-                <para> </para>
+                <para>Half Gray Star.
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.DashboardCommon.FormatConditionIconType.ShapeGreenCircle">
             <summary>
-                <para> </para>
+                <para>Green circle.
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.DashboardCommon.FormatConditionIconType.ShapeGreenTrafficLight">
             <summary>
-                <para> </para>
+                <para>Green Traffic Light.
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.DashboardCommon.FormatConditionIconType.ShapeLightGrayCircle">
             <summary>
-                <para> </para>
+                <para>Light Gray Circle.
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.DashboardCommon.FormatConditionIconType.ShapeLightRedCircle">
             <summary>
-                <para> </para>
+                <para>Light Red Circle.
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.DashboardCommon.FormatConditionIconType.ShapeRedCircle">
             <summary>
-                <para> </para>
+                <para>Red Circle.
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.DashboardCommon.FormatConditionIconType.ShapeRedDiamond">
             <summary>
-                <para> </para>
+                <para>Red Diamond.
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.DashboardCommon.FormatConditionIconType.ShapeRedTrafficLight">
             <summary>
-                <para> </para>
+                <para>Red Traffic Light.
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.DashboardCommon.FormatConditionIconType.ShapeYellowCircle">
             <summary>
-                <para> </para>
+                <para>Yellow Circle.
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.DashboardCommon.FormatConditionIconType.ShapeYellowTrafficLight">
             <summary>
-                <para> </para>
+                <para>Yellow Traffic Light.
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.DashboardCommon.FormatConditionIconType.ShapeYellowTriangle">
             <summary>
-                <para> </para>
+                <para>Yellow Triangle.
+</para>
             </summary>
 
 
@@ -12870,50 +12935,59 @@
         <member name="T:DevExpress.DashboardCommon.RangeSet">
 
             <summary>
-                <para> </para>
+                <para>A collection of <see cref="T:DevExpress.DashboardCommon.RangeInfo"/> objects providing custom range boundaries and corresponding style settings used to apply conditional formatting to value ranges.
+</para>
             </summary>
 
         </member>
         <member name="M:DevExpress.DashboardCommon.RangeSet.#ctor">
             <summary>
-                <para> </para>
+                <para>Initializes a new instance of the RangeSet class.
+</para>
             </summary>
 
 
         </member>
         <member name="P:DevExpress.DashboardCommon.RangeSet.HasRanges">
             <summary>
-                <para> </para>
+                <para>Gets whether or not the current range set contains at least one range.
+</para>
             </summary>
-            <value> </value>
+            <value><b>true</b>, if the current range set contains at least one range; otherwise, <b>false</b>.
+</value>
 
 
         </member>
         <member name="M:DevExpress.DashboardCommon.RangeSet.ToString">
             <summary>
-                <para> </para>
+                <para>Returns the string that represents the current object.
+</para>
             </summary>
-            <returns> </returns>
+            <returns>A <see cref="T:System.String"/> that represents the current RangeSet object. 
+</returns>
 
 
         </member>
         <member name="T:DevExpress.DashboardCommon.RangeInfo">
 
             <summary>
-                <para> </para>
+                <para>Provides custom range boundaries and corresponding style settings used to apply conditional formatting to value ranges.
+</para>
             </summary>
 
         </member>
         <member name="M:DevExpress.DashboardCommon.RangeInfo.#ctor">
             <summary>
-                <para> </para>
+                <para>Initializes a new instance of the RangeInfo class.
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.DashboardCommon.RangeInfo.NegativeInfinity">
             <summary>
-                <para> </para>
+                <para>Identifies a negative infinity that can be used as a lower range boundary (the <see cref="P:DevExpress.DashboardCommon.RangeInfo.Value"/> property).
+</para>
             </summary>
             <returns> </returns>
 
@@ -12921,33 +12995,45 @@
         </member>
         <member name="P:DevExpress.DashboardCommon.RangeInfo.StyleSettings">
             <summary>
-                <para> </para>
+                <para>Gets or sets style settings applied to values within the current range.
+</para>
             </summary>
-            <value> </value>
+            <value>A <see cref="T:DevExpress.DashboardCommon.StyleSettingsBase"/> descendant that specifies style settings applied to values within the current range.
+</value>
 
 
         </member>
         <member name="M:DevExpress.DashboardCommon.RangeInfo.ToString">
             <summary>
-                <para> </para>
+                <para>Returns the string that represents the current object.
+</para>
             </summary>
-            <returns> </returns>
+            <returns>A <see cref="T:System.String"/> that represents the current RangeInfo object. 
+</returns>
 
 
         </member>
         <member name="P:DevExpress.DashboardCommon.RangeInfo.Value">
             <summary>
-                <para> </para>
+                <para>Gets or sets the lower boundary value for the current range.
+
+</para>
             </summary>
-            <value> </value>
+            <value>The lower boundary value for the current range.
+
+</value>
 
 
         </member>
         <member name="P:DevExpress.DashboardCommon.RangeInfo.ValueComparison">
             <summary>
-                <para> </para>
+                <para>Gets or sets the comparison logic for the current range.
+
+</para>
             </summary>
-            <value> </value>
+            <value>A <see cref="T:DevExpress.DashboardCommon.DashboardFormatConditionComparisonType"/> enumeration value that specifies the comparison logic for the current range.
+
+</value>
 
 
         </member>
@@ -12961,55 +13047,67 @@
         </member>
         <member name="M:DevExpress.DashboardCommon.FormatConditionTopBottom.#ctor">
             <summary>
-                <para> </para>
+                <para>Initializes a new instance of the FormatConditionTopBottom class.
+</para>
             </summary>
 
 
         </member>
         <member name="M:DevExpress.DashboardCommon.FormatConditionTopBottom.#ctor(System.Decimal)">
             <summary>
-                <para> </para>
+                <para>Initializes a new instance of the FormatConditionTopBottom class.
+</para>
             </summary>
             <param name="rank">
-		 
+		A <see cref="T:System.Decimal"/> value that specifies a rank value.
+
             </param>
 
 
         </member>
         <member name="M:DevExpress.DashboardCommon.FormatConditionTopBottom.#ctor(System.Decimal,DevExpress.DashboardCommon.DashboardFormatConditionTopBottomType)">
             <summary>
-                <para> </para>
+                <para>Initializes a new instance of the FormatConditionTopBottom class.
+</para>
             </summary>
             <param name="rank">
-		 
+		A <see cref="T:System.Decimal"/> value that specifies a rank value.
+
             </param>
             <param name="topBottom">
-		 
+		A <see cref="T:DevExpress.DashboardCommon.DashboardFormatConditionTopBottomType"/> value that specifies whether to apply formatting to top or bottom values.
+
             </param>
 
 
         </member>
         <member name="P:DevExpress.DashboardCommon.FormatConditionTopBottom.Rank">
             <summary>
-                <para> </para>
+                <para>Gets or sets a rank value used to apply formatting to top/bottom values. 
+</para>
             </summary>
-            <value> </value>
+            <value>A <see cref="T:System.Decimal"/> value that specifies a rank value.
+</value>
 
 
         </member>
         <member name="P:DevExpress.DashboardCommon.FormatConditionTopBottom.RankType">
             <summary>
-                <para> </para>
+                <para>Gets or sets the value type used in conditional formatting. 
+</para>
             </summary>
-            <value> </value>
+            <value>A <see cref="T:DevExpress.DashboardCommon.DashboardFormatConditionValueType"/> value that specifies the value type used in conditional formatting. 
+</value>
 
 
         </member>
         <member name="P:DevExpress.DashboardCommon.FormatConditionTopBottom.TopBottom">
             <summary>
-                <para> </para>
+                <para>Gets or sets whether to apply formatting to top or bottom values.
+</para>
             </summary>
-            <value> </value>
+            <value>A <see cref="T:DevExpress.DashboardCommon.DashboardFormatConditionTopBottomType"/> value that specifies whether to apply formatting to top or bottom values.
+</value>
 
 
         </member>
@@ -13025,9 +13123,11 @@
         </member>
         <member name="P:DevExpress.DashboardCommon.FormatConditionStyleBase.StyleSettings">
             <summary>
-                <para> </para>
+                <para>Gets or sets style settings used in a current format condition.
+</para>
             </summary>
-            <value> </value>
+            <value>A <see cref="T:DevExpress.DashboardCommon.StyleSettingsBase"/> descendant that specifies style settings used in a current format condition.
+</value>
 
 
         </member>
@@ -13041,35 +13141,42 @@
         </member>
         <member name="M:DevExpress.DashboardCommon.FormatConditionRangeSet.#ctor">
             <summary>
-                <para> </para>
+                <para>Initializes a new instance of the FormatConditionRangeSet class.
+</para>
             </summary>
 
 
         </member>
         <member name="M:DevExpress.DashboardCommon.FormatConditionRangeSet.#ctor(DevExpress.DashboardCommon.FormatConditionRangeSetPredefinedType)">
             <summary>
-                <para> </para>
+                <para>Initializes a new instance of the FormatConditionRangeSet class.
+</para>
             </summary>
             <param name="type">
-		 
+		A <see cref="T:DevExpress.DashboardCommon.FormatConditionRangeSetPredefinedType"/> enumeration value that specifies the predefined style used to apply conditional formatting using value ranges.
+
             </param>
 
 
         </member>
         <member name="P:DevExpress.DashboardCommon.FormatConditionRangeSet.ActualPredefinedType">
             <summary>
-                <para> </para>
+                <para>Gets the actual predefined style used to apply conditional formatting using value ranges.
+</para>
             </summary>
-            <value> </value>
+            <value>A <see cref="T:DevExpress.DashboardCommon.FormatConditionRangeSetPredefinedType"/> value that specifies the actual predefined style.
+</value>
 
 
         </member>
         <member name="M:DevExpress.DashboardCommon.FormatConditionRangeSet.Generate(DevExpress.DashboardCommon.FormatConditionRangeSetPredefinedType)">
             <summary>
-                <para> </para>
+                <para>Assigns the specified predefined style to the current format condition.
+</para>
             </summary>
             <param name="type">
-		 
+		A <see cref="T:DevExpress.DashboardCommon.FormatConditionRangeSetPredefinedType"/> enumeration value that specifies the predefined style used to apply conditional formatting using value ranges. 
+
             </param>
 
 
@@ -13084,132 +13191,163 @@
         </member>
         <member name="M:DevExpress.DashboardCommon.FormatConditionRangeGradient.#ctor(DevExpress.DashboardCommon.FormatConditionRangeGradientPredefinedType)">
             <summary>
-                <para> </para>
+                <para>Initializes a new instance of the FormatConditionRangeGradient class.
+</para>
             </summary>
             <param name="type">
-		 
+		A <see cref="T:DevExpress.DashboardCommon.FormatConditionRangeGradientPredefinedType"/> object that specifies the predefined color gradient used to apply conditional formatting using value ranges. 
+
             </param>
 
 
         </member>
         <member name="M:DevExpress.DashboardCommon.FormatConditionRangeGradient.#ctor(DevExpress.DashboardCommon.StyleSettingsBase,DevExpress.DashboardCommon.StyleSettingsBase,System.Object[])">
             <summary>
-                <para> </para>
+                <para>Initializes a new instance of the FormatConditionRangeGradient class.
+</para>
             </summary>
             <param name="startStyle">
-		 
+		A <see cref="T:DevExpress.DashboardCommon.StyleSettingsBase"/> descendant that specifies the start gradient color.
+
             </param>
             <param name="endStyle">
-		 
+		A <see cref="T:DevExpress.DashboardCommon.StyleSettingsBase"/> descendant that specifies the end gradient color.
+
             </param>
             <param name="values">
-		 
+		An array of boundary values.
+
             </param>
 
 
         </member>
         <member name="M:DevExpress.DashboardCommon.FormatConditionRangeGradient.#ctor(DevExpress.DashboardCommon.StyleSettingsBase,DevExpress.DashboardCommon.StyleSettingsBase,System.Int32)">
             <summary>
-                <para> </para>
+                <para>Initializes a new instance of the FormatConditionRangeGradient class.
+</para>
             </summary>
             <param name="startStyle">
-		 
+		A <see cref="T:DevExpress.DashboardCommon.StyleSettingsBase"/> descendant that specifies the start gradient color.
+
             </param>
             <param name="endStyle">
-		 
+		A <see cref="T:DevExpress.DashboardCommon.StyleSettingsBase"/> descendant that specifies the end gradient color.
+
             </param>
             <param name="segmentCount">
-		 
+		An integer value that specifies the number of ranges.
+
             </param>
 
 
         </member>
         <member name="M:DevExpress.DashboardCommon.FormatConditionRangeGradient.#ctor">
             <summary>
-                <para> </para>
+                <para>Initializes a new instance of the FormatConditionRangeGradient class.
+</para>
             </summary>
 
 
         </member>
         <member name="P:DevExpress.DashboardCommon.FormatConditionRangeGradient.ActualPredefinedType">
             <summary>
-                <para> </para>
+                <para>Gets the predefined color gradient used to apply conditional formatting.
+</para>
             </summary>
-            <value> </value>
+            <value>A <see cref="T:DevExpress.DashboardCommon.FormatConditionRangeGradientPredefinedType"/> object that is the predefined color gradient used to apply conditional formatting.
+</value>
 
 
         </member>
         <member name="P:DevExpress.DashboardCommon.FormatConditionRangeGradient.EndStyle">
             <summary>
-                <para> </para>
+                <para>Gets the end gradient color.
+</para>
             </summary>
-            <value> </value>
+            <value>A <see cref="T:DevExpress.DashboardCommon.StyleSettingsBase"/> descendant that specifies the end gradient color.
+</value>
 
 
         </member>
         <member name="M:DevExpress.DashboardCommon.FormatConditionRangeGradient.Generate(DevExpress.DashboardCommon.StyleSettingsBase,DevExpress.DashboardCommon.StyleSettingsBase,System.Object[])">
             <summary>
-                <para> </para>
+                <para>Specifies gradient settings for the current format condition.
+</para>
             </summary>
             <param name="startStyle">
-		 
+		A <see cref="T:DevExpress.DashboardCommon.StyleSettingsBase"/> descendant that specifies the start gradient color.
+
             </param>
             <param name="endStyle">
-		 
+		A <see cref="T:DevExpress.DashboardCommon.StyleSettingsBase"/> descendant that specifies the end gradient color.
+
             </param>
             <param name="values">
-		 
+		An array of boundary values.
+
             </param>
 
 
         </member>
         <member name="M:DevExpress.DashboardCommon.FormatConditionRangeGradient.Generate(DevExpress.DashboardCommon.StyleSettingsBase,DevExpress.DashboardCommon.StyleSettingsBase,System.Int32)">
             <summary>
-                <para> </para>
+                <para>Specifies gradient settings for the current format condition.
+</para>
             </summary>
             <param name="startStyle">
-		 
+		A <see cref="T:DevExpress.DashboardCommon.StyleSettingsBase"/> descendant that specifies the start gradient color.
+
             </param>
             <param name="endStyle">
-		 
+		A <see cref="T:DevExpress.DashboardCommon.StyleSettingsBase"/> descendant that specifies the end gradient color.
+
             </param>
             <param name="segmentCount">
-		 
+		An integer value that specifies the number of ranges.
+
             </param>
 
 
         </member>
         <member name="M:DevExpress.DashboardCommon.FormatConditionRangeGradient.Generate(DevExpress.DashboardCommon.FormatConditionRangeGradientPredefinedType)">
             <summary>
-                <para> </para>
+                <para>Specifies gradient settings for the current format condition. 
+</para>
             </summary>
             <param name="type">
-		 
+		A <see cref="T:DevExpress.DashboardCommon.FormatConditionRangeGradientPredefinedType"/> object that is the predefined color gradient used to apply conditional formatting.
+
             </param>
 
 
         </member>
         <member name="P:DevExpress.DashboardCommon.FormatConditionRangeGradient.IsValid">
             <summary>
-                <para> </para>
+                <para>Gets whether the current format condition is properly specified.
+</para>
             </summary>
-            <value> </value>
+            <value><b>true</b>, if the current format condition is properly specified; otherwise, <b>false</b>.
+</value>
 
 
         </member>
         <member name="P:DevExpress.DashboardCommon.FormatConditionRangeGradient.SegmentCount">
             <summary>
-                <para> </para>
+                <para>Gets the number of ranges in the current format condition.
+</para>
             </summary>
-            <value> </value>
+            <value>An integer value that specifies the number of ranges in the current format condition.
+</value>
 
 
         </member>
         <member name="P:DevExpress.DashboardCommon.FormatConditionRangeGradient.StartStyle">
             <summary>
-                <para> </para>
+                <para>Gets the start gradient color.
+</para>
             </summary>
-            <value> </value>
+            <value>A <see cref="T:DevExpress.DashboardCommon.StyleSettingsBase"/> descendant that specifies the start gradient color.
+</value>
 
 
         </member>
@@ -13223,45 +13361,65 @@
         </member>
         <member name="M:DevExpress.DashboardCommon.FormatConditionExpression.#ctor">
             <summary>
-                <para> </para>
+                <para>Initializes a new instance of the FormatConditionExpression class.
+</para>
             </summary>
+
+
+        </member>
+        <member name="M:DevExpress.DashboardCommon.FormatConditionExpression.#ctor(System.String)">
+            <summary>
+                <para>Initializes a new instance of the FormatConditionExpression class.
+</para>
+            </summary>
+            <param name="expression">
+		A <see cref="T:System.String"/> that specifies the expression used in the format condition.
+
+            </param>
 
 
         </member>
         <member name="P:DevExpress.DashboardCommon.FormatConditionExpression.Expression">
             <summary>
-                <para> </para>
+                <para>Gets or sets the expression used in the current format condition.
+</para>
             </summary>
-            <value> </value>
+            <value>A <see cref="T:System.String"/> that specifies the expression used in the current format condition.
+</value>
 
 
         </member>
         <member name="T:DevExpress.DashboardCommon.FormatConditionDateOccuring">
 
             <summary>
-                <para>A format condition used to apply formatting to date-time values concerning to a specific date and/or date interval relative to today.
+                <para>A format condition used to apply formatting to date-time values concerning a specific date and/or date interval relative to today.
+
 </para>
             </summary>
 
         </member>
         <member name="M:DevExpress.DashboardCommon.FormatConditionDateOccuring.#ctor">
             <summary>
-                <para> </para>
+                <para>Initializes a new instance of the FormatConditionDateOccuring class.
+</para>
             </summary>
 
 
         </member>
         <member name="P:DevExpress.DashboardCommon.FormatConditionDateOccuring.DateType">
             <summary>
-                <para> </para>
+                <para>Gets or sets a specific date/date interval whose values are used to apply formatting.
+</para>
             </summary>
-            <value> </value>
+            <value>A <see cref="T:DevExpress.XtraEditors.FilterDateType"/> object that specifies a specific date/date interval whose values are used to apply formatting.
+</value>
 
 
         </member>
         <member name="M:DevExpress.DashboardCommon.FormatConditionDateOccuring.ResetCurrentDate">
             <summary>
-                <para> </para>
+                <para>Reapplies conditional formatting, taking into account the current date.
+</para>
             </summary>
 
 
@@ -13276,382 +13434,439 @@
         </member>
         <member name="M:DevExpress.DashboardCommon.AppearanceSettings.#ctor(System.Drawing.Color)">
             <summary>
-                <para> </para>
+                <para>Initializes a new instance of the AppearanceSettings class.
+</para>
             </summary>
             <param name="backColor">
-		 
+		A <see cref="T:System.Drawing.Color"/> value that specifies the background color.
+
             </param>
 
 
         </member>
         <member name="M:DevExpress.DashboardCommon.AppearanceSettings.#ctor(DevExpress.DashboardCommon.FormatConditionAppearanceType)">
             <summary>
-                <para> </para>
+                <para>Initializes a new instance of the AppearanceSettings class.
+</para>
             </summary>
             <param name="predefinedType">
-		 
+		A <see cref="T:DevExpress.DashboardCommon.FormatConditionAppearanceType"/> enumeration value that specifies style settings.
+
             </param>
 
 
         </member>
         <member name="M:DevExpress.DashboardCommon.AppearanceSettings.#ctor">
             <summary>
-                <para> </para>
+                <para>Initializes a new instance of the AppearanceSettings class.
+</para>
             </summary>
 
 
         </member>
         <member name="M:DevExpress.DashboardCommon.AppearanceSettings.#ctor(System.Drawing.Color,System.Drawing.Color)">
             <summary>
-                <para> </para>
+                <para>Initializes a new instance of the AppearanceSettings class.
+</para>
             </summary>
             <param name="backColor">
-		 
+		A <see cref="T:System.Drawing.Color"/> value that specifies the background color.
+
             </param>
-            <param name="color">
-		 
+            <param name="foreColor">
+		A <see cref="T:System.Drawing.Color"/> value that specifies the foreground color.
+
             </param>
 
 
         </member>
         <member name="M:DevExpress.DashboardCommon.AppearanceSettings.#ctor(System.Drawing.Color,System.Drawing.FontStyle)">
             <summary>
-                <para> </para>
+                <para>Initializes a new instance of the AppearanceSettings class.
+</para>
             </summary>
-            <param name="color">
-		 
+            <param name="foreColor">
+		A <see cref="T:System.Drawing.Color"/> value that specifies the foreground color.
+
             </param>
-            <param name="style">
-		 
+            <param name="fontStyle">
+		A <see cref="T:System.Drawing.FontStyle"/> value that specifies the style applied to text.
+
             </param>
 
 
         </member>
         <member name="M:DevExpress.DashboardCommon.AppearanceSettings.#ctor(System.Drawing.FontStyle)">
             <summary>
-                <para> </para>
+                <para>Initializes a new instance of the AppearanceSettings class.
+</para>
             </summary>
-            <param name="style">
-		 
+            <param name="fontStyle">
+		A <see cref="T:System.Drawing.FontStyle"/> value that specifies the style applied to text.
+
             </param>
 
 
         </member>
         <member name="P:DevExpress.DashboardCommon.AppearanceSettings.AppearanceType">
             <summary>
-                <para> </para>
+                <para>Gets or sets predefined appearance settings.
+</para>
             </summary>
-            <value> </value>
+            <value>A <see cref="T:DevExpress.DashboardCommon.FormatConditionAppearanceType"/> object that specifies predefined appearance settings.
+</value>
 
 
         </member>
         <member name="P:DevExpress.DashboardCommon.AppearanceSettings.BackColor">
             <summary>
-                <para> </para>
+                <para>Gets or sets the background color.
+</para>
             </summary>
-            <value> </value>
+            <value>A <see cref="T:System.Drawing.Color"/> value that specifies the background color.
+</value>
 
 
         </member>
         <member name="M:DevExpress.DashboardCommon.AppearanceSettings.Equals(System.Object)">
             <summary>
-                <para> </para>
+                <para>Determines whether the specified object is equal to the current AppearanceSettings instance.
+</para>
             </summary>
             <param name="obj">
-		 
+		The object to compare with the current object. 
+
             </param>
-            <returns> </returns>
+            <returns><b>true</b> if the specified object is equal to the current AppearanceSettings instance; otherwise <b>false</b>. 
+</returns>
 
 
         </member>
         <member name="P:DevExpress.DashboardCommon.AppearanceSettings.FontFamily">
             <summary>
-                <para> </para>
+                <para>Gets or sets the font family.
+</para>
             </summary>
-            <value> </value>
-
-
-        </member>
-        <member name="P:DevExpress.DashboardCommon.AppearanceSettings.FontSize">
-            <summary>
-                <para> </para>
-            </summary>
-            <value> </value>
+            <value>A <see cref="T:System.String"/> that specifies the font family.
+</value>
 
 
         </member>
         <member name="P:DevExpress.DashboardCommon.AppearanceSettings.FontStyle">
             <summary>
-                <para> </para>
+                <para>Gets or sets the style applied to text.
+</para>
             </summary>
-            <value> </value>
+            <value>A <see cref="T:System.Drawing.FontStyle"/> value that specifies the style applied to text.
+</value>
 
 
         </member>
         <member name="P:DevExpress.DashboardCommon.AppearanceSettings.ForeColor">
             <summary>
-                <para> </para>
+                <para>Gets or sets the foreround color.
+</para>
             </summary>
-            <value> </value>
+            <value>A <see cref="T:System.Drawing.Color"/> value that specifies the foreround color.
+</value>
 
 
         </member>
         <member name="M:DevExpress.DashboardCommon.AppearanceSettings.GetHashCode">
             <summary>
-                <para> </para>
+                <para>Gets the hash code that corresponds to the value of the current AppearanceSettings object.
+</para>
             </summary>
-            <returns> </returns>
+            <returns>An integer value representing the hash code for the current object. 
+</returns>
 
 
         </member>
         <member name="T:DevExpress.DashboardCommon.FormatConditionRangeSetPredefinedType">
 
             <summary>
-                <para> </para>
+                <para>Lists predefined styles used to apply conditional formatting using value ranges.
+</para>
             </summary>
 
         </member>
         <member name="F:DevExpress.DashboardCommon.FormatConditionRangeSetPredefinedType.Arrows2">
             <summary>
-                <para> </para>
+                <para>Green Up and Red Down arrows.
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.DashboardCommon.FormatConditionRangeSetPredefinedType.Arrows3">
             <summary>
-                <para> </para>
+                <para>Green Up, Yellow Side and Red Down arrows.
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.DashboardCommon.FormatConditionRangeSetPredefinedType.Arrows4">
             <summary>
-                <para> </para>
+                <para>Green Up, Yellow Up Incline, Yellow Down Incline and Red Down arrows.
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.DashboardCommon.FormatConditionRangeSetPredefinedType.Arrows5">
             <summary>
-                <para> </para>
+                <para>Green Up, Yellow Up Incline, Yellow Side, Yellow Down Incline and Red Down arrows.
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.DashboardCommon.FormatConditionRangeSetPredefinedType.ArrowsGray2">
             <summary>
-                <para> </para>
+                <para>2 Gray arrows.
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.DashboardCommon.FormatConditionRangeSetPredefinedType.ArrowsGray3">
             <summary>
-                <para> </para>
+                <para>3 Gray arrows.
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.DashboardCommon.FormatConditionRangeSetPredefinedType.ArrowsGray4">
             <summary>
-                <para> </para>
+                <para>4 Gray arrows.
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.DashboardCommon.FormatConditionRangeSetPredefinedType.ArrowsGray5">
             <summary>
-                <para> </para>
+                <para>5 Gray arrows.
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.DashboardCommon.FormatConditionRangeSetPredefinedType.Bars4">
             <summary>
-                <para> </para>
+                <para>1 filled bar - 4 filled bars.
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.DashboardCommon.FormatConditionRangeSetPredefinedType.Bars5">
             <summary>
-                <para> </para>
+                <para>0 filled bar - 4 filled bars.
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.DashboardCommon.FormatConditionRangeSetPredefinedType.Boxes5">
             <summary>
-                <para> </para>
+                <para>0 filled boxes - 5 filled boxes.
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.DashboardCommon.FormatConditionRangeSetPredefinedType.Circles2">
             <summary>
-                <para> </para>
+                <para>Green and Red circles.
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.DashboardCommon.FormatConditionRangeSetPredefinedType.Circles3">
             <summary>
-                <para> </para>
+                <para>Green, Yellow and Red circles.
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.DashboardCommon.FormatConditionRangeSetPredefinedType.Circles4">
             <summary>
-                <para> </para>
+                <para>Green, Yellow, Red  and Gray circles.
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.DashboardCommon.FormatConditionRangeSetPredefinedType.CirclesRedToBlack4">
             <summary>
-                <para> </para>
+                <para>Red, Light Red, Light Gray and Gray circles.
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.DashboardCommon.FormatConditionRangeSetPredefinedType.ColorsPaleRedGreen">
             <summary>
-                <para> </para>
+                <para>Pale Red and Green colors.
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.DashboardCommon.FormatConditionRangeSetPredefinedType.ColorsPaleRedGreenBlue">
             <summary>
-                <para> </para>
+                <para>Pale Red, Green and Blue colors.
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.DashboardCommon.FormatConditionRangeSetPredefinedType.ColorsPaleRedOrangeYellowGreenBlue">
             <summary>
-                <para> </para>
+                <para>Pale Red, Orange, Yellow, Green and Blue colors.
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.DashboardCommon.FormatConditionRangeSetPredefinedType.ColorsPaleRedYellowGreenBlue">
             <summary>
-                <para> </para>
+                <para>Pale Red, Yellow, Green and Blue colors.
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.DashboardCommon.FormatConditionRangeSetPredefinedType.ColorsRedGreen">
             <summary>
-                <para> </para>
+                <para>Red and Green colors.
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.DashboardCommon.FormatConditionRangeSetPredefinedType.ColorsRedGreenBlue">
             <summary>
-                <para> </para>
+                <para>Red, Green and Blue colors.
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.DashboardCommon.FormatConditionRangeSetPredefinedType.ColorsRedOrangeYellowGreenBlue">
             <summary>
-                <para> </para>
+                <para>Red, Orange, Yellow, Green and Blue colors.
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.DashboardCommon.FormatConditionRangeSetPredefinedType.ColorsRedYellowGreenBlue">
             <summary>
-                <para> </para>
+                <para>Red, Yellow, Green and Blue colors.
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.DashboardCommon.FormatConditionRangeSetPredefinedType.Custom">
             <summary>
-                <para> </para>
+                <para>A custom type.
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.DashboardCommon.FormatConditionRangeSetPredefinedType.Flags3">
             <summary>
-                <para> </para>
+                <para>Green, Yellow and Red flags.
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.DashboardCommon.FormatConditionRangeSetPredefinedType.None">
             <summary>
-                <para> </para>
+                <para>Style is not applied.
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.DashboardCommon.FormatConditionRangeSetPredefinedType.PositiveNegative3">
             <summary>
-                <para> </para>
+                <para>Green Up triangle, Yellow dash and Red Down triangle.
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.DashboardCommon.FormatConditionRangeSetPredefinedType.Quarters5">
             <summary>
-                <para> </para>
+                <para>Gray circles with a different number of white quarters.
+
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.DashboardCommon.FormatConditionRangeSetPredefinedType.Signs3">
             <summary>
-                <para> </para>
+                <para>Green Circle, Yellow Triangle and Red Diamond.
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.DashboardCommon.FormatConditionRangeSetPredefinedType.Stars3">
             <summary>
-                <para> </para>
+                <para>Empty Star, Half Star and Full Star.
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.DashboardCommon.FormatConditionRangeSetPredefinedType.Symbols2">
             <summary>
-                <para> </para>
+                <para>Green Check and Red Cross.
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.DashboardCommon.FormatConditionRangeSetPredefinedType.Symbols3">
             <summary>
-                <para> </para>
+                <para>Green Check, Yellow Exclamation and Red Cross.
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.DashboardCommon.FormatConditionRangeSetPredefinedType.SymbolsCircled2">
             <summary>
-                <para> </para>
+                <para>Circled Green Check and Circled Red Cross.
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.DashboardCommon.FormatConditionRangeSetPredefinedType.SymbolsCircled3">
             <summary>
-                <para> </para>
+                <para>Circled Green Check, Circled Yellow Exclamation and Circled Red Cross.
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.DashboardCommon.FormatConditionRangeSetPredefinedType.TrafficLights3">
             <summary>
-                <para> </para>
+                <para>Red, Yellow and Green traffic lights.
+</para>
             </summary>
 
 
@@ -13659,237 +13874,247 @@
         <member name="T:DevExpress.DashboardCommon.FormatConditionRangeGradientPredefinedType">
 
             <summary>
-                <para> </para>
+                <para>Lists predefined color gradients used to apply conditional formatting using value ranges.
+</para>
             </summary>
 
         </member>
         <member name="F:DevExpress.DashboardCommon.FormatConditionRangeGradientPredefinedType.BlueGreen">
             <summary>
-                <para> </para>
+                <para>The Blue/Green gradient.
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.DashboardCommon.FormatConditionRangeGradientPredefinedType.BlueRed">
             <summary>
-                <para> </para>
+                <para>The Blue/Red gradient.
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.DashboardCommon.FormatConditionRangeGradientPredefinedType.BlueWhite">
             <summary>
-                <para> </para>
+                <para>The Blue/White gradient.
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.DashboardCommon.FormatConditionRangeGradientPredefinedType.BlueWhiteGreen">
             <summary>
-                <para> </para>
+                <para>The Blue/White/Green gradient.
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.DashboardCommon.FormatConditionRangeGradientPredefinedType.BlueWhiteRed">
             <summary>
-                <para> </para>
+                <para>The Blue/White/Red gradient.
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.DashboardCommon.FormatConditionRangeGradientPredefinedType.BlueYellow">
             <summary>
-                <para> </para>
+                <para>The Blue/Yellow gradient.
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.DashboardCommon.FormatConditionRangeGradientPredefinedType.BlueYellowGreen">
             <summary>
-                <para> </para>
+                <para>The Blue/Yellow/Green gradient.
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.DashboardCommon.FormatConditionRangeGradientPredefinedType.BlueYellowRed">
             <summary>
-                <para> </para>
+                <para>The Blue/Yellow/Red gradient.
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.DashboardCommon.FormatConditionRangeGradientPredefinedType.Custom">
             <summary>
-                <para> </para>
+                <para>A custom gradient. To specify start/end colors for the custom gradient, create a pair of <see cref="T:DevExpress.DashboardCommon.AppearanceSettings"/> objects, specify their <see cref="P:DevExpress.DashboardCommon.AppearanceSettings.BackColor"/> properties and assign the resulting objects to the <see cref="P:DevExpress.DashboardCommon.FormatConditionRangeGradient.StartStyle"/>/<see cref="P:DevExpress.DashboardCommon.FormatConditionRangeGradient.EndStyle"/> properties.
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.DashboardCommon.FormatConditionRangeGradientPredefinedType.GreenBlue">
             <summary>
-                <para> </para>
+                <para>The Green/Blue gradient.
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.DashboardCommon.FormatConditionRangeGradientPredefinedType.GreenWhite">
             <summary>
-                <para> </para>
+                <para>The Green/White gradient.
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.DashboardCommon.FormatConditionRangeGradientPredefinedType.GreenWhiteBlue">
             <summary>
-                <para> </para>
+                <para>The Green/White/Blue gradient.
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.DashboardCommon.FormatConditionRangeGradientPredefinedType.GreenWhiteRed">
             <summary>
-                <para> </para>
+                <para>The Green/White/Red gradient.
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.DashboardCommon.FormatConditionRangeGradientPredefinedType.GreenYellow">
             <summary>
-                <para> </para>
+                <para>The Green/Yellow gradient.
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.DashboardCommon.FormatConditionRangeGradientPredefinedType.GreenYellowBlue">
             <summary>
-                <para> </para>
+                <para>The Green/Yellow/Blue gradient.
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.DashboardCommon.FormatConditionRangeGradientPredefinedType.GreenYellowRed">
             <summary>
-                <para> </para>
+                <para>The Green/Yellow/Red gradient.
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.DashboardCommon.FormatConditionRangeGradientPredefinedType.None">
             <summary>
-                <para> </para>
+                <para>Gradient is not specified.
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.DashboardCommon.FormatConditionRangeGradientPredefinedType.RedBlue">
             <summary>
-                <para> </para>
+                <para>The Red/Blue gradient.
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.DashboardCommon.FormatConditionRangeGradientPredefinedType.RedWhite">
             <summary>
-                <para> </para>
+                <para>The Red/White gradient.
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.DashboardCommon.FormatConditionRangeGradientPredefinedType.RedWhiteBlue">
             <summary>
-                <para> </para>
+                <para>The Red/White/Blue gradient.
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.DashboardCommon.FormatConditionRangeGradientPredefinedType.RedWhiteGreen">
             <summary>
-                <para> </para>
+                <para>The Red/White/Green gradient.
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.DashboardCommon.FormatConditionRangeGradientPredefinedType.RedYellow">
             <summary>
-                <para> </para>
+                <para>The Red/Yellow gradient.
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.DashboardCommon.FormatConditionRangeGradientPredefinedType.RedYellowBlue">
             <summary>
-                <para> </para>
+                <para>The Red/Yellow/Blue gradient.
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.DashboardCommon.FormatConditionRangeGradientPredefinedType.RedYellowGreen">
             <summary>
-                <para> </para>
+                <para>The Red/Yellow/Green gradient.
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.DashboardCommon.FormatConditionRangeGradientPredefinedType.WhiteBlue">
             <summary>
-                <para> </para>
+                <para>The White/Blue gradient.
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.DashboardCommon.FormatConditionRangeGradientPredefinedType.WhiteGreen">
             <summary>
-                <para> </para>
+                <para>The White/Green gradient.
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.DashboardCommon.FormatConditionRangeGradientPredefinedType.WhiteRed">
             <summary>
-                <para> </para>
+                <para>The White/Red gradient.
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.DashboardCommon.FormatConditionRangeGradientPredefinedType.YellowBlue">
             <summary>
-                <para> </para>
+                <para>The Yellow/Blue gradient.
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.DashboardCommon.FormatConditionRangeGradientPredefinedType.YellowGreen">
             <summary>
-                <para> </para>
+                <para>The Yellow/Green gradient.
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.DashboardCommon.FormatConditionRangeGradientPredefinedType.YellowRed">
             <summary>
-                <para> </para>
-            </summary>
-
-
-        </member>
-        <member name="T:DevExpress.DashboardCommon.FormatConditionColorScheme">
-
-            <summary>
-                <para> </para>
-            </summary>
-
-        </member>
-        <member name="F:DevExpress.DashboardCommon.FormatConditionColorScheme.Dark">
-            <summary>
-                <para> </para>
-            </summary>
-
-
-        </member>
-        <member name="F:DevExpress.DashboardCommon.FormatConditionColorScheme.Light">
-            <summary>
-                <para> </para>
+                <para>The Yellow/Red gradient.
+</para>
             </summary>
 
 
@@ -13897,244 +14122,280 @@
         <member name="T:DevExpress.DashboardCommon.FormatConditionAppearanceType">
 
             <summary>
-                <para> </para>
+                <para>Lists values used to specify style settings used in conditional formatting.
+</para>
             </summary>
 
         </member>
         <member name="F:DevExpress.DashboardCommon.FormatConditionAppearanceType.Blue">
             <summary>
-                <para> </para>
+                <para>The Blue background color.
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.DashboardCommon.FormatConditionAppearanceType.Custom">
             <summary>
-                <para> </para>
+                <para>A custom appearance. If the <see cref="P:DevExpress.DashboardCommon.AppearanceSettings.AppearanceType"/> is set to <b>Custom</b>, specify appearance settings manually using the <see cref="P:DevExpress.DashboardCommon.AppearanceSettings.BackColor"/>, <see cref="P:DevExpress.DashboardCommon.AppearanceSettings.ForeColor"/>, <see cref="P:DevExpress.DashboardCommon.AppearanceSettings.FontFamily"/> and <see cref="P:DevExpress.DashboardCommon.AppearanceSettings.FontStyle"/> properties.
+
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.DashboardCommon.FormatConditionAppearanceType.Cyan">
             <summary>
-                <para> </para>
+                <para>The Cyan background color.
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.DashboardCommon.FormatConditionAppearanceType.FontBlue">
             <summary>
-                <para> </para>
+                <para>The Blue font.
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.DashboardCommon.FormatConditionAppearanceType.FontBold">
             <summary>
-                <para> </para>
+                <para>The bold font.
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.DashboardCommon.FormatConditionAppearanceType.FontGrayed">
             <summary>
-                <para> </para>
+                <para>The Gray font.
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.DashboardCommon.FormatConditionAppearanceType.FontGreen">
             <summary>
-                <para> </para>
+                <para>The Green font.
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.DashboardCommon.FormatConditionAppearanceType.FontItalic">
             <summary>
-                <para> </para>
+                <para>The Italic font.
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.DashboardCommon.FormatConditionAppearanceType.FontRed">
             <summary>
-                <para> </para>
+                <para>The Red font.
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.DashboardCommon.FormatConditionAppearanceType.FontUnderline">
             <summary>
-                <para> </para>
+                <para>The underline font.
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.DashboardCommon.FormatConditionAppearanceType.FontYellow">
             <summary>
-                <para> </para>
+                <para>The Yellow font.
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.DashboardCommon.FormatConditionAppearanceType.GradientBlue">
             <summary>
-                <para> </para>
+                <para>The Blue color used in gradient ranges.
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.DashboardCommon.FormatConditionAppearanceType.GradientCyan">
             <summary>
-                <para> </para>
+                <para>The Cyan color used in gradient ranges.
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.DashboardCommon.FormatConditionAppearanceType.GradientGreen">
             <summary>
-                <para> </para>
+                <para>The Green color used in gradient ranges.
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.DashboardCommon.FormatConditionAppearanceType.GradientOrange">
             <summary>
-                <para> </para>
+                <para>The Orange color used in gradient ranges.
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.DashboardCommon.FormatConditionAppearanceType.GradientPurple">
             <summary>
-                <para> </para>
+                <para>The Purple color used in gradient ranges.
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.DashboardCommon.FormatConditionAppearanceType.GradientRed">
             <summary>
-                <para> </para>
+                <para>The Red color used in gradient ranges.
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.DashboardCommon.FormatConditionAppearanceType.GradientTransparent">
             <summary>
-                <para> </para>
+                <para>The transparent color used in gradient ranges.
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.DashboardCommon.FormatConditionAppearanceType.GradientYellow">
             <summary>
-                <para> </para>
+                <para>The Yellow color used in gradient ranges.
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.DashboardCommon.FormatConditionAppearanceType.Gray">
             <summary>
-                <para> </para>
+                <para>The Gray color.
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.DashboardCommon.FormatConditionAppearanceType.Green">
             <summary>
-                <para> </para>
+                <para>The Green color.
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.DashboardCommon.FormatConditionAppearanceType.None">
             <summary>
-                <para> </para>
+                <para>Style settings are not changed.
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.DashboardCommon.FormatConditionAppearanceType.Orange">
             <summary>
-                <para> </para>
+                <para>The Orange color.
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.DashboardCommon.FormatConditionAppearanceType.PaleBlue">
             <summary>
-                <para> </para>
+                <para>The Pale Blue color.
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.DashboardCommon.FormatConditionAppearanceType.PaleCyan">
             <summary>
-                <para> </para>
+                <para>The Pale Cyan color.
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.DashboardCommon.FormatConditionAppearanceType.PaleGray">
             <summary>
-                <para> </para>
+                <para>The Pale Gray color.
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.DashboardCommon.FormatConditionAppearanceType.PaleGreen">
             <summary>
-                <para> </para>
+                <para>The Pale Green color.
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.DashboardCommon.FormatConditionAppearanceType.PaleOrange">
             <summary>
-                <para> </para>
+                <para>The Pale Orange color.
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.DashboardCommon.FormatConditionAppearanceType.PalePurple">
             <summary>
-                <para> </para>
+                <para>The Pale Purple color.
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.DashboardCommon.FormatConditionAppearanceType.PaleRed">
             <summary>
-                <para> </para>
+                <para>The Pale Red color.
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.DashboardCommon.FormatConditionAppearanceType.PaleYellow">
             <summary>
-                <para> </para>
+                <para>The Pale Yellow color.
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.DashboardCommon.FormatConditionAppearanceType.Purple">
             <summary>
-                <para> </para>
+                <para>The Purple color.
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.DashboardCommon.FormatConditionAppearanceType.Red">
             <summary>
-                <para> </para>
+                <para>The Red color.
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.DashboardCommon.FormatConditionAppearanceType.Yellow">
             <summary>
-                <para> </para>
+                <para>The Yellow color.
+</para>
             </summary>
 
 
@@ -14142,41 +14403,49 @@
         <member name="T:DevExpress.DashboardCommon.FormatConditionIntersectionLevelMode">
 
             <summary>
-                <para> </para>
+                <para>Lists values used to specify the level on which to apply conditional formatting to pivot cells.
+
+</para>
             </summary>
 
         </member>
         <member name="F:DevExpress.DashboardCommon.FormatConditionIntersectionLevelMode.AllLevels">
             <summary>
-                <para> </para>
+                <para>All pivot cells is used to apply conditional formatting.
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.DashboardCommon.FormatConditionIntersectionLevelMode.Auto">
             <summary>
-                <para> </para>
+                <para>The default level.
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.DashboardCommon.FormatConditionIntersectionLevelMode.FirstLevel">
             <summary>
-                <para> </para>
+                <para>First level values are used to apply conditional formatting.
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.DashboardCommon.FormatConditionIntersectionLevelMode.LastLevel">
             <summary>
-                <para> </para>
+                <para>The last level values are used to apply conditional formatting.
+
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.DashboardCommon.FormatConditionIntersectionLevelMode.SpecificLevel">
             <summary>
-                <para> </para>
+                <para>Values from the specific level are used to apply conditional formatting. Use the <see cref="P:DevExpress.DashboardCommon.PivotItemFormatRuleLevel.Row"/> and <see cref="P:DevExpress.DashboardCommon.PivotItemFormatRuleLevel.Column"/> properties to specify this level.
+</para>
             </summary>
 
 
@@ -14184,27 +14453,31 @@
         <member name="T:DevExpress.DashboardCommon.DashboardFormatConditionValueType">
 
             <summary>
-                <para> </para>
+                <para>Lists values used to specify the value type used in conditional formatting. 
+</para>
             </summary>
 
         </member>
         <member name="F:DevExpress.DashboardCommon.DashboardFormatConditionValueType.Automatic">
             <summary>
-                <para> </para>
+                <para>A value type is selected automatically.
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.DashboardCommon.DashboardFormatConditionValueType.Number">
             <summary>
-                <para> </para>
+                <para>A numeric value.
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.DashboardCommon.DashboardFormatConditionValueType.Percent">
             <summary>
-                <para> </para>
+                <para>A percentage value. 
+</para>
             </summary>
 
 
@@ -14212,20 +14485,23 @@
         <member name="T:DevExpress.DashboardCommon.DashboardFormatConditionTopBottomType">
 
             <summary>
-                <para> </para>
+                <para>Lists values used to apply conditional formatting to top/bottom values.
+</para>
             </summary>
 
         </member>
         <member name="F:DevExpress.DashboardCommon.DashboardFormatConditionTopBottomType.Bottom">
             <summary>
-                <para> </para>
+                <para>The lowest values.
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.DashboardCommon.DashboardFormatConditionTopBottomType.Top">
             <summary>
-                <para> </para>
+                <para>The highest values.
+</para>
             </summary>
 
 
@@ -14233,20 +14509,23 @@
         <member name="T:DevExpress.DashboardCommon.DashboardFormatConditionComparisonType">
 
             <summary>
-                <para> </para>
+                <para>Lists values used to specify the comparison logic used to apply conditional formatting.
+</para>
             </summary>
 
         </member>
         <member name="F:DevExpress.DashboardCommon.DashboardFormatConditionComparisonType.Greater">
             <summary>
-                <para> </para>
+                <para>The <b>Greater Than</b> operator.
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.DashboardCommon.DashboardFormatConditionComparisonType.GreaterOrEqual">
             <summary>
-                <para> </para>
+                <para>The <b>Greater Than or Equal To</b> operator.
+</para>
             </summary>
 
 
@@ -14254,7 +14533,8 @@
         <member name="T:DevExpress.DashboardCommon.DashboardConnectionErrorEventHandler">
 
             <summary>
-                <para> </para>
+                <para>References a method that will handle the <b>ConnectionError</b> events. 
+</para>
             </summary>
 
         </member>
@@ -14321,7 +14601,8 @@
         <member name="T:DevExpress.DashboardCommon.DashboardConfigureDataConnectionEventHandler">
 
             <summary>
-                <para> </para>
+                <para>References a method that will handle the <b>ConnectionError</b> events. 
+</para>
             </summary>
 
         </member>
@@ -15166,56 +15447,68 @@
         </member>
         <member name="M:DevExpress.DashboardCommon.FormatConditionAverage.#ctor">
             <summary>
-                <para> </para>
+                <para>Initializes a new instance of the FormatConditionAverage class.
+</para>
             </summary>
 
 
         </member>
         <member name="P:DevExpress.DashboardCommon.FormatConditionAverage.AverageType">
             <summary>
-                <para> </para>
+                <para>Gets or sets the comparison logic used to apply formatting according to the average value. 
+</para>
             </summary>
-            <value> </value>
+            <value>A <see cref="T:DevExpress.DashboardCommon.DashboardFormatConditionAboveBelowType"/> value that specifies the comparison logic used to apply formatting according to the average value.
+</value>
 
 
         </member>
         <member name="T:DevExpress.DashboardCommon.CellsItemFormatRule">
 
             <summary>
-                <para>Serves as the base for classes used to apply conditional formatting to dashboard item's cells.
+                <para>Serves as the base for classes used to apply conditional formatting to a dashboard item's cells.
+
 </para>
             </summary>
 
         </member>
         <member name="P:DevExpress.DashboardCommon.CellsItemFormatRule.ApplyToRow">
             <summary>
-                <para> </para>
+                <para>Gets or sets whether conditional formatting is applied to the entire row.
+</para>
             </summary>
-            <value> </value>
+            <value><b>true</b>, to apply conditional formatting to the entire row; otherwise, <b>false</b>.
+</value>
 
 
         </member>
         <member name="P:DevExpress.DashboardCommon.CellsItemFormatRule.DataItem">
             <summary>
-                <para> </para>
+                <para>Gets or sets a data item by whose values a format condition is checked.
+</para>
             </summary>
-            <value> </value>
+            <value>A <see cref="T:DevExpress.DashboardCommon.DataItem"/> descendant that specifies a data item by whose values a format condition is checked.
+</value>
 
 
         </member>
         <member name="P:DevExpress.DashboardCommon.CellsItemFormatRule.DataItemApplyTo">
             <summary>
-                <para> </para>
+                <para>Gets or sets a data item to whose values a format condition is applied.
+</para>
             </summary>
-            <value> </value>
+            <value>A <see cref="T:DevExpress.DashboardCommon.DataItem"/> descendant that specifies a data item to whose values a format condition is applied.
+</value>
 
 
         </member>
         <member name="P:DevExpress.DashboardCommon.CellsItemFormatRule.IsValid">
             <summary>
-                <para> </para>
+                <para>Gets whether the current format rule is properly specified.
+</para>
             </summary>
-            <value> </value>
+            <value><b>true</b>, if the current format rule is properly specified; otherwise, <b>false</b>.
+</value>
 
 
         </member>
@@ -15330,55 +15623,39 @@
         </member>
         <member name="M:DevExpress.DashboardCommon.FormatConditionBase.Assign(DevExpress.DashboardCommon.FormatConditionBase)">
             <summary>
-                <para> </para>
+                <para>Copies settings of the specified object to the current object.
+</para>
             </summary>
             <param name="obj">
-		 
+		An object whose settings are copied. 
+
             </param>
 
 
         </member>
         <member name="M:DevExpress.DashboardCommon.FormatConditionBase.BeginUpdate">
             <summary>
-                <para> </para>
+                <para>Locks the FormatConditionBase object by preventing updates until the <see cref="M:DevExpress.DashboardCommon.FormatConditionBase.EndUpdate"/> method is called.
+</para>
             </summary>
-
-
-        </member>
-        <member name="M:DevExpress.DashboardCommon.FormatConditionBase.CalcStyleSetting(DevExpress.DashboardCommon.Native.IFormatConditionValueProvider)">
-            <summary>
-                <para> </para>
-            </summary>
-            <param name="valueProvider">
-		 
-            </param>
-            <returns> </returns>
 
 
         </member>
         <member name="M:DevExpress.DashboardCommon.FormatConditionBase.EndUpdate">
             <summary>
-                <para> </para>
+                <para>Unlocks the FormatConditionBase object after a call to the <see cref="M:DevExpress.DashboardCommon.FormatConditionBase.BeginUpdate"/> method and causes an immediate update. 
+</para>
             </summary>
-
-
-        </member>
-        <member name="M:DevExpress.DashboardCommon.FormatConditionBase.IsFit(DevExpress.DashboardCommon.Native.IFormatConditionValueProvider)">
-            <summary>
-                <para> </para>
-            </summary>
-            <param name="valueProvider">
-		 
-            </param>
-            <returns> </returns>
 
 
         </member>
         <member name="P:DevExpress.DashboardCommon.FormatConditionBase.IsValid">
             <summary>
-                <para> </para>
+                <para>Gets whether the current FormatConditionBase object is properly specified.
+</para>
             </summary>
-            <value> </value>
+            <value><b>true</b>, if the current object is properly specified; otherwise, <b>false</b>.
+</value>
 
 
         </member>
@@ -15392,7 +15669,8 @@
         </member>
         <member name="M:DevExpress.DashboardCommon.PivotItemFormatRuleCollection.#ctor">
             <summary>
-                <para> </para>
+                <para>Initializes a new instance of the PivotItemFormatRuleCollection class.
+</para>
             </summary>
 
 
@@ -15407,55 +15685,77 @@
         </member>
         <member name="M:DevExpress.DashboardCommon.PivotItemFormatRule.#ctor">
             <summary>
-                <para> </para>
+                <para>Initializes a new instance of the PivotItemFormatRule class.
+</para>
             </summary>
 
 
         </member>
         <member name="M:DevExpress.DashboardCommon.PivotItemFormatRule.#ctor(DevExpress.DashboardCommon.DataItem,DevExpress.DashboardCommon.DataItem)">
             <summary>
-                <para> </para>
+                <para>Initializes a new instance of the PivotItemFormatRule class.
+</para>
             </summary>
             <param name="item">
-		 
+		A <see cref="T:DevExpress.DashboardCommon.DataItem"/> descendant by whose values formatting is applied.
+
             </param>
             <param name="itemApplyTo">
-		 
+		A <see cref="T:DevExpress.DashboardCommon.DataItem"/> descendant to which values formatting is applied.
+
             </param>
 
 
         </member>
         <member name="M:DevExpress.DashboardCommon.PivotItemFormatRule.#ctor(DevExpress.DashboardCommon.DataItem)">
             <summary>
-                <para> </para>
+                <para>Initializes a new instance of the PivotItemFormatRule class.
+</para>
             </summary>
             <param name="item">
-		 
+		A <see cref="T:DevExpress.DashboardCommon.DataItem"/> descendant by whose values formatting is applied.
+
             </param>
 
 
         </member>
         <member name="P:DevExpress.DashboardCommon.PivotItemFormatRule.ApplyToColumn">
             <summary>
-                <para> </para>
+                <para>Gets or sets whether conditional formatting is applied to the entire pivot column. 
+</para>
             </summary>
-            <value> </value>
+            <value><b>true</b>, to apply conditional formatting to the entire pivot column; otherwise, <b>false</b>. 
+</value>
 
 
         </member>
         <member name="P:DevExpress.DashboardCommon.PivotItemFormatRule.IntersectionLevelMode">
             <summary>
-                <para> </para>
+                <para> Gets or sets the level on which to apply conditional formatting to pivot cells.
+</para>
             </summary>
-            <value> </value>
+            <value>A <see cref="T:DevExpress.DashboardCommon.FormatConditionIntersectionLevelMode"/> object that specifies the level on which to apply conditional formatting to pivot cells.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.DashboardCommon.PivotItemFormatRule.IsValid">
+            <summary>
+                <para>Gets whether the current format rule is properly specified.
+</para>
+            </summary>
+            <value><b>true</b>, if the current format rule is properly specified; otherwise, <b>false</b>. 
+</value>
 
 
         </member>
         <member name="P:DevExpress.DashboardCommon.PivotItemFormatRule.Level">
             <summary>
-                <para> </para>
+                <para>Gets the level by whose values formatting is applied.
+</para>
             </summary>
-            <value> </value>
+            <value>A <see cref="T:DevExpress.DashboardCommon.PivotItemFormatRuleLevel"/> object that is the level by whose values formatting is applied.
+</value>
 
 
         </member>
@@ -15469,7 +15769,8 @@
         </member>
         <member name="M:DevExpress.DashboardCommon.GridItemFormatRuleCollection.#ctor">
             <summary>
-                <para> </para>
+                <para>Initializes a new instance of the GridItemFormatRuleCollection class.
+</para>
             </summary>
 
 
@@ -15484,53 +15785,64 @@
         </member>
         <member name="M:DevExpress.DashboardCommon.GridItemFormatRule.#ctor">
             <summary>
-                <para> </para>
+                <para>Initializes a new instance of the GridItemFormatRule class.
+</para>
             </summary>
 
 
         </member>
         <member name="M:DevExpress.DashboardCommon.GridItemFormatRule.#ctor(DevExpress.DashboardCommon.GridColumnBase)">
             <summary>
-                <para> </para>
+                <para>Initializes a new instance of the GridItemFormatRule class.
+</para>
             </summary>
             <param name="column">
-		 
+		A <see cref="T:DevExpress.DashboardCommon.GridColumnBase"/> descendant that specifies the column by whose values formatting is applied.
+
             </param>
 
 
         </member>
         <member name="M:DevExpress.DashboardCommon.GridItemFormatRule.#ctor(DevExpress.DashboardCommon.GridColumnBase,DevExpress.DashboardCommon.GridColumnBase)">
             <summary>
-                <para> </para>
+                <para>Initializes a new instance of the GridItemFormatRule class.
+</para>
             </summary>
             <param name="column">
-		 
+		A <see cref="T:DevExpress.DashboardCommon.GridColumnBase"/> descendant that specifies the column by whose values formatting is applied.
+
             </param>
             <param name="columnApplyTo">
-		 
+		A <see cref="T:DevExpress.DashboardCommon.GridColumnBase"/> descendant that specifies the column to whose values formatting is applied.
+
             </param>
 
 
         </member>
         <member name="M:DevExpress.DashboardCommon.GridItemFormatRule.#ctor(DevExpress.DashboardCommon.DataItem)">
             <summary>
-                <para> </para>
+                <para>Initializes a new instance of the GridItemFormatRule class.
+</para>
             </summary>
             <param name="item">
-		 
+		A <see cref="T:DevExpress.DashboardCommon.DataItem"/> descendant that specifies the data item by whose values formatting is applied.
+
             </param>
 
 
         </member>
         <member name="M:DevExpress.DashboardCommon.GridItemFormatRule.#ctor(DevExpress.DashboardCommon.DataItem,DevExpress.DashboardCommon.DataItem)">
             <summary>
-                <para> </para>
+                <para>Initializes a new instance of the GridItemFormatRule class.
+</para>
             </summary>
             <param name="item">
-		 
+		A <see cref="T:DevExpress.DashboardCommon.DataItem"/> descendant that specifies the data item by whose values formatting is applied.
+
             </param>
             <param name="itemApplyTo">
-		 
+		A <see cref="T:DevExpress.DashboardCommon.DataItem"/> descendant that specifies the data item to whose values formatting is applied.
+
             </param>
 
 
@@ -15545,61 +15857,82 @@
         </member>
         <member name="M:DevExpress.DashboardCommon.FormatConditionValue.#ctor">
             <summary>
-                <para> </para>
+                <para>Initializes a new instance of the FormatConditionValue class.
+</para>
             </summary>
 
 
         </member>
         <member name="M:DevExpress.DashboardCommon.FormatConditionValue.#ctor(DevExpress.DashboardCommon.DashboardFormatCondition,System.Object)">
             <summary>
-                <para> </para>
+                <para>Initializes a new instance of the FormatConditionValue class.
+</para>
             </summary>
             <param name="condition">
-		 
+		A <see cref="T:DevExpress.DashboardCommon.DashboardFormatCondition"/> object that specifies the comparison logic used to apply conditional styles.
+
+
             </param>
             <param name="value">
-		 
+		A boundary value.
+
             </param>
 
 
         </member>
         <member name="M:DevExpress.DashboardCommon.FormatConditionValue.#ctor(DevExpress.DashboardCommon.DashboardFormatCondition,System.Object,System.Object)">
             <summary>
-                <para> </para>
+                <para>Initializes a new instance of the FormatConditionValue class.
+</para>
             </summary>
             <param name="condition">
-		 
+		A <see cref="T:DevExpress.DashboardCommon.DashboardFormatCondition"/> object that specifies the comparison logic used to apply conditional styles.
+
             </param>
             <param name="value1">
-		 
+		A first boundary value.
+
             </param>
             <param name="value2">
-		 
+		A second boundary value.
+
             </param>
 
 
         </member>
         <member name="P:DevExpress.DashboardCommon.FormatConditionValue.Condition">
             <summary>
-                <para> </para>
+                <para>Gets or sets the comparison logic used to apply conditional styles.
+
+</para>
             </summary>
-            <value> </value>
+            <value>A <see cref="T:DevExpress.DashboardCommon.DashboardFormatCondition"/> object that specifies the comparison logic used to apply conditional styles.
+
+</value>
 
 
         </member>
         <member name="P:DevExpress.DashboardCommon.FormatConditionValue.Value1">
             <summary>
-                <para> </para>
+                <para>Gets or sets the first boundary value. 
+
+</para>
             </summary>
-            <value> </value>
+            <value>The first boundary value. 
+
+</value>
 
 
         </member>
         <member name="P:DevExpress.DashboardCommon.FormatConditionValue.Value2">
             <summary>
-                <para> </para>
+                <para>Gets or sets the second boundary value.
+
+</para>
             </summary>
-            <value> </value>
+            <value>The second boundary value.
+
+</value>
 
 
         </member>
@@ -15614,34 +15947,41 @@
         <member name="T:DevExpress.DashboardCommon.DashboardFormatConditionAboveBelowType">
 
             <summary>
-                <para> </para>
+                <para>Lists values used to specify the comparison logic used to apply formatting according to the average value.
+</para>
             </summary>
 
         </member>
         <member name="F:DevExpress.DashboardCommon.DashboardFormatConditionAboveBelowType.Above">
             <summary>
-                <para> </para>
+                <para>The range that includes values above the average value.
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.DashboardCommon.DashboardFormatConditionAboveBelowType.AboveOrEqual">
             <summary>
-                <para> </para>
+                <para>The range that includes values above or equal to the average value.
+
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.DashboardCommon.DashboardFormatConditionAboveBelowType.Below">
             <summary>
-                <para> </para>
+                <para>The range that includes values below the average value.
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.DashboardCommon.DashboardFormatConditionAboveBelowType.BelowOrEqual">
             <summary>
-                <para> </para>
+                <para>The range that includes values below or equal to the average value.
+
+</para>
             </summary>
 
 
@@ -15656,70 +15996,80 @@
         </member>
         <member name="F:DevExpress.DashboardCommon.DashboardFormatCondition.Between">
             <summary>
-                <para> </para>
+                <para>The formatting is applied to elements whose values fall into the range specified by the <see cref="P:DevExpress.DashboardCommon.FormatConditionValue.Value1"/> and <see cref="P:DevExpress.DashboardCommon.FormatConditionValue.Value2"/> properties.
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.DashboardCommon.DashboardFormatCondition.ContainsText">
             <summary>
-                <para> </para>
+                <para>The formatting is applied to elements whose values contain text specified by the <see cref="P:DevExpress.DashboardCommon.FormatConditionValue.Value1"/> property.
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.DashboardCommon.DashboardFormatCondition.Equal">
             <summary>
-                <para> </para>
+                <para>The formatting is applied to elements whose values are equal to a value assigned to the <see cref="P:DevExpress.DashboardCommon.FormatConditionValue.Value1"/> property.
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.DashboardCommon.DashboardFormatCondition.Greater">
             <summary>
-                <para> </para>
+                <para>The formatting is applied to elements whose values are greater than that specified by the <see cref="P:DevExpress.DashboardCommon.FormatConditionValue.Value1"/> property.
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.DashboardCommon.DashboardFormatCondition.GreaterOrEqual">
             <summary>
-                <para> </para>
+                <para>The formatting is applied to elements whose values are greater than or equal to that specified by the <see cref="P:DevExpress.DashboardCommon.FormatConditionValue.Value1"/> property.
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.DashboardCommon.DashboardFormatCondition.Less">
             <summary>
-                <para> </para>
+                <para>The formatting is applied to elements whose values are less than that specified by the <see cref="P:DevExpress.DashboardCommon.FormatConditionValue.Value1"/> property.
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.DashboardCommon.DashboardFormatCondition.LessOrEqual">
             <summary>
-                <para> </para>
+                <para>The formatting is applied to elements whose values are less than or equal to that specified by the <see cref="P:DevExpress.DashboardCommon.FormatConditionValue.Value1"/> property.
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.DashboardCommon.DashboardFormatCondition.None">
             <summary>
-                <para> </para>
+                <para>The formatting is not applied to any element.
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.DashboardCommon.DashboardFormatCondition.NotBetween">
             <summary>
-                <para> </para>
+                <para>The formatting is applied to elements whose values fall outside of the range specified by the <see cref="P:DevExpress.DashboardCommon.FormatConditionValue.Value1"/> and <see cref="P:DevExpress.DashboardCommon.FormatConditionValue.Value2"/> properties.
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.DashboardCommon.DashboardFormatCondition.NotEqual">
             <summary>
-                <para> </para>
+                <para>The formatting is applied to elements whose values are not equal to a value assigned to the <see cref="P:DevExpress.DashboardCommon.FormatConditionValue.Value1"/> property.
+</para>
             </summary>
 
 
@@ -15735,73 +16085,81 @@
         </member>
         <member name="M:DevExpress.DashboardCommon.DashboardItemFormatRule.Assign(DevExpress.DashboardCommon.DashboardItemFormatRule)">
             <summary>
-                <para> </para>
+                <para>Copies settings of the specified object to the current object.
+</para>
             </summary>
             <param name="source">
-		 
+		An object whose settings are copied. 
+
             </param>
 
 
         </member>
         <member name="M:DevExpress.DashboardCommon.DashboardItemFormatRule.BeginUpdate">
             <summary>
-                <para> </para>
+                <para>Locks the DashboardItemFormatRule object by preventing updates until the <see cref="M:DevExpress.DashboardCommon.DashboardItemFormatRule.EndUpdate"/> method is called.
+</para>
             </summary>
-
-
-        </member>
-        <member name="M:DevExpress.DashboardCommon.DashboardItemFormatRule.CastCondition``1">
-            <summary>
-                <para> </para>
-            </summary>
-            <returns> </returns>
 
 
         </member>
         <member name="P:DevExpress.DashboardCommon.DashboardItemFormatRule.Condition">
             <summary>
-                <para> </para>
+                <para>Gets or sets a condition used to apply formatting to a dashboard item.
+
+</para>
             </summary>
-            <value> </value>
+            <value>A <see cref="T:DevExpress.DashboardCommon.FormatConditionBase"/> descendant that specifies a condition used to apply formatting to a dashboard item.
+
+</value>
 
 
         </member>
         <member name="P:DevExpress.DashboardCommon.DashboardItemFormatRule.Enabled">
             <summary>
-                <para> </para>
+                <para>Gets or sets whether the current format rule is enabled.
+</para>
             </summary>
-            <value> </value>
+            <value><b>true</b>, if the current format rule is enabled; otherwise, <b>false</b>.
+</value>
 
 
         </member>
         <member name="M:DevExpress.DashboardCommon.DashboardItemFormatRule.EndUpdate">
             <summary>
-                <para> </para>
+                <para>Unlocks the DashboardItemFormatRule object after a call to the <see cref="M:DevExpress.DashboardCommon.DashboardItemFormatRule.BeginUpdate"/> method and causes an immediate update.
+</para>
             </summary>
 
 
         </member>
         <member name="P:DevExpress.DashboardCommon.DashboardItemFormatRule.IsValid">
             <summary>
-                <para> </para>
+                <para>Gets or sets whether the current DashboardItemFormatRule object is properly specified.
+</para>
             </summary>
-            <value> </value>
+            <value><b>true</b>, if the current DashboardItemFormatRule object is properly specified; otherwise, <b>false</b>.
+</value>
 
 
         </member>
         <member name="P:DevExpress.DashboardCommon.DashboardItemFormatRule.Name">
             <summary>
-                <para> </para>
+                <para>Gets or sets the name of the current format rule.
+</para>
             </summary>
-            <value> </value>
+            <value>A <see cref="T:System.String"/> that specifies the name of the current format rule.
+</value>
 
 
         </member>
         <member name="M:DevExpress.DashboardCommon.DashboardItemFormatRule.ToString">
             <summary>
-                <para> </para>
+                <para>Returns the string that represents the current object.
+</para>
             </summary>
-            <returns> </returns>
+            <returns>A <see cref="T:System.String"/> that represents the current DashboardItemFormatRule object. 
+</returns>
 
 
         </member>

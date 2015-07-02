@@ -640,6 +640,14 @@
 
 
         </member>
+        <member name="P:DevExpress.PivotGrid.Printing.PrintAppearanceObject.BorderWidth">
+            <summary>
+                <para> </para>
+            </summary>
+            <value> </value>
+
+
+        </member>
         <member name="P:DevExpress.PivotGrid.Printing.PrintAppearanceObject.DefaultFont">
             <summary>
                 <para>Gets the default font of the appearance object.
@@ -708,6 +716,14 @@
             </summary>
             <value><b>true</b> if a border color has been assigned; otherwise <b>false</b>.
 </value>
+
+
+        </member>
+        <member name="P:DevExpress.PivotGrid.Printing.PrintAppearanceObject.IsSetBorderWidth">
+            <summary>
+                <para> </para>
+            </summary>
+            <value> </value>
 
 
         </member>
@@ -6857,7 +6873,7 @@ An end-user can move fields between areas by dragging their field headers within
         </member>
         <member name="M:DevExpress.XtraPivotGrid.CustomServerModeSortEventArgsBase`1.GetCellValue1(System.Object[],DevExpress.XtraPivotGrid.PivotGridFieldBase)">
             <summary>
-                <para>In OLAP and server mode, returns a first cell value calculated for the specified cross area field values, against the specified data field.
+                <para>In OLAP and server mode, returns the first cell value calculated for the specified cross area field values against the specified data field.
 </para>
             </summary>
             <param name="crossAreaValues">
@@ -6869,18 +6885,20 @@ An end-user can move fields between areas by dragging their field headers within
 
 
             </param>
-            <returns>A summary value calculated for the specified column/row field values, against the specified data field. 
+            <returns>A summary value calculated for the specified column/row field values against the specified data field. 
+
 </returns>
 
 
         </member>
         <member name="M:DevExpress.XtraPivotGrid.CustomServerModeSortEventArgsBase`1.GetCellValue1(DevExpress.XtraPivotGrid.CrossAreaKey,DevExpress.XtraPivotGrid.PivotGridFieldBase)">
             <summary>
-                <para>In OLAP and server mode, returns a first cell value calculated for the specified cross area key, against the specified data field.
+                <para>In OLAP and server mode, returns the first cell value calculated for the specified cross area key against the specified data field.
 </para>
             </summary>
             <param name="crossAreaKey">
-		A <see cref="T:DevExpress.XtraPivotGrid.CrossAreaKey"/> object, that represents array of column or row field values. 
+		A <see cref="T:DevExpress.XtraPivotGrid.CrossAreaKey"/> object that represents an array of column or row field values. 
+
 
             </param>
             <param name="dataField">
@@ -6888,33 +6906,36 @@ An end-user can move fields between areas by dragging their field headers within
 
 
             </param>
-            <returns>A summary value calculated for the specified column/row field values, against the specified data field. 
+            <returns>A summary value calculated for the specified column/row field values against the specified data field. 
+
 </returns>
 
 
         </member>
         <member name="M:DevExpress.XtraPivotGrid.CustomServerModeSortEventArgsBase`1.GetCellValue2(DevExpress.XtraPivotGrid.CrossAreaKey,DevExpress.XtraPivotGrid.PivotGridFieldBase)">
             <summary>
-                <para>In OLAP and server mode, returns a second cell value calculated for the specified cross area key, against the specified data field.
+                <para>In OLAP and server mode, returns the second cell value calculated for the specified cross area key against the specified data field.
 
 </para>
             </summary>
             <param name="crossAreaKey">
-		A <see cref="T:DevExpress.XtraPivotGrid.CrossAreaKey"/> object, that represents array of column or row field values. 
+		A <see cref="T:DevExpress.XtraPivotGrid.CrossAreaKey"/> object that represents an array of column or row field values. 
+
 
             </param>
             <param name="dataField">
 		A <see cref="T:DevExpress.XtraPivotGrid.PivotGridFieldBase"/> object that specifies the data field. 
 
             </param>
-            <returns>A summary value calculated for the specified column/row field values, against the specified data field. 
+            <returns>A summary value calculated for the specified column/row field values against the specified data field. 
+
 </returns>
 
 
         </member>
         <member name="M:DevExpress.XtraPivotGrid.CustomServerModeSortEventArgsBase`1.GetCellValue2(System.Object[],DevExpress.XtraPivotGrid.PivotGridFieldBase)">
             <summary>
-                <para>In OLAP and server mode, returns a second cell value calculated for the specified cross area field values, against the specified data field.
+                <para>In OLAP and server mode, returns the second cell value calculated for the specified cross area field values against the specified data field.
 </para>
             </summary>
             <param name="crossAreaValues">
@@ -6925,21 +6946,24 @@ An end-user can move fields between areas by dragging their field headers within
 		A <see cref="T:DevExpress.XtraPivotGrid.PivotGridFieldBase"/> object that specifies the data field. 
 
             </param>
-            <returns>A summary value calculated for the specified column/row field values, against the specified data field. 
+            <returns>A summary value calculated for the specified column/row field values against the specified data field. 
+
 </returns>
 
 
         </member>
         <member name="M:DevExpress.XtraPivotGrid.CustomServerModeSortEventArgsBase`1.GetCrossAreaKey(System.Object[])">
             <summary>
-                <para>In OLAP and server mode, returns cross area values, by which you want to sort the pivot grid column or row.
+                <para>In OLAP and server mode, returns cross area values by which you want to sort the pivot grid column or row.
+
 </para>
             </summary>
             <param name="crossAreaValues">
 		A row/column field values.
 
             </param>
-            <returns>A <a href="ms-xhelp:///?Id=T%3aDevExpress.XtraPivotGrid.CrossAreaKey">CrossAreaKey</a> object, that represents array of column or row field values.
+            <returns>A <a href="ms-xhelp:///?Id=T%3aDevExpress.XtraPivotGrid.CrossAreaKey">CrossAreaKey</a> object that represents array of column or row field values.
+
 </returns>
 
 
@@ -6989,7 +7013,8 @@ An end-user can move fields between areas by dragging their field headers within
                 <para>Gets the second value being compared.
 </para>
             </summary>
-            <value>An object that pepresents second value being compared.
+            <value>An object that represents second value being compared.
+
 </value>
 
 
@@ -8231,7 +8256,8 @@ Not supported in OLAP mode.
         </member>
         <member name="F:DevExpress.XtraPivotGrid.PivotSortMode.DimensionAttribute">
             <summary>
-                <para>Sorts the field's data by OLAP member property (in OLAP mode).
+                <para>Sorts the field's data by the OLAP member property (in OLAP mode).
+
 </para>
             </summary>
 
@@ -11360,7 +11386,8 @@ Not supported in OLAP mode.
                 <para>Get or set a collection of OLAP member properties.
 </para>
             </summary>
-            <value>A System.String objects, containing properties names.
+            <value> System.String objects, containing property names.
+
 </value>
 
 
@@ -11843,7 +11870,8 @@ Not supported in OLAP mode.
                 <para>Returns the name of an OLAP member property used to set the default member sorting.
 </para>
             </summary>
-            <returns>A <b>System.String</b> object, that contains a property name.
+            <returns>A <b>System.String</b> object that contains a property name.
+
 </returns>
 
 
@@ -13583,6 +13611,14 @@ Not supported in OLAP mode.
 		An object implementing the DevExpress.XtraPrinting.IVisualBrick interface that is used to initialize the <see cref="P:DevExpress.PivotGrid.Printing.CustomPrintEventArgs.Brick"/> property.
 
             </param>
+
+
+        </member>
+        <member name="P:DevExpress.PivotGrid.Printing.CustomPrintEventArgs.ApplyAppearanceToBrickStyle">
+            <summary>
+                <para> </para>
+            </summary>
+            <value> </value>
 
 
         </member>

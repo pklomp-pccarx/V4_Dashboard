@@ -362,9 +362,11 @@
         </member>
         <member name="P:DevExpress.XtraLayout.Customization.LayoutItemDragController.ShouldRestoreOriginalSize">
             <summary>
-                <para> </para>
+                <para>For internal use.
+</para>
             </summary>
-            <value> </value>
+            <value> 
+</value>
 
 
         </member>
@@ -521,9 +523,11 @@ The default maximum height is specified by the Control.MaximumSize.Height proper
         </member>
         <member name="M:DevExpress.XtraDataLayout.DataLayoutControl.CreateLayoutCreator">
             <summary>
-                <para> </para>
+                <para>Creates a <b>LayoutCreator</b> object that allows you to build a layout with appropriate editors bound to the data source's fields.
+</para>
             </summary>
-            <returns> </returns>
+            <returns>An object that allows you to build a layout with appropriate editors bound to the data source's fields.
+</returns>
 
 
         </member>
@@ -583,9 +587,11 @@ The default maximum height is specified by the Control.MaximumSize.Height proper
         </member>
         <member name="M:DevExpress.XtraDataLayout.DataLayoutControl.GetLayoutElementsBindingsInfo">
             <summary>
-                <para> </para>
+                <para>Returns information on the layout column count and binding settings of public properties in the data source.
+</para>
             </summary>
-            <returns> </returns>
+            <returns>A value that specifies information on layout element binding settings.
+</returns>
 
 
         </member>
@@ -1516,11 +1522,13 @@ For the root group, its parent is the LayoutControl itself (the LayoutControl's 
 
 
         </member>
-        <member name="P:DevExpress.XtraLayout.OptionsView.RightToLeftMirrowingApplied">
+        <member name="P:DevExpress.XtraLayout.OptionsView.RightToLeftMirroringApplied">
             <summary>
-                <para> </para>
+                <para>For internal use.
+</para>
             </summary>
-            <value> </value>
+            <value> 
+</value>
 
 
         </member>
@@ -4992,9 +5000,11 @@ For the root group, its parent is the LayoutControl itself (the LayoutControl's 
         </member>
         <member name="P:DevExpress.XtraLayout.LayoutGroup.AllowBorderColorBlending">
             <summary>
-                <para> </para>
+                <para>Gets or sets whether to colorize the layout group border and caption according to the <b>BorderColor</b> setting in skinning paint schemes.
+</para>
             </summary>
-            <value> </value>
+            <value><b>true</b>, if the layout group border should be colorized according to its border color in skinning paint schemes; otherwise, <b>false</b>.
+</value>
 
 
         </member>
@@ -5471,10 +5481,12 @@ For the root group, its parent is the LayoutControl itself (the LayoutControl's 
         </member>
         <member name="P:DevExpress.XtraLayout.LayoutGroup.LayoutMode">
             <summary>
-                <para>Gets or sets layout mode for a <see cref="T:DevExpress.XtraLayout.LayoutGroup"/>.
+                <para>Gets or sets layout the mode for a <see cref="T:DevExpress.XtraLayout.LayoutGroup"/>.
+
 </para>
             </summary>
-            <value>A <see cref="T:DevExpress.XtraLayout.Utils.LayoutMode"/> enumerator value that specifies layout mode for the LayoutGroup.
+            <value>A <see cref="T:DevExpress.XtraLayout.Utils.LayoutMode"/> enumerator value that specifies the layout mode for the LayoutGroup.
+
 </value>
 
 
@@ -5536,10 +5548,10 @@ For the root group, its parent is the LayoutControl itself (the LayoutControl's 
         </member>
         <member name="P:DevExpress.XtraLayout.LayoutGroup.OptionsTableLayoutGroup">
             <summary>
-                <para>Provides access to a table layout's options. 
+                <para>Provides settings and events for table layout customization.
 </para>
             </summary>
-            <value>An object that contains the table layout's options.
+            <value>An object that contains options and settings specific to table layout mode.
 </value>
 
 
@@ -6154,6 +6166,16 @@ For the root group, its parent is the LayoutControl itself (the LayoutControl's 
 </para>
             </summary>
             <value><b>true</b>, if the control's size is automatically calculated; otherwise, <b>false</b>.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraLayout.LayoutControl.AutoSizeMode">
+            <summary>
+                <para>Gets or sets how the control is automatically resized to display its entire contents.
+</para>
+            </summary>
+            <value>A value that specifies how the control is automatically resized.
 </value>
 
 
@@ -7400,7 +7422,8 @@ For the root group, its parent is the LayoutControl itself (the LayoutControl's 
         </member>
         <member name="E:DevExpress.XtraLayout.LayoutControl.ItemDragging">
             <summary>
-                <para> </para>
+                <para>Fires repeatedly when a layout item is being dragged and allows you to prevent the item from being dropped at a specific position.
+</para>
             </summary>
 
 
@@ -7624,10 +7647,12 @@ For the root group, its parent is the LayoutControl itself (the LayoutControl's 
         </member>
         <member name="M:DevExpress.XtraLayout.LayoutControl.RegisterUserCustomizationForm(System.Type)">
             <summary>
-                <para> </para>
+                <para>Registers the specified custom Customization Form.
+</para>
             </summary>
             <param name="customizationFormType">
-		 
+		The type of the custom Customization Form.
+
             </param>
 
 
@@ -8276,7 +8301,7 @@ This property is in effect if the <see cref="P:DevExpress.XtraLayout.OptionsPrin
         </member>
         <member name="M:DevExpress.XtraLayout.ColumnDefinitions.Add(DevExpress.XtraLayout.ColumnDefinition)">
             <summary>
-                <para>Adds the specified column to a table layout.
+                <para>Adds a specified column to the table layout.
 </para>
             </summary>
             <param name="columnDefinition">
@@ -8288,7 +8313,7 @@ This property is in effect if the <see cref="P:DevExpress.XtraLayout.OptionsPrin
         </member>
         <member name="M:DevExpress.XtraLayout.ColumnDefinitions.AddRange(DevExpress.XtraLayout.ColumnDefinition[])">
             <summary>
-                <para>Adds an array of column objects to a table layout. 
+                <para>Adds an array of columns to the table layout. 
 </para>
             </summary>
             <param name="items">
@@ -8300,14 +8325,14 @@ This property is in effect if the <see cref="P:DevExpress.XtraLayout.OptionsPrin
         </member>
         <member name="P:DevExpress.XtraLayout.ColumnDefinitions.Item(System.Int32)">
             <summary>
-                <para>Provides indexed access to columns within a table layout's column collection.
+                <para>Provides indexed access to columns within the table layout.
 </para>
             </summary>
             <param name="index">
 		A zero-based integer value that specifies the index of the required column.
 
             </param>
-            <value>An object that represents a column at the specified position within the collection.
+            <value>A column at the specified position within the collection.
 </value>
 
 
@@ -8354,7 +8379,7 @@ This property is in effect if the <see cref="P:DevExpress.XtraLayout.OptionsPrin
 
             </param>
             <param name="sizingType">
-		The type of the current column width. This value is assigned to the <see cref="P:DevExpress.XtraLayout.ColumnDefinition.SizeType"/> property.
+		The size type of the created column. This value is assigned to the <see cref="P:DevExpress.XtraLayout.ColumnDefinition.SizeType"/> property.
 
             </param>
 
@@ -8362,20 +8387,21 @@ This property is in effect if the <see cref="P:DevExpress.XtraLayout.OptionsPrin
         </member>
         <member name="P:DevExpress.XtraLayout.ColumnDefinition.SizeType">
             <summary>
-                <para>Gets or sets the size type of the current column within a table layout.
+                <para>Gets or sets the column's size type in a table layout.
 </para>
             </summary>
-            <value>A value that specifies the type of the current column width. 
+            <value>A value that specifies the column's size type.
 </value>
 
 
         </member>
         <member name="P:DevExpress.XtraLayout.ColumnDefinition.Width">
             <summary>
-                <para>Gets or sets the column width. 
+                <para>Gets or sets the column width, in pixels or as a percentage, according to the <see cref="P:DevExpress.XtraLayout.ColumnDefinition.SizeType"/>.
+
 </para>
             </summary>
-            <value>An integer value that specifies the column width. 
+            <value>A value that specifies the column width. 
 </value>
 
 
@@ -8422,7 +8448,7 @@ This property is in effect if the <see cref="P:DevExpress.XtraLayout.OptionsPrin
 
             </param>
             <param name="sizingType">
-		The type of the current row height. This value is assigned to the <see cref="P:DevExpress.XtraLayout.RowDefinition.SizeType"/> property.
+		The size type of the created row. This value is assigned to the <see cref="P:DevExpress.XtraLayout.RowDefinition.SizeType"/> property.
 
             </param>
 
@@ -8430,20 +8456,21 @@ This property is in effect if the <see cref="P:DevExpress.XtraLayout.OptionsPrin
         </member>
         <member name="P:DevExpress.XtraLayout.RowDefinition.Height">
             <summary>
-                <para>Gets or sets the row height. 
+                <para>Gets or sets the row height, in pixels or as a percentage, according to the <see cref="P:DevExpress.XtraLayout.RowDefinition.SizeType"/>.
+
 </para>
             </summary>
-            <value>An integer value that specifies the row height. 
+            <value>A value that specifies the row height. 
 </value>
 
 
         </member>
         <member name="P:DevExpress.XtraLayout.RowDefinition.SizeType">
             <summary>
-                <para>Gets or sets the size type of the current row within a table layout.
+                <para>Gets or sets the row's size type in a table layout.
 </para>
             </summary>
-            <value>A value that specifies the type of the current row height. 
+            <value>A value that specifies the row's size type. 
 </value>
 
 
@@ -8486,7 +8513,7 @@ This property is in effect if the <see cref="P:DevExpress.XtraLayout.OptionsPrin
         </member>
         <member name="M:DevExpress.XtraLayout.RowDefinitions.Add(DevExpress.XtraLayout.RowDefinition)">
             <summary>
-                <para>Adds the specified row to a table layout.
+                <para>Adds the specified row to the table layout.
 </para>
             </summary>
             <param name="rowDefinition">
@@ -8498,7 +8525,7 @@ This property is in effect if the <see cref="P:DevExpress.XtraLayout.OptionsPrin
         </member>
         <member name="M:DevExpress.XtraLayout.RowDefinitions.AddRange(DevExpress.XtraLayout.RowDefinition[])">
             <summary>
-                <para>Adds an array of row objects to a table layout. 
+                <para>Adds an array of row objects to the table layout. 
 </para>
             </summary>
             <param name="items">
@@ -8510,14 +8537,14 @@ This property is in effect if the <see cref="P:DevExpress.XtraLayout.OptionsPrin
         </member>
         <member name="P:DevExpress.XtraLayout.RowDefinitions.Item(System.Int32)">
             <summary>
-                <para>Provides indexed access to rows within a table layout's row collection.
+                <para>Provides indexed access to rows within the current row collection.
 </para>
             </summary>
             <param name="index">
 		A zero-based integer value that specifies the index of the required row.
 
             </param>
-            <value>An object that represents a row at the specified position within the collection.
+            <value>An object that represents the row at the specified position within the collection.
 </value>
 
 
@@ -8544,7 +8571,7 @@ This property is in effect if the <see cref="P:DevExpress.XtraLayout.OptionsPrin
         </member>
         <member name="P:DevExpress.XtraLayout.OptionsTableLayoutItem.ColumnIndex">
             <summary>
-                <para>Gets or sets a layout item's column index within a table layout.
+                <para>Gets or sets the index of the column in which the current layout item is displayed.
 </para>
             </summary>
             <value>The zero-based index that specifies the layout item's column position within the table layout. 
@@ -8554,7 +8581,7 @@ This property is in effect if the <see cref="P:DevExpress.XtraLayout.OptionsPrin
         </member>
         <member name="P:DevExpress.XtraLayout.OptionsTableLayoutItem.ColumnSpan">
             <summary>
-                <para>Gets or sets the number of columns spanned by a layout item within a table layout.
+                <para>Gets or sets the number of columns spanned by the current layout item within the table layout.
 </para>
             </summary>
             <value>A positive integer value that specifies the number of columns spanned by the layout item.
@@ -8564,7 +8591,8 @@ This property is in effect if the <see cref="P:DevExpress.XtraLayout.OptionsPrin
         </member>
         <member name="P:DevExpress.XtraLayout.OptionsTableLayoutItem.RowIndex">
             <summary>
-                <para>Gets or sets a layout item's row index within a table layout.
+                <para>Gets or sets the index of the row in which the current layout item is displayed.
+
 </para>
             </summary>
             <value>The zero-based index that specifies the layout item's row position within the table layout. 
@@ -8574,7 +8602,7 @@ This property is in effect if the <see cref="P:DevExpress.XtraLayout.OptionsPrin
         </member>
         <member name="P:DevExpress.XtraLayout.OptionsTableLayoutItem.RowSpan">
             <summary>
-                <para>Gets or sets the number of rows spanned by a layout item within a table layout.
+                <para>Gets or sets the number of rows spanned by the current layout item within the table layout.
 </para>
             </summary>
             <value>A positive integer value that specifies the number of rows spanned by the layout item.
@@ -8633,17 +8661,17 @@ This property is in effect if the <see cref="P:DevExpress.XtraLayout.OptionsPrin
         </member>
         <member name="M:DevExpress.XtraLayout.OptionsTableLayoutGroup.AddColumn">
             <summary>
-                <para>Creates a new column with default settings and adds it to a table layout. 
+                <para>Creates a new column with default settings and adds it to the table layout. 
 </para>
             </summary>
-            <returns>An object that specifies the new column.
+            <returns>An object that specifies the newly created column.
 </returns>
 
 
         </member>
         <member name="M:DevExpress.XtraLayout.OptionsTableLayoutGroup.AddRow">
             <summary>
-                <para>Creates a new row with default settings and adds it to a table layout. 
+                <para>Creates a new row with default settings and adds it to the table layout. 
 </para>
             </summary>
             <returns>An object that specifies the new row.
@@ -8651,9 +8679,19 @@ This property is in effect if the <see cref="P:DevExpress.XtraLayout.OptionsPrin
 
 
         </member>
+        <member name="P:DevExpress.XtraLayout.OptionsTableLayoutGroup.AutoSizeDefaultDefinitionLength">
+            <summary>
+                <para>Gets or sets the default size for rows/columns of the <b>AitoSize</b> type that don't contain layout items in the table layout.
+</para>
+            </summary>
+            <value>A value that specifies the size for rows/columns of the <b>AutoSize</b> type, in pixels.
+</value>
+
+
+        </member>
         <member name="P:DevExpress.XtraLayout.OptionsTableLayoutGroup.ColumnCount">
             <summary>
-                <para>Returns the number of columns within a table layout.
+                <para>Returns the number of columns within the table layout.
 </para>
             </summary>
             <value>The number of columns within the table layout.
@@ -8663,17 +8701,17 @@ This property is in effect if the <see cref="P:DevExpress.XtraLayout.OptionsPrin
         </member>
         <member name="P:DevExpress.XtraLayout.OptionsTableLayoutGroup.ColumnDefinitions">
             <summary>
-                <para>Provides access to a table layout's column collection. 
+                <para>Provides access to columns of the table layout.
 </para>
             </summary>
-            <value>An object that contains the table layout's columns.
+            <value>The table layout's columns.
 </value>
 
 
         </member>
         <member name="M:DevExpress.XtraLayout.OptionsTableLayoutGroup.GetColumn(System.Int32)">
             <summary>
-                <para>Returns a column by its index within a table layout.
+                <para>Returns a column by its index within the table layout.
 </para>
             </summary>
             <param name="index">
@@ -8687,7 +8725,7 @@ This property is in effect if the <see cref="P:DevExpress.XtraLayout.OptionsPrin
         </member>
         <member name="M:DevExpress.XtraLayout.OptionsTableLayoutGroup.GetRow(System.Int32)">
             <summary>
-                <para>Returns a row by its index within a table layout.
+                <para>Returns a row by its index within the table layout.
 </para>
             </summary>
             <param name="index">
@@ -8701,7 +8739,7 @@ This property is in effect if the <see cref="P:DevExpress.XtraLayout.OptionsPrin
         </member>
         <member name="M:DevExpress.XtraLayout.OptionsTableLayoutGroup.Remove(DevExpress.XtraLayout.ColumnDefinition)">
             <summary>
-                <para>Removes the specified column from a table layout.
+                <para>Removes the specified column from the table layout.
 </para>
             </summary>
             <param name="columnDefinition">
@@ -8725,7 +8763,7 @@ This property is in effect if the <see cref="P:DevExpress.XtraLayout.OptionsPrin
         </member>
         <member name="P:DevExpress.XtraLayout.OptionsTableLayoutGroup.RowCount">
             <summary>
-                <para>Returns the number of rows within a table layout.
+                <para>Returns the number of rows within the table layout.
 </para>
             </summary>
             <value>The number of rows within the table layout.
@@ -8735,10 +8773,10 @@ This property is in effect if the <see cref="P:DevExpress.XtraLayout.OptionsPrin
         </member>
         <member name="P:DevExpress.XtraLayout.OptionsTableLayoutGroup.RowDefinitions">
             <summary>
-                <para>Provides access to a table layout's row collection. 
+                <para>Provides access to rows of the table layout.
 </para>
             </summary>
-            <value>An object that contains the table layout's rows.
+            <value>The table layout's rows.
 </value>
 
 

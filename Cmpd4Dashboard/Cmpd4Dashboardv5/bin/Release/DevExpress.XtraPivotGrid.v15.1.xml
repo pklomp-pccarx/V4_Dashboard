@@ -10587,7 +10587,8 @@
         <member name="T:DevExpress.XtraPivotGrid.CustomServerModeSortEventArgs">
 
             <summary>
-                <para>Provide data for the <see cref="E:DevExpress.XtraPivotGrid.PivotGridControl.CustomServerModeSort"/> event
+                <para>Provides data for the <see cref="E:DevExpress.XtraPivotGrid.PivotGridControl.CustomServerModeSort"/> event
+
 </para>
             </summary>
 
@@ -10598,7 +10599,8 @@
 </para>
             </summary>
             <param name="field">
-		A <see cref="T:DevExpress.XtraPivotGrid.PivotGridField"/> object that represent a pivot grid field.
+		A <see cref="T:DevExpress.XtraPivotGrid.PivotGridField"/> object that represents a pivot grid field.
+
 
             </param>
 

@@ -1405,9 +1405,11 @@
         </member>
         <member name="P:DevExpress.XtraTreeList.TreeListOptionsCustomization.CustomizationFormSearchBoxVisible">
             <summary>
-                <para> </para>
+                <para>Gets or sets whether the Customization Form displays the search box that allows end-users to find columns and bands.
+</para>
             </summary>
-            <value> </value>
+            <value><b>true</b>, if the Customization Form displays the search box; otherwise, <b>false</b>.
+</value>
 
 
         </member>
@@ -2165,9 +2167,11 @@
         </member>
         <member name="P:DevExpress.XtraTreeList.TreeListOptionsPrint.AllowCancelPrintExport">
             <summary>
-                <para> </para>
+                <para>Gets or sets whether the print/export progress window contains the Cancel button, which allows an end-user to cancel the current print/export operation.
+</para>
             </summary>
-            <value> </value>
+            <value><b>true</b>, if the print/export progress window contains the <b>Cancel</b> button; otherwise, <b>false</b>.
+</value>
 
 
         </member>
@@ -2326,9 +2330,11 @@
         </member>
         <member name="P:DevExpress.XtraTreeList.TreeListOptionsPrint.ShowPrintExportProgress">
             <summary>
-                <para> </para>
+                <para>Gets or sets whether a separate window is used to indicate print/export progress.
+</para>
             </summary>
-            <value> </value>
+            <value><b>true</b>, if a separate window is used to indicate print/export progress; otherwise, <b>false</b>.
+</value>
 
 
         </member>
@@ -3052,22 +3058,28 @@
         </member>
         <member name="M:DevExpress.XtraTreeList.CustomDrawFooterEventArgs.#ctor(DevExpress.Utils.Drawing.GraphicsCache,System.Drawing.Rectangle,DevExpress.Utils.AppearanceObject,DevExpress.Utils.Drawing.ObjectPainter,System.Boolean)">
             <summary>
-                <para> </para>
+                <para>Initializes a new instance of the CustomDrawFooterEventArgs class.
+</para>
             </summary>
             <param name="cache">
-		 
+		A <see cref="T:DevExpress.Utils.Drawing.GraphicsCache"/> object which specifies the storage for the most  used  pens, fonts and brushes. This value is assigned to the <see cref="P:DevExpress.XtraTreeList.CustomDrawEventArgs.Cache"/> property.
+
             </param>
             <param name="r">
-		 
+		A <see cref="T:System.Drawing.Rectangle"/> structure which represents the painted element's bounding rectangle. This value is assigned to the <see cref="P:DevExpress.XtraTreeList.CustomDrawEventArgs.Bounds"/> property.
+
             </param>
             <param name="appearance">
-		 
+		An <see cref="T:DevExpress.Utils.AppearanceObject"/> object which specifies the painted footer's appearance settings. This value is assigned to the <see cref="P:DevExpress.XtraTreeList.CustomDrawEventArgs.Appearance"/> property.
+
             </param>
             <param name="painter">
-		 
+		An <see cref="T:DevExpress.Utils.Drawing.ObjectPainter"/> object that provides facilities for painting a footer using the default mechanism. This value is assigned to the <see cref="P:DevExpress.XtraTreeList.CustomDrawEventArgs.Painter"/> property.
+
             </param>
             <param name="isRightToLeft">
-		 
+		A Boolean value that specifies whether the TreeList's elements are aligned to support locales using right-to-left fonts. This value is assigned to the <see cref="P:DevExpress.XtraTreeList.CustomDrawEventArgs.IsRightToLeft"/> property.
+
             </param>
 
 
@@ -3593,9 +3605,11 @@ If there is no underlying data that would fall into a specific date range, the c
         </member>
         <member name="M:DevExpress.XtraTreeList.Columns.TreeListBand.ToString">
             <summary>
-                <para> </para>
+                <para>Gets the band's caption. 
+</para>
             </summary>
-            <returns> </returns>
+            <returns>A string that specifies the band's caption.
+</returns>
 
 
         </member>
@@ -4777,28 +4791,36 @@ If there is no underlying data that would fall into a specific date range, the c
         </member>
         <member name="M:DevExpress.XtraTreeList.CustomDrawEmptyAreaEventArgs.#ctor(DevExpress.Utils.Drawing.GraphicsCache,System.Drawing.Rectangle,DevExpress.Utils.AppearanceObject,System.Drawing.Rectangle,System.Drawing.Rectangle,System.Drawing.Region,System.Boolean)">
             <summary>
-                <para> </para>
+                <para>Initializes a new instance of the CustomDrawEmptyAreaEventArgs class with the specified settings.
+</para>
             </summary>
             <param name="cache">
-		 
+		 A <see cref="T:DevExpress.Utils.Drawing.GraphicsCache"/> object which specifies the storage for the pens, fonts and brushes used. This value is assigned to the <see cref="P:DevExpress.XtraTreeList.CustomDrawEventArgs.Cache"/> property.
+
             </param>
             <param name="r">
-		 
+		A <see cref="T:System.Drawing.Rectangle"/> structure which specifies the boundaries of the painted element. This value is assigned to the <see cref="P:DevExpress.XtraTreeList.CustomDrawEventArgs.Bounds"/> property.
+
             </param>
             <param name="appearance">
-		 
+		A <see cref="T:DevExpress.Utils.AppearanceObject"/> object which provides the appearance settings used to paint an empty area. This value is assigned to the <see cref="P:DevExpress.XtraTreeList.CustomDrawEventArgs.Appearance"/> property.
+
             </param>
             <param name="emptyRows">
-		 
+		A <see cref="T:System.Drawing.Rectangle"/> structure which represents the bounding rectangle occupied by the empty rows. This value is assigned to the <see cref="P:DevExpress.XtraTreeList.CustomDrawEmptyAreaEventArgs.EmptyRows"/> property.
+
             </param>
             <param name="bc">
-		 
+		A <see cref="T:System.Drawing.Rectangle"/> structure which specifies the drawing area under the blank column's header. This value is assigned to the <see cref="P:DevExpress.XtraTreeList.CustomDrawEmptyAreaEventArgs.BehindColumn"/> property.
+
             </param>
             <param name="emptyAreaRegion">
-		 
+		A <see cref="T:System.Drawing.Region"/> object which represents the interior of the empty area. This value is assigned to the <see cref="P:DevExpress.XtraTreeList.CustomDrawEmptyAreaEventArgs.EmptyAreaRegion"/> property.
+
             </param>
             <param name="isRightToLeft">
-		 
+		A Boolean value that specifies whether the TreeList's elements are aligned to support locales using right-to-left fonts. This value is assigned to the <see cref="P:DevExpress.XtraTreeList.CustomDrawEventArgs.IsRightToLeft"/> property.
+
             </param>
 
 
@@ -6385,25 +6407,32 @@ If there is no underlying data that would fall into a specific date range, the c
         </member>
         <member name="M:DevExpress.XtraTreeList.CustomDrawRowFooterEventArgs.#ctor(DevExpress.Utils.Drawing.GraphicsCache,System.Drawing.Rectangle,DevExpress.Utils.AppearanceObject,DevExpress.Utils.Drawing.ObjectPainter,DevExpress.XtraTreeList.Nodes.TreeListNode,System.Boolean)">
             <summary>
-                <para> </para>
+                <para>Initializes a new instance of the CustomDrawRowFooterEventArgs class.
+</para>
             </summary>
             <param name="cache">
-		 
+		A <see cref="T:DevExpress.Utils.Drawing.GraphicsCache"/> object which specifies the storage for the most used  pens, fonts and brushes. This value is assigned to the <see cref="P:DevExpress.XtraTreeList.CustomDrawEventArgs.Cache"/> property.
+
             </param>
             <param name="r">
-		 
+		A <see cref="T:System.Drawing.Rectangle"/> structure which represents the painted element's bounding rectangle. This value is assigned to the <see cref="P:DevExpress.XtraTreeList.CustomDrawEventArgs.Bounds"/> property.
+
             </param>
             <param name="appearance">
-		 
+		An <see cref="T:DevExpress.Utils.AppearanceObject"/> object which specifies the painted element's appearance settings. This value is assigned to the <see cref="P:DevExpress.XtraTreeList.CustomDrawEventArgs.Appearance"/> property.
+
             </param>
             <param name="painter">
-		 
+		An <see cref="T:DevExpress.Utils.Drawing.ObjectPainter"/> object that provides facilities for painting an element using the default mechanism. This value is assigned to the <see cref="P:DevExpress.XtraTreeList.CustomDrawEventArgs.Painter"/> property.
+
             </param>
             <param name="node">
-		 
+		A <see cref="T:DevExpress.XtraTreeList.Nodes.TreeListNode"/> object which represents a node containing the painted row footer. This value is assigned to the <see cref="P:DevExpress.XtraTreeList.CustomDrawRowFooterEventArgs.Node"/> property.
+
             </param>
             <param name="isRightToLeft">
-		 
+		A Boolean value that specifies whether the TreeList's elements are aligned to support locales using right-to-left fonts. This value is assigned to the <see cref="P:DevExpress.XtraTreeList.CustomDrawEventArgs.IsRightToLeft"/> property.
+
             </param>
 
 
@@ -6492,34 +6521,46 @@ If there is no underlying data that would fall into a specific date range, the c
         </member>
         <member name="M:DevExpress.XtraTreeList.CustomDrawRowFooterCellEventArgs.#ctor(DevExpress.Utils.Drawing.GraphicsCache,System.Drawing.Rectangle,DevExpress.Utils.AppearanceObject,DevExpress.XtraTreeList.Columns.TreeListColumn,DevExpress.XtraTreeList.Nodes.TreeListNode,DevExpress.XtraTreeList.SummaryItemType,System.String,DevExpress.Utils.Drawing.ObjectPainter,System.Boolean)">
             <summary>
-                <para> </para>
+                <para>Initializes a new instance of the CustomDrawRowFooterCellEventArgs class.
+</para>
             </summary>
             <param name="cache">
-		 
+		A <see cref="T:DevExpress.Utils.Drawing.GraphicsCache"/> object which specifies the storage for the most used  pens, fonts and brushes. This value is assigned to the <see cref="P:DevExpress.XtraTreeList.CustomDrawEventArgs.Cache"/> property.
+
             </param>
             <param name="r">
-		 
+		A <see cref="T:System.Drawing.Rectangle"/> structure which represents the painted element's bounding rectangle. This value is assigned to the <see cref="P:DevExpress.XtraTreeList.CustomDrawEventArgs.Bounds"/> property.
+
             </param>
             <param name="appearance">
-		 
+		An <see cref="T:DevExpress.Utils.AppearanceObject"/> object which specifies the painted element's appearance settings. This value is assigned to the <see cref="P:DevExpress.XtraTreeList.CustomDrawEventArgs.Appearance"/> property.
+
             </param>
             <param name="column">
-		 
+		A <see cref="T:DevExpress.XtraTreeList.Columns.TreeListColumn"/> object which represents the column whose footer cell is painted. This value is assigned to the <see cref="P:DevExpress.XtraTreeList.CustomDrawFooterCellEventArgs.Column"/> property.
+
             </param>
             <param name="node">
-		 
+		A <see cref="T:DevExpress.XtraTreeList.Nodes.TreeListNode"/> object which represents the node for whose children the row footer is displayed. This value is assigned to the <see cref="P:DevExpress.XtraTreeList.CustomDrawRowFooterCellEventArgs.Node"/> property.
+
             </param>
             <param name="itemType">
-		 
+		A <see cref="T:DevExpress.XtraTreeList.SummaryItemType"/> enumeration value specifying the type of summary whose value displayed in the painted footer cell. This value is assigned to the <see cref="P:DevExpress.XtraTreeList.CustomDrawFooterCellEventArgs.ItemType"/> property.
+
+
             </param>
             <param name="text">
-		 
+		A string value specifying the text to be displayed in the painted row footer cell. This value is assigned to the <see cref="P:DevExpress.XtraTreeList.CustomDrawFooterCellEventArgs.Text"/> property.
+
+
             </param>
             <param name="painter">
-		 
+		An <see cref="T:DevExpress.Utils.Drawing.ObjectPainter"/> object that provides facilities for painting an element using the default mechanism. This value is assigned to the <see cref="P:DevExpress.XtraTreeList.CustomDrawEventArgs.Painter"/> property.
+
             </param>
             <param name="isRightToLeft">
-		 
+		A Boolean value that specifies whether the TreeList's elements are aligned to support locales using right-to-left fonts. This value is assigned to the <see cref="P:DevExpress.XtraTreeList.CustomDrawEventArgs.IsRightToLeft"/> property.
+
             </param>
 
 
@@ -6584,7 +6625,7 @@ If there is no underlying data that would fall into a specific date range, the c
 
             </param>
             <param name="node">
-		A <see cref="T:DevExpress.XtraTreeList.Nodes.TreeListNode"/> object which represents the node whose preview section is being painted. This value is assigned to the <see cref="P:DevExpress.XtraTreeList.CustomDrawNodePreviewEventArgs.Node"/> property.
+		A <see cref="T:DevExpress.XtraTreeList.Nodes.TreeListNode"/> object which represents the node whose preview section is being painted. This value is assigned to the <see cref="P:DevExpress.XtraTreeList.CustomDrawNodeEventArgs.Node"/> property.
 
             </param>
             <param name="previewText">
@@ -6596,25 +6637,32 @@ If there is no underlying data that would fall into a specific date range, the c
         </member>
         <member name="M:DevExpress.XtraTreeList.CustomDrawNodePreviewEventArgs.#ctor(DevExpress.Utils.Drawing.GraphicsCache,System.Drawing.Rectangle,DevExpress.Utils.AppearanceObject,DevExpress.XtraTreeList.Nodes.TreeListNode,System.String,System.Boolean)">
             <summary>
-                <para> </para>
+                <para>Initializes a new instance of the CustomDrawNodePreviewEventArgs class.
+</para>
             </summary>
             <param name="cache">
-		 
+		A <see cref="T:DevExpress.Utils.Drawing.GraphicsCache"/> object which specifies the storage for the most used  pens, fonts and brushes. This value is assigned to the <see cref="P:DevExpress.XtraTreeList.CustomDrawEventArgs.Cache"/> property.
+
             </param>
             <param name="r">
-		 
+		A <see cref="T:System.Drawing.Rectangle"/> structure which represents the painted element's bounding rectangle. This value is assigned to the <see cref="P:DevExpress.XtraTreeList.CustomDrawEventArgs.Bounds"/> property.
+
             </param>
             <param name="appearance">
-		 
+		An <see cref="T:DevExpress.Utils.AppearanceObject"/> object which specifies the painted element's appearance settings. This value is assigned to the <see cref="P:DevExpress.XtraTreeList.CustomDrawEventArgs.Appearance"/> property.
+
             </param>
             <param name="node">
-		 
+		A <see cref="T:DevExpress.XtraTreeList.Nodes.TreeListNode"/> object which represents the node whose preview section is being painted. This value is assigned to the <see cref="P:DevExpress.XtraTreeList.CustomDrawNodeEventArgs.Node"/> property.
+
             </param>
             <param name="previewText">
-		 
+		A string value representing the text of the preview section. This value is assigned to the <see cref="P:DevExpress.XtraTreeList.CustomDrawNodePreviewEventArgs.PreviewText"/> property.
+
             </param>
             <param name="isRightToLeft">
-		 
+		A Boolean value that specifies whether the TreeList's elements are aligned to support locales using right-to-left fonts. This value is assigned to the <see cref="P:DevExpress.XtraTreeList.CustomDrawEventArgs.IsRightToLeft"/> property.
+
             </param>
 
 
@@ -6663,65 +6711,84 @@ If there is no underlying data that would fall into a specific date range, the c
         </member>
         <member name="M:DevExpress.XtraTreeList.CustomDrawNodeIndicatorEventArgs.#ctor(DevExpress.Utils.Drawing.GraphicsCache,System.Drawing.Rectangle,DevExpress.Utils.AppearanceObject,System.Boolean,System.Int32,System.Boolean,DevExpress.XtraTreeList.Nodes.TreeListNode,DevExpress.Utils.Drawing.ObjectPainter,System.Boolean)">
             <summary>
-                <para> </para>
+                <para>Initializes a new instance of the CustomDrawNodeIndicatorEventArgs class.
+</para>
             </summary>
             <param name="cache">
-		 
+		A <see cref="T:DevExpress.Utils.Drawing.GraphicsCache"/> object which specifies the storage for the most used  pens, fonts and brushes. This value is assigned to the <see cref="P:DevExpress.XtraTreeList.CustomDrawEventArgs.Cache"/> property.
+
             </param>
             <param name="r">
-		 
+		A <see cref="T:System.Drawing.Rectangle"/> structure which represents the painted element's bounding rectangle. This value is assigned to the <see cref="P:DevExpress.XtraTreeList.CustomDrawEventArgs.Bounds"/> property.
+
             </param>
             <param name="appearance">
-		 
+		An <see cref="T:DevExpress.Utils.AppearanceObject"/> object which specifies the painted element's appearance settings. This value is assigned to the <see cref="P:DevExpress.XtraTreeList.CustomDrawEventArgs.Appearance"/> property.
+
             </param>
             <param name="isNodeIndicator">
-		 
+		A Boolean value that indicates whether the painted indicator cell corresponds to a node or to a row footer.  This value is assigned to the <see cref="P:DevExpress.XtraTreeList.CustomDrawNodeIndicatorEventArgs.IsNodeIndicator"/> property.
+
             </param>
             <param name="imageIndex">
-		 
+		A value that specifies the painted indicator cell's image index. This value is assigned to the <see cref="P:DevExpress.XtraTreeList.CustomDrawNodeIndicatorEventArgs.ImageIndex"/> property.
+
             </param>
             <param name="topMost">
-		 
+		A Boolean value that specifies whether the painted indicator corresponds to the topmost row. 
+
             </param>
             <param name="node">
-		 
+		A <see cref="T:DevExpress.XtraTreeList.Nodes.TreeListNode"/> object which represents the node in which the painted cell resides This value is assigned to the <see cref="P:DevExpress.XtraTreeList.CustomDrawNodeEventArgs.Node"/> property.
+
             </param>
             <param name="painter">
-		 
+		An <see cref="T:DevExpress.Utils.Drawing.ObjectPainter"/> object that provides facilities for painting an element using the default mechanism. This value is assigned to the <see cref="P:DevExpress.XtraTreeList.CustomDrawEventArgs.Painter"/> property.
+
             </param>
             <param name="isRightToLeft">
-		 
+		A Boolean value that specifies whether the TreeList's elements are aligned to support locales using right-to-left fonts. This value is assigned to the <see cref="P:DevExpress.XtraTreeList.CustomDrawEventArgs.IsRightToLeft"/> property.
+
             </param>
 
 
         </member>
         <member name="M:DevExpress.XtraTreeList.CustomDrawNodeIndicatorEventArgs.#ctor(DevExpress.Utils.Drawing.GraphicsCache,System.Drawing.Rectangle,DevExpress.Utils.AppearanceObject,System.Boolean,System.Int32,System.Boolean,DevExpress.XtraTreeList.Nodes.TreeListNode,DevExpress.Utils.Drawing.ObjectPainter)">
             <summary>
-                <para> </para>
+                <para>Initializes a new instance of the CustomDrawNodeIndicatorEventArgs class.
+</para>
             </summary>
             <param name="cache">
-		 
+		A <see cref="T:DevExpress.Utils.Drawing.GraphicsCache"/> object which specifies the storage for the most used  pens, fonts and brushes. This value is assigned to the <see cref="P:DevExpress.XtraTreeList.CustomDrawEventArgs.Cache"/> property.
+
             </param>
             <param name="r">
-		 
+		A <see cref="T:System.Drawing.Rectangle"/> structure which represents the painted element's bounding rectangle. This value is assigned to the <see cref="P:DevExpress.XtraTreeList.CustomDrawEventArgs.Bounds"/> property.
+
             </param>
             <param name="appearance">
-		 
+		An <see cref="T:DevExpress.Utils.AppearanceObject"/> object which specifies the painted element's appearance settings. This value is assigned to the <see cref="P:DevExpress.XtraTreeList.CustomDrawEventArgs.Appearance"/> property.
+
             </param>
             <param name="isNodeIndicator">
-		 
+		A Boolean value that indicates whether the painted indicator cell corresponds to a node or to a row footer.  This value is assigned to the <see cref="P:DevExpress.XtraTreeList.CustomDrawNodeIndicatorEventArgs.IsNodeIndicator"/> property.
+
             </param>
             <param name="imageIndex">
-		 
+		A value that specifies the painted indicator cell's image index. This value is assigned to the <see cref="P:DevExpress.XtraTreeList.CustomDrawNodeIndicatorEventArgs.ImageIndex"/> property.
+
             </param>
             <param name="topMost">
-		 
+		A Boolean value that specifies whether the painted indicator corresponds to the topmost row. 
+
             </param>
             <param name="node">
-		 
+		A <see cref="T:DevExpress.XtraTreeList.Nodes.TreeListNode"/> object which represents the node in which the painted cell resides This value is assigned to the <see cref="P:DevExpress.XtraTreeList.CustomDrawNodeEventArgs.Node"/> property.
+
             </param>
             <param name="painter">
-		 
+		An <see cref="T:DevExpress.Utils.Drawing.ObjectPainter"/> object that provides facilities for painting an element using the default mechanism. This value is assigned to the <see cref="P:DevExpress.XtraTreeList.CustomDrawEventArgs.Painter"/> property.
+
             </param>
 
 
@@ -6828,40 +6895,53 @@ If there is no underlying data that would fall into a specific date range, the c
         </member>
         <member name="M:DevExpress.XtraTreeList.CustomDrawNodeImagesEventArgs.#ctor(DevExpress.Utils.Drawing.GraphicsCache,System.Drawing.Rectangle,DevExpress.Utils.AppearanceObject,DevExpress.XtraTreeList.Nodes.TreeListNode,System.Int32,System.Int32,System.Drawing.Rectangle,System.Drawing.Rectangle,System.Drawing.Point,System.Drawing.Point,System.Boolean)">
             <summary>
-                <para> </para>
+                <para>Initializes a new instance of the CustomDrawNodeImagesEventArgs class.
+</para>
             </summary>
             <param name="cache">
-		 
+		A <see cref="T:DevExpress.Utils.Drawing.GraphicsCache"/> object which specifies the storage for the most used  pens, fonts and brushes. This value is assigned to the <see cref="P:DevExpress.XtraTreeList.CustomDrawEventArgs.Cache"/> property.
+
             </param>
             <param name="r">
-		 
+		A <see cref="T:System.Drawing.Rectangle"/> structure which represents the painted element's bounding rectangle. This value is assigned to the <see cref="P:DevExpress.XtraTreeList.CustomDrawEventArgs.Bounds"/> property.
+
             </param>
             <param name="appearance">
-		 
+		An <see cref="T:DevExpress.Utils.AppearanceObject"/> object which specifies the painted element's appearance settings. This value is assigned to the <see cref="P:DevExpress.XtraTreeList.CustomDrawEventArgs.Appearance"/> property.
+
             </param>
             <param name="node">
-		 
+		A <see cref="T:DevExpress.XtraTreeList.Nodes.TreeListNode"/> object which represents the node whose images are being painted. This value is assigned to the <see cref="P:DevExpress.XtraTreeList.CustomDrawNodeEventArgs.Node"/> property.
+
             </param>
             <param name="selectImageIndex">
-		 
+		An integer value specifying the zero-based index of the image displayed in the node when it's focused. This value is assigned to the <see cref="P:DevExpress.XtraTreeList.CustomDrawNodeImagesEventArgs.SelectImageIndex"/> property.
+
+
             </param>
             <param name="stateImageIndex">
-		 
+		An integer value specifying the zero-based index of the node's state image. This value is assigned to the <see cref="P:DevExpress.XtraTreeList.CustomDrawNodeImagesEventArgs.StateImageIndex"/> property.
+
             </param>
             <param name="selectRect">
-		 
+		A <see cref="T:System.Drawing.Rectangle"/> structure that represents the bounding rectangle of the select image. This value is assigned to the <see cref="P:DevExpress.XtraTreeList.CustomDrawNodeImagesEventArgs.SelectRect"/> property.
+
             </param>
             <param name="stateRect">
-		 
+		A <see cref="T:System.Drawing.Rectangle"/> structure that represents the state image's bounding rectangle. This value is assigned to <see cref="P:DevExpress.XtraTreeList.CustomDrawNodeImagesEventArgs.StateRect"/> property.
+
             </param>
             <param name="selectImageLocation">
-		 
+		A <see cref="T:System.Drawing.Point"/> structure that represents the top-left point of the select image. This value is assigned to the <see cref="P:DevExpress.XtraTreeList.CustomDrawNodeImagesEventArgs.SelectImageLocation"/> property.
+
             </param>
             <param name="stateImageLocation">
-		 
+		A <see cref="T:System.Drawing.Point"/> structure that represents the top-left corner of the state image. This value is assigned to the <see cref="P:DevExpress.XtraTreeList.CustomDrawNodeImagesEventArgs.StateImageLocation"/> property.
+
             </param>
             <param name="isRightToLeft">
-		 
+		A Boolean value that specifies whether the TreeList's elements are aligned to support locales using right-to-left fonts. This value is assigned to the <see cref="P:DevExpress.XtraTreeList.CustomDrawEventArgs.IsRightToLeft"/> property.
+
             </param>
 
 
@@ -7000,34 +7080,44 @@ If there is no underlying data that would fall into a specific date range, the c
         </member>
         <member name="M:DevExpress.XtraTreeList.CustomDrawNodeCellEventArgs.#ctor(DevExpress.Utils.Drawing.GraphicsCache,System.Drawing.Rectangle,DevExpress.Utils.AppearanceObject,DevExpress.XtraEditors.Drawing.BaseEditPainter,DevExpress.XtraTreeList.Columns.TreeListColumn,DevExpress.XtraTreeList.Nodes.TreeListNode,DevExpress.XtraEditors.ViewInfo.BaseEditViewInfo,System.Boolean,System.Boolean)">
             <summary>
-                <para> </para>
+                <para>Initializes a new instance of the CustomDrawNodeCellEventArgs class.
+</para>
             </summary>
             <param name="cache">
-		 
+		A <see cref="T:DevExpress.Utils.Drawing.GraphicsCache"/> object which specifies the storage for the most used  pens, fonts and brushes. This value is assigned to the <see cref="P:DevExpress.XtraTreeList.CustomDrawEventArgs.Cache"/> property.
+
             </param>
             <param name="r">
-		 
+		A <see cref="T:System.Drawing.Rectangle"/> structure which represents the painted element's bounding rectangle. This value is assigned to the <see cref="P:DevExpress.XtraTreeList.CustomDrawEventArgs.Bounds"/> property.
+
             </param>
             <param name="appearance">
-		 
+		An <see cref="T:DevExpress.Utils.AppearanceObject"/> object which specifies the painted cell's appearance settings. This value is assigned to the <see cref="P:DevExpress.XtraTreeList.CustomDrawEventArgs.Appearance"/> property.
+
             </param>
             <param name="painter">
-		 
+		A <see cref="T:DevExpress.XtraEditors.Drawing.BaseEditPainter"/> object that provides facilities for painting a cell using the default mechanism. This value is assigned to the <see cref="P:DevExpress.XtraTreeList.CustomDrawEventArgs.Painter"/> property.
+
             </param>
             <param name="column">
-		 
+		A <see cref="T:DevExpress.XtraTreeList.Columns.TreeListColumn"/> object which represents the column containing the painted cell. This value is assigned to the <see cref="P:DevExpress.XtraTreeList.CustomDrawNodeCellEventArgs.Column"/> property.
+
             </param>
             <param name="node">
-		 
+		A <see cref="T:DevExpress.XtraTreeList.Nodes.TreeListNode"/> object which represents the node in which the painted cell resides This value is assigned to the <see cref="P:DevExpress.XtraTreeList.CustomDrawNodeEventArgs.Node"/> property.
+
             </param>
             <param name="viewInfo">
-		 
+		A <see cref="T:DevExpress.XtraEditors.ViewInfo.BaseEditViewInfo"/> object which provides view information on the painted cell's editor. This value is assigned to the <see cref="P:DevExpress.XtraTreeList.CustomDrawNodeCellEventArgs.EditViewInfo"/> property.
+
             </param>
             <param name="focused">
-		 
+		<b>true</b>, if the painted cell has focus; otherwise, <b>false</b>. This value is assigned to the <see cref="P:DevExpress.XtraTreeList.CustomDrawNodeCellEventArgs.Focused"/> property.
+
             </param>
             <param name="isRightToLeft">
-		 
+		A Boolean value that specifies whether the TreeList's elements are aligned to support locales using right-to-left fonts. This value is assigned to the <see cref="P:DevExpress.XtraTreeList.CustomDrawEventArgs.IsRightToLeft"/> property.
+
             </param>
 
 
@@ -7154,25 +7244,32 @@ If there is no underlying data that would fall into a specific date range, the c
         </member>
         <member name="M:DevExpress.XtraTreeList.CustomDrawNodeButtonEventArgs.#ctor(DevExpress.Utils.Drawing.GraphicsCache,System.Drawing.Rectangle,DevExpress.Utils.AppearanceObject,DevExpress.XtraTreeList.Nodes.TreeListNode,DevExpress.Utils.Drawing.ObjectPainter,System.Boolean)">
             <summary>
-                <para> </para>
+                <para>Initializes a new instance of the <see cref="T:DevExpress.XtraTreeList.CustomDrawNodeButtonEventArgs"/> class.
+</para>
             </summary>
             <param name="cache">
-		 
+		A <see cref="T:DevExpress.Utils.Drawing.GraphicsCache"/> object which specifies the storage for the most  used  pens, fonts and brushes. This value is assigned to the <see cref="P:DevExpress.XtraTreeList.CustomDrawEventArgs.Cache"/> property.
+
             </param>
             <param name="r">
-		 
+		A <see cref="T:System.Drawing.Rectangle"/> structure which represents the painted element's bounding rectangle. This value is assigned to the <see cref="P:DevExpress.XtraTreeList.CustomDrawEventArgs.Bounds"/> property.
+
             </param>
             <param name="appearance">
-		 
+		An <see cref="T:DevExpress.Utils.AppearanceObject"/> object which specifies the painted expand button's appearance settings. This value is assigned to the <see cref="P:DevExpress.XtraTreeList.CustomDrawEventArgs.Appearance"/> property.
+
             </param>
             <param name="node">
-		 
+		A <see cref="T:DevExpress.XtraTreeList.Nodes.TreeListNode"/> object which represents the node that contains the button being painted. This value is assigned to the <see cref="P:DevExpress.XtraTreeList.CustomDrawNodeButtonEventArgs.Node"/> property.
+
             </param>
             <param name="painter">
-		 
+		An <see cref="T:DevExpress.Utils.Drawing.ObjectPainter"/> object that provides facilities for painting the node's expand button using the default mechanism. This value is assigned to the <see cref="P:DevExpress.XtraTreeList.CustomDrawEventArgs.Painter"/> property.
+
             </param>
             <param name="isRightToLeft">
-		 
+		A Boolean value that specifies whether the TreeList's elements are aligned to support locales using right-to-left fonts. This value is assigned to the <see cref="P:DevExpress.XtraTreeList.CustomDrawEventArgs.IsRightToLeft"/> property.
+
             </param>
 
 
@@ -7282,31 +7379,40 @@ If there is no underlying data that would fall into a specific date range, the c
         </member>
         <member name="M:DevExpress.XtraTreeList.CustomDrawFooterCellEventArgs.#ctor(DevExpress.Utils.Drawing.GraphicsCache,System.Drawing.Rectangle,DevExpress.Utils.AppearanceObject,DevExpress.XtraTreeList.Columns.TreeListColumn,DevExpress.XtraTreeList.SummaryItemType,System.String,DevExpress.Utils.Drawing.ObjectPainter,System.Boolean)">
             <summary>
-                <para> </para>
+                <para>Initializes a new instance of the CustomDrawFooterCellEventArgs class.
+</para>
             </summary>
             <param name="cache">
-		 
+		A <see cref="T:DevExpress.Utils.Drawing.GraphicsCache"/> object which specifies the storage for the most  used pens, fonts and brushes. This value is assigned to the <see cref="P:DevExpress.XtraTreeList.CustomDrawEventArgs.Cache"/> property.
+
             </param>
             <param name="r">
-		 
+		A <see cref="T:System.Drawing.Rectangle"/> structure which represents the painted element's bounding rectangle. This value is assigned to the <see cref="P:DevExpress.XtraTreeList.CustomDrawEventArgs.Bounds"/> property.
+
             </param>
             <param name="appearance">
-		 
+		An <see cref="T:DevExpress.Utils.AppearanceObject"/> object which specifies the painted footer cell's appearance settings. This value is assigned to the <see cref="P:DevExpress.XtraTreeList.CustomDrawEventArgs.Appearance"/> property.
+
             </param>
             <param name="column">
-		 
+		A <see cref="T:DevExpress.XtraTreeList.Columns.TreeListColumn"/> object which represents the column whose footer cell is being painted. This value is assigned to the <see cref="P:DevExpress.XtraTreeList.CustomDrawFooterCellEventArgs.Column"/> property.
+
             </param>
             <param name="itemType">
-		 
+		A <see cref="T:DevExpress.XtraTreeList.SummaryItemType"/> enumeration value specifying the type of summary whose value is displayed within the painted cell. This value is assigned to the <see cref="P:DevExpress.XtraTreeList.CustomDrawFooterCellEventArgs.ItemType"/> property.
+
             </param>
             <param name="text">
-		 
+		A string value specifying the text to be displayed within the painted footer cell. This value is assigned to the <see cref="P:DevExpress.XtraTreeList.CustomDrawFooterCellEventArgs.Text"/> property.
+
             </param>
             <param name="painter">
-		 
+		An <see cref="T:DevExpress.Utils.Drawing.ObjectPainter"/> object that provides facilities for painting a footer cell using the default mechanism. This value is assigned to the <see cref="P:DevExpress.XtraTreeList.CustomDrawEventArgs.Painter"/> property.
+
             </param>
             <param name="isRightToLeft">
-		 
+		A Boolean value that specifies whether the TreeList's elements are aligned to support locales using right-to-left fonts. This value is assigned to the <see cref="P:DevExpress.XtraTreeList.CustomDrawEventArgs.IsRightToLeft"/> property.
+
             </param>
 
 
@@ -7395,22 +7501,28 @@ If there is no underlying data that would fall into a specific date range, the c
         </member>
         <member name="M:DevExpress.XtraTreeList.CustomDrawEventArgs.#ctor(DevExpress.Utils.Drawing.GraphicsCache,System.Drawing.Rectangle,DevExpress.Utils.AppearanceObject,DevExpress.Utils.Drawing.ObjectPainter,System.Boolean)">
             <summary>
-                <para> </para>
+                <para>Initializes a new instance of the <see cref="T:DevExpress.XtraTreeList.CustomDrawEventArgs"/> class with the specified <see cref="P:DevExpress.XtraTreeList.CustomDrawEventArgs.Painter"/> property.
+</para>
             </summary>
             <param name="cache">
-		 
+		A <see cref="T:DevExpress.Utils.Drawing.GraphicsCache"/> object which specifies the storage for the most  used  pens, fonts and brushes. This value is assigned to the <see cref="P:DevExpress.XtraTreeList.CustomDrawEventArgs.Cache"/> property.
+
             </param>
             <param name="r">
-		 
+		A <see cref="T:System.Drawing.Rectangle"/> structure which represents the painted element's bounding rectangle. This value is assigned to the <see cref="P:DevExpress.XtraTreeList.CustomDrawEventArgs.Bounds"/> property.
+
             </param>
             <param name="appearance">
-		 
+		An <see cref="T:DevExpress.Utils.AppearanceObject"/> object which specifies the painted element's appearance settings. This value is assigned to the <see cref="P:DevExpress.XtraTreeList.CustomDrawEventArgs.Appearance"/> property.
+
             </param>
             <param name="painter">
-		 
+		An <see cref="T:DevExpress.Utils.Drawing.ObjectPainter"/> object that provides facilities for painting an element using the default mechanism. This value is assigned to the <see cref="P:DevExpress.XtraTreeList.CustomDrawEventArgs.Painter"/> property.
+
             </param>
             <param name="isRightToLeft">
-		 
+		A Boolean value that specifies whether the TreeList's elements are aligned to support locales using right-to-left fonts. This value is assigned to the <see cref="P:DevExpress.XtraTreeList.CustomDrawEventArgs.IsRightToLeft"/> property.
+
             </param>
 
 
@@ -7477,9 +7589,11 @@ If there is no underlying data that would fall into a specific date range, the c
         </member>
         <member name="P:DevExpress.XtraTreeList.CustomDrawEventArgs.IsRightToLeft">
             <summary>
-                <para> </para>
+                <para>Gets a value indicating whether the TreeList's elements are aligned to support locales using right-to-left fonts.
+</para>
             </summary>
-            <value> </value>
+            <value><b>true</b>, if the TreeList's elements are aligned to support locales using right-to-left fonts; otherwise, <b>false</b>.
+</value>
 
 
         </member>
@@ -7557,19 +7671,24 @@ If there is no underlying data that would fall into a specific date range, the c
         </member>
         <member name="M:DevExpress.XtraTreeList.CustomDrawColumnHeaderEventArgs.#ctor(DevExpress.Utils.Drawing.GraphicsCache,System.Drawing.Rectangle,DevExpress.Utils.AppearanceObject,System.Boolean)">
             <summary>
-                <para> </para>
+                <para>Initializes a new instance of the CustomDrawColumnHeaderEventArgs class.
+</para>
             </summary>
             <param name="cache">
-		 
+		A <see cref="T:DevExpress.Utils.Drawing.GraphicsCache"/> object which specifies the storage for the most  used  pens, fonts and brushes. This value is assigned to the <see cref="P:DevExpress.XtraTreeList.CustomDrawEventArgs.Cache"/> property.
+
             </param>
             <param name="r">
-		 
+		A <see cref="T:System.Drawing.Rectangle"/> structure which represents the painted element's bounding rectangle. This value is assigned to the <see cref="P:DevExpress.XtraTreeList.CustomDrawEventArgs.Bounds"/> property.
+
             </param>
             <param name="appearance">
-		 
+		An <see cref="T:DevExpress.Utils.AppearanceObject"/> object which specifies the painted column header's appearance settings. This value is assigned to the <see cref="P:DevExpress.XtraTreeList.CustomDrawEventArgs.Appearance"/> property.
+
             </param>
             <param name="isRightToLeft">
-		 
+		A Boolean value that specifies whether the TreeList's elements are aligned to support locales using right-to-left fonts. This value is assigned to the <see cref="P:DevExpress.XtraTreeList.CustomDrawEventArgs.IsRightToLeft"/> property.
+
             </param>
 
 
@@ -8912,9 +9031,11 @@ If there is no underlying data that would fall into a specific date range, the c
         </member>
         <member name="P:DevExpress.XtraTreeList.Columns.TreeListColumn.RealColumnEdit">
             <summary>
-                <para> </para>
+                <para>Gets the repository item that actually specifies the column's editor. 
+</para>
             </summary>
-            <value> </value>
+            <value>A <see cref="T:DevExpress.XtraEditors.Repository.RepositoryItem"/> descendant that specifies the actual column's editor. 
+</value>
 
 
         </member>
@@ -9052,9 +9173,11 @@ If there is no underlying data that would fall into a specific date range, the c
         </member>
         <member name="M:DevExpress.XtraTreeList.Columns.TreeListColumn.ToString">
             <summary>
-                <para> </para>
+                <para>Gets the column's caption. 
+</para>
             </summary>
-            <returns> </returns>
+            <returns>A string that specifies the column's caption. 
+</returns>
 
 
         </member>
@@ -11114,9 +11237,11 @@ the tree structure due to adding, deleting and modifying nodes, until the <see c
         </member>
         <member name="P:DevExpress.XtraTreeList.TreeList.FindPanelVisible">
             <summary>
-                <para> </para>
+                <para>Gets or sets whether the Find Panel is visible.
+</para>
             </summary>
-            <value> </value>
+            <value><b>true</b>, if the Find Panel is visible; otherwise, <b>false</b>.
+</value>
 
 
         </member>
@@ -11832,7 +11957,7 @@ the tree structure due to adding, deleting and modifying nodes, until the <see c
                 <para>Gets whether the TreeList control is sending information to the print/export engine.
 </para>
             </summary>
-            <value><b>true</b> if the TreeList control is sending information to the print/export engine; otherwise, <b>false</b>.
+            <value><b>true</b>, if the TreeList control is sending information to the print/export engine; otherwise, <b>false</b>.
 </value>
 
 
@@ -12346,14 +12471,16 @@ the tree structure due to adding, deleting and modifying nodes, until the <see c
         </member>
         <member name="M:DevExpress.XtraTreeList.TreeList.PrintDialog">
             <summary>
-                <para> </para>
+                <para>Displays the standard Print dialog to print the data displayed in the TreeList control.
+</para>
             </summary>
 
 
         </member>
         <member name="E:DevExpress.XtraTreeList.TreeList.PrintExportProgress">
             <summary>
-                <para> </para>
+                <para>Fires repeatedly while the TreeList's data is being printed/exported. 
+</para>
             </summary>
 
 

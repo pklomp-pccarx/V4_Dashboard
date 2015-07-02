@@ -8329,6 +8329,32 @@
 
 
         </member>
+        <member name="T:DevExpress.XtraCharts.ConstantLineTitleAlignment">
+
+            <summary>
+                <para>Lists the values used to specify the alignment of a constant line's title relative to the corresponding axis.
+</para>
+            </summary>
+
+        </member>
+        <member name="F:DevExpress.XtraCharts.ConstantLineTitleAlignment.Far">
+            <summary>
+                <para>Specifies that a constant line title is aligned far from the axis which it belongs to.
+
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.XtraCharts.ConstantLineTitleAlignment.Near">
+            <summary>
+                <para>Specifies that a constant line title is aligned near to the axis which it belongs to.
+
+</para>
+            </summary>
+
+
+        </member>
         <member name="T:DevExpress.XtraCharts.FullStackedBarSeriesLabel">
 
             <summary>
@@ -8376,9 +8402,11 @@
         </member>
         <member name="P:DevExpress.XtraCharts.ChartPaletteColorizerBase.ShowInLegend">
             <summary>
-                <para> </para>
+                <para>Specifies whether or not the colorizer should provide items to the chart's legend.
+</para>
             </summary>
-            <value> </value>
+            <value><b>true</b> if colorizer should provide items to the legend, otherwise <b>false</b>.
+</value>
 
 
         </member>
@@ -8998,19 +9026,22 @@
         </member>
         <member name="P:DevExpress.XtraCharts.KeyColorColorizer.Keys">
             <summary>
-                <para>Returns the list of keys used by <see cref="T:DevExpress.Xpf.Map.KeyColorColorizer"/>.
+                <para>Gets or sets the collection of keys used to colorize series points using the key-color colorizer.
+
 </para>
             </summary>
-            <value>A list of keys of <see cref="T:System.Object"/> type.
+            <value>A <see cref="T:DevExpress.XtraCharts.KeyCollection"/> object, which stores keys.
 </value>
 
 
         </member>
         <member name="P:DevExpress.XtraCharts.KeyColorColorizer.LegendItemPattern">
             <summary>
-                <para> </para>
+                <para>Gets or sets the pattern used to form a legend item text.
+</para>
             </summary>
-            <value> </value>
+            <value>A <see cref="T:System.String"/> object.
+</value>
 
 
         </member>
@@ -9060,9 +9091,11 @@
         </member>
         <member name="P:DevExpress.XtraCharts.RangeColorizer.LegendItemPattern">
             <summary>
-                <para> </para>
+                <para>Gets or sets the pattern used to form a legend item text.
+</para>
             </summary>
-            <value> </value>
+            <value>A <see cref="T:System.String"/> object.
+</value>
 
 
         </member>
@@ -11487,24 +11520,30 @@
         </member>
         <member name="M:DevExpress.XtraCharts.SummaryFunction.Invoke(DevExpress.XtraCharts.Series,System.Object,System.String[],DevExpress.XtraCharts.DataSourceValues[],System.Object[])">
             <summary>
-                <para> </para>
+                <para>Represents a class to create a custom summary function for the specific series point argument.
+</para>
             </summary>
             <param name="series">
-		 
+		A <see cref="T:DevExpress.XtraCharts.Series"/> object, containing information about the series, for which the custom summary function should be calculated.
+
             </param>
             <param name="argument">
-		 
+		A <see cref="T:System.Object"/> representing an original argument of a series point, for which the custom summary function should be calculated.
+
             </param>
             <param name="functionArguments">
-		 
+		An array of <see cref="T:System.String"/> values that specify the names of function arguments, if any. These names can be used to obtain data source values from the dictionary, passed as the <i>values</i> parameter.
+
             </param>
             <param name="values">
-		 
+		An array of <see cref="T:DevExpress.XtraCharts.DataSourceValues"/> objects representing data source values to be used for summarizing. This object represents a dictionary, which allows you to obtain a specific data source value, by its name.
+
             </param>
             <param name="colors">
-		 
+		An array of objects representing colors obtained from a datasource.
+
             </param>
-            <returns>An array of objects of classes implementing the 
+            <returns>An array of <see cref="T:DevExpress.XtraCharts.SeriesPoint"/> objects representing the resulting series points.
 </returns>
 
 
@@ -19179,9 +19218,12 @@
         </member>
         <member name="P:DevExpress.XtraCharts.StackedAreaSeriesView.MarkerVisibility">
             <summary>
-                <para> </para>
+                <para>Specifies whether the series point markers are visible.
+</para>
             </summary>
-            <value> </value>
+            <value><b>Default</b> - marker visibility (visible/invisible) is automatically determined according to the type of diagram currently displayed on a chart; <b>True</b> - if the markers are visible; <b>False</b> - markers are hidden. The default is <b>DefaultBoolean.Default</b>.
+
+</value>
 
 
         </member>
@@ -29959,6 +30001,14 @@ A <see cref="T:DevExpress.XtraCharts.Palette"/> object that is the <b>Oriel</b> 
 
 
         </member>
+        <member name="P:DevExpress.XtraCharts.DataFilter.CoolumnNameSerializable">
+            <summary>
+                <para> </para>
+            </summary>
+            <value> </value>
+
+
+        </member>
         <member name="P:DevExpress.XtraCharts.DataFilter.DataType">
             <summary>
                 <para>Gets or sets the data type of the value associated with the current data filter object.
@@ -33135,32 +33185,6 @@ A <see cref="T:DevExpress.XtraCharts.Palette"/> object that is the <b>Oriel</b> 
 
 
         </member>
-        <member name="T:DevExpress.XtraCharts.ConstantLineTitleAlignment">
-
-            <summary>
-                <para>Lists the values used to specify the alignment of a constant line's title relative to the corresponding axis.
-</para>
-            </summary>
-
-        </member>
-        <member name="F:DevExpress.XtraCharts.ConstantLineTitleAlignment.Far">
-            <summary>
-                <para>Specifies that a constant line title is aligned far from the axis which it belongs to.
-
-</para>
-            </summary>
-
-
-        </member>
-        <member name="F:DevExpress.XtraCharts.ConstantLineTitleAlignment.Near">
-            <summary>
-                <para>Specifies that a constant line title is aligned near to the axis which it belongs to.
-
-</para>
-            </summary>
-
-
-        </member>
         <member name="T:DevExpress.XtraCharts.FunnelSeriesViewBase">
 
             <summary>
@@ -33746,7 +33770,9 @@ A <see cref="T:DevExpress.XtraCharts.Palette"/> object that is the <b>Oriel</b> 
         <member name="T:DevExpress.XtraCharts.NumericColorizerValueProvider">
 
             <summary>
-                <para> </para>
+                <para>The class used to provide floating point number values stored in the color data source member to a colorizer.
+
+</para>
             </summary>
 
         </member>

@@ -18,12 +18,11 @@
 </para>
             </summary>
             <param name="tables">
-		An array of <see cref="T:DevExpress.Xpo.DB.DBTable"/> objects representing tables that will be included in the DBSchema. This value is assigned to the <see cref="P:DevExpress.DataAccess.DBSchema.Tables"/> property.
-
+		An array of <see cref="T:DevExpress.Xpo.DB.DBTable"/> objects representing tables that will be included in the DBSchema. This value is assigned to the <see cref="P:DevExpress.DataAccess.Sql.DBSchema.Tables"/> property.
 
             </param>
             <param name="views">
-		An array of <see cref="T:DevExpress.Xpo.DB.DBTable"/> objects representing views that will be included in the DBSchema. This value is assigned to the <see cref="P:DevExpress.DataAccess.DBSchema.Views"/> property.
+		An array of <see cref="T:DevExpress.Xpo.DB.DBTable"/> objects representing views that will be included in the DBSchema. This value is assigned to the <see cref="P:DevExpress.DataAccess.Sql.DBSchema.Views"/> property.
 
 
             </param>
@@ -355,7 +354,7 @@
         <member name="T:DevExpress.DataAccess.Sql.DBColumnWithAlias">
 
             <summary>
-                <para>A column in a <see cref="T:DevExpress.DataAccess.DBTableWithAlias"/>.
+                <para>A column in a <see cref="T:DevExpress.DataAccess.Sql.DBTableWithAlias"/>.
 </para>
             </summary>
 
@@ -370,7 +369,7 @@
 
             </param>
             <param name="alias">
-		A <see cref="T:System.String"/> that specifies the column's alias. This value is assigned to the <see cref="P:DevExpress.DataAccess.DBColumnWithAlias.Alias"/> property.
+		A <see cref="T:System.String"/> that specifies the column's alias. This value is assigned to the <see cref="P:DevExpress.DataAccess.Sql.DBColumnWithAlias.Alias"/> property.
 
             </param>
 
@@ -386,7 +385,7 @@
 
             </param>
             <param name="alias">
-		A <see cref="T:System.String"/> that specifies the column's alias. This value is assigned to the <see cref="P:DevExpress.DataAccess.DBColumnWithAlias.Alias"/> property.
+		A <see cref="T:System.String"/> that specifies the column's alias. This value is assigned to the <see cref="P:DevExpress.DataAccess.Sql.DBColumnWithAlias.Alias"/> property.
 
             </param>
             <param name="isKey">
@@ -1383,7 +1382,8 @@
         <member name="T:DevExpress.DataAccess.ConnectionParameters.TeradataConnectionParameters">
 
             <summary>
-                <para> </para>
+                <para>Contains parameters used to establish a connection to a Teradata database server.
+</para>
             </summary>
 
         </member>
@@ -1463,7 +1463,9 @@
         <member name="T:DevExpress.DataAccess.ConnectionParameters.AmazonRedshiftConnectionParameters">
 
             <summary>
-                <para> </para>
+                <para>Contains parameters used to establish a connection to an Amazon Redshift database.
+
+</para>
             </summary>
 
         </member>
@@ -1618,7 +1620,8 @@
         </member>
         <member name="F:DevExpress.DataAccess.Localization.DataAccessStringId.GroupByAggregateColumnValidationException">
             <summary>
-                <para> </para>
+                <para><b>Default value</b>: "Cannot group by an aggregate column: \"{0}\".\"{1}\"."
+</para>
             </summary>
 
 
@@ -1745,7 +1748,8 @@
         </member>
         <member name="F:DevExpress.DataAccess.Localization.DataAccessStringId.ODSErrorMissingMember">
             <summary>
-                <para> </para>
+                <para><b>Default value</b>: "A data member '{0}' does not exist."
+</para>
             </summary>
 
 
@@ -2016,7 +2020,8 @@
         </member>
         <member name="F:DevExpress.DataAccess.Localization.DataAccessStringId.SortingBySameColumnTwiceValidationException">
             <summary>
-                <para> </para>
+                <para><b>Default value</b>: "The following column is used as a sorting criterion more than once: \"{0}\".\"{1}\"."
+</para>
             </summary>
 
 
@@ -4533,7 +4538,7 @@
 
             </param>
             <param name="alias">
-		A <see cref="T:System.String"/> specifying the table's alias. This value is assigned to the <see cref="P:DevExpress.DataAccess.DBTableWithAlias.Alias"/> property.
+		A <see cref="T:System.String"/> specifying the table's alias. This value is assigned to the <see cref="P:DevExpress.DataAccess.Sql.DBTableWithAlias.Alias"/> property.
 
             </param>
 
@@ -4585,11 +4590,11 @@
 </para>
             </summary>
             <param name="connectionName">
-		A <see cref="T:System.String"/> that specifies the name of the connection for which the event has been raised. This value is assigned to the <see cref="P:DevExpress.DataAccess.ConfigureDataConnectionEventArgs.ConnectionName"/> property.
+		A <see cref="T:System.String"/> that specifies the name of the connection for which the event has been raised. This value is assigned to the <see cref="P:DevExpress.DataAccess.Sql.ConfigureDataConnectionEventArgs.ConnectionName"/> property.
 
             </param>
             <param name="connectionParameters">
-		A <see cref="T:DevExpress.DataAccess.ConnectionParameters.DataConnectionParametersBase"/> descendant that contains connection parameters. This object is assigned to the <see cref="P:DevExpress.DataAccess.ConfigureDataConnectionEventArgs.ConnectionParameters"/> property.
+		A <see cref="T:DevExpress.DataAccess.ConnectionParameters.DataConnectionParametersBase"/> descendant that contains connection parameters. This object is assigned to the <see cref="P:DevExpress.DataAccess.Sql.ConfigureDataConnectionEventArgs.ConnectionParameters"/> property.
 
             </param>
             <param name="exception">
@@ -4937,6 +4942,84 @@
 </para>
             </summary>
             <value>A <see cref="T:System.String"/> that specifies the user name used to authenticate to the SQL server.
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.DataAccess.ConnectionParameters.PostgreSqlConnectionParameters">
+
+            <summary>
+                <para>Contains parameters used to establish a connection to a PostgreSQL database server.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.DataAccess.ConnectionParameters.PostgreSqlConnectionParameters.#ctor">
+            <summary>
+                <para>Initializes a new instance of the PostgreSqlConnectionParameters class with default settings.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="M:DevExpress.DataAccess.ConnectionParameters.PostgreSqlConnectionParameters.#ctor(System.String,System.String,System.String,System.String)">
+            <summary>
+                <para>Initializes a new instance of the PostgreSqlConnectionParameters class.
+</para>
+            </summary>
+            <param name="serverName">
+		A <see cref="T:System.String"/> that specifies the name of the PostgreSQL server to which the connection should be established. This value is assigned to the <see cref="P:DevExpress.DataAccess.ConnectionParameters.SqlServerConnectionParametersBase.ServerName"/> property.
+
+            </param>
+            <param name="databaseName">
+		A <see cref="T:System.String"/> that specifies the name of the database that contains the required data. This value is assigned to the <see cref="P:DevExpress.DataAccess.ConnectionParameters.SqlServerConnectionParametersBase.DatabaseName"/> property.
+
+            </param>
+            <param name="userName">
+		A <see cref="T:System.String"/> that specifies the user name used to authenticate to the PostgreSQL server. This value is assigned to the <see cref="P:DevExpress.DataAccess.ConnectionParameters.SqlServerConnectionParametersBase.UserName"/> property.
+
+            </param>
+            <param name="password">
+		A <see cref="T:System.String"/> that specifies the password used to authenticate to the PostgreSQL server. This value is assigned to the <see cref="P:DevExpress.DataAccess.ConnectionParameters.SqlServerConnectionParametersBase.Password"/> property.
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.DataAccess.ConnectionParameters.PostgreSqlConnectionParameters.#ctor(System.String,System.String,System.String,System.String,System.String)">
+            <summary>
+                <para>Initializes a new instance of the PostgreSqlConnectionParameters class.
+</para>
+            </summary>
+            <param name="serverName">
+		A <see cref="T:System.String"/> that specifies the name of the PostgreSQL server to which the connection should be established. This value is assigned to the <see cref="P:DevExpress.DataAccess.ConnectionParameters.SqlServerConnectionParametersBase.ServerName"/> property.
+
+            </param>
+            <param name="port">
+		A <see cref="T:System.String"/> that specifies the number of the port used to listen for connections from client applications. This value is assigned to the <see cref="P:DevExpress.DataAccess.ConnectionParameters.PostgreSqlConnectionParameters.Port"/> property.
+
+            </param>
+            <param name="databaseName">
+		A <see cref="T:System.String"/> that specifies the name of the database that contains the required data. This value is assigned to the <see cref="P:DevExpress.DataAccess.ConnectionParameters.SqlServerConnectionParametersBase.DatabaseName"/> property.
+
+            </param>
+            <param name="userName">
+		A <see cref="T:System.String"/> that specifies the user name used to authenticate to the PostgreSQL server. This value is assigned to the <see cref="P:DevExpress.DataAccess.ConnectionParameters.SqlServerConnectionParametersBase.UserName"/> property.
+
+            </param>
+            <param name="password">
+		A <see cref="T:System.String"/> that specifies the password used to authenticate to the PostgreSQL server. This value is assigned to the <see cref="P:DevExpress.DataAccess.ConnectionParameters.SqlServerConnectionParametersBase.Password"/> property.
+
+            </param>
+
+
+        </member>
+        <member name="P:DevExpress.DataAccess.ConnectionParameters.PostgreSqlConnectionParameters.Port">
+            <summary>
+                <para>Specifies the number of the port used to listen for connections from client applications. 
+</para>
+            </summary>
+            <value>A <see cref="T:System.String"/> that specifies the number of the port. 
 </value>
 
 
@@ -5824,84 +5907,6 @@
                 <para> </para>
             </summary>
             <returns> </returns>
-
-
-        </member>
-        <member name="T:DevExpress.DataAccess.ConnectionParameters.PostgreSqlConnectionParameters">
-
-            <summary>
-                <para>Contains parameters used to establish a connection to a PostgreSQL database server.
-</para>
-            </summary>
-
-        </member>
-        <member name="M:DevExpress.DataAccess.ConnectionParameters.PostgreSqlConnectionParameters.#ctor">
-            <summary>
-                <para>Initializes a new instance of the PostgreSqlConnectionParameters class with default settings.
-</para>
-            </summary>
-
-
-        </member>
-        <member name="M:DevExpress.DataAccess.ConnectionParameters.PostgreSqlConnectionParameters.#ctor(System.String,System.String,System.String,System.String)">
-            <summary>
-                <para>Initializes a new instance of the PostgreSqlConnectionParameters class.
-</para>
-            </summary>
-            <param name="serverName">
-		A <see cref="T:System.String"/> that specifies the name of the PostgreSQL server to which the connection should be established. This value is assigned to the <see cref="P:DevExpress.DataAccess.ConnectionParameters.SqlServerConnectionParametersBase.ServerName"/> property.
-
-            </param>
-            <param name="databaseName">
-		A <see cref="T:System.String"/> that specifies the name of the database that contains the required data. This value is assigned to the <see cref="P:DevExpress.DataAccess.ConnectionParameters.SqlServerConnectionParametersBase.DatabaseName"/> property.
-
-            </param>
-            <param name="userName">
-		A <see cref="T:System.String"/> that specifies the user name used to authenticate to the PostgreSQL server. This value is assigned to the <see cref="P:DevExpress.DataAccess.ConnectionParameters.SqlServerConnectionParametersBase.UserName"/> property.
-
-            </param>
-            <param name="password">
-		A <see cref="T:System.String"/> that specifies the password used to authenticate to the PostgreSQL server. This value is assigned to the <see cref="P:DevExpress.DataAccess.ConnectionParameters.SqlServerConnectionParametersBase.Password"/> property.
-
-            </param>
-
-
-        </member>
-        <member name="M:DevExpress.DataAccess.ConnectionParameters.PostgreSqlConnectionParameters.#ctor(System.String,System.String,System.String,System.String,System.String)">
-            <summary>
-                <para>Initializes a new instance of the PostgreSqlConnectionParameters class.
-</para>
-            </summary>
-            <param name="serverName">
-		A <see cref="T:System.String"/> that specifies the name of the PostgreSQL server to which the connection should be established. This value is assigned to the <see cref="P:DevExpress.DataAccess.ConnectionParameters.SqlServerConnectionParametersBase.ServerName"/> property.
-
-            </param>
-            <param name="port">
-		A <see cref="T:System.String"/> that specifies the number of the port used to listen for connections from client applications. This value is assigned to the <see cref="P:DevExpress.DataAccess.ConnectionParameters.PostgreSqlConnectionParameters.Port"/> property.
-
-            </param>
-            <param name="databaseName">
-		A <see cref="T:System.String"/> that specifies the name of the database that contains the required data. This value is assigned to the <see cref="P:DevExpress.DataAccess.ConnectionParameters.SqlServerConnectionParametersBase.DatabaseName"/> property.
-
-            </param>
-            <param name="userName">
-		A <see cref="T:System.String"/> that specifies the user name used to authenticate to the PostgreSQL server. This value is assigned to the <see cref="P:DevExpress.DataAccess.ConnectionParameters.SqlServerConnectionParametersBase.UserName"/> property.
-
-            </param>
-            <param name="password">
-		A <see cref="T:System.String"/> that specifies the password used to authenticate to the PostgreSQL server. This value is assigned to the <see cref="P:DevExpress.DataAccess.ConnectionParameters.SqlServerConnectionParametersBase.Password"/> property.
-
-            </param>
-
-
-        </member>
-        <member name="P:DevExpress.DataAccess.ConnectionParameters.PostgreSqlConnectionParameters.Port">
-            <summary>
-                <para>Specifies the number of the port used to listen for connections from client applications. 
-</para>
-            </summary>
-            <value>A <see cref="T:System.String"/> that specifies the number of the port. 
-</value>
 
 
         </member>
