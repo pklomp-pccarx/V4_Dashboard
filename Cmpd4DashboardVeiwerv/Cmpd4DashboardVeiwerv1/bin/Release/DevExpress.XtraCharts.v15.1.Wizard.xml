@@ -7,74 +7,95 @@
         <member name="T:DevExpress.XtraCharts.Designer.ChartDesigner">
 
             <summary>
-                <para> </para>
+                <para>The class representing the Chart Designer  used to design a chart at runtime.
+
+</para>
             </summary>
 
         </member>
         <member name="M:DevExpress.XtraCharts.Designer.ChartDesigner.#ctor(System.Object)">
             <summary>
-                <para> </para>
+                <para>Creates an instance of the ChartDesigner class.
+</para>
             </summary>
             <param name="chart">
-		 
+		A <see cref="T:DevExpress.XtraCharts.ChartControl"/> object.
+
             </param>
 
 
         </member>
         <member name="M:DevExpress.XtraCharts.Designer.ChartDesigner.#ctor(System.Object,System.ComponentModel.Design.IDesignerHost)">
             <summary>
-                <para> </para>
+                <para>Creates an instance of the ChartDesigner class.
+</para>
             </summary>
             <param name="chart">
-		 
+		A <see cref="T:DevExpress.XtraCharts.ChartControl"/> object.
+
             </param>
             <param name="designerHost">
-		 
+		An object of a class implementing the IDesignerHost interface.
+
+
             </param>
 
 
         </member>
         <member name="M:DevExpress.XtraCharts.Designer.ChartDesigner.ShowDialog">
             <summary>
-                <para> </para>
+                <para>Invokes the Chart Designer  for the chart control.
+</para>
             </summary>
-            <returns> </returns>
+            <returns>A <see cref="T:System.Windows.Forms.DialogResult"/> enumeration member that indicates the return value of a dialog box.
+</returns>
 
 
         </member>
         <member name="M:DevExpress.XtraCharts.Designer.ChartDesigner.ShowDialog(System.Boolean)">
             <summary>
-                <para> </para>
+                <para>Invokes the Chart Wizard for the chart control with the specified topmost parameter indicating whether the chart wizard is displayed on top.
+</para>
             </summary>
             <param name="topMost">
-		 
+		A <see cref="T:System.Boolean"/> value that specifies whether the chart wizard should be shown as the topmost dialog box.
+
             </param>
-            <returns> </returns>
+            <returns>A <see cref="T:System.Windows.Forms.DialogResult"/> enumeration member that indicates the return value of a dialog box.
+</returns>
 
 
         </member>
         <member name="M:DevExpress.XtraCharts.Designer.ChartDesigner.ShowDialog(DevExpress.LookAndFeel.UserLookAndFeel)">
             <summary>
-                <para> </para>
+                <para>Invokes the Chart Designer  for the chart control with Look And Feel painting scheme applied.
+</para>
             </summary>
             <param name="lookAndFeel">
-		 
+		A <see cref="T:DevExpress.LookAndFeel.UserLookAndFeel"/> object that specifies the painting scheme.
+
             </param>
-            <returns> </returns>
+            <returns>A <see cref="T:System.Windows.Forms.DialogResult"/> enumeration member that indicates the return value of a dialog box.
+</returns>
 
 
         </member>
         <member name="M:DevExpress.XtraCharts.Designer.ChartDesigner.ShowDialog(DevExpress.LookAndFeel.UserLookAndFeel,System.Boolean)">
             <summary>
-                <para> </para>
+                <para>Invokes the Chart Designer  for the chart control with the Look And Feel painting scheme applied and specified topmost parameter indicating whether the chart wizard is the topmost dialog box..
+
+</para>
             </summary>
             <param name="lookAndFeel">
-		 
+		A <see cref="T:DevExpress.LookAndFeel.UserLookAndFeel"/> object that specifies the painting scheme.
+
             </param>
             <param name="topMost">
-		 
+		A <see cref="T:System.Boolean"/> value that specifies whether the chart wizard should be shown as the topmost dialog box.
+
             </param>
-            <returns> </returns>
+            <returns>A <see cref="T:System.Windows.Forms.DialogResult"/> enumeration member that indicates the return value of a dialog box.
+</returns>
 
 
         </member>
@@ -3298,7 +3319,6 @@
             <param name="topMost">
 		A <see cref="T:System.Boolean"/> value that specifies whether the chart wizard should be shown as the topmost dialog box.
 
-
             </param>
             <returns>A <see cref="T:System.Windows.Forms.DialogResult"/> enumeration member that indicates the return value of a dialog box.
 </returns>
@@ -3308,12 +3328,10 @@
         <member name="M:DevExpress.XtraCharts.Wizard.ChartWizard.ShowDialog(System.Boolean)">
             <summary>
                 <para>Invokes the Chart Wizard for the chart control with the specified topmost parameter indicating whether the chart wizard is displayed on top.
-
 </para>
             </summary>
             <param name="topMost">
 		A <see cref="T:System.Boolean"/> value that specifies whether the chart wizard should be shown as the topmost dialog box.
-
 
             </param>
             <returns>A <see cref="T:System.Windows.Forms.DialogResult"/> enumeration member that indicates the return value of a dialog box.

@@ -1339,21 +1339,24 @@
         </member>
         <member name="E:DevExpress.XtraCharts.ChartControl.PivotChartingCustomizeLegend">
             <summary>
-                <para> </para>
+                <para>Occurs before automatic settings are applied to the legend's layout properties.
+</para>
             </summary>
 
 
         </member>
         <member name="E:DevExpress.XtraCharts.ChartControl.PivotChartingCustomizeResolveOverlappingMode">
             <summary>
-                <para> </para>
+                <para>Occurs before an automatic setting is applied to the overlap resolving mode of series labels.
+</para>
             </summary>
 
 
         </member>
         <member name="E:DevExpress.XtraCharts.ChartControl.PivotChartingCustomizeXAxisLabels">
             <summary>
-                <para> </para>
+                <para>Occurs after automatic layout settings are applied to the X-axis' labels.
+</para>
             </summary>
 
 

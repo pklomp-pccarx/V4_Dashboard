@@ -1449,6 +1449,14 @@
 
 
         </member>
+        <member name="E:DevExpress.XtraRichEdit.RichEditControl.AfterExport">
+            <summary>
+                <para>Occurs after the document is successfully exported.
+</para>
+            </summary>
+
+
+        </member>
         <member name="P:DevExpress.XtraRichEdit.RichEditControl.AllowDrop">
             <summary>
                 <para>Gets or sets a value indicating whether the control allows drag-and-drop operations. This member supports the internal infrastructure and is not intended to be used directly from your code.
@@ -1698,6 +1706,13 @@
 
 
         </member>
+        <member name="E:DevExpress.XtraRichEdit.RichEditControl.CommentInserted">
+            <summary>
+                <para> </para>
+            </summary>
+
+
+        </member>
         <member name="E:DevExpress.XtraRichEdit.RichEditControl.ContentChanged">
             <summary>
                 <para>Occurs when the document content was changed.
@@ -1843,9 +1858,11 @@
         </member>
         <member name="P:DevExpress.XtraRichEdit.RichEditControl.DocumentLayout">
             <summary>
-                <para> </para>
+                <para>Provides access to Layout API.
+</para>
             </summary>
-            <value> </value>
+            <value>A <a href="ms-xhelp:///?Id=T%3aDevExpress.XtraRichEdit.API.Layout.DocumentLayout">DocumentLayout</a> object that is the key object for Layout API.
+</value>
 
 
         </member>

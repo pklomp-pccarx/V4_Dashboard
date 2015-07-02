@@ -440,12 +440,15 @@
         </member>
         <member name="M:DevExpress.XtraPrinting.IPrintingSystemContext.CanPublish(DevExpress.XtraPrinting.Brick)">
             <summary>
-                <para> </para>
+                <para>For internal use. 
+</para>
             </summary>
             <param name="brick">
 		 
+
             </param>
-            <returns> </returns>
+            <returns> 
+</returns>
 
 
         </member>
@@ -4184,70 +4187,86 @@
         <member name="T:DevExpress.Export.Xl.IXlRow">
 
             <summary>
-                <para> </para>
+                <para>Represents a single row in a worksheet.
+</para>
             </summary>
 
         </member>
         <member name="M:DevExpress.Export.Xl.IXlRow.ApplyFormatting(DevExpress.Export.Xl.XlCellFormatting)">
             <summary>
-                <para> </para>
+                <para>Formats the given row according to the specified settings.
+</para>
             </summary>
             <param name="formatting">
-		 
+		An XlCellFormatting object that specifies format characteristics to be applied to the row cells.
+
             </param>
 
 
         </member>
         <member name="M:DevExpress.Export.Xl.IXlRow.BlankCells(System.Int32,DevExpress.Export.Xl.XlCellFormatting)">
             <summary>
-                <para> </para>
+                <para>Creates a number of empty cells with the specified formatting.
+</para>
             </summary>
             <param name="count">
-		 
+		A positive integer that specifies the number of blank cells to be created.
+
             </param>
             <param name="formatting">
-		 
+		An XlCellFormatting object that specifies format characteristics to be applied to the created cells. If the object is <b>null</b>, an <b>ArgumentNullException</b> is thrown.
+
             </param>
 
 
         </member>
         <member name="M:DevExpress.Export.Xl.IXlRow.BulkCells(System.Collections.IEnumerable,DevExpress.Export.Xl.XlCellFormatting)">
             <summary>
-                <para> </para>
+                <para>Creates cells with the specified values and format characteristics.
+</para>
             </summary>
             <param name="values">
-		 
+		A list of cell values.
+
             </param>
             <param name="formatting">
-		 
+		An XlCellFormatting object that specifies format characteristics to be applied to the created cells.
+
             </param>
 
 
         </member>
         <member name="M:DevExpress.Export.Xl.IXlRow.CreateCell">
             <summary>
-                <para> </para>
+                <para>Creates a new cell in the row and returns the <see cref="T:DevExpress.Export.Xl.IXlCell"/> object.
+</para>
             </summary>
-            <returns> </returns>
+            <returns>An <see cref="T:DevExpress.Export.Xl.IXlCell"/> object that is the newly created cell.
+</returns>
 
 
         </member>
         <member name="M:DevExpress.Export.Xl.IXlRow.CreateCell(System.Int32)">
             <summary>
-                <para> </para>
+                <para>Creates a new cell at the intersection of the current row and the specified column.
+</para>
             </summary>
             <param name="columnIndex">
-		 
+		An integer specifying the zero-based index of the column where the created cell should be located.
+
             </param>
-            <returns> </returns>
+            <returns>An <see cref="T:DevExpress.Export.Xl.IXlCell"/> object that is the newly created cell.
+</returns>
 
 
         </member>
         <member name="P:DevExpress.Export.Xl.IXlRow.Formatting">
             <summary>
-                <para> </para>
+                <para>Gets or sets format characteristics of the row.
+</para>
             </summary>
-            <value> </value>
+            <value>An XlCellFormatting object that specifies format characteristics of row cells.
+</value>
 
 
         </member>
@@ -4256,16 +4275,19 @@
                 <para>Gets or sets the row height in pixels.
 </para>
             </summary>
-            <value>An integer value that is the row height in pixels.
+            <value>An integer value that is the row height in pixels. <b>-1</b> sets the default row height.
+
 </value>
 
 
         </member>
         <member name="P:DevExpress.Export.Xl.IXlRow.IsCollapsed">
             <summary>
-                <para> </para>
+                <para>Gets or sets a value indicating whether the group located below or above the current row is collapsed.
+</para>
             </summary>
-            <value> </value>
+            <value><b>true</b>, if the group is collapsed; otherwise, <b>false</b>.
+</value>
 
 
         </member>
@@ -4291,10 +4313,14 @@
         </member>
         <member name="M:DevExpress.Export.Xl.IXlRow.SkipCells(System.Int32)">
             <summary>
-                <para> </para>
+                <para>Specifies the number of cells to be skipped in the row before starting to create a new cell. 
+
+</para>
             </summary>
             <param name="count">
-		 
+		An integer value that specifies the number of row cells to be skipped.
+
+
             </param>
 
 
@@ -4353,16 +4379,19 @@
         <member name="T:DevExpress.Export.Xl.IXlCell">
 
             <summary>
-                <para> </para>
+                <para>Represents a single cell in a worksheet.
+</para>
             </summary>
 
         </member>
         <member name="M:DevExpress.Export.Xl.IXlCell.ApplyFormatting(DevExpress.Export.Xl.XlCellFormatting)">
             <summary>
-                <para> </para>
+                <para>Formats the given cell according to the specified settings.
+</para>
             </summary>
             <param name="formatting">
-		 
+		An XlCellFormatting object that specifies format characteristics to be applied to the cell.
+
             </param>
 
 
@@ -4379,17 +4408,21 @@
         </member>
         <member name="P:DevExpress.Export.Xl.IXlCell.Formatting">
             <summary>
-                <para> </para>
+                <para>Gets or sets cell format characteristics.
+</para>
             </summary>
-            <value> </value>
+            <value>An XlCellFormatting object that specifies format characteristics of worksheet cells.
+</value>
 
 
         </member>
         <member name="P:DevExpress.Export.Xl.IXlCell.Position">
             <summary>
-                <para> </para>
+                <para>Gets the current cell position in the worksheet.
+</para>
             </summary>
-            <value> </value>
+            <value>An XlCellPosition object.
+</value>
 
 
         </member>
@@ -4405,7 +4438,8 @@
         </member>
         <member name="M:DevExpress.Export.Xl.IXlCell.SetFormula(System.String)">
             <summary>
-                <para> </para>
+                <para>Assigns the specified formula string to a cell.
+</para>
             </summary>
             <param name="formula">
 		 
@@ -4415,7 +4449,8 @@
         </member>
         <member name="M:DevExpress.Export.Xl.IXlCell.SetFormula(DevExpress.Export.Xl.XlExpression)">
             <summary>
-                <para> </para>
+                <para>Assigns the specified formula expression to a cell.
+</para>
             </summary>
             <param name="formula">
 		 
@@ -4425,7 +4460,8 @@
         </member>
         <member name="M:DevExpress.Export.Xl.IXlCell.SetFormula(DevExpress.Export.Xl.IXlFormulaParameter)">
             <summary>
-                <para> </para>
+                <para>Assigns the specified formula to a cell.
+</para>
             </summary>
             <param name="formula">
 		 
@@ -4435,7 +4471,8 @@
         </member>
         <member name="M:DevExpress.Export.Xl.IXlCell.SetSharedFormula(DevExpress.Export.Xl.XlExpression,DevExpress.Export.Xl.XlCellRange)">
             <summary>
-                <para> </para>
+                <para>Assigns the specified formula expression to the given cell range to create a shared formula.
+</para>
             </summary>
             <param name="formula">
 		 
@@ -4448,7 +4485,8 @@
         </member>
         <member name="M:DevExpress.Export.Xl.IXlCell.SetSharedFormula(System.String,DevExpress.Export.Xl.XlCellRange)">
             <summary>
-                <para> </para>
+                <para>Assigns the specified formula string to the given cell range to create a shared formula.
+</para>
             </summary>
             <param name="formula">
 		 
@@ -4461,7 +4499,8 @@
         </member>
         <member name="M:DevExpress.Export.Xl.IXlCell.SetSharedFormula(DevExpress.Export.Xl.XlCellPosition)">
             <summary>
-                <para> </para>
+                <para>Creates the shared formula based on the formula contained in the host cell.
+</para>
             </summary>
             <param name="hostCell">
 		 
@@ -4471,9 +4510,11 @@
         </member>
         <member name="P:DevExpress.Export.Xl.IXlCell.Value">
             <summary>
-                <para> </para>
+                <para>Gets or sets a cell value.
+</para>
             </summary>
-            <value> </value>
+            <value>An XlVariantValue object. 
+</value>
 
 
         </member>
@@ -4543,6 +4584,1066 @@
 
 
         </member>
+        <member name="T:DevExpress.Export.Xl.XlUnderlineType">
+
+            <summary>
+                <para>Lists underline styles.
+</para>
+            </summary>
+
+        </member>
+        <member name="F:DevExpress.Export.Xl.XlUnderlineType.Double">
+            <summary>
+                <para>Specifies a double underline.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Export.Xl.XlUnderlineType.DoubleAccounting">
+            <summary>
+                <para>Specifies a double accounting underline.  
+Adds a double-line underline that is displayed lower than the <see cref="F:DevExpress.Export.Xl.XlUnderlineType.Double"/> underline and fills the entire cell width if the cell contains text or date values.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Export.Xl.XlUnderlineType.None">
+            <summary>
+                <para>Specifies that the text is not underlined.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Export.Xl.XlUnderlineType.Single">
+            <summary>
+                <para>Specifies a single underline.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Export.Xl.XlUnderlineType.SingleAccounting">
+            <summary>
+                <para>Specifies a single accounting underline.
+Adds a single-line underline that is displayed lower than the <see cref="F:DevExpress.Export.Xl.XlUnderlineType.Single"/> underline and fills the entire cell width if the cell contains text or date values.
+
+</para>
+            </summary>
+
+
+        </member>
+        <member name="T:DevExpress.Export.Xl.XlScriptType">
+
+            <summary>
+                <para>Lists values used to format the text in a cell as superscript or subscript.
+</para>
+            </summary>
+
+        </member>
+        <member name="F:DevExpress.Export.Xl.XlScriptType.Baseline">
+            <summary>
+                <para>Specifies that the cell text should be located at the normal baseline and should have the same size as the surrounding text. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Export.Xl.XlScriptType.Subscript">
+            <summary>
+                <para>Specifies that the cell text should be formatted as subscript.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Export.Xl.XlScriptType.Superscript">
+            <summary>
+                <para>Specifies that the cell text should be formatted as superscript.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="T:DevExpress.Export.Xl.XlPatternType">
+
+            <summary>
+                <para>Lists the types of patterns available for cell shading.
+</para>
+            </summary>
+
+        </member>
+        <member name="F:DevExpress.Export.Xl.XlPatternType.DarkDown">
+            <summary>
+                <para>Specifies a pattern that is a series of thick downward diagonal stripes.
+<para></para>
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Export.Xl.XlPatternType.DarkGray">
+            <summary>
+                <para>Specifies the 75% gray pattern.
+<para></para>
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Export.Xl.XlPatternType.DarkGrid">
+            <summary>
+                <para>Specifies the thick grid pattern.
+<para></para>
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Export.Xl.XlPatternType.DarkHorizontal">
+            <summary>
+                <para>Specifies a pattern that is a series of thick horizontal stripes.
+<para></para>
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Export.Xl.XlPatternType.DarkTrellis">
+            <summary>
+                <para>Specifies the thick diagonal trellis pattern.
+<para></para>
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Export.Xl.XlPatternType.DarkUp">
+            <summary>
+                <para>Specifies a pattern that is a series of thick upward diagonal stripes.
+<para></para>
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Export.Xl.XlPatternType.DarkVertical">
+            <summary>
+                <para>Specifies a pattern that is a series of thick vertical stripes.
+<para></para>
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Export.Xl.XlPatternType.Gray0625">
+            <summary>
+                <para>Specifies the 6.25% gray pattern.
+<para></para>
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Export.Xl.XlPatternType.Gray125">
+            <summary>
+                <para>Specifies the 12.5% gray pattern.
+<para></para>
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Export.Xl.XlPatternType.LightDown">
+            <summary>
+                <para>Specifies a pattern that is a series of thin downward diagonal stripes.
+<para></para>
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Export.Xl.XlPatternType.LightGray">
+            <summary>
+                <para>Specifies the 25% gray pattern.
+<para></para>
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Export.Xl.XlPatternType.LightGrid">
+            <summary>
+                <para>Specifies the thin grid pattern.
+<para></para>
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Export.Xl.XlPatternType.LightHorizontal">
+            <summary>
+                <para>Specifies a pattern that is a series of thin horizontal stripes.
+<para></para>
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Export.Xl.XlPatternType.LightTrellis">
+            <summary>
+                <para>Specifies the thin diagonal trellis pattern.
+<para></para>
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Export.Xl.XlPatternType.LightUp">
+            <summary>
+                <para>Specifies a pattern that is a series of thin upward diagonal stripes.
+<para></para>
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Export.Xl.XlPatternType.LightVertical">
+            <summary>
+                <para>Specifies a pattern that is a series of thin vertical stripes.
+<para></para>
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Export.Xl.XlPatternType.MediumGray">
+            <summary>
+                <para>Specifies the 50% gray pattern.
+<para></para>
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Export.Xl.XlPatternType.None">
+            <summary>
+                <para>No background (solid color or fill pattern) is applied to a cell.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Export.Xl.XlPatternType.Solid">
+            <summary>
+                <para>Specifies that a cell is filled with a solid color.
+
+</para>
+            </summary>
+
+
+        </member>
+        <member name="T:DevExpress.Export.Xl.XlFontBase">
+
+            <summary>
+                <para> </para>
+            </summary>
+
+        </member>
+        <member name="P:DevExpress.Export.Xl.XlFontBase.Bold">
+            <summary>
+                <para>Gets or sets the value indicating whether the cell content is formatted as bold.
+</para>
+            </summary>
+            <value><b>true</b>, if the cell text is bold; otherwise, <b>false</b>. 
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Export.Xl.XlFontBase.Charset">
+            <summary>
+                <para> </para>
+            </summary>
+            <value> </value>
+
+
+        </member>
+        <member name="P:DevExpress.Export.Xl.XlFontBase.Condense">
+            <summary>
+                <para> </para>
+            </summary>
+            <value> </value>
+
+
+        </member>
+        <member name="M:DevExpress.Export.Xl.XlFontBase.CopyFrom(DevExpress.Export.Xl.XlFontBase)">
+            <summary>
+                <para>Copies the appropriate properties of the specified object into the current instance of the XlFontBase class.
+</para>
+            </summary>
+            <param name="value">
+		An XlFontBase class instance representing the source object for copying.
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.Export.Xl.XlFontBase.Equals(System.Object)">
+            <summary>
+                <para>Determines whether the specified object is equal to the current XlFontBase instance.
+</para>
+            </summary>
+            <param name="obj">
+		The object to compare with the current object.
+
+            </param>
+            <returns><b>true</b>, if the specified object is equal to the current XlFontBase instance; otherwise <b>false</b>.
+</returns>
+
+
+        </member>
+        <member name="P:DevExpress.Export.Xl.XlFontBase.Extend">
+            <summary>
+                <para>Compatibility setting. Gets or sets a value indicating whether the cell font is extended.
+</para>
+            </summary>
+            <value><b>true</b>, to stretch the text; otherwise, <b>false</b>.
+
+</value>
+
+
+        </member>
+        <member name="M:DevExpress.Export.Xl.XlFontBase.GetHashCode">
+            <summary>
+                <para>Gets the hash code (a number) that corresponds to the value of the current XlFontBase object.
+</para>
+            </summary>
+            <returns>An integer value that is the hash code for the current object.
+</returns>
+
+
+        </member>
+        <member name="P:DevExpress.Export.Xl.XlFontBase.Italic">
+            <summary>
+                <para>Gets or sets the value indicating whether the cell content is formatted as italic.
+</para>
+            </summary>
+            <value><b>true</b>, if the cell text is italic; otherwise, <b>false</b>. 
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Export.Xl.XlFontBase.Name">
+            <summary>
+                <para> </para>
+            </summary>
+            <value> </value>
+
+
+        </member>
+        <member name="P:DevExpress.Export.Xl.XlFontBase.Outline">
+            <summary>
+                <para>Compatibility setting. Gets or sets the value indicating whether the cell content is formatted as an outline.
+
+</para>
+            </summary>
+            <value><b>true</b>, to display only inner and outer borders of each character; otherwise, <b>false</b>.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Export.Xl.XlFontBase.SchemeStyle">
+            <summary>
+                <para> </para>
+            </summary>
+            <value> </value>
+
+
+        </member>
+        <member name="P:DevExpress.Export.Xl.XlFontBase.Script">
+            <summary>
+                <para>Formats the cell content as subscript or superscript.
+</para>
+            </summary>
+            <value>An <see cref="T:DevExpress.Export.Xl.XlScriptType"/> enumeration member indicating whether the text is subscript or superscript. 
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Export.Xl.XlFontBase.Shadow">
+            <summary>
+                <para>Compatibility setting. Gets or sets a value indicating whether the cell font is formatted as shadowed.
+</para>
+            </summary>
+            <value><b>true</b>, to add a shadow to the cell text; otherwise, <b>false</b>.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Export.Xl.XlFontBase.Size">
+            <summary>
+                <para>Gets or sets the size of the font applied to the cell content.
+</para>
+            </summary>
+            <value>A <see cref="T:System.Double"/> value specifying the font size in points. 
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Export.Xl.XlFontBase.StrikeThrough">
+            <summary>
+                <para>Gets or sets the value indicating whether the cell content is formatted as strikethrough.
+</para>
+            </summary>
+            <value><b>true</b>, if the strikethrough formatting is applied to the cell text; otherwise, <b>false</b>.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Export.Xl.XlFontBase.Underline">
+            <summary>
+                <para>Gets or sets the type of underline applied to the cell content.
+</para>
+            </summary>
+            <value>An <see cref="T:DevExpress.Export.Xl.XlUnderlineType"/> enumeration value.
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.Export.Xl.XlFont">
+
+            <summary>
+                <para> </para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.Export.Xl.XlFont.#ctor">
+            <summary>
+                <para>Initializes a new instance of the XlFont class with default settings.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="M:DevExpress.Export.Xl.XlFont.BodyFont">
+            <summary>
+                <para> </para>
+            </summary>
+            <returns> </returns>
+
+
+        </member>
+        <member name="M:DevExpress.Export.Xl.XlFont.Clone">
+            <summary>
+                <para>Creates a copy of the current XlFont object.
+</para>
+            </summary>
+            <returns>An XlFont object which is a copy of the current object.
+</returns>
+
+
+        </member>
+        <member name="P:DevExpress.Export.Xl.XlFont.Color">
+            <summary>
+                <para>Gets or sets the color of the font applied to the cell content.
+</para>
+            </summary>
+            <value>An XlColor object that specifies the font color. 
+</value>
+
+
+        </member>
+        <member name="M:DevExpress.Export.Xl.XlFont.CopyFrom(DevExpress.Export.Xl.XlFont)">
+            <summary>
+                <para>Copies the appropriate properties of the specified object into the current instance of the XlFont class.
+</para>
+            </summary>
+            <param name="value">
+		An XlFont class instance representing the source object for copying.
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.Export.Xl.XlFont.CustomFont(System.String,System.Double,DevExpress.Export.Xl.XlColor)">
+            <summary>
+                <para> </para>
+            </summary>
+            <param name="fontName">
+		 
+            </param>
+            <param name="size">
+		 
+            </param>
+            <param name="color">
+		 
+            </param>
+            <returns> </returns>
+
+
+        </member>
+        <member name="M:DevExpress.Export.Xl.XlFont.CustomFont(System.String,System.Double)">
+            <summary>
+                <para> </para>
+            </summary>
+            <param name="fontName">
+		 
+            </param>
+            <param name="size">
+		 
+            </param>
+            <returns> </returns>
+
+
+        </member>
+        <member name="M:DevExpress.Export.Xl.XlFont.CustomFont(System.String)">
+            <summary>
+                <para> </para>
+            </summary>
+            <param name="fontName">
+		 
+            </param>
+            <returns> </returns>
+
+
+        </member>
+        <member name="M:DevExpress.Export.Xl.XlFont.Equals(System.Object)">
+            <summary>
+                <para>Determines whether the specified object is equal to the current XlFont instance.
+</para>
+            </summary>
+            <param name="obj">
+		The object to compare with the current object.
+
+            </param>
+            <returns><b>true</b>, if the specified object is equal to the current XlFont instance; otherwise <b>false</b>.
+</returns>
+
+
+        </member>
+        <member name="P:DevExpress.Export.Xl.XlFont.FontFamily">
+            <summary>
+                <para>Gets or sets the font family of the font applied to the cell content.
+</para>
+            </summary>
+            <value>An XlFontFamily object that specifies the font family.
+</value>
+
+
+        </member>
+        <member name="M:DevExpress.Export.Xl.XlFont.GetHashCode">
+            <summary>
+                <para>Gets the hash code (a number) that corresponds to the value of the current XlFont object.
+</para>
+            </summary>
+            <returns>An integer value that is the hash code for the current object.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.Export.Xl.XlFont.HeadingsFont">
+            <summary>
+                <para> </para>
+            </summary>
+            <returns> </returns>
+
+
+        </member>
+        <member name="T:DevExpress.Export.Xl.XlFill">
+
+            <summary>
+                <para> </para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.Export.Xl.XlFill.#ctor">
+            <summary>
+                <para>Initializes a new instance of the XlFill class with default settings.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="P:DevExpress.Export.Xl.XlFill.BackColor">
+            <summary>
+                <para> </para>
+            </summary>
+            <value> </value>
+
+
+        </member>
+        <member name="M:DevExpress.Export.Xl.XlFill.Clone">
+            <summary>
+                <para>Creates a copy of the current XlFill object.
+</para>
+            </summary>
+            <returns>An XlFill object which is a copy of the current object.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.Export.Xl.XlFill.CopyFrom(DevExpress.Export.Xl.XlFill)">
+            <summary>
+                <para>Copies the appropriate properties of the specified object into the current instance of the XlFill class.
+</para>
+            </summary>
+            <param name="value">
+		An XlFill class instance representing the source object for copying.
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.Export.Xl.XlFill.Equals(System.Object)">
+            <summary>
+                <para>Determines whether the specified object is equal to the current XlFill instance.
+</para>
+            </summary>
+            <param name="obj">
+		The object to compare with the current object.
+
+            </param>
+            <returns><b>true</b>, if the specified object is equal to the current XlFill instance; otherwise <b>false</b>.
+</returns>
+
+
+        </member>
+        <member name="P:DevExpress.Export.Xl.XlFill.ForeColor">
+            <summary>
+                <para> </para>
+            </summary>
+            <value> </value>
+
+
+        </member>
+        <member name="M:DevExpress.Export.Xl.XlFill.GetHashCode">
+            <summary>
+                <para>Gets the hash code (a number) that corresponds to the value of the current XlFill object.
+</para>
+            </summary>
+            <returns>An integer value that is the hash code for the current object.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.Export.Xl.XlFill.NoFill">
+            <summary>
+                <para> </para>
+            </summary>
+            <returns> </returns>
+
+
+        </member>
+        <member name="M:DevExpress.Export.Xl.XlFill.PatternFill(DevExpress.Export.Xl.XlPatternType)">
+            <summary>
+                <para> </para>
+            </summary>
+            <param name="patternType">
+		 
+            </param>
+            <returns> </returns>
+
+
+        </member>
+        <member name="M:DevExpress.Export.Xl.XlFill.PatternFill(DevExpress.Export.Xl.XlPatternType,DevExpress.Export.Xl.XlColor,DevExpress.Export.Xl.XlColor)">
+            <summary>
+                <para> </para>
+            </summary>
+            <param name="patternType">
+		 
+            </param>
+            <param name="backColor">
+		 
+            </param>
+            <param name="patternColor">
+		 
+            </param>
+            <returns> </returns>
+
+
+        </member>
+        <member name="P:DevExpress.Export.Xl.XlFill.PatternType">
+            <summary>
+                <para> </para>
+            </summary>
+            <value> </value>
+
+
+        </member>
+        <member name="M:DevExpress.Export.Xl.XlFill.SolidFill(DevExpress.Export.Xl.XlColor)">
+            <summary>
+                <para> </para>
+            </summary>
+            <param name="color">
+		 
+            </param>
+            <returns> </returns>
+
+
+        </member>
+        <member name="T:DevExpress.Export.Xl.IXlOutlineProperties">
+
+            <summary>
+                <para>Contains options used to specify the summary rows and columns location.
+</para>
+            </summary>
+
+        </member>
+        <member name="P:DevExpress.Export.Xl.IXlOutlineProperties.SummaryBelow">
+            <summary>
+                <para>Gets or sets a value indicating whether the summary rows are located below detail rows
+</para>
+            </summary>
+            <value><b>true</b>, if summary rows are below each group of detail rows; otherwise, <b>false</b>.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Export.Xl.IXlOutlineProperties.SummaryRight">
+            <summary>
+                <para>Gets or sets a value indicating whether the summary columns are located to the right of detail columns.
+</para>
+            </summary>
+            <value><b>true</b>, if summary columns are to the right of each group of detail columns; otherwise, <b>false</b>.
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.Export.Xl.XlHeaderFooter">
+
+            <summary>
+                <para>Provides access to the worksheet header and footer options.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.Export.Xl.XlHeaderFooter.#ctor">
+            <summary>
+                <para>Initializes a new instance of the XlHeaderFooter class with default settings.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="P:DevExpress.Export.Xl.XlHeaderFooter.AlignWithMargins">
+            <summary>
+                <para>Gets or sets a value indicating whether the header or footer edges should be aligned with page margins. 
+
+</para>
+            </summary>
+            <value><b>true</b>, to align the header or footer with page margins; otherwise, <b>false</b>.
+</value>
+
+
+        </member>
+        <member name="F:DevExpress.Export.Xl.XlHeaderFooter.Bold">
+            <summary>
+                <para>Turns bold on or off for the characters that follows.
+</para>
+            </summary>
+            <returns> </returns>
+
+
+        </member>
+        <member name="F:DevExpress.Export.Xl.XlHeaderFooter.BookName">
+            <summary>
+                <para>Prints the name of the worksheet.
+</para>
+            </summary>
+            <returns> </returns>
+
+
+        </member>
+        <member name="F:DevExpress.Export.Xl.XlHeaderFooter.BookPath">
+            <summary>
+                <para>Prints the workbook file path.
+</para>
+            </summary>
+            <returns> </returns>
+
+
+        </member>
+        <member name="F:DevExpress.Export.Xl.XlHeaderFooter.Center">
+            <summary>
+                <para>Centers the characters that follow.
+</para>
+            </summary>
+            <returns> </returns>
+
+
+        </member>
+        <member name="M:DevExpress.Export.Xl.XlHeaderFooter.Clear">
+            <summary>
+                <para>Removes headers and footers from a worksheet.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Export.Xl.XlHeaderFooter.Date">
+            <summary>
+                <para>Prints the current date.
+</para>
+            </summary>
+            <returns> </returns>
+
+
+        </member>
+        <member name="P:DevExpress.Export.Xl.XlHeaderFooter.DifferentFirst">
+            <summary>
+                <para>Gets or sets a value indicating whether the first page of the worksheet has unique headers and footers.
+</para>
+            </summary>
+            <value><b>true</b>, to specify a unique header or footer for the first page; otherwise, <b>false</b>.
+
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Export.Xl.XlHeaderFooter.DifferentOddEven">
+            <summary>
+                <para>Gets or sets a value indicating whether the odd-numbered pages have headers and footers different from those on even-numbered pages.
+</para>
+            </summary>
+            <value><b>true</b>, to specify different headers and footers for the odd-numbered and even-numbered pages; otherwise, <b>false</b>.
+</value>
+
+
+        </member>
+        <member name="F:DevExpress.Export.Xl.XlHeaderFooter.DoubleUnderline">
+            <summary>
+                <para>Turns double underline on or off for the characters that follow.
+</para>
+            </summary>
+            <returns> </returns>
+
+
+        </member>
+        <member name="P:DevExpress.Export.Xl.XlHeaderFooter.EvenFooter">
+            <summary>
+                <para>Gets or sets the text to be displayed in the footer of even-numbered pages.
+</para>
+            </summary>
+            <value>A <see cref="T:System.String"/> object that specifies the footer for even-numbered pages.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Export.Xl.XlHeaderFooter.EvenHeader">
+            <summary>
+                <para>Gets or sets the text to be displayed in the header of even-numbered pages.
+</para>
+            </summary>
+            <value>A <see cref="T:System.String"/> object that specifies the header for even-numbered pages.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Export.Xl.XlHeaderFooter.FirstFooter">
+            <summary>
+                <para>Gets or sets the text to be displayed in the footer of the first worksheet page.
+</para>
+            </summary>
+            <value>A <see cref="T:System.String"/> object that specifies the footer for the first page.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Export.Xl.XlHeaderFooter.FirstHeader">
+            <summary>
+                <para>Gets or sets the text to be displayed in the header of the first worksheet page.
+</para>
+            </summary>
+            <value>A <see cref="T:System.String"/> object that specifies the header for the first page.
+</value>
+
+
+        </member>
+        <member name="M:DevExpress.Export.Xl.XlHeaderFooter.FromLCR(System.String,System.String,System.String)">
+            <summary>
+                <para>Specifies the left-aligned, centered and right-aligned text for the header of footer.
+</para>
+            </summary>
+            <param name="leftPart">
+		A System.String that specifies the text to be displayed in the left header or footer section.
+
+            </param>
+            <param name="centerPart">
+		A System.String that specifies the text to be displayed in the center header or footer section.
+
+            </param>
+            <param name="rightPart">
+		A System.String that specifies the text to be displayed in the right header or footer section.
+
+            </param>
+            <returns>A System.String that represents the resulting text string included in the header or footer.  
+</returns>
+
+
+        </member>
+        <member name="F:DevExpress.Export.Xl.XlHeaderFooter.Italic">
+            <summary>
+                <para>Turns italic on or off for the characters that follow.
+</para>
+            </summary>
+            <returns> </returns>
+
+
+        </member>
+        <member name="F:DevExpress.Export.Xl.XlHeaderFooter.Left">
+            <summary>
+                <para>Left aligns the characters that follow.
+</para>
+            </summary>
+            <returns> </returns>
+
+
+        </member>
+        <member name="P:DevExpress.Export.Xl.XlHeaderFooter.OddFooter">
+            <summary>
+                <para>Gets or sets the text to be displayed in the footer of odd-numbered pages.
+</para>
+            </summary>
+            <value>A <see cref="T:System.String"/> object that specifies the footer for odd-numbered pages.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Export.Xl.XlHeaderFooter.OddHeader">
+            <summary>
+                <para>Gets or sets the text to be displayed in the header of odd-numbered pages.
+</para>
+            </summary>
+            <value>A <see cref="T:System.String"/> object that specifies the header for odd-numbered pages.
+</value>
+
+
+        </member>
+        <member name="F:DevExpress.Export.Xl.XlHeaderFooter.PageNumber">
+            <summary>
+                <para>Prints the current page number.
+</para>
+            </summary>
+            <returns> </returns>
+
+
+        </member>
+        <member name="F:DevExpress.Export.Xl.XlHeaderFooter.PageTotal">
+            <summary>
+                <para>Prints the total number of pages in the document.
+</para>
+            </summary>
+            <returns> </returns>
+
+
+        </member>
+        <member name="F:DevExpress.Export.Xl.XlHeaderFooter.Right">
+            <summary>
+                <para>Right aligns the characters that follow.
+</para>
+            </summary>
+            <returns> </returns>
+
+
+        </member>
+        <member name="P:DevExpress.Export.Xl.XlHeaderFooter.ScaleWithDoc">
+            <summary>
+                <para>Gets or sets a value indicating whether headers and footers should be scaled proportionately when print scaling is used to fit information on the specified number of pages.
+</para>
+            </summary>
+            <value><b>true</b>, to scale headers and footers with document scaling; otherwise, <b>false</b>.
+</value>
+
+
+        </member>
+        <member name="F:DevExpress.Export.Xl.XlHeaderFooter.SheetName">
+            <summary>
+                <para>Prints the name of the worksheet.
+</para>
+            </summary>
+            <returns> </returns>
+
+
+        </member>
+        <member name="F:DevExpress.Export.Xl.XlHeaderFooter.Strikethrough">
+            <summary>
+                <para>Turns strikethrough on or off for the characters that follow.
+</para>
+            </summary>
+            <returns> </returns>
+
+
+        </member>
+        <member name="F:DevExpress.Export.Xl.XlHeaderFooter.Subscript">
+            <summary>
+                <para>Turns subscript on or off for the characters that follow.
+</para>
+            </summary>
+            <returns> </returns>
+
+
+        </member>
+        <member name="F:DevExpress.Export.Xl.XlHeaderFooter.Superscript">
+            <summary>
+                <para>Turns superscript on or off for the characters that follow.
+</para>
+            </summary>
+            <returns> </returns>
+
+
+        </member>
+        <member name="F:DevExpress.Export.Xl.XlHeaderFooter.Time">
+            <summary>
+                <para>Prints the current time.
+</para>
+            </summary>
+            <returns> </returns>
+
+
+        </member>
+        <member name="F:DevExpress.Export.Xl.XlHeaderFooter.Underline">
+            <summary>
+                <para>Turns underline on or off for the characters that follow.
+</para>
+            </summary>
+            <returns> </returns>
+
+
+        </member>
+        <member name="T:DevExpress.Export.Xl.XlDocumentTheme">
+
+            <summary>
+                <para>Lists values used to specify the document theme.
+</para>
+            </summary>
+
+        </member>
+        <member name="F:DevExpress.Export.Xl.XlDocumentTheme.None">
+            <summary>
+                <para>Theme settings are not written to a workbook.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Export.Xl.XlDocumentTheme.Office2010">
+            <summary>
+                <para>The default Office 2007 - 2010 theme.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Export.Xl.XlDocumentTheme.Office2013">
+            <summary>
+                <para>The default Office 2013 theme.
+</para>
+            </summary>
+
+
+        </member>
         <member name="T:DevExpress.Export.ExportSettings">
 
             <summary>
@@ -4572,16 +5673,19 @@
         <member name="T:DevExpress.Export.Xl.IXlColumn">
 
             <summary>
-                <para> </para>
+                <para>Represents a single column in a worksheet.
+</para>
             </summary>
 
         </member>
         <member name="M:DevExpress.Export.Xl.IXlColumn.ApplyFormatting(DevExpress.Export.Xl.XlCellFormatting)">
             <summary>
-                <para> </para>
+                <para>Formats the given column according to the specified settings.
+</para>
             </summary>
             <param name="formatting">
-		 
+		An XlCellFormatting object that specifies format characteristics to be applied to the column cells.
+
             </param>
 
 
@@ -4598,17 +5702,21 @@
         </member>
         <member name="P:DevExpress.Export.Xl.IXlColumn.Formatting">
             <summary>
-                <para> </para>
+                <para>Gets or sets format characteristics of the column.
+</para>
             </summary>
-            <value> </value>
+            <value>An XlCellFormatting object that specifies format characteristics of column cells.
+</value>
 
 
         </member>
         <member name="P:DevExpress.Export.Xl.IXlColumn.IsCollapsed">
             <summary>
-                <para> </para>
+                <para>Gets or sets a value indicating whether the group located to the left or to the right of the current column is collapsed.
+</para>
             </summary>
-            <value> </value>
+            <value><b>true</b>, if the group is collapsed; otherwise, <b>false</b>.
+</value>
 
 
         </member>
@@ -4637,7 +5745,7 @@
                 <para>Gets or sets the column width in pixels.
 </para>
             </summary>
-            <value>An integer value that is the column width in pixels.
+            <value>An integer value that is the column width in pixels. <b>-1</b> sets the default column width.
 </value>
 
 
@@ -4645,7 +5753,8 @@
         <member name="T:DevExpress.Export.Xl.IXlSheet">
 
             <summary>
-                <para> </para>
+                <para>Represents a worksheet in a workbook.
+</para>
             </summary>
 
         </member>
@@ -4661,10 +5770,12 @@
         </member>
         <member name="M:DevExpress.Export.Xl.IXlSheet.BeginGroup(System.Boolean)">
             <summary>
-                <para> </para>
+                <para>Starts creating the new group in a worksheet.
+</para>
             </summary>
             <param name="collapsed">
-		 
+		<b>true</b>, to collapse the group; otherwise, <b>false</b>.
+
             </param>
             <returns> </returns>
 
@@ -4672,13 +5783,15 @@
         </member>
         <member name="M:DevExpress.Export.Xl.IXlSheet.BeginGroup(System.Int32,System.Boolean)">
             <summary>
-                <para> </para>
+                <para>Starts creating the new group in a worksheet.
+</para>
             </summary>
             <param name="outlineLevel">
 		 
             </param>
             <param name="collapsed">
-		 
+		<b>true</b>, to collapse the group; otherwise, <b>false</b>.
+
             </param>
             <returns> </returns>
 
@@ -4704,63 +5817,81 @@
         </member>
         <member name="P:DevExpress.Export.Xl.IXlSheet.ConditionalFormattings">
             <summary>
-                <para> </para>
+                <para>Provides access to the collection of conditional formatting rules in a worksheet.
+</para>
             </summary>
-            <value> </value>
+            <value>A list of XlConditionalFormatting objects which specify worksheet ranges and conditional formatting rules applied to them.  
+</value>
 
 
         </member>
         <member name="M:DevExpress.Export.Xl.IXlSheet.CreateColumn">
             <summary>
-                <para> </para>
+                <para>Creates a new column in a worksheet and returns the <see cref="T:DevExpress.Export.Xl.IXlColumn"/> object.
+
+</para>
             </summary>
-            <returns> </returns>
+            <returns>An <see cref="T:DevExpress.Export.Xl.IXlColumn"/> object that is the newly created column.
+</returns>
 
 
         </member>
         <member name="M:DevExpress.Export.Xl.IXlSheet.CreateColumn(System.Int32)">
             <summary>
-                <para> </para>
+                <para>Creates a new column in a worksheet with the specified index.
+</para>
             </summary>
             <param name="columnIndex">
-		 
+		An integer specifying the zero-based index of the created column. If it is negative or exceeds the last available index, an exception is raised.
+
             </param>
-            <returns> </returns>
+            <returns>An <see cref="T:DevExpress.Export.Xl.IXlColumn"/> object that is the newly created column.
+</returns>
 
 
         </member>
         <member name="M:DevExpress.Export.Xl.IXlSheet.CreatePicture">
             <summary>
-                <para> </para>
+                <para>Creates a picture to be inserted into the worksheet.
+</para>
             </summary>
-            <returns> </returns>
+            <returns>An IXlPicture object that is the picture to insert.
+</returns>
 
 
         </member>
         <member name="M:DevExpress.Export.Xl.IXlSheet.CreateRow(System.Int32)">
             <summary>
-                <para> </para>
+                <para>Creates a new row in a worksheet with the specified index.
+</para>
             </summary>
             <param name="rowIndex">
-		 
+		An integer specifying the zero-based index of the created row. If it is negative or exceeds the last available index, an exception is raised. 
+
             </param>
-            <returns> </returns>
+            <returns>An <see cref="T:DevExpress.Export.Xl.IXlRow"/> object that is the newly created row.
+</returns>
 
 
         </member>
         <member name="M:DevExpress.Export.Xl.IXlSheet.CreateRow">
             <summary>
-                <para> </para>
+                <para>Creates a new row in a worksheet and returns the <see cref="T:DevExpress.Export.Xl.IXlRow"/> object.
+
+</para>
             </summary>
-            <returns> </returns>
+            <returns>An <see cref="T:DevExpress.Export.Xl.IXlRow"/> object that is the newly created row.
+</returns>
 
 
         </member>
         <member name="P:DevExpress.Export.Xl.IXlSheet.CurrentColumnIndex">
             <summary>
-                <para> </para>
+                <para>Gets the index of the column where the exporter is currently positioned. 
+</para>
             </summary>
-            <value> </value>
+            <value>A zero-based integer value that specifies the index of the current column.
+</value>
 
 
         </member>
@@ -4774,9 +5905,11 @@
         </member>
         <member name="P:DevExpress.Export.Xl.IXlSheet.CurrentRowIndex">
             <summary>
-                <para> </para>
+                <para>Gets the index of the row where the exporter is currently positioned.
+</para>
             </summary>
-            <value> </value>
+            <value>A zero-based integer value that specifies the index of the current row.
+</value>
 
 
         </member>
@@ -4792,15 +5925,18 @@
         </member>
         <member name="P:DevExpress.Export.Xl.IXlSheet.DataValidations">
             <summary>
-                <para> </para>
+                <para>Provides access to the collection of XlDataValidation objects for the worksheet.
+</para>
             </summary>
-            <value> </value>
+            <value>A list of XlDataValidation objects that specify data validation rules applied to cell ranges. 
+</value>
 
 
         </member>
         <member name="M:DevExpress.Export.Xl.IXlSheet.EndGroup">
             <summary>
-                <para> </para>
+                <para>Finalizes the group creation after calling the <see cref="M:DevExpress.Export.Xl.IXlSheet.BeginGroup"/> method.
+</para>
             </summary>
 
 
@@ -4810,7 +5946,7 @@
                 <para>Provides access to options which determine the worksheet header and footer characteristics.
 </para>
             </summary>
-            <value>An XlHeaderFooter object containing options specific to headers and footers. 
+            <value>An <see cref="T:DevExpress.Export.Xl.XlHeaderFooter"/> object containing options specific to headers and footers. 
 </value>
 
 
@@ -4837,9 +5973,11 @@
         </member>
         <member name="P:DevExpress.Export.Xl.IXlSheet.MergedCells">
             <summary>
-                <para> </para>
+                <para>Provides access to the collection of merged cells in a worksheet.
+</para>
             </summary>
-            <value> </value>
+            <value>An IXlMergedCells object that stores all merged cells in a worksheet.
+</value>
 
 
         </member>
@@ -4858,7 +5996,7 @@
                 <para>Provides access to the group settings that control the summary row and column location.
 </para>
             </summary>
-            <value>An IXlOutlineProperties object that specifies the grouping direction. 
+            <value>An <see cref="T:DevExpress.Export.Xl.IXlOutlineProperties"/> object that specifies the grouping direction. 
 </value>
 
 
@@ -4925,29 +6063,39 @@
         </member>
         <member name="M:DevExpress.Export.Xl.IXlSheet.SkipColumns(System.Int32)">
             <summary>
-                <para> </para>
+                <para>Specifies the number of columns to be skipped in the worksheet before starting  to create a new column. 
+
+</para>
             </summary>
             <param name="count">
-		 
+		An integer value that specifies the number of columns to be skipped.
+
             </param>
 
 
         </member>
         <member name="M:DevExpress.Export.Xl.IXlSheet.SkipRows(System.Int32)">
             <summary>
-                <para> </para>
+                <para>Specifies the number of rows to be skipped in the worksheet before starting to create a new row. 
+
+</para>
             </summary>
             <param name="count">
-		 
+		An integer value that specifies the number of rows to be skipped.
+
+
             </param>
 
 
         </member>
         <member name="P:DevExpress.Export.Xl.IXlSheet.SplitPosition">
             <summary>
-                <para> </para>
+                <para>Freezes the specified number of rows and columns at the top and left side of the worksheet.
+
+</para>
             </summary>
-            <value> </value>
+            <value>An XlCellPosition object that specifies the portion of the worksheet to be frozen.
+</value>
 
 
         </member>
@@ -4964,15 +6112,19 @@
         <member name="T:DevExpress.Export.Xl.IXlDocument">
 
             <summary>
-                <para> </para>
+                <para>Represents an interface that exposes the specific functionality of a workbook.
+</para>
             </summary>
 
         </member>
         <member name="M:DevExpress.Export.Xl.IXlDocument.CreateSheet">
             <summary>
-                <para> </para>
+                <para>Creates a new worksheet in a workbook and returns the <see cref="T:DevExpress.Export.Xl.IXlSheet"/> object.
+
+</para>
             </summary>
-            <returns> </returns>
+            <returns>An <see cref="T:DevExpress.Export.Xl.IXlSheet"/> object that is the newly created worksheet.
+</returns>
 
 
         </member>
@@ -4996,35 +6148,53 @@
 
 
         </member>
+        <member name="P:DevExpress.Export.Xl.IXlDocument.Theme">
+            <summary>
+                <para>Gets or sets the theme to be applied to the workbook.
+</para>
+            </summary>
+            <value>An <see cref="T:DevExpress.Export.Xl.XlDocumentTheme"/> enumeration member specifying the document theme.
+</value>
+
+
+        </member>
         <member name="T:DevExpress.Export.Xl.XlExport">
 
             <summary>
-                <para> </para>
+                <para>Represents an object that creates an exporter for generating spreadsheet files of the specified format.
+</para>
             </summary>
 
         </member>
         <member name="M:DevExpress.Export.Xl.XlExport.CreateExporter(DevExpress.Export.Xl.XlDocumentFormat)">
             <summary>
-                <para> </para>
+                <para>Creates an exporter that performs data export to the specified Excel format. 
+</para>
             </summary>
             <param name="documentFormat">
-		 
+		One of the <see cref="T:DevExpress.Export.Xl.XlDocumentFormat"/> enumeration members that specifies the type of the output document.
+
             </param>
-            <returns> </returns>
+            <returns>An object exposing the  <see cref="T:DevExpress.Export.Xl.IXlExporter"/> interface.
+</returns>
 
 
         </member>
         <member name="M:DevExpress.Export.Xl.XlExport.CreateExporter(DevExpress.Export.Xl.XlDocumentFormat,DevExpress.Export.Xl.IXlFormulaParser)">
             <summary>
-                <para> </para>
+                <para>Creates an exporter that performs data export to the specified Excel format using the specified formula parser. 
+</para>
             </summary>
             <param name="documentFormat">
-		 
+		One of the <see cref="T:DevExpress.Export.Xl.XlDocumentFormat"/> enumeration members that specifies the type of the output document.
+
             </param>
             <param name="formulaParser">
-		 
+		An object exposing the IXlFormulaParser interface that provides the capability to parse worksheet formulas.
+
             </param>
-            <returns> </returns>
+            <returns>An object exposing the  <see cref="T:DevExpress.Export.Xl.IXlExporter"/> interface.
+</returns>
 
 
         </member>
@@ -7673,42 +8843,9 @@ When exporting to XLS and XLSX formats, the layout of control elements is retain
 
 
         </member>
-        <member name="E:DevExpress.XtraPrinting.CsvExportOptionsEx.AfterAddRow">
-            <summary>
-                <para>When exporting to XLS format, this event fires immediately after a row has been added to the output document.
-</para>
-            </summary>
-
-
-        </member>
         <member name="E:DevExpress.XtraPrinting.CsvExportOptionsEx.CustomizeCell">
             <summary>
                 <para>When exporting to CSV format, this event allows you to customize a cell in the output document. 
-</para>
-            </summary>
-
-
-        </member>
-        <member name="E:DevExpress.XtraPrinting.CsvExportOptionsEx.CustomizeSheetFooter">
-            <summary>
-                <para>When exporting to XLS format, this event allows you to customize the footer in the output document. 
-
-</para>
-            </summary>
-
-
-        </member>
-        <member name="E:DevExpress.XtraPrinting.CsvExportOptionsEx.CustomizeSheetHeader">
-            <summary>
-                <para>When exporting to XLS format, this event allows you to customize the header in the output document.
-</para>
-            </summary>
-
-
-        </member>
-        <member name="E:DevExpress.XtraPrinting.CsvExportOptionsEx.CustomizeSheetSettings">
-            <summary>
-                <para>When exporting to XLS format, this event allows you to customize the output document's settings. 
 </para>
             </summary>
 
@@ -8159,7 +9296,8 @@ When exporting to XLS and XLSX formats, the layout of control elements is retain
         <member name="T:DevExpress.Export.Xl.IXlExporter">
 
             <summary>
-                <para> </para>
+                <para>Represents an exporter used to create a spreadsheet document and export it to a stream. 
+</para>
             </summary>
 
         </member>
@@ -12671,7 +13809,7 @@ The default is <b><a href="ms-xhelp:///?Id=T%3aDevExpress.XtraPrinting.PdfAttach
         </member>
         <member name="P:DevExpress.DocumentServices.ServiceModel.IClientParameter.Visible">
             <summary>
-                <para>Specifies whether or not the parameter is visible and its value is requested in a Document Viewer.
+                <para>Specifies whether or not the parameter is visible and its value is requested in a Document Preview.
 
 </para>
             </summary>
@@ -18739,9 +19877,11 @@ A <b>System.Action</b> delegate to be called when the operation is complete.
         </member>
         <member name="P:DevExpress.XtraPrinting.BrickBase.CanPublish">
             <summary>
-                <para> </para>
+                <para>Specifies whether or not a brick is displayed in a printed or exported document.
+</para>
             </summary>
-            <value> </value>
+            <value><b>true</b>, to display a brick in a printed or exported document; <b>false</b>, to display a brick only in a preview.
+</value>
 
 
         </member>
@@ -23360,6 +24500,38 @@ A <b>System.Action</b> delegate to be called when the operation is complete.
             </summary>
             <value>A <see cref="T:DevExpress.XtraPrinting.PrintingSystemBase"/> descendant.
 </value>
+
+
+        </member>
+        <member name="T:DevExpress.Export.Xl.XlDocumentFormat">
+
+            <summary>
+                <para>Lists values used to specify the document format.
+</para>
+            </summary>
+
+        </member>
+        <member name="F:DevExpress.Export.Xl.XlDocumentFormat.Csv">
+            <summary>
+                <para>The CSV format (Comma-Separated Values) - the file format to store tabular data as plain text using commas as separators between cells.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Export.Xl.XlDocumentFormat.Xls">
+            <summary>
+                <para>MS Excel 97-2003 binary file format.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Export.Xl.XlDocumentFormat.Xlsx">
+            <summary>
+                <para>The OpenXML file format for the workbook (default MS Excel 2007 format). File extension - .xlsx.
+</para>
+            </summary>
 
 
         </member>

@@ -4022,7 +4022,7 @@ To create the <b>logical OR</b> operator using the <see cref="M:DevExpress.Data.
 </para>
             </summary>
             <param name="client">
-		An ICameraDeviceClient interface implementing an object that processes the video stream received from a video capture device.
+		An ICameraDeviceClient object that processes the video stream received from a video capture device.
 
 
             </param>
@@ -5125,6 +5125,87 @@ To create the <b>logical OR</b> operator using the <see cref="M:DevExpress.Data.
                 <para>Registers a custom parameter type.
 </para>
             </summary>
+
+
+        </member>
+        <member name="T:DevExpress.Data.Filtering.ICustomFunctionOperatorEvaluatableWithCaseSensitivity">
+
+            <summary>
+                <para> </para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.Data.Filtering.ICustomFunctionOperatorEvaluatableWithCaseSensitivity.Evaluate(System.Boolean,System.Object[])">
+            <summary>
+                <para> </para>
+            </summary>
+            <param name="caseSensetive">
+		 
+            </param>
+            <param name="operands">
+		 
+            </param>
+            <returns> </returns>
+
+
+        </member>
+        <member name="T:DevExpress.Data.Filtering.ICustomFunctionOperatorConvertibleToExpression">
+
+            <summary>
+                <para> </para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.Data.Filtering.ICustomFunctionOperatorConvertibleToExpression.Convert(DevExpress.Data.Linq.ICriteriaToExpressionConverter,System.Linq.Expressions.Expression[])">
+            <summary>
+                <para> </para>
+            </summary>
+            <param name="converter">
+		 
+            </param>
+            <param name="operands">
+		 
+            </param>
+            <returns> </returns>
+
+
+        </member>
+        <member name="T:DevExpress.Data.Filtering.ICustomFunctionOperatorCompileableWithCaseSensitivity">
+
+            <summary>
+                <para> </para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.Data.Filtering.ICustomFunctionOperatorCompileableWithCaseSensitivity.Create(System.Boolean,System.Linq.Expressions.Expression[])">
+            <summary>
+                <para> </para>
+            </summary>
+            <param name="caseSensetive">
+		 
+            </param>
+            <param name="operands">
+		 
+            </param>
+            <returns> </returns>
+
+
+        </member>
+        <member name="T:DevExpress.Data.Filtering.ICustomFunctionOperatorCompileable">
+
+            <summary>
+                <para> </para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.Data.Filtering.ICustomFunctionOperatorCompileable.Create(System.Linq.Expressions.Expression[])">
+            <summary>
+                <para> </para>
+            </summary>
+            <param name="operands">
+		 
+            </param>
+            <returns> </returns>
 
 
         </member>
@@ -6353,76 +6434,87 @@ To create the <b>logical OR</b> operator using the <see cref="M:DevExpress.Data.
         <member name="T:DevExpress.XtraPrinting.ImageAlignment">
 
             <summary>
-                <para> </para>
+                <para>Specifies the alignment of a displayed image in relation to the container control's boundaries.
+</para>
             </summary>
 
         </member>
         <member name="F:DevExpress.XtraPrinting.ImageAlignment.BottomCenter">
             <summary>
-                <para> </para>
+                <para>An image is aligned to the bottom side of a control.
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.XtraPrinting.ImageAlignment.BottomLeft">
             <summary>
-                <para> </para>
+                <para>An image is aligned to the bottom left corner of a control.
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.XtraPrinting.ImageAlignment.BottomRight">
             <summary>
-                <para> </para>
+                <para>An image is aligned to the bottom right corner of a control.
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.XtraPrinting.ImageAlignment.Default">
             <summary>
-                <para> </para>
+                <para>The default image alignment is used.
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.XtraPrinting.ImageAlignment.MiddleCenter">
             <summary>
-                <para> </para>
+                <para>An image is aligned to the middler of a control
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.XtraPrinting.ImageAlignment.MiddleLeft">
             <summary>
-                <para> </para>
+                <para>An image is aligned to the left side of a control. 
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.XtraPrinting.ImageAlignment.MiddleRight">
             <summary>
-                <para> </para>
+                <para>An image is aligned to the right side of a control. 
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.XtraPrinting.ImageAlignment.TopCenter">
             <summary>
-                <para> </para>
+                <para>An image is aligned to the top side of a control. 
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.XtraPrinting.ImageAlignment.TopLeft">
             <summary>
-                <para> </para>
+                <para>An image is aligned to the top left corner of a control. 
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.XtraPrinting.ImageAlignment.TopRight">
             <summary>
-                <para> </para>
+                <para>An image is aligned to the top right corner of a control. 
+</para>
             </summary>
 
 

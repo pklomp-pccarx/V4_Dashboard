@@ -2507,23 +2507,29 @@ Manual searching is enabled in the following cases: 1) a control functions in re
         </member>
         <member name="M:DevExpress.XtraEditors.Repository.RepositoryItemGridLookUpEditBase.GetIndexByKeyValue(System.Object)">
             <summary>
-                <para> </para>
+                <para>Returns the index of the row containing the specified <see cref="P:DevExpress.XtraEditors.Repository.RepositoryItemLookUpEditBase.ValueMember"/> field value.
+</para>
             </summary>
             <param name="keyValue">
-		 
+		The value of the <see cref="P:DevExpress.XtraEditors.Repository.RepositoryItemLookUpEditBase.ValueMember"/> field for the row to locate.
+
             </param>
-            <returns> </returns>
+            <returns>A zero-based index of the row containing the specified <see cref="P:DevExpress.XtraEditors.Repository.RepositoryItemLookUpEditBase.ValueMember"/> field value. <b>-1</b> if no record with the specified value was found.
+</returns>
 
 
         </member>
         <member name="M:DevExpress.XtraEditors.Repository.RepositoryItemGridLookUpEditBase.GetRowByKeyValue(System.Object)">
             <summary>
-                <para> </para>
+                <para>Returns the row containing the specified <see cref="P:DevExpress.XtraEditors.Repository.RepositoryItemLookUpEditBase.ValueMember"/> field value.
+</para>
             </summary>
             <param name="keyValue">
-		 
+		The value of the <see cref="P:DevExpress.XtraEditors.Repository.RepositoryItemLookUpEditBase.ValueMember"/> field for the row to locate.
+
             </param>
-            <returns> </returns>
+            <returns>The row containing the specified <see cref="P:DevExpress.XtraEditors.Repository.RepositoryItemLookUpEditBase.ValueMember"/> field value. <b>null</b> (<b>Nothing</b> in Visual Basic) if no row with the specified value was found.
+</returns>
 
 
         </member>
@@ -6642,9 +6648,11 @@ Manual searching is enabled in the following cases: 1) a control functions in re
         </member>
         <member name="P:DevExpress.XtraGrid.Views.Layout.LayoutViewCard.CustomHeaderButtons">
             <summary>
-                <para> </para>
+                <para>This property is not supported by the LayoutViewCard class.
+</para>
             </summary>
-            <value> </value>
+            <value> 
+</value>
 
 
         </member>
@@ -7596,6 +7604,116 @@ This value is used to initialize the <see cref="P:DevExpress.XtraGrid.Views.Prin
 </para>
             </summary>
             <value>The handle that identifies the grid row for which the <b>Edit From</b> is about to be displayed.
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.XtraGrid.Views.Grid.GridViewPrintAppearances">
+
+            <summary>
+                <para>Provides the appearance settings used to paint the elements in a Grid View when the grid control is printed/exported.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.XtraGrid.Views.Grid.GridViewPrintAppearances.#ctor(DevExpress.XtraGrid.Views.Base.BaseView)">
+            <summary>
+                <para>Initializes a new instance of the <see cref="T:DevExpress.XtraGrid.Views.Grid.GridViewPrintAppearances"/> class.
+</para>
+            </summary>
+            <param name="view">
+		A <see cref="T:DevExpress.XtraGrid.Views.Base.BaseView"/> descendant representing the View that will own the created collection.
+
+            </param>
+
+
+        </member>
+        <member name="P:DevExpress.XtraGrid.Views.Grid.GridViewPrintAppearances.EvenRow">
+            <summary>
+                <para>Gets the appearance settings used to paint the even data rows when the grid control is printed.
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.Utils.AppearanceOptions"/> object which provides the appearance settings used to paint even data rows when the grid control is printed.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraGrid.Views.Grid.GridViewPrintAppearances.FooterPanel">
+            <summary>
+                <para>Gets the appearance settings used to paint the view footer when the grid is printed.
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.Utils.AppearanceObject"/> object that provides the appearance settings used to paint the View footer when the grid is printed.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraGrid.Views.Grid.GridViewPrintAppearances.GroupFooter">
+            <summary>
+                <para>Gets the appearance settings used to paint the group footer when the grid is printed.
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.Utils.AppearanceObject"/> object that provides the appearance settings used to paint the group footer when the grid is printed.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraGrid.Views.Grid.GridViewPrintAppearances.GroupRow">
+            <summary>
+                <para>Gets the appearance settings used to paint group rows when the grid is printed.
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.Utils.AppearanceObject"/> object that provides the appearance settings used to paint group rows when the grid is printed.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraGrid.Views.Grid.GridViewPrintAppearances.HeaderPanel">
+            <summary>
+                <para>Gets the appearance settings used to paint column headers when the grid is printed.
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.Utils.AppearanceObject"/> object that provides the appearance settings used to paint column headers when the grid is printed.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraGrid.Views.Grid.GridViewPrintAppearances.Lines">
+            <summary>
+                <para>Gets the appearance settings used to paint the horizontal and vertical lines when the grid is printed.
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.Utils.AppearanceObject"/> object that provides the appearance settings used to paint the horizontal and vertical lines when the grid is printed.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraGrid.Views.Grid.GridViewPrintAppearances.OddRow">
+            <summary>
+                <para>Gets the appearance settings used to paint odd data rows when the grid control is printed.
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.Utils.AppearanceObject"/> object that provides the appearance settings used to paint odd data rows when the grid control is printed.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraGrid.Views.Grid.GridViewPrintAppearances.Preview">
+            <summary>
+                <para>Gets the appearance settings used to paint the preview sections when the grid is printed.
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.Utils.AppearanceObject"/> object that provides the appearance settings used to paint the preview sections when the grid is printed.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraGrid.Views.Grid.GridViewPrintAppearances.Row">
+            <summary>
+                <para>Gets the appearance settings used to paint the data rows when the grid control is printed.
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.Utils.AppearanceObject"/> object that provides the appearance settings used to paint the data rows when the grid control is printed.
 </value>
 
 
@@ -9248,6 +9366,62 @@ Multiple rows can be selected via the mouse and keyboard. Individual cells canno
 
 
         </member>
+        <member name="T:DevExpress.XtraGrid.Views.Tile.TileViewItem">
+
+            <summary>
+                <para>A tile within a <see cref="T:DevExpress.XtraGrid.Views.Tile.TileView"/>.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.XtraGrid.Views.Tile.TileViewItem.#ctor">
+            <summary>
+                <para>Initializes a new instance of the TileViewItem class with the default settings.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="P:DevExpress.XtraGrid.Views.Tile.TileViewItem.AppearanceItem">
+            <summary>
+                <para>Provides access to this TileViewItem's appearance settings.
+</para>
+            </summary>
+            <value>A TileViewItemAppearances object that stores item appearance settings.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraGrid.Views.Tile.TileViewItem.ImageInfo">
+            <summary>
+                <para>Gets or sets the object that stores image loading info for this TileViewItem.
+</para>
+            </summary>
+            <value>An ImageLoadInfo object that stores image loading info for this TileViewItem.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraGrid.Views.Tile.TileViewItem.RowHandle">
+            <summary>
+                <para>Returns the row handle for this TileViewItem.
+</para>
+            </summary>
+            <value>An Int32 value that is the integer index associated with a data row, displayed within this TileViewItem.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraGrid.Views.Tile.TileViewItem.View">
+            <summary>
+                <para>Gets a <see cref="T:DevExpress.XtraGrid.Views.Tile.TileView"/> that owns this TileViewItem.
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.XtraGrid.Views.Tile.TileView"/> that owns this TileViewItem.
+</value>
+
+
+        </member>
         <member name="T:DevExpress.XtraGrid.FilterEditor.ViewFilterColumnCollection">
 
             <summary>
@@ -9778,62 +9952,6 @@ Multiple rows can be selected via the mouse and keyboard. Individual cells canno
             </summary>
             <value>A <see cref="T:DevExpress.XtraGrid.Views.BandedGrid.GridBand"/> object representing the band currently being processed.
 
-</value>
-
-
-        </member>
-        <member name="T:DevExpress.XtraGrid.Views.Tile.TileViewItem">
-
-            <summary>
-                <para>A tile within a <see cref="T:DevExpress.XtraGrid.Views.Tile.TileView"/>.
-</para>
-            </summary>
-
-        </member>
-        <member name="M:DevExpress.XtraGrid.Views.Tile.TileViewItem.#ctor">
-            <summary>
-                <para>Initializes a new instance of the TileViewItem class with the default settings.
-</para>
-            </summary>
-
-
-        </member>
-        <member name="P:DevExpress.XtraGrid.Views.Tile.TileViewItem.AppearanceItem">
-            <summary>
-                <para>Provides access to this TileViewItem's appearance settings.
-</para>
-            </summary>
-            <value>A TileViewItemAppearances object that stores item appearance settings.
-</value>
-
-
-        </member>
-        <member name="P:DevExpress.XtraGrid.Views.Tile.TileViewItem.ImageInfo">
-            <summary>
-                <para>Gets or sets the object that stores image loading info for this TileViewItem.
-</para>
-            </summary>
-            <value>An ImageLoadInfo object that stores image loading info for this TileViewItem.
-</value>
-
-
-        </member>
-        <member name="P:DevExpress.XtraGrid.Views.Tile.TileViewItem.RowHandle">
-            <summary>
-                <para>Returns the row handle for this TileViewItem.
-</para>
-            </summary>
-            <value>An Int32 value that is the integer index associated with a data row, displayed within this TileViewItem.
-</value>
-
-
-        </member>
-        <member name="P:DevExpress.XtraGrid.Views.Tile.TileViewItem.View">
-            <summary>
-                <para>Gets a <see cref="T:DevExpress.XtraGrid.Views.Tile.TileView"/> that owns this TileViewItem.
-</para>
-            </summary>
-            <value>A <see cref="T:DevExpress.XtraGrid.Views.Tile.TileView"/> that owns this TileViewItem.
 </value>
 
 
@@ -10659,116 +10777,6 @@ Multiple rows can be selected via the mouse and keyboard. Individual cells canno
 </para>
             </summary>
             <value>A <see cref="T:DevExpress.Utils.AppearanceObject"/> object which provides the appearance settings used to paint the filter panel when the grid is printed.
-</value>
-
-
-        </member>
-        <member name="T:DevExpress.XtraGrid.Views.Grid.GridViewPrintAppearances">
-
-            <summary>
-                <para>Provides the appearance settings used to paint the elements in a Grid View when the grid control is printed/exported.
-</para>
-            </summary>
-
-        </member>
-        <member name="M:DevExpress.XtraGrid.Views.Grid.GridViewPrintAppearances.#ctor(DevExpress.XtraGrid.Views.Base.BaseView)">
-            <summary>
-                <para>Initializes a new instance of the <see cref="T:DevExpress.XtraGrid.Views.Grid.GridViewPrintAppearances"/> class.
-</para>
-            </summary>
-            <param name="view">
-		A <see cref="T:DevExpress.XtraGrid.Views.Base.BaseView"/> descendant representing the View that will own the created collection.
-
-            </param>
-
-
-        </member>
-        <member name="P:DevExpress.XtraGrid.Views.Grid.GridViewPrintAppearances.EvenRow">
-            <summary>
-                <para>Gets the appearance settings used to paint the even data rows when the grid control is printed.
-</para>
-            </summary>
-            <value>A <see cref="T:DevExpress.Utils.AppearanceOptions"/> object which provides the appearance settings used to paint even data rows when the grid control is printed.
-</value>
-
-
-        </member>
-        <member name="P:DevExpress.XtraGrid.Views.Grid.GridViewPrintAppearances.FooterPanel">
-            <summary>
-                <para>Gets the appearance settings used to paint the view footer when the grid is printed.
-</para>
-            </summary>
-            <value>A <see cref="T:DevExpress.Utils.AppearanceObject"/> object that provides the appearance settings used to paint the View footer when the grid is printed.
-</value>
-
-
-        </member>
-        <member name="P:DevExpress.XtraGrid.Views.Grid.GridViewPrintAppearances.GroupFooter">
-            <summary>
-                <para>Gets the appearance settings used to paint the group footer when the grid is printed.
-</para>
-            </summary>
-            <value>A <see cref="T:DevExpress.Utils.AppearanceObject"/> object that provides the appearance settings used to paint the group footer when the grid is printed.
-</value>
-
-
-        </member>
-        <member name="P:DevExpress.XtraGrid.Views.Grid.GridViewPrintAppearances.GroupRow">
-            <summary>
-                <para>Gets the appearance settings used to paint group rows when the grid is printed.
-</para>
-            </summary>
-            <value>A <see cref="T:DevExpress.Utils.AppearanceObject"/> object that provides the appearance settings used to paint group rows when the grid is printed.
-</value>
-
-
-        </member>
-        <member name="P:DevExpress.XtraGrid.Views.Grid.GridViewPrintAppearances.HeaderPanel">
-            <summary>
-                <para>Gets the appearance settings used to paint column headers when the grid is printed.
-</para>
-            </summary>
-            <value>A <see cref="T:DevExpress.Utils.AppearanceObject"/> object that provides the appearance settings used to paint column headers when the grid is printed.
-</value>
-
-
-        </member>
-        <member name="P:DevExpress.XtraGrid.Views.Grid.GridViewPrintAppearances.Lines">
-            <summary>
-                <para>Gets the appearance settings used to paint the horizontal and vertical lines when the grid is printed.
-</para>
-            </summary>
-            <value>A <see cref="T:DevExpress.Utils.AppearanceObject"/> object that provides the appearance settings used to paint the horizontal and vertical lines when the grid is printed.
-</value>
-
-
-        </member>
-        <member name="P:DevExpress.XtraGrid.Views.Grid.GridViewPrintAppearances.OddRow">
-            <summary>
-                <para>Gets the appearance settings used to paint odd data rows when the grid control is printed.
-</para>
-            </summary>
-            <value>A <see cref="T:DevExpress.Utils.AppearanceObject"/> object that provides the appearance settings used to paint odd data rows when the grid control is printed.
-</value>
-
-
-        </member>
-        <member name="P:DevExpress.XtraGrid.Views.Grid.GridViewPrintAppearances.Preview">
-            <summary>
-                <para>Gets the appearance settings used to paint the preview sections when the grid is printed.
-</para>
-            </summary>
-            <value>A <see cref="T:DevExpress.Utils.AppearanceObject"/> object that provides the appearance settings used to paint the preview sections when the grid is printed.
-</value>
-
-
-        </member>
-        <member name="P:DevExpress.XtraGrid.Views.Grid.GridViewPrintAppearances.Row">
-            <summary>
-                <para>Gets the appearance settings used to paint the data rows when the grid control is printed.
-</para>
-            </summary>
-            <value>A <see cref="T:DevExpress.Utils.AppearanceObject"/> object that provides the appearance settings used to paint the data rows when the grid control is printed.
 </value>
 
 
@@ -15432,9 +15440,11 @@ If the data source is empty or if all values in the date-time column are set to 
         </member>
         <member name="M:DevExpress.XtraGrid.GridGroupSummaryItem.GetDefaultDisplayFormat">
             <summary>
-                <para> </para>
+                <para>Returns the default display format for the group summary item.
+</para>
             </summary>
-            <returns> </returns>
+            <returns>A string that specifies the default display format for the group summary item.
+</returns>
 
 
         </member>
@@ -17873,9 +17883,11 @@ This option is in effect when the <see cref="P:DevExpress.XtraGrid.Views.Grid.Gr
         </member>
         <member name="P:DevExpress.XtraGrid.Views.Grid.GridOptionsMenu.DialogFormBorderEffect">
             <summary>
-                <para> </para>
+                <para>Gets or sets the border adornment effect for dialog forms within the <see cref="T:DevExpress.XtraGrid.Views.Grid.GridView"/>.
+</para>
             </summary>
-            <value> </value>
+            <value>A value that specifies the dialog form border adornment effect.
+</value>
 
 
         </member>
@@ -24464,7 +24476,8 @@ The <see cref="F:DevExpress.XtraGrid.GridControl.InvalidRowHandle"/> value if th
         </member>
         <member name="M:DevExpress.XtraGrid.Views.Grid.GridView.ClearSorting">
             <summary>
-                <para> </para>
+                <para>Clear sorting applied to the View.
+</para>
             </summary>
 
 
@@ -26378,9 +26391,11 @@ descendant (a <see cref="T:DevExpress.XtraGrid.Views.Grid.ViewInfo.GridHitInfo"/
         </member>
         <member name="P:DevExpress.XtraGrid.Views.Grid.GridView.LoadingPanelVisible">
             <summary>
-                <para> </para>
+                <para>Gets or sets whether the animated Loading Panel indicating the data load process is displayed.
+</para>
             </summary>
-            <value> </value>
+            <value><b>true</b>, if the Loading panel is displayed; otherwise, <b>false</b>.
+</value>
 
 
         </member>
@@ -32970,7 +32985,8 @@ The <see cref="F:DevExpress.XtraGrid.GridControl.InvalidRowHandle"/> value, if n
         </member>
         <member name="E:DevExpress.XtraGrid.Views.Base.ColumnView.SubstituteFilter">
             <summary>
-                <para> </para>
+                <para>Allows you to replace a filter applied with another filter.
+</para>
             </summary>
 
 
@@ -35916,7 +35932,7 @@ The <see cref="F:DevExpress.XtraGrid.GridControl.InvalidRowHandle"/> value, if n
         </member>
         <member name="P:DevExpress.XtraGrid.Columns.GridColumn.SortMode">
             <summary>
-                <para>Gets or sets how the column's data is sorted when sorting is applied to it.
+                <para>Gets or sets how the column's data is sorted when sorting/grouping is applied to it.
 
 </para>
             </summary>
