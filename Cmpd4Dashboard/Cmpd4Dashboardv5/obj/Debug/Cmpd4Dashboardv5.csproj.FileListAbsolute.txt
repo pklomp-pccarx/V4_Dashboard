@@ -1,0 +1,15 @@
+c:\users\pklomp\documents\visual studio 2013\Projects\Cmpd4Dashboardv5\Cmpd4Dashboardv5\bin\Debug\Cmpd4Dashboardv5.exe.config
+c:\users\pklomp\documents\visual studio 2013\Projects\Cmpd4Dashboardv5\Cmpd4Dashboardv5\bin\Debug\Cmpd4Dashboardv5.exe
+c:\users\pklomp\documents\visual studio 2013\Projects\Cmpd4Dashboardv5\Cmpd4Dashboardv5\bin\Debug\Cmpd4Dashboardv5.pdb
+c:\users\pklomp\documents\visual studio 2013\Projects\Cmpd4Dashboardv5\Cmpd4Dashboardv5\bin\Debug\FirebirdSql.Data.FirebirdClient.dll
+c:\users\pklomp\documents\visual studio 2013\Projects\Cmpd4Dashboardv5\Cmpd4Dashboardv5\bin\Debug\FirebirdSql.Data.FirebirdClient.pdb
+c:\users\pklomp\documents\visual studio 2013\Projects\Cmpd4Dashboardv5\Cmpd4Dashboardv5\obj\Debug\Cmpd4Dashboardv5.csprojResolveAssemblyReference.cache
+c:\users\pklomp\documents\visual studio 2013\Projects\Cmpd4Dashboardv5\Cmpd4Dashboardv5\obj\Debug\Cmpd4Dashboardv5.FrmMain.resources
+c:\users\pklomp\documents\visual studio 2013\Projects\Cmpd4Dashboardv5\Cmpd4Dashboardv5\obj\Debug\Cmpd4Dashboardv5.Properties.Resources.resources
+c:\users\pklomp\documents\visual studio 2013\Projects\Cmpd4Dashboardv5\Cmpd4Dashboardv5\obj\Debug\Cmpd4Dashboardv5.csproj.GenerateResource.Cache
+c:\users\pklomp\documents\visual studio 2013\Projects\Cmpd4Dashboardv5\Cmpd4Dashboardv5\obj\Debug\Cmpd4Dashboardv5.exe.licenses
+c:\users\pklomp\documents\visual studio 2013\Projects\Cmpd4Dashboardv5\Cmpd4Dashboardv5\obj\Debug\Cmpd4Dashboardv5.exe
+c:\users\pklomp\documents\visual studio 2013\Projects\Cmpd4Dashboardv5\Cmpd4Dashboardv5\obj\Debug\Cmpd4Dashboardv5.pdb
+C:\Work\VS2013\Cmpd4\Cmpd4Dashboardv5\Cmpd4Dashboardv5\bin\Debug\Cmpd4Dashboardv5.exe.config
+C:\Work\VS2013\Cmpd4\Cmpd4Dashboardv5\Cmpd4Dashboardv5\obj\Debug\Cmpd4Dashboardv5.exe
+C:\Work\VS2013\Cmpd4\Cmpd4Dashboardv5\Cmpd4Dashboardv5\obj\Debug\Cmpd4Dashboardv5.pdb

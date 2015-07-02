@@ -1,0 +1,15 @@
+c:\users\pklomp\documents\visual studio 2013\Projects\Cmpd4DashboardVeiwerv1\Cmpd4DashboardVeiwerv1\bin\Debug\Cmpd4DashboardVeiwerv1.exe.config
+c:\users\pklomp\documents\visual studio 2013\Projects\Cmpd4DashboardVeiwerv1\Cmpd4DashboardVeiwerv1\bin\Debug\Cmpd4DashboardVeiwerv1.exe
+c:\users\pklomp\documents\visual studio 2013\Projects\Cmpd4DashboardVeiwerv1\Cmpd4DashboardVeiwerv1\bin\Debug\Cmpd4DashboardVeiwerv1.pdb
+c:\users\pklomp\documents\visual studio 2013\Projects\Cmpd4DashboardVeiwerv1\Cmpd4DashboardVeiwerv1\bin\Debug\FirebirdSql.Data.FirebirdClient.dll
+c:\users\pklomp\documents\visual studio 2013\Projects\Cmpd4DashboardVeiwerv1\Cmpd4DashboardVeiwerv1\bin\Debug\FirebirdSql.Data.FirebirdClient.pdb
+c:\users\pklomp\documents\visual studio 2013\Projects\Cmpd4DashboardVeiwerv1\Cmpd4DashboardVeiwerv1\obj\Debug\Cmpd4DashboardVeiwerv1.csprojResolveAssemblyReference.cache
+c:\users\pklomp\documents\visual studio 2013\Projects\Cmpd4DashboardVeiwerv1\Cmpd4DashboardVeiwerv1\obj\Debug\Cmpd4DashboardVeiwerv1.FrmMain.resources
+c:\users\pklomp\documents\visual studio 2013\Projects\Cmpd4DashboardVeiwerv1\Cmpd4DashboardVeiwerv1\obj\Debug\Cmpd4DashboardVeiwerv1.Properties.Resources.resources
+c:\users\pklomp\documents\visual studio 2013\Projects\Cmpd4DashboardVeiwerv1\Cmpd4DashboardVeiwerv1\obj\Debug\Cmpd4DashboardVeiwerv1.csproj.GenerateResource.Cache
+c:\users\pklomp\documents\visual studio 2013\Projects\Cmpd4DashboardVeiwerv1\Cmpd4DashboardVeiwerv1\obj\Debug\Cmpd4DashboardVeiwerv1.exe.licenses
+c:\users\pklomp\documents\visual studio 2013\Projects\Cmpd4DashboardVeiwerv1\Cmpd4DashboardVeiwerv1\obj\Debug\Cmpd4DashboardVeiwerv1.exe
+c:\users\pklomp\documents\visual studio 2013\Projects\Cmpd4DashboardVeiwerv1\Cmpd4DashboardVeiwerv1\obj\Debug\Cmpd4DashboardVeiwerv1.pdb
+C:\Work\VS2013\Cmpd4\Cmpd4DashboardVeiwerv1\Cmpd4DashboardVeiwerv1\bin\Debug\Cmpd4DashboardVeiwerv1.exe.config
+C:\Work\VS2013\Cmpd4\Cmpd4DashboardVeiwerv1\Cmpd4DashboardVeiwerv1\obj\Debug\Cmpd4DashboardVeiwerv1.exe
+C:\Work\VS2013\Cmpd4\Cmpd4DashboardVeiwerv1\Cmpd4DashboardVeiwerv1\obj\Debug\Cmpd4DashboardVeiwerv1.pdb

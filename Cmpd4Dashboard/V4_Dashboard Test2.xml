@@ -1,0 +1,466 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Dashboard CurrencyCulture="en-US">
+  <Title Text="Paul's Pharmacy Dashboard" />
+  <DataSources>
+    <SqlDataSource ComponentName="dashboardSqlDataSource1" DataProcessingMode="Client">
+      <Name>Cmpdwin.pkf - V4</Name>
+      <Connection Name="localhost_cmpdwinConnection" ProviderKey="Firebird">
+        <Parameters>
+          <Parameter Name="server" Value="localhost" />
+          <Parameter Name="database" Value="c:\pks4\data\cmpdwin.pkf" />
+          <Parameter Name="read only" Value="1" />
+          <Parameter Name="generateConnectionHelper" Value="false" />
+          <Parameter Name="userid" Value="PAUL" />
+          <Parameter Name="password" Value="nonenone" />
+        </Parameters>
+      </Connection>
+      <Query Type="CustomSqlQuery" Name="Prescription Data">
+        <Parameter Name="StartDate" Type="System.DateTime">-8589289168854775808</Parameter>
+        <Parameter Name="EndDate" Type="System.DateTime">-8587685584854775808</Parameter>
+        <Sql>select 
+
+RXFILL.RXFILL_id,
+RXFILL.fILL_DATE,
+extract (hour from rxfill.fill_time) as filltime,
+rxfill.PCCA_CPM,
+rxfill.quantity,
+RXMAIN.RXMAIN_id,
+rxmain.deleted,
+rxmain.Not_filled,
+rxfill.new_or_refill,
+DOCTOR.DOCTOR_ID,
+DOCTOR.LASTNAME as DoctorLastName,
+DOCTOR.FIRSTNAME as DoctorFirstName,
+DOCTOR.LASTNAME || ', ' || DOCTOR.FIRSTNAME as Dr_FullName,
+DOCTOR.REGCITY as Dr_City,
+DOCTOR.DEA,
+DOCTOR.TYPEOFPRACTICE,
+DOCTOR.NUMBEROFSCRIPTS,
+DOCTOR.TOTALCOST AS DrTotalCostForPeriod,
+DOCTOR.TOTALPRICE AS DrTotalPriceForPeriod,
+doctor.businessName,
+doctor.regzip as DrZIP,
+doctor.regstate as DrState,
+doctor.phone1 AS DrPhone,
+doctor.LASTSCRIPTDATE as DrLastRxDate,
+doctor.code as DrCode,
+Sales_Person.FIRSTNAME || ' ' || Sales_Person.LASTNAME as Dr_Sales_Person,
+Sales_Person.FIRSTNAME || ' ' || Sales_Person.LASTNAME as Rx_Sales_Person,
+Formula.Name as FormulaName,
+Formula.Strength,
+Formula.Form,
+Formula.Schedule as FormulaSchedule,
+formula.compounded_in_store,
+Formula.THERAPEUTIC_CLASS,
+Formula.Code as FormulaCode,
+pharmacist.lastname as RPhLastName,
+pharmacist.firstname as RPhFirsstName,
+technician.lastname as TechLastName,
+technician.firstname as TechFirstName,
+PATIENT.lastname AS PATLASTNAME,
+PATIENT.firstname AS PATFIRSTNAME,
+Patient.phone1 as patphone,
+patient.regstate as patstate,
+Patient.regzip as PatZip,
+Patient.patclass as PatClass,
+patient.miscID as PatMiscID,
+rxfill.PHARMACY_COST,
+rxfill.PATIENT_PRICE,
+rxfill.SALES_TAX,
+rxfill.INSURANCE_PAY,
+rxfill.CO_PAY,
+rxfill.PATIENT_PRICE - rxfill.PHARMACY_COST  as profit,
+rxfill.PAYMENT_METHOD,
+rxfill.EMUNICATIONS_GUID,
+INSURANCE.NAME AS INSNAME,
+Insurance.Code as InsuranceCode,
+Insurance.ANSI_BIN_NUMBER as InsuranceBIN,
+Insurance.PROCESSOR_CONTROL_ID as InsurancePCN,
+rxfill.RXLOCTRACK_COMPLETE_STATUS,
+rxfill.RXLOCTRACK_COMPLETION_TYPE
+    
+from rxfill rxfill
+
+JOIN RXMAIN RXMAIN
+ON (RXMAIN.RXMAIN_id = RXFILL.RXMAIN_id)
+
+JOIN DOCTOR DOCTOR
+ON (DOCTOR.DOCTOR_id = RXMAIN.DOCTOR_id)
+
+JOIN PATIENT PATIENT
+ON (PATIENT.PATIENT_id = RXMAIN.PATIENT_id)
+
+JOIN formula formula
+ON (formula.formula_ID = RXfill.formula_dispensed_ID)
+
+JOIN pharmacist pharmacist
+ON (pharmacist.pharmacist_ID = RXfill.pharmacist_ID)
+
+JOIN INSURANCE INSURANCE
+ON (INSURANCE.INSURANCE_id = RXfill.INSURANCE_id)
+
+left outer JOIN technician technician
+ON (technician.technician_ID = RXfill.technician_ID)
+
+left outer join Sales_Person Sales_Person
+on (Sales_Person.Sales_Person_ID = Doctor.Sales_Person_ID)
+
+left outer join Sales_Person Sales_PersonRx
+on (Sales_PersonRx.Sales_Person_ID = Rxfill.Sales_Person_ID)
+
+
+where (rxmain.deleted = 'F') and
+(rxmain.filled_elsewhere = 'F') and
+(rxmain.not_filled = 'F') and
+(rxfill.fill_date &gt;= @startdate) and
+(rxfill.fill_date &lt;= @enddate)
+
+ORDER BY RXFILL.FILL_DATE</Sql>
+      </Query>
+      <Query Type="CustomSqlQuery" Name="Doctor Data">
+        <Sql>select * from doctor</Sql>
+      </Query>
+      <Query Type="CustomSqlQuery" Name="States - lookup list">
+        <Sql>select 
+name as statename,
+code as statecode
+
+from states
+order by name</Sql>
+      </Query>
+      <ResultSchema>
+        <DataSet Name="Cmpdwin.pkf - V4">
+          <View Name="Doctor Data">
+            <Field Name="DOCTOR_ID" Type="Int32" />
+            <Field Name="ACTIVATED" Type="String" />
+            <Field Name="LAST_MODIFIED" Type="DateTime" />
+            <Field Name="LAST_MODIFIED_BY" Type="String" />
+            <Field Name="DATE_ENTERED" Type="DateTime" />
+            <Field Name="CODE" Type="String" />
+            <Field Name="FIRSTNAME" Type="String" />
+            <Field Name="LASTNAME" Type="String" />
+            <Field Name="MIDDLENAME" Type="String" />
+            <Field Name="REGADDRESS1" Type="String" />
+            <Field Name="REGADDRESS2" Type="String" />
+            <Field Name="REGCITY" Type="String" />
+            <Field Name="REGSTATE" Type="String" />
+            <Field Name="REGZIP" Type="String" />
+            <Field Name="REGCOUNTRY" Type="String" />
+            <Field Name="SHIPADDRESS1" Type="String" />
+            <Field Name="SHIPADDRESS2" Type="String" />
+            <Field Name="SHIPCITY" Type="String" />
+            <Field Name="SHIPSTATE" Type="String" />
+            <Field Name="SHIPZIP" Type="String" />
+            <Field Name="SHIPCOUNTRY" Type="String" />
+            <Field Name="SHIP_TO_DEFAULT" Type="String" />
+            <Field Name="SHIPPING_INSTRUCTIONS" Type="String" />
+            <Field Name="SHIPPING_ID" Type="Int32" />
+            <Field Name="MISCID" Type="String" />
+            <Field Name="TAXABLE" Type="String" />
+            <Field Name="DEA" Type="String" />
+            <Field Name="STATELICENSE" Type="String" />
+            <Field Name="UPIN" Type="String" />
+            <Field Name="SPIN" Type="String" />
+            <Field Name="TITLE" Type="String" />
+            <Field Name="CALLFAXPREF" Type="String" />
+            <Field Name="ALLOWGENSUB" Type="String" />
+            <Field Name="BIRTHDATE" Type="DateTime" />
+            <Field Name="PROVIDER1" Type="String" />
+            <Field Name="PROVIDER2" Type="String" />
+            <Field Name="PROVIDER3" Type="String" />
+            <Field Name="PROVIDER4" Type="String" />
+            <Field Name="LASTVISITDATE" Type="DateTime" />
+            <Field Name="LASTSCRIPTDATE" Type="DateTime" />
+            <Field Name="LASTCLEARED" Type="DateTime" />
+            <Field Name="PHONE1" Type="String" />
+            <Field Name="PHONE2" Type="String" />
+            <Field Name="FAX" Type="String" />
+            <Field Name="PAGER" Type="String" />
+            <Field Name="CELLULAR" Type="String" />
+            <Field Name="WEBSITE" Type="String" />
+            <Field Name="OFFICESTAFF" Type="String" />
+            <Field Name="PICTURE" Type="ByteArray" />
+            <Field Name="CREDIT_CARD_NO" Type="String" />
+            <Field Name="CREDIT_CARD_EXP_DATE" Type="DateTime" />
+            <Field Name="CREDIT_CARD_TYPE" Type="String" />
+            <Field Name="CREDIT_CARD_NAME" Type="String" />
+            <Field Name="MEMO" Type="ByteArray" />
+            <Field Name="OLD_PARADOX_ID" Type="Int32" />
+            <Field Name="CONTACT_FLAG" Type="String" />
+            <Field Name="NEWS_LETTER_FLAG" Type="String" />
+            <Field Name="SHIPNAME" Type="String" />
+            <Field Name="CI_PRESCRIBER_ID_QUALIFIER" Type="String" />
+            <Field Name="NAT_PROV_PROV_ID" Type="String" />
+            <Field Name="BLUE_CROSS_PROV_ID" Type="String" />
+            <Field Name="BLUE_SHIELD_PROV_ID" Type="String" />
+            <Field Name="MEDICAID_PROV_ID" Type="String" />
+            <Field Name="NCPDP_PROV_ID" Type="String" />
+            <Field Name="CHAMPUS_PROV_ID" Type="String" />
+            <Field Name="HEALTH_IND_NUMBER" Type="String" />
+            <Field Name="FEDERAL_TAX_ID" Type="String" />
+            <Field Name="PLAN_SPECIFIC_ID_PROV_ID" Type="String" />
+            <Field Name="OTHER_PROV_ID" Type="String" />
+            <Field Name="PRESCRIBER_LOCATION_CODE" Type="String" />
+            <Field Name="PRIM_CARE_PROV_ID_QUAL" Type="String" />
+            <Field Name="PRIM_CARE_DOCTOR_ID" Type="Int32" />
+            <Field Name="NUMBEROFSCRIPTS" Type="Int32" />
+            <Field Name="TOTALCOST" Type="Decimal" />
+            <Field Name="TOTALPRICE" Type="Decimal" />
+            <Field Name="NEWSLETTER" Type="String" />
+            <Field Name="SALES_PERSON_ID" Type="Int32" />
+            <Field Name="SOUNDEX" Type="String" />
+            <Field Name="FSOUNDEX" Type="String" />
+            <Field Name="GENDER" Type="String" />
+            <Field Name="BUSINESSNAME" Type="String" />
+            <Field Name="REGCOUNTY" Type="String" />
+            <Field Name="SHIPCOUNTY" Type="String" />
+            <Field Name="COUNTY_POPULATION" Type="String" />
+            <Field Name="EMPLOYEESSIZE" Type="String" />
+            <Field Name="FIRSTYEAROPEN" Type="String" />
+            <Field Name="FRANCHISECODE" Type="String" />
+            <Field Name="OFFICEBASED" Type="String" />
+            <Field Name="EMAIL" Type="String" />
+            <Field Name="SPEEDCODE" Type="String" />
+            <Field Name="CC_BILLING_ADDRESS" Type="String" />
+            <Field Name="CC_BILLING_ZIP" Type="String" />
+            <Field Name="CC_BILLING_THREE" Type="String" />
+            <Field Name="AREACODE" Type="String" />
+            <Field Name="PHONEPREFERRED" Type="String" />
+            <Field Name="SCANIMAGE" Type="ByteArray" />
+            <Field Name="NPI" Type="String" />
+            <Field Name="PHONE1EXT" Type="String" />
+            <Field Name="PHONE2EXT" Type="String" />
+            <Field Name="FAXEXT" Type="String" />
+            <Field Name="PAGEREXT" Type="String" />
+            <Field Name="CELLEXT" Type="String" />
+            <Field Name="LIPO_ID" Type="String" />
+            <Field Name="CREDIT_CARD_NO_ENC" Type="String" />
+            <Field Name="CREDIT_CARD_CVS" Type="String" />
+            <Field Name="CREDIT_CARD_MONTH" Type="String" />
+            <Field Name="CREDIT_CARD_YEAR" Type="String" />
+            <Field Name="CR_TIMESTAMP" Type="DateTime" />
+            <Field Name="TOP_DOCTOR_NUMBER" Type="Int32" />
+            <Field Name="COLORTOP" Type="Int32" />
+            <Field Name="TM_PATIENTOPTINOUT" Type="String" />
+            <Field Name="TM_PATIENTOPTDATE" Type="DateTime" />
+            <Field Name="QB_POS_ID" Type="String" />
+            <Field Name="LIC_VERIFIED" Type="String" />
+            <Field Name="DEA_SUFFIX" Type="String" />
+            <Field Name="CC_TIMESTAMP" Type="DateTime" />
+            <Field Name="DEA_EXP_DATE" Type="DateTime" />
+            <Field Name="STATE_EXP_DATE" Type="DateTime" />
+            <Field Name="DEA_DATE_CHECKED" Type="DateTime" />
+            <Field Name="NPI_DATE_CHECKED" Type="DateTime" />
+            <Field Name="STATELIC_DATE_CHECKED" Type="DateTime" />
+            <Field Name="OFFICE_HOURS" Type="String" />
+            <Field Name="AM_USE_COLORS" Type="String" />
+            <Field Name="AM_USE_NUMBERS" Type="String" />
+            <Field Name="AM_FIRST_VIAL_10" Type="String" />
+            <Field Name="AM_CONCENT_NUM_1" Type="Int32" />
+            <Field Name="AM_CONCENT_COLOR_1" Type="Int32" />
+            <Field Name="AM_CONCENT_NUM_2" Type="Int32" />
+            <Field Name="AM_CONCENT_COLOR_2" Type="Int32" />
+            <Field Name="AM_CONCENT_NUM_3" Type="Int32" />
+            <Field Name="AM_CONCENT_COLOR_3" Type="Int32" />
+            <Field Name="AM_CONCENT_NUM_4" Type="Int32" />
+            <Field Name="AM_CONCENT_COLOR_4" Type="Int32" />
+            <Field Name="AM_CONCENT_NUM_5" Type="Int32" />
+            <Field Name="AM_CONCENT_COLOR_5" Type="Int32" />
+            <Field Name="AM_CONCENT_NUM_6" Type="Int32" />
+            <Field Name="AM_CONCENT_COLOR_6" Type="Int32" />
+            <Field Name="AM_CONCENT_NUM_7" Type="Int32" />
+            <Field Name="AM_CONCENT_COLOR_7" Type="Int32" />
+            <Field Name="AM_CONCENT_NUM_8" Type="Int32" />
+            <Field Name="AM_CONCENT_COLOR_8" Type="Int32" />
+            <Field Name="SPI" Type="String" />
+            <Field Name="SALESFORCEID" Type="String" />
+            <Field Name="ALLERMED_SHIP_TO" Type="ByteArray" />
+            <Field Name="ALLERMED_BILL_TO" Type="ByteArray" />
+            <Field Name="ALLERMED_LABEL_STYLING" Type="String" />
+            <Field Name="ALLERMED_LABEL_INCLUDESET" Type="String" />
+            <Field Name="PRICE_TIER_ID" Type="Int32" />
+            <Field Name="ENTERED_BY_USERSEC_ID" Type="Int32" />
+            <Field Name="ENTERED_BY_NAME" Type="String" />
+            <Field Name="CUSTOM_SORTCODE1" Type="String" />
+            <Field Name="CUSTOM_SORTCODE2" Type="String" />
+            <Field Name="TYPEOFPRACTICE" Type="String" />
+          </View>
+          <View Name="Prescription Data">
+            <Field Name="RXFILL_ID" Type="Int32" />
+            <Field Name="FILL_DATE" Type="DateTime" />
+            <Field Name="FILLTIME" Type="Int16" />
+            <Field Name="PCCA_CPM" Type="Int32" />
+            <Field Name="QUANTITY" Type="Double" />
+            <Field Name="RXMAIN_ID" Type="Int32" />
+            <Field Name="DELETED" Type="String" />
+            <Field Name="NOT_FILLED" Type="String" />
+            <Field Name="NEW_OR_REFILL" Type="String" />
+            <Field Name="DOCTOR_ID" Type="Int32" />
+            <Field Name="DOCTORLASTNAME" Type="String" />
+            <Field Name="DOCTORFIRSTNAME" Type="String" />
+            <Field Name="DR_FULLNAME" Type="String" />
+            <Field Name="DR_CITY" Type="String" />
+            <Field Name="DEA" Type="String" />
+            <Field Name="TYPEOFPRACTICE" Type="String" />
+            <Field Name="NUMBEROFSCRIPTS" Type="Int32" />
+            <Field Name="DRTOTALCOSTFORPERIOD" Type="Decimal" />
+            <Field Name="DRTOTALPRICEFORPERIOD" Type="Decimal" />
+            <Field Name="BUSINESSNAME" Type="String" />
+            <Field Name="DRZIP" Type="String" />
+            <Field Name="DRSTATE" Type="String" />
+            <Field Name="DRPHONE" Type="String" />
+            <Field Name="DRLASTRXDATE" Type="DateTime" />
+            <Field Name="DRCODE" Type="String" />
+            <Field Name="DR_SALES_PERSON" Type="String" />
+            <Field Name="RX_SALES_PERSON" Type="String" />
+            <Field Name="FORMULANAME" Type="String" />
+            <Field Name="STRENGTH" Type="String" />
+            <Field Name="FORM" Type="String" />
+            <Field Name="FORMULASCHEDULE" Type="String" />
+            <Field Name="COMPOUNDED_IN_STORE" Type="String" />
+            <Field Name="THERAPEUTIC_CLASS" Type="String" />
+            <Field Name="FORMULACODE" Type="String" />
+            <Field Name="RPHLASTNAME" Type="String" />
+            <Field Name="RPHFIRSSTNAME" Type="String" />
+            <Field Name="TECHLASTNAME" Type="String" />
+            <Field Name="TECHFIRSTNAME" Type="String" />
+            <Field Name="PATLASTNAME" Type="String" />
+            <Field Name="PATFIRSTNAME" Type="String" />
+            <Field Name="PATPHONE" Type="String" />
+            <Field Name="PATSTATE" Type="String" />
+            <Field Name="PATZIP" Type="String" />
+            <Field Name="PATCLASS" Type="String" />
+            <Field Name="PATMISCID" Type="String" />
+            <Field Name="PHARMACY_COST" Type="Decimal" />
+            <Field Name="PATIENT_PRICE" Type="Decimal" />
+            <Field Name="SALES_TAX" Type="Decimal" />
+            <Field Name="INSURANCE_PAY" Type="Decimal" />
+            <Field Name="CO_PAY" Type="Decimal" />
+            <Field Name="PROFIT" Type="Decimal" />
+            <Field Name="PAYMENT_METHOD" Type="String" />
+            <Field Name="EMUNICATIONS_GUID" Type="String" />
+            <Field Name="INSNAME" Type="String" />
+            <Field Name="INSURANCECODE" Type="String" />
+            <Field Name="INSURANCEBIN" Type="String" />
+            <Field Name="INSURANCEPCN" Type="String" />
+            <Field Name="RXLOCTRACK_COMPLETE_STATUS" Type="String" />
+            <Field Name="RXLOCTRACK_COMPLETION_TYPE" Type="String" />
+          </View>
+          <View Name="States - lookup list">
+            <Field Name="STATENAME" Type="String" />
+            <Field Name="STATECODE" Type="String" />
+          </View>
+        </DataSet>
+      </ResultSchema>
+      <CalculatedFields>
+        <CalculatedField Name="NameStrengthForm" Expression="[FORMULANAME] + [STRENGTH] + [FORM]" DataMember="Prescription Data" />
+      </CalculatedFields>
+    </SqlDataSource>
+  </DataSources>
+  <Items>
+    <Pivot ComponentName="pivotDashboardItem1" Name="Doctor Practice Types in states" ShowCaption="false" DataSource="dashboardSqlDataSource1" DataMember="Prescription Data">
+      <DataItems>
+        <Measure DataMember="PROFIT" UniqueName="DataItem0" />
+      </DataItems>
+      <Values>
+        <Value UniqueName="DataItem0" />
+      </Values>
+    </Pivot>
+    <Chart ComponentName="chartDashboardItem1" Name="Top 20 doctors" DataSource="dashboardSqlDataSource1" DataMember="Prescription Data">
+      <InteractivityOptions MasterFilterMode="Multiple" IsDrillDownEnabled="true" TargetDimensions="Series" />
+      <DataItems>
+        <Dimension DataMember="DR_FULLNAME" TopNEnabled="true" TopNShowOthers="true" TopNCount="20" TopNMeasure="DataItem0" UniqueName="DataItem1" />
+        <Measure DataMember="PROFIT" UniqueName="DataItem0" />
+      </DataItems>
+      <Arguments>
+        <Argument UniqueName="DataItem1" />
+      </Arguments>
+      <Panes>
+        <Pane Name="Pane 1">
+          <Series>
+            <Simple Name="Based off of profit" SeriesType="StackedBar">
+              <Value UniqueName="DataItem0" />
+            </Simple>
+          </Series>
+        </Pane>
+      </Panes>
+      <ChartLegend OutsidePosition="TopCenterHorizontal" />
+    </Chart>
+    <RangeFilter ComponentName="rangeFilterDashboardItem1" Name="Range Filter 1" DataSource="dashboardSqlDataSource1" DataMember="Prescription Data">
+      <DataItems>
+        <Measure DataMember="FILL_DATE" SummaryType="Count" UniqueName="DataItem0" />
+        <Dimension DataMember="FILL_DATE" DateTimeGroupInterval="MonthYear" UniqueName="DataItem1" />
+      </DataItems>
+      <Argument UniqueName="DataItem1" />
+      <Series>
+        <Simple SeriesType="Line">
+          <Value UniqueName="DataItem0" />
+        </Simple>
+      </Series>
+    </RangeFilter>
+    <Chart ComponentName="chartDashboardItem2" Name="Top 10 insurances" DataSource="dashboardSqlDataSource1" DataMember="Prescription Data">
+      <InteractivityOptions MasterFilterMode="Multiple" IsDrillDownEnabled="true" TargetDimensions="Series" />
+      <DataItems>
+        <Measure DataMember="PROFIT" UniqueName="DataItem0" />
+        <Dimension DataMember="INSNAME" UniqueName="DataItem3" />
+        <Dimension DataMember="INSNAME" TopNEnabled="true" TopNCount="10" TopNMeasure="DataItem0" UniqueName="DataItem1" />
+      </DataItems>
+      <SeriesDimensions>
+        <SeriesDimension UniqueName="DataItem3" />
+      </SeriesDimensions>
+      <Arguments>
+        <Argument UniqueName="DataItem1" />
+      </Arguments>
+      <Panes>
+        <Pane Name="Pane 1">
+          <Series>
+            <Simple Name="Based off of profit" SeriesType="StackedBar">
+              <Value UniqueName="DataItem0" />
+            </Simple>
+          </Series>
+        </Pane>
+      </Panes>
+      <ChartLegend OutsidePosition="TopCenterHorizontal" />
+    </Chart>
+    <ChoroplethMap ComponentName="choroplethMapDashboardItem1" Name="Profit by state" DataSource="dashboardSqlDataSource1" DataMember="Prescription Data" ShapefileArea="USA" AttributeName="POSTAL">
+      <DataItems>
+        <Dimension DataMember="PATSTATE" TopNCount="10" UniqueName="DataItem0" />
+        <Measure DataMember="PROFIT" UniqueName="DataItem2" />
+      </DataItems>
+      <ViewArea TopLatitude="49.369672064487254" BottomLatitude="22.722765208057595" LeftLongitude="-124.70997774915153" RightLongitude="-66.987022055984482" CenterPointLatitude="37.208247632673633" CenterPointLongitude="-95.848499902568008" />
+      <MapLegend />
+      <WeightedLegend />
+      <AttributeDimension UniqueName="DataItem0" />
+      <Maps>
+        <ValueMap Name="PROFIT (Sum)" ValueName="PROFIT (Sum)">
+          <Value UniqueName="DataItem2" />
+          <UniformScale />
+        </ValueMap>
+      </Maps>
+    </ChoroplethMap>
+    <Gauge ComponentName="gaugeDashboardItem1" Name="Gauges 1" DataSource="dashboardSqlDataSource1" DataMember="Prescription Data">
+      <DataItems>
+        <Measure DataMember="PROFIT" UniqueName="DataItem0" />
+      </DataItems>
+      <GaugeElement>
+        <ActualValue UniqueName="DataItem0" />
+      </GaugeElement>
+    </Gauge>
+  </Items>
+  <LayoutTree>
+    <LayoutGroup>
+      <LayoutItem DashboardItem="pivotDashboardItem1" Weight="15.916722632639356" />
+      <LayoutGroup Orientation="Vertical" Weight="84.083277367360651">
+        <LayoutGroup Weight="38.998957247132431">
+          <LayoutItem DashboardItem="chartDashboardItem1" Weight="45.846645367412144" />
+          <LayoutItem DashboardItem="chartDashboardItem2" Weight="54.153354632587856" />
+        </LayoutGroup>
+        <LayoutGroup Weight="47.549530761209596">
+          <LayoutItem DashboardItem="choroplethMapDashboardItem1" Weight="45.846645367412144" />
+          <LayoutItem DashboardItem="gaugeDashboardItem1" Weight="54.153354632587856" />
+        </LayoutGroup>
+        <LayoutItem DashboardItem="rangeFilterDashboardItem1" Weight="13.451511991657977" />
+      </LayoutGroup>
+    </LayoutGroup>
+  </LayoutTree>
+</Dashboard>

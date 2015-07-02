@@ -1,0 +1,12 @@
+C:\Work\VS2013\Cmpd4\Cmpd4Dashboardv5\Cmpd4Dashboardv5\bin\Debug\Cmpd4Dashboard.exe.config
+C:\Work\VS2013\Cmpd4\Cmpd4Dashboardv5\Cmpd4Dashboardv5\bin\Debug\Cmpd4Dashboard.exe
+C:\Work\VS2013\Cmpd4\Cmpd4Dashboardv5\Cmpd4Dashboardv5\bin\Debug\Cmpd4Dashboard.pdb
+C:\Work\VS2013\Cmpd4\Cmpd4Dashboardv5\Cmpd4Dashboardv5\bin\Debug\FirebirdSql.Data.FirebirdClient.dll
+C:\Work\VS2013\Cmpd4\Cmpd4Dashboardv5\Cmpd4Dashboardv5\bin\Debug\FirebirdSql.Data.FirebirdClient.pdb
+C:\Work\VS2013\Cmpd4\Cmpd4Dashboardv5\Cmpd4Dashboardv5\obj\Debug\Cmpd4Dashboard.csprojResolveAssemblyReference.cache
+C:\Work\VS2013\Cmpd4\Cmpd4Dashboardv5\Cmpd4Dashboardv5\obj\Debug\Cmpd4Dashboardv5.FrmMain.resources
+C:\Work\VS2013\Cmpd4\Cmpd4Dashboardv5\Cmpd4Dashboardv5\obj\Debug\Cmpd4Dashboard.Properties.Resources.resources
+C:\Work\VS2013\Cmpd4\Cmpd4Dashboardv5\Cmpd4Dashboardv5\obj\Debug\Cmpd4Dashboard.csproj.GenerateResource.Cache
+C:\Work\VS2013\Cmpd4\Cmpd4Dashboardv5\Cmpd4Dashboardv5\obj\Debug\Cmpd4Dashboard.exe.licenses
+C:\Work\VS2013\Cmpd4\Cmpd4Dashboardv5\Cmpd4Dashboardv5\obj\Debug\Cmpd4Dashboard.exe
+C:\Work\VS2013\Cmpd4\Cmpd4Dashboardv5\Cmpd4Dashboardv5\obj\Debug\Cmpd4Dashboard.pdb
