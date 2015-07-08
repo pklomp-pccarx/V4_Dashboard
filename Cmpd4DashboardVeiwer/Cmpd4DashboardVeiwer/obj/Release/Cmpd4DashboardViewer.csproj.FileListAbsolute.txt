@@ -1,6 +1,6 @@
-C:\Work\VS2013\Cmpd4\Dashboard\Cmpd4DashboardVeiwer\Cmpd4DashboardVeiwer\bin\Release\Cmpd4DashboardVeiwer.exe.config
-C:\Work\VS2013\Cmpd4\Dashboard\Cmpd4DashboardVeiwer\Cmpd4DashboardVeiwer\bin\Release\Cmpd4DashboardVeiwer.exe
-C:\Work\VS2013\Cmpd4\Dashboard\Cmpd4DashboardVeiwer\Cmpd4DashboardVeiwer\bin\Release\Cmpd4DashboardVeiwer.pdb
+C:\Work\VS2013\Cmpd4\Dashboard\Cmpd4DashboardVeiwer\Cmpd4DashboardVeiwer\bin\Release\Cmpd4DashboardViewer.exe.config
+C:\Work\VS2013\Cmpd4\Dashboard\Cmpd4DashboardVeiwer\Cmpd4DashboardVeiwer\bin\Release\Cmpd4DashboardViewer.exe
+C:\Work\VS2013\Cmpd4\Dashboard\Cmpd4DashboardVeiwer\Cmpd4DashboardVeiwer\bin\Release\Cmpd4DashboardViewer.pdb
 C:\Work\VS2013\Cmpd4\Dashboard\Cmpd4DashboardVeiwer\Cmpd4DashboardVeiwer\bin\Release\DevExpress.Charts.v15.1.Core.dll
 C:\Work\VS2013\Cmpd4\Dashboard\Cmpd4DashboardVeiwer\Cmpd4DashboardVeiwer\bin\Release\DevExpress.Dashboard.v15.1.Core.dll
 C:\Work\VS2013\Cmpd4\Dashboard\Cmpd4DashboardVeiwer\Cmpd4DashboardVeiwer\bin\Release\DevExpress.Dashboard.v15.1.Win.dll
@@ -174,8 +174,8 @@ C:\Work\VS2013\Cmpd4\Dashboard\Cmpd4DashboardVeiwer\Cmpd4DashboardVeiwer\bin\Rel
 C:\Work\VS2013\Cmpd4\Dashboard\Cmpd4DashboardVeiwer\Cmpd4DashboardVeiwer\bin\Release\ru\DevExpress.XtraTreeList.v15.1.resources.dll
 C:\Work\VS2013\Cmpd4\Dashboard\Cmpd4DashboardVeiwer\Cmpd4DashboardVeiwer\obj\Release\Cmpd4DashboardViewer.csprojResolveAssemblyReference.cache
 C:\Work\VS2013\Cmpd4\Dashboard\Cmpd4DashboardVeiwer\Cmpd4DashboardVeiwer\obj\Release\Cmpd4DashboardVeiwerv1.FrmMain.resources
-C:\Work\VS2013\Cmpd4\Dashboard\Cmpd4DashboardVeiwer\Cmpd4DashboardVeiwer\obj\Release\Cmpd4DashboardVeiwer.Properties.Resources.resources
+C:\Work\VS2013\Cmpd4\Dashboard\Cmpd4DashboardVeiwer\Cmpd4DashboardVeiwer\obj\Release\Cmpd4DashboardViewer.Properties.Resources.resources
 C:\Work\VS2013\Cmpd4\Dashboard\Cmpd4DashboardVeiwer\Cmpd4DashboardVeiwer\obj\Release\Cmpd4DashboardViewer.csproj.GenerateResource.Cache
-C:\Work\VS2013\Cmpd4\Dashboard\Cmpd4DashboardVeiwer\Cmpd4DashboardVeiwer\obj\Release\Cmpd4DashboardVeiwer.exe.licenses
-C:\Work\VS2013\Cmpd4\Dashboard\Cmpd4DashboardVeiwer\Cmpd4DashboardVeiwer\obj\Release\Cmpd4DashboardVeiwer.exe
-C:\Work\VS2013\Cmpd4\Dashboard\Cmpd4DashboardVeiwer\Cmpd4DashboardVeiwer\obj\Release\Cmpd4DashboardVeiwer.pdb
+C:\Work\VS2013\Cmpd4\Dashboard\Cmpd4DashboardVeiwer\Cmpd4DashboardVeiwer\obj\Release\Cmpd4DashboardViewer.exe.licenses
+C:\Work\VS2013\Cmpd4\Dashboard\Cmpd4DashboardVeiwer\Cmpd4DashboardVeiwer\obj\Release\Cmpd4DashboardViewer.exe
+C:\Work\VS2013\Cmpd4\Dashboard\Cmpd4DashboardVeiwer\Cmpd4DashboardVeiwer\obj\Release\Cmpd4DashboardViewer.pdb

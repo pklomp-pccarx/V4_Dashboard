@@ -8,8 +8,8 @@
     <ProjectGuid>{3FED6193-C5EA-407E-A912-ECEFFB87949D}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Cmpd4Dashboard</RootNamespace>
-    <AssemblyName>Cmpd4Dashboard</AssemblyName>
+    <RootNamespace>Cmpd4DashboardDesigner</RootNamespace>
+    <AssemblyName>Cmpd4DashboardDesigner</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <IsWebBootstrapper>false</IsWebBootstrapper>

@@ -8,8 +8,8 @@
     <ProjectGuid>{5E8FBE73-013B-4AAD-93E1-2129AF237AD2}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Cmpd4DashboardVeiwer</RootNamespace>
-    <AssemblyName>Cmpd4DashboardVeiwer</AssemblyName>
+    <RootNamespace>Cmpd4DashboardViewer</RootNamespace>
+    <AssemblyName>Cmpd4DashboardViewer</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
