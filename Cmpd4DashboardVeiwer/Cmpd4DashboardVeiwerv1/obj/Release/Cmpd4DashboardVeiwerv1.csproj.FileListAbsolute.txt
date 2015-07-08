@@ -360,3 +360,6 @@ C:\Work\VS2013\Cmpd4\Dashboard\Cmpd4DashboardVeiwerv\Cmpd4DashboardVeiwerv1\obj\
 C:\Work\VS2013\Cmpd4\Dashboard\Cmpd4DashboardVeiwerv\Cmpd4DashboardVeiwerv1\obj\Release\Cmpd4DashboardVeiwer.exe.licenses
 C:\Work\VS2013\Cmpd4\Dashboard\Cmpd4DashboardVeiwerv\Cmpd4DashboardVeiwerv1\obj\Release\Cmpd4DashboardVeiwer.exe
 C:\Work\VS2013\Cmpd4\Dashboard\Cmpd4DashboardVeiwerv\Cmpd4DashboardVeiwerv1\obj\Release\Cmpd4DashboardVeiwer.pdb
+C:\Work\VS2013\Cmpd4\Dashboard\Cmpd4DashboardVeiwer\Cmpd4DashboardVeiwerv1\bin\Release\Cmpd4DashboardVeiwer.exe.config
+C:\Work\VS2013\Cmpd4\Dashboard\Cmpd4DashboardVeiwer\Cmpd4DashboardVeiwerv1\obj\Release\Cmpd4DashboardVeiwer.exe
+C:\Work\VS2013\Cmpd4\Dashboard\Cmpd4DashboardVeiwer\Cmpd4DashboardVeiwerv1\obj\Release\Cmpd4DashboardVeiwer.pdb

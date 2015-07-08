@@ -360,3 +360,7 @@ C:\Work\VS2013\Cmpd4\Dashboard\Cmpd4Dashboard\Cmpd4Dashboardv5\obj\Release\Cmpd4
 C:\Work\VS2013\Cmpd4\Dashboard\Cmpd4Dashboard\Cmpd4Dashboardv5\obj\Release\Cmpd4Dashboard.exe.licenses
 C:\Work\VS2013\Cmpd4\Dashboard\Cmpd4Dashboard\Cmpd4Dashboardv5\obj\Release\Cmpd4Dashboard.exe
 C:\Work\VS2013\Cmpd4\Dashboard\Cmpd4Dashboard\Cmpd4Dashboardv5\obj\Release\Cmpd4Dashboard.pdb
+C:\Work\VS2013\Cmpd4\Dashboard\Cmpd4Dashboard\Cmpd4Dashboardv5\bin\Release\Cmpd4Dashboard.exe.manifest
+C:\Work\VS2013\Cmpd4\Dashboard\Cmpd4Dashboard\Cmpd4Dashboardv5\bin\Release\Cmpd4Dashboard.application
+C:\Work\VS2013\Cmpd4\Dashboard\Cmpd4Dashboard\Cmpd4Dashboardv5\obj\Release\Cmpd4Dashboard.exe.manifest
+C:\Work\VS2013\Cmpd4\Dashboard\Cmpd4Dashboard\Cmpd4Dashboardv5\obj\Release\Cmpd4Dashboard.application
