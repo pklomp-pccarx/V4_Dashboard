@@ -28,10 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmMain));
             this.ribbonControl1 = new DevExpress.XtraBars.Ribbon.RibbonControl();
-            this.dashboardViewer1 = new DevExpress.DashboardWin.DashboardViewer(this.components);
+            this.dashboardViewer1 = new DevExpress.DashboardWin.DashboardViewer();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dashboardViewer1)).BeginInit();
             this.SuspendLayout();
@@ -49,7 +48,6 @@
             // 
             // dashboardViewer1
             // 
-            this.dashboardViewer1.DashboardSource = new System.Uri("C:\\Users\\pklomp\\Desktop\\V4_DoctorTest.xml", System.UriKind.Absolute);
             this.dashboardViewer1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dashboardViewer1.Location = new System.Drawing.Point(0, 49);
             this.dashboardViewer1.Name = "dashboardViewer1";
