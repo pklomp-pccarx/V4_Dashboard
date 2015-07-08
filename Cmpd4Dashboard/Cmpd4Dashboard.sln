@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
 VisualStudioVersion = 12.0.31101.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cmpd4DashboardDesigner", "Cmpd4Dashboardv5\Cmpd4DashboardDesigner.csproj", "{3FED6193-C5EA-407E-A912-ECEFFB87949D}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cmpd4DashboardViewer", "..\Cmpd4DashboardVeiwer\Cmpd4DashboardVeiwer\Cmpd4DashboardViewer.csproj", "{5E8FBE73-013B-4AAD-93E1-2129AF237AD2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cmpd4DashboardDesigner", "Cmpd4Dashboard\Cmpd4DashboardDesigner.csproj", "{3FED6193-C5EA-407E-A912-ECEFFB87949D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -13,14 +13,14 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{3FED6193-C5EA-407E-A912-ECEFFB87949D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{3FED6193-C5EA-407E-A912-ECEFFB87949D}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{3FED6193-C5EA-407E-A912-ECEFFB87949D}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{3FED6193-C5EA-407E-A912-ECEFFB87949D}.Release|Any CPU.Build.0 = Release|Any CPU
 		{5E8FBE73-013B-4AAD-93E1-2129AF237AD2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{5E8FBE73-013B-4AAD-93E1-2129AF237AD2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5E8FBE73-013B-4AAD-93E1-2129AF237AD2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5E8FBE73-013B-4AAD-93E1-2129AF237AD2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3FED6193-C5EA-407E-A912-ECEFFB87949D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3FED6193-C5EA-407E-A912-ECEFFB87949D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3FED6193-C5EA-407E-A912-ECEFFB87949D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3FED6193-C5EA-407E-A912-ECEFFB87949D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
